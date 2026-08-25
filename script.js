@@ -8,38 +8,38 @@ let currentLang = 'he'; // Default Language
 
 const translations = {
     he: {
-        subtitle: "ארגז הכלים לטכנאי",
-        nav_commands: "מאגר פקודות",
-        nav_software: "תוכנות חובה",
-        nav_ai: "מחולל AI",
-        nav_about: "אודות",
-        search_cmd_placeholder: "חפש פקודה, תיאור או קטגוריה...",
-        search_sw_placeholder: "חפש תוכנה (לדוגמה: Rufus, רשת, שחזור)...",
-        found: "נמצאו",
-        no_commands: "לא נמצאו פקודות מתאימות.",
-        no_software: "לא נמצאו תוכנות.",
-        all: "הכל",
-        copy_success: "הפקודה הועתקה בהצלחה!",
-        download: "הורדה / לאתר",
-        main_title: "מאגר פקודות (CMD & PowerShell)",
-        main_subtitle: "חפש מתוך אלפי פקודות מערכת, רשת ותיקון.",
-        sw_title: "תוכנות חובה לטכנאים",
-        sw_subtitle: "מאגר תוכנות ניידות וכלים שכל טכנאי חייב בדיסק און קי.",
-        all_os: "הכל יחד",
-        about_title: "אודות המערכת",
-        about_subtitle: "Tech Toolkit - ארגז הכלים האולטימטיבי",
-        about_p1: "ברוכים הבאים למאגר הפקודות והכלים הגדול והמתקדם מסוגו. המערכת נבנתה במיוחד עבור טכנאים, אנשי סיסטם ומפתחים המחפשים גישה מיידית לאלפי כלי עבודה, ללא תלות בחיבור לאינטרנט.",
-        about_li1: "מאגר עצום: למעלה מ-25,000 פקודות מערכת, הכוללות פקודות PowerShell מובניות, מחלקות WMI, תהליכי שירות (Services), ופקודות טכנאים אותנטיות.",
-        about_li2: "תמיכה מרובת פלטפורמות: כיסוי נרחב למערכות Windows, Linux, macOS וכלים למכשירי Android דרך ADB.",
-        about_li3: "דו-לשוניות מלאה: כל הפקודות מתורגמות באופן מלא לאנגלית ולעברית, עם אפשרות החלפה בלחיצת כפתור אחת כולל התאמת יישור טקסט (RTL/LTR).",
-        about_li4: "חיפוש חי וסינון: מנוע חיפוש חכם הפועל בצד הלקוח ומסוגל לסנן אלפי רשומות בזמן אמת לפי שם הפקודה, התיאור או הקטגוריה, ללא זמני טעינה (Zero Latency).",
-        about_footer: "כל המידע נטען מקומית ואינו דורש שרת חיצוני. הקליקו על סמל ההעתקה לצד כל פקודה כדי להעתיק אותה מידית ללוח שלכם.",
-        ai_title: "מחולל סקריפטים חכם (Gemini)",
-        ai_subtitle: "תאר איזה סקריפט או פקודה אתה צריך, והבינה המלאכותית תייצר לך קובץ מוכן להורדה.",
-        ai_welcome: "היי! אני עוזר ה-AI שלך. איזה סקריפט תרצה שאכתוב עבורך היום? (לדוגמה: 'תכתוב לי סקריפט PowerShell שמנקה קבצים זמניים')",
-        ai_placeholder: "הקלד כאן את הבקשה שלך...",
-        ai_download_btn: "הורד סקריפט מוכן",
-        ai_status: "מעבד את הבקשה שלך ומכין את הסקריפט..."
+        subtitle: "в░в╗в▓в√ в■в⌡в°в≥в² в°в≤в⌡в═в░в≥",
+        nav_commands: "в·в░в▓в╗ в╓в╖в∙в⌠в∙в╙",
+        nav_software: "в╙в∙в⌡в═в∙в╙ в≈в∙в▒в■",
+        nav_ai: "в·в≈в∙в°в° AI",
+        nav_about: "в░в∙в⌠в∙в╙",
+        search_cmd_placeholder: "в≈в╓в╘ в╓в╖в∙в⌠в■, в╙в≥в░в∙в╗ в░в∙ в╖в≤в▓в∙в╗в≥в■...",
+        search_sw_placeholder: "в≈в╓в╘ в╙в∙в⌡в═в■ (в°в⌠в∙в▓в·в■: Rufus, в╗в╘в╙, в╘в≈в√в∙в╗)...",
+        found: "в═в·в╕в░в∙",
+        no_commands: "в°в░ в═в·в╕в░в∙ в╓в╖в∙в⌠в∙в╙ в·в╙в░в≥в·в∙в╙.",
+        no_software: "в°в░ в═в·в╕в░в∙ в╙в∙в⌡в═в∙в╙.",
+        all: "в■в⌡в°",
+        copy_success: "в■в╓в╖в∙в⌠в■ в■в∙в╒в╙в╖в■ в▒в■в╕в°в≈в■!",
+        download: "в■в∙в╗в⌠в■ / в°в░в╙в╗",
+        main_title: "в·в░в▓в╗ в╓в╖в∙в⌠в∙в╙ (CMD & PowerShell)",
+        main_subtitle: "в≈в╓в╘ в·в╙в∙в  в░в°в╓в≥ в╓в╖в∙в⌠в∙в╙ в·в╒в╗в⌡в╙, в╗в╘в╙ в∙в╙в≥в╖в∙в÷.",
+        sw_title: "в╙в∙в⌡в═в∙в╙ в≈в∙в▒в■ в°в≤в⌡в═в░в≥в²",
+        sw_subtitle: "в·в░в▓в╗ в╙в∙в⌡в═в∙в╙ в═в≥в≥в⌠в∙в╙ в∙в⌡в°в≥в² в╘в⌡в° в≤в⌡в═в░в≥ в≈в≥в≥в▒ в▒в⌠в≥в║в╖ в░в∙в÷ в╖в≥.",
+        all_os: "в■в⌡в° в≥в≈в⌠",
+        about_title: "в░в∙в⌠в∙в╙ в■в·в╒в╗в⌡в╙",
+        about_subtitle: "Tech Toolkit - в░в╗в▓в√ в■в⌡в°в≥в² в■в░в∙в°в≤в≥в·в≤в≥в▒в≥",
+        about_p1: "в▒в╗в∙в⌡в≥в² в■в▒в░в≥в² в°в·в░в▓в╗ в■в╓в╖в∙в⌠в∙в╙ в∙в■в⌡в°в≥в² в■в▓в⌠в∙в° в∙в■в·в╙в╖в⌠в² в·в║в∙в▓в∙. в■в·в╒в╗в⌡в╙ в═в▒в═в╙в■ в▒в·в≥в∙в≈в⌠ в╒в▒в∙в╗ в≤в⌡в═в░в≥в², в░в═в╘в≥ в║в≥в║в≤в² в∙в·в╓в╙в≈в≥в² в■в·в≈в╓в╘в≥в² в▓в≥в╘в■ в·в≥в≥в⌠в≥в╙ в°в░в°в╓в≥ в⌡в°в≥ в╒в▒в∙в⌠в■, в°в°в░ в╙в°в∙в╙ в▒в≈в≥в▒в∙в╗ в°в░в≥в═в≤в╗в═в≤.",
+        about_li1: "в·в░в▓в╗ в╒в╕в∙в²: в°в·в╒в°в■ в·-25,000 в╓в╖в∙в⌠в∙в╙ в·в╒в╗в⌡в╙, в■в⌡в∙в°в°в∙в╙ в╓в╖в∙в⌠в∙в╙ PowerShell в·в∙в▒в═в≥в∙в╙, в·в≈в°в╖в∙в╙ WMI, в╙в■в°в≥в⌡в≥ в╘в≥в╗в∙в╙ (Services), в∙в╓в╖в∙в⌠в∙в╙ в≤в⌡в═в░в≥в² в░в∙в╙в═в≤в≥в∙в╙.",
+        about_li2: "в╙в·в≥в⌡в■ в·в╗в∙в▒в╙ в╓в°в≤в╓в∙в╗в·в∙в╙: в⌡в≥в║в∙в≥ в═в╗в≈в▒ в°в·в╒в╗в⌡в∙в╙ Windows, Linux, macOS в∙в⌡в°в≥в² в°в·в⌡в╘в≥в╗в≥ Android в⌠в╗в  ADB.",
+        about_li3: "в⌠в∙-в°в╘в∙в═в≥в∙в╙ в·в°в░в■: в⌡в° в■в╓в╖в∙в⌠в∙в╙ в·в╙в∙в╗в▓в·в∙в╙ в▒в░в∙в╓в÷ в·в°в░ в°в░в═в▓в°в≥в╙ в∙в°в╒в▒в╗в≥в╙, в╒в² в░в╓в╘в╗в∙в╙ в■в≈в°в╓в■ в▒в°в≈в≥в╕в╙ в⌡в╓в╙в∙в╗ в░в≈в╙ в⌡в∙в°в° в■в╙в░в·в╙ в≥в≥в╘в∙в╗ в≤в╖в║в≤ (RTL/LTR).",
+        about_li4: "в≈в≥в╓в∙в╘ в≈в≥ в∙в║в≥в═в∙в÷: в·в═в∙в╒ в≈в≥в╓в∙в╘ в≈в⌡в² в■в╓в∙в╒в° в▒в╕в⌠ в■в°в╖в∙в≈ в∙в·в║в∙в▓в° в°в║в═в÷ в░в°в╓в≥ в╗в╘в∙в·в∙в╙ в▒в√в·в÷ в░в·в╙ в°в╓в≥ в╘в² в■в╓в╖в∙в⌠в■, в■в╙в≥в░в∙в╗ в░в∙ в■в╖в≤в▓в∙в╗в≥в■, в°в°в░ в√в·в═в≥ в≤в╒в≥в═в■ (Zero Latency).",
+        about_footer: "в⌡в° в■в·в≥в⌠в╒ в═в≤в╒в÷ в·в╖в∙в·в≥в╙ в∙в░в≥в═в∙ в⌠в∙в╗в╘ в╘в╗в╙ в≈в≥в╕в∙в═в≥. в■в╖в°в≥в╖в∙ в╒в° в║в·в° в■в■в╒в╙в╖в■ в°в╕в⌠ в⌡в° в╓в╖в∙в⌠в■ в⌡в⌠в≥ в°в■в╒в╙в≥в╖ в░в∙в╙в■ в·в≥в⌠в≥в╙ в°в°в∙в≈ в╘в°в⌡в².",
+        ai_title: "в·в≈в∙в°в° в║в╖в╗в≥в╓в≤в≥в² в≈в⌡в² (Gemini)",
+        ai_subtitle: "в╙в░в╗ в░в≥в√в■ в║в╖в╗в≥в╓в≤ в░в∙ в╓в╖в∙в⌠в■ в░в╙в■ в╕в╗в≥в , в∙в■в▒в≥в═в■ в■в·в°в░в⌡в∙в╙в≥в╙ в╙в≥в≥в╕в╗ в°в  в╖в∙в▒в╔ в·в∙в⌡в÷ в°в■в∙в╗в⌠в■.",
+        ai_welcome: "в■в≥в≥! в░в═в≥ в╒в∙в√в╗ в■-AI в╘в°в . в░в≥в√в■ в║в╖в╗в≥в╓в≤ в╙в╗в╕в■ в╘в░в⌡в╙в∙в▒ в╒в▒в∙в╗в  в■в≥в∙в²? (в°в⌠в∙в▓в·в■: 'в╙в⌡в╙в∙в▒ в°в≥ в║в╖в╗в≥в╓в≤ PowerShell в╘в·в═в╖в■ в╖в▒в╕в≥в² в√в·в═в≥в≥в²')",
+        ai_placeholder: "в■в╖в°в⌠ в⌡в░в÷ в░в╙ в■в▒в╖в╘в■ в╘в°в ...",
+        ai_download_btn: "в■в∙в╗в⌠ в║в╖в╗в≥в╓в≤ в·в∙в⌡в÷",
+        ai_status: "в·в╒в▒в⌠ в░в╙ в■в▒в╖в╘в■ в╘в°в  в∙в·в⌡в≥в÷ в░в╙ в■в║в╖в╗в≥в╓в≤..."
     },
     en: {
         subtitle: "Technician's Toolkit",
@@ -77,16 +77,17 @@ const translations = {
     }
 };
 
+// Debounce helper to prevent UI lag while typing
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
+
 // Initialize
 function loadData() {
-    // Backwards compatibility for existing commands
-    commandsData = commandsData.map(cmd => ({
-        ...cmd,
-        os: cmd.os || 'Windows',
-        descriptionHe: cmd.descriptionHe || cmd.description,
-        descriptionEn: cmd.descriptionEn || cmd.description
-    }));
-
     initOSFilters();
     initLangToggle();
     initCommands();
@@ -188,10 +189,10 @@ function initCommands() {
     // Initial Render
     renderCommands();
     
-    // Search Listener
-    searchInput.addEventListener('input', () => {
+    // Search Listener with Debounce (fixes lag when typing)
+    searchInput.addEventListener('input', debounce(() => {
         renderCommands();
-    });
+    }, 250));
 }
 
 function renderCommands() {
@@ -216,7 +217,17 @@ function renderCommands() {
     });
     
     const t = translations[currentLang];
-    countBadge.textContent = `${filtered.length} ${t.found}`;
+    
+    // Performance: limit rendering to 300 items max
+    const maxResults = 300;
+    const isLimited = filtered.length > maxResults;
+    const itemsToRender = filtered.slice(0, maxResults);
+    
+    if (isLimited) {
+        countBadge.textContent = `${filtered.length} ${t.found} (Showing first ${maxResults})`;
+    } else {
+        countBadge.textContent = `${filtered.length} ${t.found}`;
+    }
     
     if (filtered.length === 0) {
         grid.innerHTML = `<div class="empty-state">${t.no_commands}</div>`;
@@ -226,7 +237,7 @@ function renderCommands() {
     grid.innerHTML = '';
     const fragment = document.createDocumentFragment();
     
-    filtered.forEach((cmd, index) => {
+    itemsToRender.forEach((cmd, index) => {
         const card = document.createElement('div');
         card.className = 'card';
         const desc = currentLang === 'he' ? (cmd.descriptionHe || cmd.description) : (cmd.descriptionEn || cmd.description);
@@ -235,14 +246,16 @@ function renderCommands() {
                 <span class="card-category">${cmd.category}</span>
                 <span class="card-shell">${cmd.shell}</span>
             </div>
-            <div class="command-box" dir="ltr" style="display: flex; align-items: center; gap: 8px;">
-                <span class="command-text" id="cmd-${index}" style="flex-grow: 1;">${cmd.command}</span>
-                <button class="copy-btn" onclick="downloadCommandFile('cmd-${index}', '${cmd.shell}')" title="Download Script">
-                    <i data-lucide="download" style="width: 18px; height: 18px;"></i>
-                </button>
-                <button class="copy-btn" onclick="copyCommand('cmd-${index}')" title="Copy to Clipboard">
-                    <i data-lucide="copy" style="width: 18px; height: 18px;"></i>
-                </button>
+            <div class="command-box" dir="ltr">
+                <span class="command-text" id="cmd-${index}">${cmd.command}</span>
+                <div class="command-actions">
+                    <button class="icon-btn download-btn" title="Download Script" onclick="downloadCommandFile('cmd-${index}', '${cmd.shell}')">
+                        <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                    </button>
+                    <button class="copy-btn" onclick="copyCommand('cmd-${index}')" title="Copy to Clipboard">
+                        <i data-lucide="copy" style="width: 18px; height: 18px;"></i>
+                    </button>
+                </div>
             </div>
             <p class="card-desc">${desc}</p>
         `;
@@ -326,10 +339,10 @@ function initSoftware() {
     // Initial Render
     renderSoftware();
     
-    // Search Listener
-    searchInput.addEventListener('input', () => {
+    // Search Listener with Debounce
+    searchInput.addEventListener('input', debounce(() => {
         renderSoftware();
-    });
+    }, 250));
 }
 
 function renderSoftware() {
@@ -398,6 +411,34 @@ function showToast(message) {
         toast.classList.remove('show');
     }, 3000);
 }
+
+// UX: Scroll to Top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// UX: Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+    // Press '/' to focus search
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+        e.preventDefault();
+        const activeSection = document.querySelector('.content-section.active');
+        if (activeSection.id === 'commands') {
+            document.getElementById('commandSearch').focus();
+        } else if (activeSection.id === 'software') {
+            document.getElementById('softwareSearch').focus();
+        }
+    }
+});
 
 // Start Application
 document.addEventListener('DOMContentLoaded', loadData);
@@ -486,11 +527,11 @@ async function generateScript(prompt, useFallback = false) {
     
     let apiKey = localStorage.getItem('tech_toolkit_api_key');
     if (!apiKey) {
-        apiKey = prompt(currentLang === 'he' ? 'אנא הזן את מפתח ה-API שלך של Google Gemini:' : 'Please enter your Google Gemini API Key:');
+        apiKey = prompt(currentLang === 'he' ? 'в░в═в░ в■в√в÷ в░в╙ в·в╓в╙в≈ в■-API в╘в°в  в╘в° Google Gemini:' : 'Please enter your Google Gemini API Key:');
         if (!apiKey) {
             typingIndicator.remove();
             if (statusMsgDiv) statusMsgDiv.remove();
-            addChatMessage(currentLang === 'he' ? 'שגיאה: מפתח ה-API חסר.' : 'Error: API key is missing.', 'bot-message');
+            addChatMessage(currentLang === 'he' ? 'в╘в▓в≥в░в■: в·в╓в╙в≈ в■-API в≈в║в╗.' : 'Error: API key is missing.', 'bot-message');
             return;
         }
         localStorage.setItem('tech_toolkit_api_key', apiKey);
@@ -521,7 +562,7 @@ Also, the very FIRST line of your response MUST be a comment containing exactly 
         if (data.error) {
             // Auto fallback to a lighter model if high demand
             if (!useFallback && (data.error.code === 503 || data.error.message.includes('high demand') || data.error.message.includes('overloaded'))) {
-                const retryMsg = currentLang === 'he' ? 'השרת הראשי עמוס, מנסה לעבור לשרת גיבוי...' : 'Main server busy, switching to fallback server...';
+                const retryMsg = currentLang === 'he' ? 'в■в╘в╗в╙ в■в╗в░в╘в≥ в╒в·в∙в║, в·в═в║в■ в°в╒в▒в∙в╗ в°в╘в╗в╙ в▓в≥в▒в∙в≥...' : 'Main server busy, switching to fallback server...';
                 const retryDiv = addChatMessage(retryMsg, 'bot-message');
                 setTimeout(() => {
                     retryDiv.remove();
@@ -530,7 +571,7 @@ Also, the very FIRST line of your response MUST be a comment containing exactly 
                 return;
             }
             
-            const errMsg = currentLang === 'he' ? `שגיאת שרת: ${data.error.message}` : `Server Error: ${data.error.message}`;
+            const errMsg = currentLang === 'he' ? `в╘в▓в≥в░в╙ в╘в╗в╙: ${data.error.message}` : `Server Error: ${data.error.message}`;
             addChatMessage(errMsg, 'bot-message');
             return;
         }
@@ -564,7 +605,7 @@ Also, the very FIRST line of your response MUST be a comment containing exactly 
         const blob = new Blob([rawCode], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
         
-        const successMsg = currentLang === 'he' ? 'הנה הסקריפט שלך! לחץ על הכפתור למטה כדי להוריד אותו:' : 'Here is your script! Click the button below to download it:';
+        const successMsg = currentLang === 'he' ? 'в■в═в■ в■в║в╖в╗в≥в╓в≤ в╘в°в ! в°в≈в╔ в╒в° в■в⌡в╓в╙в∙в╗ в°в·в≤в■ в⌡в⌠в≥ в°в■в∙в╗в≥в⌠ в░в∙в╙в∙:' : 'Here is your script! Click the button below to download it:';
         addChatMessage(successMsg, 'bot-message', url, filename);
 
     } catch (err) {
@@ -574,3 +615,18 @@ Also, the very FIRST line of your response MUST be a comment containing exactly 
         console.error(err);
     }
 }
+
+
+
+// AI Explain Command
+window.explainCommand = function(cmdText) {
+    const aiModal = document.getElementById('aiModal');
+    if(aiModal) aiModal.classList.add('active');
+    
+    const promptInput = document.getElementById('aiPrompt');
+    if(promptInput) {
+        promptInput.value = 'ЗЯАИЬ ЛИ АВЖЬД ЕАРАЬИЗ ТЫЕХД НД ДТВЕЦД ДФЮЗ РЕЫД, ЕЗО ЛИ ЦЕБНД ЛЫИНЕЫ:\\n' + cmdText;
+        generateScript();
+    }
+};
+
