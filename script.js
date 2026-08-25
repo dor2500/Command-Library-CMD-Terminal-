@@ -1,5 +1,60 @@
 const toast = document.getElementById('toast');
 
+
+// Favorites State
+let favorites = JSON.parse(localStorage.getItem('tech_toolkit_favorites')) || [];
+
+function toggleFavorite(commandId) {
+    const index = favorites.indexOf(commandId);
+    if (index > -1) {
+        favorites.splice(index, 1);
+    } else {
+        favorites.push(commandId);
+    }
+    localStorage.setItem('tech_toolkit_favorites', JSON.stringify(favorites));
+    renderCommands(); // Re-render to update star icons and filters
+}
+
+// Global Keyboard Shortcuts
+document.addEventListener('keydown', (e) => {
+    // Focus search on "/"
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
+        e.preventDefault();
+        const activeSection = document.querySelector('.content-section.active');
+        if (activeSection.id === 'commands-section') {
+            document.getElementById('commandSearch').focus();
+        } else if (activeSection.id === 'software-section') {
+            document.getElementById('softwareSearch').focus();
+        }
+    }
+    // Clear search on "Escape"
+    if (e.key === 'Escape') {
+        if (document.activeElement.id === 'commandSearch') {
+            document.activeElement.value = '';
+            document.activeElement.blur();
+            renderCommands();
+        } else if (document.activeElement.id === 'softwareSearch') {
+            document.activeElement.value = '';
+            document.activeElement.blur();
+            renderSoftware();
+        }
+    }
+});
+
+// Syntax Highlighting formatting function
+function formatCommandText(text) {
+    // Escape HTML tags first
+    let formatted = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    
+    // Highlight paths (C:\... or /var/...)
+    formatted = formatted.replace(/([a-zA-Z]:\\[^\s]+|\/[a-zA-Z0-9_.-]+(\/[a-zA-Z0-9_.-]+)+)/g, '<span class="sh-path">$1</span>');
+    
+    // Highlight flags (-f, /f, --force)
+    formatted = formatted.replace(/(\s)(-[a-zA-Z0-9]+|--[a-zA-Z0-9\-]+|\/[a-zA-Z0-9]+)/g, '$1<span class="sh-flag">$2</span>');
+    
+    return formatted;
+}
+
 // Data State
 let currentCommandCategory = 'all';
 let currentSoftwareCategory = 'all';
@@ -19,6 +74,7 @@ const translations = {
         no_commands: "לא נמצאו פקודות מתאימות.",
         no_software: "לא נמצאו תוכנות.",
         all: "הכל",
+        favorites: "מועדפים",
         copy_success: "הפקודה הועתקה בהצלחה!",
         download: "הורדה / לאתר",
         main_title: "מאגר פקודות (CMD & PowerShell)",
@@ -26,6 +82,7 @@ const translations = {
         sw_title: "תוכנות חובה לטכנאים",
         sw_subtitle: "מאגר תוכנות ניידות וכלים שכל טכנאי חייב בדיסק און קי.",
         all_os: "הכל יחד",
+        favorites: "מועדפים",
         about_title: "אודות המערכת",
         about_subtitle: "Tech Toolkit - ארגז הכלים האולטימטיבי",
         about_p1: "ברוכים הבאים למאגר הפקודות והכלים הגדול והמתקדם מסוגו. המערכת נבנתה במיוחד עבור טכנאים, אנשי סיסטם ומפתחים המחפשים גישה מיידית לאלפי כלי עבודה, ללא תלות בחיבור לאינטרנט.",
@@ -53,6 +110,7 @@ const translations = {
         no_commands: "No commands found.",
         no_software: "No software found.",
         all: "All",
+        favorites: "Favorites",
         copy_success: "Command copied successfully!",
         download: "Download / Website",
         main_title: "Command Library (CMD & Terminal)",
@@ -60,6 +118,7 @@ const translations = {
         sw_title: "Essential Technician Software",
         sw_subtitle: "Portable tools and software every technician needs on a USB drive.",
         all_os: "All OS",
+        favorites: "Favorites",
         about_title: "About The System",
         about_subtitle: "Tech Toolkit - The Ultimate Toolbox",
         about_p1: "Welcome to the largest and most advanced command library of its kind. Built specifically for technicians, sysadmins, and developers needing instant access to thousands of tools entirely offline.",
@@ -259,7 +318,10 @@ function renderCommands() {
         const matchesSearch = searchWords.every(word => searchString.includes(word));
         
         const matchesCategory = currentCommandCategory === 'all' || cmd.category === currentCommandCategory;
-        const matchesOS = currentOS === 'all' || cmd.os === currentOS;
+        let matchesOS = currentOS === 'all' || cmd.os === currentOS;
+        if (currentOS === 'favorites') {
+            matchesOS = favorites.includes(cmd.id || cmd.command); // Fallback to command string if no id
+        }
         
         return matchesSearch && matchesCategory && matchesOS;
     });
@@ -313,7 +375,7 @@ function renderCommands() {
 }
 
 function copyCommand(elementId) {
-    const text = document.getElementById(elementId).innerText;
+    const text = document.getElementById(elementId).textContent;
     navigator.clipboard.writeText(text).then(() => {
         const t = translations[currentLang];
         showToast(t.copy_success);
@@ -323,7 +385,7 @@ function copyCommand(elementId) {
 }
 
 function downloadCommandFile(elementId, shell) {
-    const text = document.getElementById(elementId).innerText;
+    const text = document.getElementById(elementId).textContent;
     let extension = '.txt';
     let content = text;
     
