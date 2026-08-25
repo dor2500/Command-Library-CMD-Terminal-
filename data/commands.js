@@ -1,4 +1,4 @@
-const commandsData = [
+let commandsData = [
   {
     "command": "sfc /scannow",
     "descriptionHe": "סריקה ותיקון של קבצי מערכת פגומים בווינדוס",
@@ -41,7 +41,7 @@ const commandsData = [
   },
   {
     "command": "%",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול %",
+    "descriptionHe": "פקודת PowerShell מקורית: %",
     "descriptionEn": "Native PowerShell Command: %",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -49,7 +49,7 @@ const commandsData = [
   },
   {
     "command": "?",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ?",
+    "descriptionHe": "פקודת PowerShell מקורית: ?",
     "descriptionEn": "Native PowerShell Command: ?",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -57,7 +57,7 @@ const commandsData = [
   },
   {
     "command": "ac",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ac",
+    "descriptionHe": "פקודת PowerShell מקורית: ac",
     "descriptionEn": "Native PowerShell Command: ac",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -65,7 +65,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppPackage",
-    "descriptionHe": "הוספת App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppPackage",
     "descriptionEn": "Native PowerShell Command: Add-AppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -73,7 +73,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppPackageVolume",
-    "descriptionHe": "הוספת App Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppPackageVolume",
     "descriptionEn": "Native PowerShell Command: Add-AppPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -81,7 +81,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppProvisionedPackage",
-    "descriptionHe": "הוספת App Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Add-AppProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -89,7 +89,7 @@ const commandsData = [
   },
   {
     "command": "Add-MsixPackage",
-    "descriptionHe": "הוספת Msix Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-MsixPackage",
     "descriptionEn": "Native PowerShell Command: Add-MsixPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -97,7 +97,7 @@ const commandsData = [
   },
   {
     "command": "Add-MsixPackageVolume",
-    "descriptionHe": "הוספת Msix Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-MsixPackageVolume",
     "descriptionEn": "Native PowerShell Command: Add-MsixPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -105,7 +105,7 @@ const commandsData = [
   },
   {
     "command": "Add-MsixVolume",
-    "descriptionHe": "הוספת Msix Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-MsixVolume",
     "descriptionEn": "Native PowerShell Command: Add-MsixVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -113,7 +113,7 @@ const commandsData = [
   },
   {
     "command": "Add-ProvisionedAppPackage",
-    "descriptionHe": "הוספת Provisioned App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-ProvisionedAppPackage",
     "descriptionEn": "Native PowerShell Command: Add-ProvisionedAppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -121,7 +121,7 @@ const commandsData = [
   },
   {
     "command": "Add-ProvisionedAppSharedPackageContainer",
-    "descriptionHe": "הוספת Provisioned App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-ProvisionedAppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Add-ProvisionedAppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -129,7 +129,7 @@ const commandsData = [
   },
   {
     "command": "Add-ProvisionedAppxPackage",
-    "descriptionHe": "הוספת Provisioned Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-ProvisionedAppxPackage",
     "descriptionEn": "Native PowerShell Command: Add-ProvisionedAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -137,7 +137,7 @@ const commandsData = [
   },
   {
     "command": "Add-ProvisioningPackage",
-    "descriptionHe": "הוספת Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Add-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -145,7 +145,7 @@ const commandsData = [
   },
   {
     "command": "Add-TrustedProvisioningCertificate",
-    "descriptionHe": "הוספת Trusted Provisioning Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-TrustedProvisioningCertificate",
     "descriptionEn": "Native PowerShell Command: Add-TrustedProvisioningCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -153,7 +153,7 @@ const commandsData = [
   },
   {
     "command": "algm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול algm",
+    "descriptionHe": "פקודת PowerShell מקורית: algm",
     "descriptionEn": "Native PowerShell Command: algm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -161,7 +161,7 @@ const commandsData = [
   },
   {
     "command": "Apply-WindowsUnattend",
-    "descriptionHe": "פעולת PowerShell על Windows Unattend",
+    "descriptionHe": "פקודת PowerShell מקורית: Apply-WindowsUnattend",
     "descriptionEn": "Native PowerShell Command: Apply-WindowsUnattend",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -169,7 +169,7 @@ const commandsData = [
   },
   {
     "command": "asnp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול asnp",
+    "descriptionHe": "פקודת PowerShell מקורית: asnp",
     "descriptionEn": "Native PowerShell Command: asnp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -177,7 +177,7 @@ const commandsData = [
   },
   {
     "command": "blsmba",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול blsmba",
+    "descriptionHe": "פקודת PowerShell מקורית: blsmba",
     "descriptionEn": "Native PowerShell Command: blsmba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -185,7 +185,7 @@ const commandsData = [
   },
   {
     "command": "blsmbclas",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול blsmbclas",
+    "descriptionHe": "פקודת PowerShell מקורית: blsmbclas",
     "descriptionEn": "Native PowerShell Command: blsmbclas",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -193,7 +193,7 @@ const commandsData = [
   },
   {
     "command": "cat",
-    "descriptionHe": "הצגת תוכן של קובץ טקסט על המסך",
+    "descriptionHe": "פקודת PowerShell מקורית: cat",
     "descriptionEn": "Native PowerShell Command: cat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -201,7 +201,7 @@ const commandsData = [
   },
   {
     "command": "cd",
-    "descriptionHe": "מעבר לספרייה (תיקייה) אחרת",
+    "descriptionHe": "פקודת PowerShell מקורית: cd",
     "descriptionEn": "Native PowerShell Command: cd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -209,7 +209,7 @@ const commandsData = [
   },
   {
     "command": "CFS",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול CFS",
+    "descriptionHe": "פקודת PowerShell מקורית: CFS",
     "descriptionEn": "Native PowerShell Command: CFS",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -217,7 +217,7 @@ const commandsData = [
   },
   {
     "command": "chdir",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול chdir",
+    "descriptionHe": "פקודת PowerShell מקורית: chdir",
     "descriptionEn": "Native PowerShell Command: chdir",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -225,7 +225,7 @@ const commandsData = [
   },
   {
     "command": "clc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול clc",
+    "descriptionHe": "פקודת PowerShell מקורית: clc",
     "descriptionEn": "Native PowerShell Command: clc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -233,7 +233,7 @@ const commandsData = [
   },
   {
     "command": "clear",
-    "descriptionHe": "ניקוי המסך מכל הפלט הקודם",
+    "descriptionHe": "פקודת PowerShell מקורית: clear",
     "descriptionEn": "Native PowerShell Command: clear",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -241,7 +241,7 @@ const commandsData = [
   },
   {
     "command": "clhy",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול clhy",
+    "descriptionHe": "פקודת PowerShell מקורית: clhy",
     "descriptionEn": "Native PowerShell Command: clhy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -249,7 +249,7 @@ const commandsData = [
   },
   {
     "command": "cli",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cli",
+    "descriptionHe": "פקודת PowerShell מקורית: cli",
     "descriptionEn": "Native PowerShell Command: cli",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -257,7 +257,7 @@ const commandsData = [
   },
   {
     "command": "clp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול clp",
+    "descriptionHe": "פקודת PowerShell מקורית: clp",
     "descriptionEn": "Native PowerShell Command: clp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -265,7 +265,7 @@ const commandsData = [
   },
   {
     "command": "cls",
-    "descriptionHe": "ניקוי המסך מכל הפלט הקודם",
+    "descriptionHe": "פקודת PowerShell מקורית: cls",
     "descriptionEn": "Native PowerShell Command: cls",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -273,7 +273,7 @@ const commandsData = [
   },
   {
     "command": "clv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול clv",
+    "descriptionHe": "פקודת PowerShell מקורית: clv",
     "descriptionEn": "Native PowerShell Command: clv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -281,7 +281,7 @@ const commandsData = [
   },
   {
     "command": "cmpcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cmpcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: cmpcfg",
     "descriptionEn": "Native PowerShell Command: cmpcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -289,7 +289,7 @@ const commandsData = [
   },
   {
     "command": "cnsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cnsn",
+    "descriptionHe": "פקודת PowerShell מקורית: cnsn",
     "descriptionEn": "Native PowerShell Command: cnsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -297,7 +297,7 @@ const commandsData = [
   },
   {
     "command": "compare",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול compare",
+    "descriptionHe": "פקודת PowerShell מקורית: compare",
     "descriptionEn": "Native PowerShell Command: compare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -305,7 +305,7 @@ const commandsData = [
   },
   {
     "command": "copy",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול copy",
+    "descriptionHe": "פקודת PowerShell מקורית: copy",
     "descriptionEn": "Native PowerShell Command: copy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -313,7 +313,7 @@ const commandsData = [
   },
   {
     "command": "cp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cp",
+    "descriptionHe": "פקודת PowerShell מקורית: cp",
     "descriptionEn": "Native PowerShell Command: cp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -321,7 +321,7 @@ const commandsData = [
   },
   {
     "command": "cpi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cpi",
+    "descriptionHe": "פקודת PowerShell מקורית: cpi",
     "descriptionEn": "Native PowerShell Command: cpi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -329,7 +329,7 @@ const commandsData = [
   },
   {
     "command": "cpp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cpp",
+    "descriptionHe": "פקודת PowerShell מקורית: cpp",
     "descriptionEn": "Native PowerShell Command: cpp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -337,7 +337,7 @@ const commandsData = [
   },
   {
     "command": "cssmbo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cssmbo",
+    "descriptionHe": "פקודת PowerShell מקורית: cssmbo",
     "descriptionEn": "Native PowerShell Command: cssmbo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -345,7 +345,7 @@ const commandsData = [
   },
   {
     "command": "cssmbse",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cssmbse",
+    "descriptionHe": "פקודת PowerShell מקורית: cssmbse",
     "descriptionEn": "Native PowerShell Command: cssmbse",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -353,7 +353,7 @@ const commandsData = [
   },
   {
     "command": "curl",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול curl",
+    "descriptionHe": "פקודת PowerShell מקורית: curl",
     "descriptionEn": "Native PowerShell Command: curl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -361,7 +361,7 @@ const commandsData = [
   },
   {
     "command": "cvpa",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cvpa",
+    "descriptionHe": "פקודת PowerShell מקורית: cvpa",
     "descriptionEn": "Native PowerShell Command: cvpa",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -369,7 +369,7 @@ const commandsData = [
   },
   {
     "command": "dbp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול dbp",
+    "descriptionHe": "פקודת PowerShell מקורית: dbp",
     "descriptionEn": "Native PowerShell Command: dbp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -377,7 +377,7 @@ const commandsData = [
   },
   {
     "command": "del",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול del",
+    "descriptionHe": "פקודת PowerShell מקורית: del",
     "descriptionEn": "Native PowerShell Command: del",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -385,7 +385,7 @@ const commandsData = [
   },
   {
     "command": "diff",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול diff",
+    "descriptionHe": "פקודת PowerShell מקורית: diff",
     "descriptionEn": "Native PowerShell Command: diff",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -393,7 +393,7 @@ const commandsData = [
   },
   {
     "command": "dir",
-    "descriptionHe": "הצגת רשימת הקבצים והתיקיות בספרייה הנוכחית",
+    "descriptionHe": "פקודת PowerShell מקורית: dir",
     "descriptionEn": "Native PowerShell Command: dir",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -401,7 +401,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PhysicalDiskIndication",
-    "descriptionHe": "השבתת Physical Disk Indication",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PhysicalDiskIndication",
     "descriptionEn": "Native PowerShell Command: Disable-PhysicalDiskIndication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -409,7 +409,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageDiagnosticLog",
-    "descriptionHe": "השבתת Storage Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Disable-StorageDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -417,7 +417,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-AppPackageVolume",
-    "descriptionHe": "פעולת PowerShell על App Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-AppPackageVolume",
     "descriptionEn": "Native PowerShell Command: Dismount-AppPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -425,7 +425,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-MsixPackageVolume",
-    "descriptionHe": "פעולת PowerShell על Msix Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-MsixPackageVolume",
     "descriptionEn": "Native PowerShell Command: Dismount-MsixPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -433,7 +433,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-MsixVolume",
-    "descriptionHe": "פעולת PowerShell על Msix Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-MsixVolume",
     "descriptionEn": "Native PowerShell Command: Dismount-MsixVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -441,7 +441,7 @@ const commandsData = [
   },
   {
     "command": "dlu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול dlu",
+    "descriptionHe": "פקודת PowerShell מקורית: dlu",
     "descriptionEn": "Native PowerShell Command: dlu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -449,7 +449,7 @@ const commandsData = [
   },
   {
     "command": "dnsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול dnsn",
+    "descriptionHe": "פקודת PowerShell מקורית: dnsn",
     "descriptionEn": "Native PowerShell Command: dnsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -457,7 +457,7 @@ const commandsData = [
   },
   {
     "command": "dsmbd",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול dsmbd",
+    "descriptionHe": "פקודת PowerShell מקורית: dsmbd",
     "descriptionEn": "Native PowerShell Command: dsmbd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -465,7 +465,7 @@ const commandsData = [
   },
   {
     "command": "ebp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ebp",
+    "descriptionHe": "פקודת PowerShell מקורית: ebp",
     "descriptionEn": "Native PowerShell Command: ebp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -473,7 +473,7 @@ const commandsData = [
   },
   {
     "command": "echo",
-    "descriptionHe": "הדפסת טקסט או משתנים למסך",
+    "descriptionHe": "פקודת PowerShell מקורית: echo",
     "descriptionEn": "Native PowerShell Command: echo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -481,7 +481,7 @@ const commandsData = [
   },
   {
     "command": "elu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול elu",
+    "descriptionHe": "פקודת PowerShell מקורית: elu",
     "descriptionEn": "Native PowerShell Command: elu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -489,7 +489,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PhysicalDiskIndication",
-    "descriptionHe": "הפעלת/אפשור Physical Disk Indication",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PhysicalDiskIndication",
     "descriptionEn": "Native PowerShell Command: Enable-PhysicalDiskIndication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -497,7 +497,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageDiagnosticLog",
-    "descriptionHe": "הפעלת/אפשור Storage Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Enable-StorageDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -505,7 +505,7 @@ const commandsData = [
   },
   {
     "command": "epal",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול epal",
+    "descriptionHe": "פקודת PowerShell מקורית: epal",
     "descriptionEn": "Native PowerShell Command: epal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -513,7 +513,7 @@ const commandsData = [
   },
   {
     "command": "epcsv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול epcsv",
+    "descriptionHe": "פקודת PowerShell מקורית: epcsv",
     "descriptionEn": "Native PowerShell Command: epcsv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -521,7 +521,7 @@ const commandsData = [
   },
   {
     "command": "epsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול epsn",
+    "descriptionHe": "פקודת PowerShell מקורית: epsn",
     "descriptionEn": "Native PowerShell Command: epsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -529,7 +529,7 @@ const commandsData = [
   },
   {
     "command": "erase",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול erase",
+    "descriptionHe": "פקודת PowerShell מקורית: erase",
     "descriptionEn": "Native PowerShell Command: erase",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -537,7 +537,7 @@ const commandsData = [
   },
   {
     "command": "esmbd",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול esmbd",
+    "descriptionHe": "פקודת PowerShell מקורית: esmbd",
     "descriptionEn": "Native PowerShell Command: esmbd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -545,7 +545,7 @@ const commandsData = [
   },
   {
     "command": "etsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול etsn",
+    "descriptionHe": "פקודת PowerShell מקורית: etsn",
     "descriptionEn": "Native PowerShell Command: etsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -553,7 +553,7 @@ const commandsData = [
   },
   {
     "command": "Export-VMCheckpoint",
-    "descriptionHe": "ייצוא נתונים עבור V M Checkpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-VMCheckpoint",
     "descriptionEn": "Native PowerShell Command: Export-VMCheckpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -561,7 +561,7 @@ const commandsData = [
   },
   {
     "command": "exsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול exsn",
+    "descriptionHe": "פקודת PowerShell מקורית: exsn",
     "descriptionEn": "Native PowerShell Command: exsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -569,7 +569,7 @@ const commandsData = [
   },
   {
     "command": "fc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול fc",
+    "descriptionHe": "פקודת PowerShell מקורית: fc",
     "descriptionEn": "Native PowerShell Command: fc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -577,7 +577,7 @@ const commandsData = [
   },
   {
     "command": "fhx",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול fhx",
+    "descriptionHe": "פקודת PowerShell מקורית: fhx",
     "descriptionEn": "Native PowerShell Command: fhx",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -585,7 +585,7 @@ const commandsData = [
   },
   {
     "command": "fimo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול fimo",
+    "descriptionHe": "פקודת PowerShell מקורית: fimo",
     "descriptionEn": "Native PowerShell Command: fimo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -593,7 +593,7 @@ const commandsData = [
   },
   {
     "command": "fl",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול fl",
+    "descriptionHe": "פקודת PowerShell מקורית: fl",
     "descriptionEn": "Native PowerShell Command: fl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -601,7 +601,7 @@ const commandsData = [
   },
   {
     "command": "Flush-Volume",
-    "descriptionHe": "פעולת PowerShell על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Flush-Volume",
     "descriptionEn": "Native PowerShell Command: Flush-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -609,7 +609,7 @@ const commandsData = [
   },
   {
     "command": "foreach",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול foreach",
+    "descriptionHe": "פקודת PowerShell מקורית: foreach",
     "descriptionEn": "Native PowerShell Command: foreach",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -617,7 +617,7 @@ const commandsData = [
   },
   {
     "command": "ft",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ft",
+    "descriptionHe": "פקודת PowerShell מקורית: ft",
     "descriptionEn": "Native PowerShell Command: ft",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -625,7 +625,7 @@ const commandsData = [
   },
   {
     "command": "fw",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול fw",
+    "descriptionHe": "פקודת PowerShell מקורית: fw",
     "descriptionEn": "Native PowerShell Command: fw",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -633,7 +633,7 @@ const commandsData = [
   },
   {
     "command": "gal",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gal",
+    "descriptionHe": "פקודת PowerShell מקורית: gal",
     "descriptionEn": "Native PowerShell Command: gal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -641,7 +641,7 @@ const commandsData = [
   },
   {
     "command": "gbp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gbp",
+    "descriptionHe": "פקודת PowerShell מקורית: gbp",
     "descriptionEn": "Native PowerShell Command: gbp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -649,7 +649,7 @@ const commandsData = [
   },
   {
     "command": "gc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gc",
+    "descriptionHe": "פקודת PowerShell מקורית: gc",
     "descriptionEn": "Native PowerShell Command: gc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -657,7 +657,7 @@ const commandsData = [
   },
   {
     "command": "gcai",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcai",
+    "descriptionHe": "פקודת PowerShell מקורית: gcai",
     "descriptionEn": "Native PowerShell Command: gcai",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -665,7 +665,7 @@ const commandsData = [
   },
   {
     "command": "gcb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcb",
+    "descriptionHe": "פקודת PowerShell מקורית: gcb",
     "descriptionEn": "Native PowerShell Command: gcb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -673,7 +673,7 @@ const commandsData = [
   },
   {
     "command": "gcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: gcfg",
     "descriptionEn": "Native PowerShell Command: gcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -681,7 +681,7 @@ const commandsData = [
   },
   {
     "command": "gcfgs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcfgs",
+    "descriptionHe": "פקודת PowerShell מקורית: gcfgs",
     "descriptionEn": "Native PowerShell Command: gcfgs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -689,7 +689,7 @@ const commandsData = [
   },
   {
     "command": "gci",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gci",
+    "descriptionHe": "פקודת PowerShell מקורית: gci",
     "descriptionEn": "Native PowerShell Command: gci",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -697,7 +697,7 @@ const commandsData = [
   },
   {
     "command": "gcim",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcim",
+    "descriptionHe": "פקודת PowerShell מקורית: gcim",
     "descriptionEn": "Native PowerShell Command: gcim",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -705,7 +705,7 @@ const commandsData = [
   },
   {
     "command": "gcls",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcls",
+    "descriptionHe": "פקודת PowerShell מקורית: gcls",
     "descriptionEn": "Native PowerShell Command: gcls",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -713,7 +713,7 @@ const commandsData = [
   },
   {
     "command": "gcm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcm",
+    "descriptionHe": "פקודת PowerShell מקורית: gcm",
     "descriptionEn": "Native PowerShell Command: gcm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -721,7 +721,7 @@ const commandsData = [
   },
   {
     "command": "gcms",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcms",
+    "descriptionHe": "פקודת PowerShell מקורית: gcms",
     "descriptionEn": "Native PowerShell Command: gcms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -729,7 +729,7 @@ const commandsData = [
   },
   {
     "command": "gcs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gcs",
+    "descriptionHe": "פקודת PowerShell מקורית: gcs",
     "descriptionEn": "Native PowerShell Command: gcs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -737,7 +737,7 @@ const commandsData = [
   },
   {
     "command": "gdr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gdr",
+    "descriptionHe": "פקודת PowerShell מקורית: gdr",
     "descriptionEn": "Native PowerShell Command: gdr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -745,7 +745,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackage",
-    "descriptionHe": "קבלת מידע על App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackage",
     "descriptionEn": "Native PowerShell Command: Get-AppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -753,7 +753,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageAutoUpdateSettings",
-    "descriptionHe": "קבלת מידע על App Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -761,7 +761,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageDefaultVolume",
-    "descriptionHe": "קבלת מידע על App Package Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -769,7 +769,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageLastError",
-    "descriptionHe": "קבלת מידע על App Package Last Error",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageLastError",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageLastError",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -777,7 +777,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageLog",
-    "descriptionHe": "קבלת מידע על App Package Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageLog",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -785,7 +785,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageManifest",
-    "descriptionHe": "קבלת מידע על App Package Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageManifest",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -793,7 +793,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppPackageVolume",
-    "descriptionHe": "קבלת מידע על App Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppPackageVolume",
     "descriptionEn": "Native PowerShell Command: Get-AppPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -801,7 +801,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppProvisionedPackage",
-    "descriptionHe": "קבלת מידע על App Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Get-AppProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -809,7 +809,7 @@ const commandsData = [
   },
   {
     "command": "Get-DiskSNV",
-    "descriptionHe": "קבלת מידע על Disk S N V",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DiskSNV",
     "descriptionEn": "Native PowerShell Command: Get-DiskSNV",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -817,7 +817,7 @@ const commandsData = [
   },
   {
     "command": "Get-Language",
-    "descriptionHe": "קבלת מידע על Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Language",
     "descriptionEn": "Native PowerShell Command: Get-Language",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -825,7 +825,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixDefaultVolume",
-    "descriptionHe": "קבלת מידע על Msix Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Get-MsixDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -833,7 +833,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixLastError",
-    "descriptionHe": "קבלת מידע על Msix Last Error",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixLastError",
     "descriptionEn": "Native PowerShell Command: Get-MsixLastError",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -841,7 +841,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixLog",
-    "descriptionHe": "קבלת מידע על Msix Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixLog",
     "descriptionEn": "Native PowerShell Command: Get-MsixLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -849,7 +849,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackage",
-    "descriptionHe": "קבלת מידע על Msix Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackage",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -857,7 +857,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageAutoUpdateSettings",
-    "descriptionHe": "קבלת מידע על Msix Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -865,7 +865,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageDefaultVolume",
-    "descriptionHe": "קבלת מידע על Msix Package Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -873,7 +873,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageLastError",
-    "descriptionHe": "קבלת מידע על Msix Package Last Error",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageLastError",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageLastError",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -881,7 +881,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageLog",
-    "descriptionHe": "קבלת מידע על Msix Package Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageLog",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -889,7 +889,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageManifest",
-    "descriptionHe": "קבלת מידע על Msix Package Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageManifest",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -897,7 +897,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixPackageVolume",
-    "descriptionHe": "קבלת מידע על Msix Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixPackageVolume",
     "descriptionEn": "Native PowerShell Command: Get-MsixPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -905,7 +905,7 @@ const commandsData = [
   },
   {
     "command": "Get-MsixVolume",
-    "descriptionHe": "קבלת מידע על Msix Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MsixVolume",
     "descriptionEn": "Native PowerShell Command: Get-MsixVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -913,7 +913,7 @@ const commandsData = [
   },
   {
     "command": "Get-PhysicalDiskSNV",
-    "descriptionHe": "קבלת מידע על Physical Disk S N V",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PhysicalDiskSNV",
     "descriptionEn": "Native PowerShell Command: Get-PhysicalDiskSNV",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -921,7 +921,7 @@ const commandsData = [
   },
   {
     "command": "Get-PreferredLanguage",
-    "descriptionHe": "קבלת מידע על Preferred Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PreferredLanguage",
     "descriptionEn": "Native PowerShell Command: Get-PreferredLanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -929,7 +929,7 @@ const commandsData = [
   },
   {
     "command": "Get-ProvisionedAppPackage",
-    "descriptionHe": "קבלת מידע על Provisioned App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ProvisionedAppPackage",
     "descriptionEn": "Native PowerShell Command: Get-ProvisionedAppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -937,7 +937,7 @@ const commandsData = [
   },
   {
     "command": "Get-ProvisionedAppSharedPackageContainer",
-    "descriptionHe": "קבלת מידע על Provisioned App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ProvisionedAppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Get-ProvisionedAppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -945,7 +945,7 @@ const commandsData = [
   },
   {
     "command": "Get-ProvisionedAppxPackage",
-    "descriptionHe": "קבלת מידע על Provisioned Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ProvisionedAppxPackage",
     "descriptionEn": "Native PowerShell Command: Get-ProvisionedAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -953,7 +953,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageEnclosureSNV",
-    "descriptionHe": "קבלת מידע על Storage Enclosure S N V",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageEnclosureSNV",
     "descriptionEn": "Native PowerShell Command: Get-StorageEnclosureSNV",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -961,7 +961,7 @@ const commandsData = [
   },
   {
     "command": "Get-SystemLanguage",
-    "descriptionHe": "קבלת מידע על System Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SystemLanguage",
     "descriptionEn": "Native PowerShell Command: Get-SystemLanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -969,7 +969,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMCheckpoint",
-    "descriptionHe": "קבלת מידע על V M Checkpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMCheckpoint",
     "descriptionEn": "Native PowerShell Command: Get-VMCheckpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -977,7 +977,7 @@ const commandsData = [
   },
   {
     "command": "ghy",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ghy",
+    "descriptionHe": "פקודת PowerShell מקורית: ghy",
     "descriptionEn": "Native PowerShell Command: ghy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -985,7 +985,7 @@ const commandsData = [
   },
   {
     "command": "gi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gi",
+    "descriptionHe": "פקודת PowerShell מקורית: gi",
     "descriptionEn": "Native PowerShell Command: gi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -993,7 +993,7 @@ const commandsData = [
   },
   {
     "command": "gin",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gin",
+    "descriptionHe": "פקודת PowerShell מקורית: gin",
     "descriptionEn": "Native PowerShell Command: gin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1001,7 +1001,7 @@ const commandsData = [
   },
   {
     "command": "gip",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gip",
+    "descriptionHe": "פקודת PowerShell מקורית: gip",
     "descriptionEn": "Native PowerShell Command: gip",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1009,7 +1009,7 @@ const commandsData = [
   },
   {
     "command": "gjb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gjb",
+    "descriptionHe": "פקודת PowerShell מקורית: gjb",
     "descriptionEn": "Native PowerShell Command: gjb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1017,7 +1017,7 @@ const commandsData = [
   },
   {
     "command": "gl",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gl",
+    "descriptionHe": "פקודת PowerShell מקורית: gl",
     "descriptionEn": "Native PowerShell Command: gl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1025,7 +1025,7 @@ const commandsData = [
   },
   {
     "command": "glcm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול glcm",
+    "descriptionHe": "פקודת PowerShell מקורית: glcm",
     "descriptionEn": "Native PowerShell Command: glcm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1033,7 +1033,7 @@ const commandsData = [
   },
   {
     "command": "glg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול glg",
+    "descriptionHe": "פקודת PowerShell מקורית: glg",
     "descriptionEn": "Native PowerShell Command: glg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1041,7 +1041,7 @@ const commandsData = [
   },
   {
     "command": "glgm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול glgm",
+    "descriptionHe": "פקודת PowerShell מקורית: glgm",
     "descriptionEn": "Native PowerShell Command: glgm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1049,7 +1049,7 @@ const commandsData = [
   },
   {
     "command": "glu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול glu",
+    "descriptionHe": "פקודת PowerShell מקורית: glu",
     "descriptionEn": "Native PowerShell Command: glu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1057,7 +1057,7 @@ const commandsData = [
   },
   {
     "command": "gm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gm",
+    "descriptionHe": "פקודת PowerShell מקורית: gm",
     "descriptionEn": "Native PowerShell Command: gm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1065,7 +1065,7 @@ const commandsData = [
   },
   {
     "command": "gmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gmo",
+    "descriptionHe": "פקודת PowerShell מקורית: gmo",
     "descriptionEn": "Native PowerShell Command: gmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1073,7 +1073,7 @@ const commandsData = [
   },
   {
     "command": "gp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gp",
+    "descriptionHe": "פקודת PowerShell מקורית: gp",
     "descriptionEn": "Native PowerShell Command: gp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1081,7 +1081,7 @@ const commandsData = [
   },
   {
     "command": "gps",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gps",
+    "descriptionHe": "פקודת PowerShell מקורית: gps",
     "descriptionEn": "Native PowerShell Command: gps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1089,7 +1089,7 @@ const commandsData = [
   },
   {
     "command": "gpv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gpv",
+    "descriptionHe": "פקודת PowerShell מקורית: gpv",
     "descriptionEn": "Native PowerShell Command: gpv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1097,7 +1097,7 @@ const commandsData = [
   },
   {
     "command": "group",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול group",
+    "descriptionHe": "פקודת PowerShell מקורית: group",
     "descriptionEn": "Native PowerShell Command: group",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1105,7 +1105,7 @@ const commandsData = [
   },
   {
     "command": "grsmba",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול grsmba",
+    "descriptionHe": "פקודת PowerShell מקורית: grsmba",
     "descriptionEn": "Native PowerShell Command: grsmba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1113,7 +1113,7 @@ const commandsData = [
   },
   {
     "command": "grsmbclas",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול grsmbclas",
+    "descriptionHe": "פקודת PowerShell מקורית: grsmbclas",
     "descriptionEn": "Native PowerShell Command: grsmbclas",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1121,7 +1121,7 @@ const commandsData = [
   },
   {
     "command": "gsmba",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmba",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmba",
     "descriptionEn": "Native PowerShell Command: gsmba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1129,7 +1129,7 @@ const commandsData = [
   },
   {
     "command": "gsmbb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbb",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbb",
     "descriptionEn": "Native PowerShell Command: gsmbb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1137,7 +1137,7 @@ const commandsData = [
   },
   {
     "command": "gsmbc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbc",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbc",
     "descriptionEn": "Native PowerShell Command: gsmbc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1145,7 +1145,7 @@ const commandsData = [
   },
   {
     "command": "gsmbcc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbcc",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbcc",
     "descriptionEn": "Native PowerShell Command: gsmbcc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1153,7 +1153,7 @@ const commandsData = [
   },
   {
     "command": "gsmbccm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbccm",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbccm",
     "descriptionEn": "Native PowerShell Command: gsmbccm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1161,7 +1161,7 @@ const commandsData = [
   },
   {
     "command": "gsmbclas",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbclas",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbclas",
     "descriptionEn": "Native PowerShell Command: gsmbclas",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1169,7 +1169,7 @@ const commandsData = [
   },
   {
     "command": "gsmbcn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbcn",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbcn",
     "descriptionEn": "Native PowerShell Command: gsmbcn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1177,7 +1177,7 @@ const commandsData = [
   },
   {
     "command": "gsmbd",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbd",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbd",
     "descriptionEn": "Native PowerShell Command: gsmbd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1185,7 +1185,7 @@ const commandsData = [
   },
   {
     "command": "gsmbgm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbgm",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbgm",
     "descriptionEn": "Native PowerShell Command: gsmbgm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1193,7 +1193,7 @@ const commandsData = [
   },
   {
     "command": "gsmbm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbm",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbm",
     "descriptionEn": "Native PowerShell Command: gsmbm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1201,7 +1201,7 @@ const commandsData = [
   },
   {
     "command": "gsmbmc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbmc",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbmc",
     "descriptionEn": "Native PowerShell Command: gsmbmc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1209,7 +1209,7 @@ const commandsData = [
   },
   {
     "command": "gsmbo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbo",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbo",
     "descriptionEn": "Native PowerShell Command: gsmbo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1217,7 +1217,7 @@ const commandsData = [
   },
   {
     "command": "gsmbs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbs",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbs",
     "descriptionEn": "Native PowerShell Command: gsmbs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1225,7 +1225,7 @@ const commandsData = [
   },
   {
     "command": "gsmbsap",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbsap",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbsap",
     "descriptionEn": "Native PowerShell Command: gsmbsap",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1233,7 +1233,7 @@ const commandsData = [
   },
   {
     "command": "gsmbsc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbsc",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbsc",
     "descriptionEn": "Native PowerShell Command: gsmbsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1241,7 +1241,7 @@ const commandsData = [
   },
   {
     "command": "gsmbscm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbscm",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbscm",
     "descriptionEn": "Native PowerShell Command: gsmbscm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1249,7 +1249,7 @@ const commandsData = [
   },
   {
     "command": "gsmbscp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbscp",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbscp",
     "descriptionEn": "Native PowerShell Command: gsmbscp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1257,7 +1257,7 @@ const commandsData = [
   },
   {
     "command": "gsmbse",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbse",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbse",
     "descriptionEn": "Native PowerShell Command: gsmbse",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1265,7 +1265,7 @@ const commandsData = [
   },
   {
     "command": "gsmbsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbsn",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbsn",
     "descriptionEn": "Native PowerShell Command: gsmbsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1273,7 +1273,7 @@ const commandsData = [
   },
   {
     "command": "gsmbt",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbt",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbt",
     "descriptionEn": "Native PowerShell Command: gsmbt",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1281,7 +1281,7 @@ const commandsData = [
   },
   {
     "command": "gsmbw",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsmbw",
+    "descriptionHe": "פקודת PowerShell מקורית: gsmbw",
     "descriptionEn": "Native PowerShell Command: gsmbw",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1289,7 +1289,7 @@ const commandsData = [
   },
   {
     "command": "gsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsn",
+    "descriptionHe": "פקודת PowerShell מקורית: gsn",
     "descriptionEn": "Native PowerShell Command: gsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1297,7 +1297,7 @@ const commandsData = [
   },
   {
     "command": "gsnp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsnp",
+    "descriptionHe": "פקודת PowerShell מקורית: gsnp",
     "descriptionEn": "Native PowerShell Command: gsnp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1305,7 +1305,7 @@ const commandsData = [
   },
   {
     "command": "gsv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gsv",
+    "descriptionHe": "פקודת PowerShell מקורית: gsv",
     "descriptionEn": "Native PowerShell Command: gsv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1313,7 +1313,7 @@ const commandsData = [
   },
   {
     "command": "gtz",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gtz",
+    "descriptionHe": "פקודת PowerShell מקורית: gtz",
     "descriptionEn": "Native PowerShell Command: gtz",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1321,7 +1321,7 @@ const commandsData = [
   },
   {
     "command": "gu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gu",
+    "descriptionHe": "פקודת PowerShell מקורית: gu",
     "descriptionEn": "Native PowerShell Command: gu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1329,7 +1329,7 @@ const commandsData = [
   },
   {
     "command": "gv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gv",
+    "descriptionHe": "פקודת PowerShell מקורית: gv",
     "descriptionEn": "Native PowerShell Command: gv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1337,7 +1337,7 @@ const commandsData = [
   },
   {
     "command": "gvm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gvm",
+    "descriptionHe": "פקודת PowerShell מקורית: gvm",
     "descriptionEn": "Native PowerShell Command: gvm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1345,7 +1345,7 @@ const commandsData = [
   },
   {
     "command": "gvmr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gvmr",
+    "descriptionHe": "פקודת PowerShell מקורית: gvmr",
     "descriptionEn": "Native PowerShell Command: gvmr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1353,7 +1353,7 @@ const commandsData = [
   },
   {
     "command": "gvmrs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gvmrs",
+    "descriptionHe": "פקודת PowerShell מקורית: gvmrs",
     "descriptionEn": "Native PowerShell Command: gvmrs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1361,7 +1361,7 @@ const commandsData = [
   },
   {
     "command": "gwmi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול gwmi",
+    "descriptionHe": "פקודת PowerShell מקורית: gwmi",
     "descriptionEn": "Native PowerShell Command: gwmi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1369,7 +1369,7 @@ const commandsData = [
   },
   {
     "command": "h",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול h",
+    "descriptionHe": "פקודת PowerShell מקורית: h",
     "descriptionEn": "Native PowerShell Command: h",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1377,7 +1377,7 @@ const commandsData = [
   },
   {
     "command": "history",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול history",
+    "descriptionHe": "פקודת PowerShell מקורית: history",
     "descriptionEn": "Native PowerShell Command: history",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1385,7 +1385,7 @@ const commandsData = [
   },
   {
     "command": "icim",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול icim",
+    "descriptionHe": "פקודת PowerShell מקורית: icim",
     "descriptionEn": "Native PowerShell Command: icim",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1393,7 +1393,7 @@ const commandsData = [
   },
   {
     "command": "icm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול icm",
+    "descriptionHe": "פקודת PowerShell מקורית: icm",
     "descriptionEn": "Native PowerShell Command: icm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1401,7 +1401,7 @@ const commandsData = [
   },
   {
     "command": "iex",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול iex",
+    "descriptionHe": "פקודת PowerShell מקורית: iex",
     "descriptionEn": "Native PowerShell Command: iex",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1409,7 +1409,7 @@ const commandsData = [
   },
   {
     "command": "ihy",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ihy",
+    "descriptionHe": "פקודת PowerShell מקורית: ihy",
     "descriptionEn": "Native PowerShell Command: ihy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1417,7 +1417,7 @@ const commandsData = [
   },
   {
     "command": "ii",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ii",
+    "descriptionHe": "פקודת PowerShell מקורית: ii",
     "descriptionEn": "Native PowerShell Command: ii",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1425,7 +1425,7 @@ const commandsData = [
   },
   {
     "command": "Initialize-Volume",
-    "descriptionHe": "פעולת PowerShell על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Initialize-Volume",
     "descriptionEn": "Native PowerShell Command: Initialize-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1433,7 +1433,7 @@ const commandsData = [
   },
   {
     "command": "inmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול inmo",
+    "descriptionHe": "פקודת PowerShell מקורית: inmo",
     "descriptionEn": "Native PowerShell Command: inmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1441,7 +1441,7 @@ const commandsData = [
   },
   {
     "command": "ipal",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ipal",
+    "descriptionHe": "פקודת PowerShell מקורית: ipal",
     "descriptionEn": "Native PowerShell Command: ipal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1449,7 +1449,7 @@ const commandsData = [
   },
   {
     "command": "ipcsv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ipcsv",
+    "descriptionHe": "פקודת PowerShell מקורית: ipcsv",
     "descriptionEn": "Native PowerShell Command: ipcsv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1457,7 +1457,7 @@ const commandsData = [
   },
   {
     "command": "ipmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ipmo",
+    "descriptionHe": "פקודת PowerShell מקורית: ipmo",
     "descriptionEn": "Native PowerShell Command: ipmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1465,7 +1465,7 @@ const commandsData = [
   },
   {
     "command": "ipsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ipsn",
+    "descriptionHe": "פקודת PowerShell מקורית: ipsn",
     "descriptionEn": "Native PowerShell Command: ipsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1473,7 +1473,7 @@ const commandsData = [
   },
   {
     "command": "irm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול irm",
+    "descriptionHe": "פקודת PowerShell מקורית: irm",
     "descriptionEn": "Native PowerShell Command: irm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1481,7 +1481,7 @@ const commandsData = [
   },
   {
     "command": "iru",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול iru",
+    "descriptionHe": "פקודת PowerShell מקורית: iru",
     "descriptionEn": "Native PowerShell Command: iru",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1489,7 +1489,7 @@ const commandsData = [
   },
   {
     "command": "ise",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ise",
+    "descriptionHe": "פקודת PowerShell מקורית: ise",
     "descriptionEn": "Native PowerShell Command: ise",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1497,7 +1497,7 @@ const commandsData = [
   },
   {
     "command": "iwmi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול iwmi",
+    "descriptionHe": "פקודת PowerShell מקורית: iwmi",
     "descriptionEn": "Native PowerShell Command: iwmi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1505,7 +1505,7 @@ const commandsData = [
   },
   {
     "command": "iwr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול iwr",
+    "descriptionHe": "פקודת PowerShell מקורית: iwr",
     "descriptionEn": "Native PowerShell Command: iwr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1513,7 +1513,7 @@ const commandsData = [
   },
   {
     "command": "kill",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול kill",
+    "descriptionHe": "פקודת PowerShell מקורית: kill",
     "descriptionEn": "Native PowerShell Command: kill",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1521,7 +1521,7 @@ const commandsData = [
   },
   {
     "command": "lp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול lp",
+    "descriptionHe": "פקודת PowerShell מקורית: lp",
     "descriptionEn": "Native PowerShell Command: lp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1529,7 +1529,7 @@ const commandsData = [
   },
   {
     "command": "ls",
-    "descriptionHe": "הצגת רשימת הקבצים והתיקיות בספרייה הנוכחית",
+    "descriptionHe": "פקודת PowerShell מקורית: ls",
     "descriptionEn": "Native PowerShell Command: ls",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1537,7 +1537,7 @@ const commandsData = [
   },
   {
     "command": "man",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול man",
+    "descriptionHe": "פקודת PowerShell מקורית: man",
     "descriptionEn": "Native PowerShell Command: man",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1545,7 +1545,7 @@ const commandsData = [
   },
   {
     "command": "md",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול md",
+    "descriptionHe": "פקודת PowerShell מקורית: md",
     "descriptionEn": "Native PowerShell Command: md",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1553,7 +1553,7 @@ const commandsData = [
   },
   {
     "command": "measure",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול measure",
+    "descriptionHe": "פקודת PowerShell מקורית: measure",
     "descriptionEn": "Native PowerShell Command: measure",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1561,7 +1561,7 @@ const commandsData = [
   },
   {
     "command": "mi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mi",
+    "descriptionHe": "פקודת PowerShell מקורית: mi",
     "descriptionEn": "Native PowerShell Command: mi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1569,7 +1569,7 @@ const commandsData = [
   },
   {
     "command": "mount",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mount",
+    "descriptionHe": "פקודת PowerShell מקורית: mount",
     "descriptionEn": "Native PowerShell Command: mount",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1577,7 +1577,7 @@ const commandsData = [
   },
   {
     "command": "Mount-AppPackageVolume",
-    "descriptionHe": "פעולת PowerShell על App Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-AppPackageVolume",
     "descriptionEn": "Native PowerShell Command: Mount-AppPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1585,7 +1585,7 @@ const commandsData = [
   },
   {
     "command": "Mount-MsixPackageVolume",
-    "descriptionHe": "פעולת PowerShell על Msix Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-MsixPackageVolume",
     "descriptionEn": "Native PowerShell Command: Mount-MsixPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1593,7 +1593,7 @@ const commandsData = [
   },
   {
     "command": "Mount-MsixVolume",
-    "descriptionHe": "פעולת PowerShell על Msix Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-MsixVolume",
     "descriptionEn": "Native PowerShell Command: Mount-MsixVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1601,7 +1601,7 @@ const commandsData = [
   },
   {
     "command": "move",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול move",
+    "descriptionHe": "פקודת PowerShell מקורית: move",
     "descriptionEn": "Native PowerShell Command: move",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1609,7 +1609,7 @@ const commandsData = [
   },
   {
     "command": "Move-AppPackage",
-    "descriptionHe": "פעולת PowerShell על App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-AppPackage",
     "descriptionEn": "Native PowerShell Command: Move-AppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1617,7 +1617,7 @@ const commandsData = [
   },
   {
     "command": "Move-MsixPackage",
-    "descriptionHe": "פעולת PowerShell על Msix Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-MsixPackage",
     "descriptionEn": "Native PowerShell Command: Move-MsixPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1625,7 +1625,7 @@ const commandsData = [
   },
   {
     "command": "Move-SmbClient",
-    "descriptionHe": "פעולת PowerShell על Smb Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-SmbClient",
     "descriptionEn": "Native PowerShell Command: Move-SmbClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1633,7 +1633,7 @@ const commandsData = [
   },
   {
     "command": "mp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mp",
+    "descriptionHe": "פקודת PowerShell מקורית: mp",
     "descriptionEn": "Native PowerShell Command: mp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1641,7 +1641,7 @@ const commandsData = [
   },
   {
     "command": "msmbw",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול msmbw",
+    "descriptionHe": "פקודת PowerShell מקורית: msmbw",
     "descriptionEn": "Native PowerShell Command: msmbw",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1649,7 +1649,7 @@ const commandsData = [
   },
   {
     "command": "mv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mv",
+    "descriptionHe": "פקודת PowerShell מקורית: mv",
     "descriptionEn": "Native PowerShell Command: mv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1657,7 +1657,7 @@ const commandsData = [
   },
   {
     "command": "mvmr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mvmr",
+    "descriptionHe": "פקודת PowerShell מקורית: mvmr",
     "descriptionEn": "Native PowerShell Command: mvmr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1665,7 +1665,7 @@ const commandsData = [
   },
   {
     "command": "nal",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nal",
+    "descriptionHe": "פקודת PowerShell מקורית: nal",
     "descriptionEn": "Native PowerShell Command: nal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1673,7 +1673,7 @@ const commandsData = [
   },
   {
     "command": "ncim",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ncim",
+    "descriptionHe": "פקודת PowerShell מקורית: ncim",
     "descriptionEn": "Native PowerShell Command: ncim",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1681,7 +1681,7 @@ const commandsData = [
   },
   {
     "command": "ncms",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ncms",
+    "descriptionHe": "פקודת PowerShell מקורית: ncms",
     "descriptionEn": "Native PowerShell Command: ncms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1689,7 +1689,7 @@ const commandsData = [
   },
   {
     "command": "ncso",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ncso",
+    "descriptionHe": "פקודת PowerShell מקורית: ncso",
     "descriptionEn": "Native PowerShell Command: ncso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1697,7 +1697,7 @@ const commandsData = [
   },
   {
     "command": "ndr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ndr",
+    "descriptionHe": "פקודת PowerShell מקורית: ndr",
     "descriptionEn": "Native PowerShell Command: ndr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1705,7 +1705,7 @@ const commandsData = [
   },
   {
     "command": "ni",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ni",
+    "descriptionHe": "פקודת PowerShell מקורית: ni",
     "descriptionEn": "Native PowerShell Command: ni",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1713,7 +1713,7 @@ const commandsData = [
   },
   {
     "command": "nlg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nlg",
+    "descriptionHe": "פקודת PowerShell מקורית: nlg",
     "descriptionEn": "Native PowerShell Command: nlg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1721,7 +1721,7 @@ const commandsData = [
   },
   {
     "command": "nlu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nlu",
+    "descriptionHe": "פקודת PowerShell מקורית: nlu",
     "descriptionEn": "Native PowerShell Command: nlu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1729,7 +1729,7 @@ const commandsData = [
   },
   {
     "command": "nmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nmo",
+    "descriptionHe": "פקודת PowerShell מקורית: nmo",
     "descriptionEn": "Native PowerShell Command: nmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1737,7 +1737,7 @@ const commandsData = [
   },
   {
     "command": "npssc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול npssc",
+    "descriptionHe": "פקודת PowerShell מקורית: npssc",
     "descriptionEn": "Native PowerShell Command: npssc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1745,7 +1745,7 @@ const commandsData = [
   },
   {
     "command": "nsmbccm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbccm",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbccm",
     "descriptionEn": "Native PowerShell Command: nsmbccm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1753,7 +1753,7 @@ const commandsData = [
   },
   {
     "command": "nsmbgm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbgm",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbgm",
     "descriptionEn": "Native PowerShell Command: nsmbgm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1761,7 +1761,7 @@ const commandsData = [
   },
   {
     "command": "nsmbm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbm",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbm",
     "descriptionEn": "Native PowerShell Command: nsmbm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1769,7 +1769,7 @@ const commandsData = [
   },
   {
     "command": "nsmbs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbs",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbs",
     "descriptionEn": "Native PowerShell Command: nsmbs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1777,7 +1777,7 @@ const commandsData = [
   },
   {
     "command": "nsmbsap",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbsap",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbsap",
     "descriptionEn": "Native PowerShell Command: nsmbsap",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1785,7 +1785,7 @@ const commandsData = [
   },
   {
     "command": "nsmbscm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbscm",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbscm",
     "descriptionEn": "Native PowerShell Command: nsmbscm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1793,7 +1793,7 @@ const commandsData = [
   },
   {
     "command": "nsmbt",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsmbt",
+    "descriptionHe": "פקודת PowerShell מקורית: nsmbt",
     "descriptionEn": "Native PowerShell Command: nsmbt",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1801,7 +1801,7 @@ const commandsData = [
   },
   {
     "command": "nsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nsn",
+    "descriptionHe": "פקודת PowerShell מקורית: nsn",
     "descriptionEn": "Native PowerShell Command: nsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1809,7 +1809,7 @@ const commandsData = [
   },
   {
     "command": "nv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nv",
+    "descriptionHe": "פקודת PowerShell מקורית: nv",
     "descriptionEn": "Native PowerShell Command: nv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1817,7 +1817,7 @@ const commandsData = [
   },
   {
     "command": "nwsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול nwsn",
+    "descriptionHe": "פקודת PowerShell מקורית: nwsn",
     "descriptionEn": "Native PowerShell Command: nwsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1825,7 +1825,7 @@ const commandsData = [
   },
   {
     "command": "ogv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ogv",
+    "descriptionHe": "פקודת PowerShell מקורית: ogv",
     "descriptionEn": "Native PowerShell Command: ogv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1833,7 +1833,7 @@ const commandsData = [
   },
   {
     "command": "oh",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול oh",
+    "descriptionHe": "פקודת PowerShell מקורית: oh",
     "descriptionEn": "Native PowerShell Command: oh",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1841,7 +1841,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-AppProvisionedPackages",
-    "descriptionHe": "פעולת PowerShell על App Provisioned Packages",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-AppProvisionedPackages",
     "descriptionEn": "Native PowerShell Command: Optimize-AppProvisionedPackages",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1849,7 +1849,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-ProvisionedAppPackages",
-    "descriptionHe": "פעולת PowerShell על Provisioned App Packages",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-ProvisionedAppPackages",
     "descriptionEn": "Native PowerShell Command: Optimize-ProvisionedAppPackages",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1857,7 +1857,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-ProvisionedAppxPackages",
-    "descriptionHe": "פעולת PowerShell על Provisioned Appx Packages",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-ProvisionedAppxPackages",
     "descriptionEn": "Native PowerShell Command: Optimize-ProvisionedAppxPackages",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1865,7 +1865,7 @@ const commandsData = [
   },
   {
     "command": "pbcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול pbcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: pbcfg",
     "descriptionEn": "Native PowerShell Command: pbcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1873,7 +1873,7 @@ const commandsData = [
   },
   {
     "command": "pfn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול pfn",
+    "descriptionHe": "פקודת PowerShell מקורית: pfn",
     "descriptionEn": "Native PowerShell Command: pfn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1881,7 +1881,7 @@ const commandsData = [
   },
   {
     "command": "popd",
-    "descriptionHe": "חזרה לתיקייה הקודמת שנשמרה בזכרון (על ידי pushd)",
+    "descriptionHe": "פקודת PowerShell מקורית: popd",
     "descriptionEn": "Native PowerShell Command: popd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1889,7 +1889,7 @@ const commandsData = [
   },
   {
     "command": "ps",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ps",
+    "descriptionHe": "פקודת PowerShell מקורית: ps",
     "descriptionEn": "Native PowerShell Command: ps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1897,7 +1897,7 @@ const commandsData = [
   },
   {
     "command": "pumo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול pumo",
+    "descriptionHe": "פקודת PowerShell מקורית: pumo",
     "descriptionEn": "Native PowerShell Command: pumo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1905,7 +1905,7 @@ const commandsData = [
   },
   {
     "command": "pushd",
-    "descriptionHe": "שמירת התיקייה הנוכחית בזכרון ומעבר לתיקייה חדשה",
+    "descriptionHe": "פקודת PowerShell מקורית: pushd",
     "descriptionEn": "Native PowerShell Command: pushd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1913,7 +1913,7 @@ const commandsData = [
   },
   {
     "command": "pwd",
-    "descriptionHe": "הצגת הנתיב המלא של התיקייה הנוכחית",
+    "descriptionHe": "פקודת PowerShell מקורית: pwd",
     "descriptionEn": "Native PowerShell Command: pwd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1921,7 +1921,7 @@ const commandsData = [
   },
   {
     "command": "r",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול r",
+    "descriptionHe": "פקודת PowerShell מקורית: r",
     "descriptionEn": "Native PowerShell Command: r",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1929,7 +1929,7 @@ const commandsData = [
   },
   {
     "command": "rbp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rbp",
+    "descriptionHe": "פקודת PowerShell מקורית: rbp",
     "descriptionEn": "Native PowerShell Command: rbp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1937,7 +1937,7 @@ const commandsData = [
   },
   {
     "command": "rcie",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rcie",
+    "descriptionHe": "פקודת PowerShell מקורית: rcie",
     "descriptionEn": "Native PowerShell Command: rcie",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1945,7 +1945,7 @@ const commandsData = [
   },
   {
     "command": "rcim",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rcim",
+    "descriptionHe": "פקודת PowerShell מקורית: rcim",
     "descriptionEn": "Native PowerShell Command: rcim",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1953,7 +1953,7 @@ const commandsData = [
   },
   {
     "command": "rcjb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rcjb",
+    "descriptionHe": "פקודת PowerShell מקורית: rcjb",
     "descriptionEn": "Native PowerShell Command: rcjb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1961,7 +1961,7 @@ const commandsData = [
   },
   {
     "command": "rcms",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rcms",
+    "descriptionHe": "פקודת PowerShell מקורית: rcms",
     "descriptionEn": "Native PowerShell Command: rcms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1969,7 +1969,7 @@ const commandsData = [
   },
   {
     "command": "rcsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rcsn",
+    "descriptionHe": "פקודת PowerShell מקורית: rcsn",
     "descriptionEn": "Native PowerShell Command: rcsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1977,7 +1977,7 @@ const commandsData = [
   },
   {
     "command": "rd",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rd",
+    "descriptionHe": "פקודת PowerShell מקורית: rd",
     "descriptionEn": "Native PowerShell Command: rd",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1985,7 +1985,7 @@ const commandsData = [
   },
   {
     "command": "rdr",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rdr",
+    "descriptionHe": "פקודת PowerShell מקורית: rdr",
     "descriptionEn": "Native PowerShell Command: rdr",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -1993,7 +1993,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppPackage",
-    "descriptionHe": "מחיקת App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppPackage",
     "descriptionEn": "Native PowerShell Command: Remove-AppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2001,7 +2001,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppPackageAutoUpdateSettings",
-    "descriptionHe": "מחיקת App Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Remove-AppPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2009,7 +2009,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppPackageVolume",
-    "descriptionHe": "מחיקת App Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppPackageVolume",
     "descriptionEn": "Native PowerShell Command: Remove-AppPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2017,7 +2017,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppProvisionedPackage",
-    "descriptionHe": "מחיקת App Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Remove-AppProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2025,7 +2025,7 @@ const commandsData = [
   },
   {
     "command": "Remove-EtwTraceSession",
-    "descriptionHe": "מחיקת Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Remove-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2033,7 +2033,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MsixPackage",
-    "descriptionHe": "מחיקת Msix Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MsixPackage",
     "descriptionEn": "Native PowerShell Command: Remove-MsixPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2041,7 +2041,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MsixPackageAutoUpdateSettings",
-    "descriptionHe": "מחיקת Msix Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MsixPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Remove-MsixPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2049,7 +2049,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MsixPackageVolume",
-    "descriptionHe": "מחיקת Msix Package Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MsixPackageVolume",
     "descriptionEn": "Native PowerShell Command: Remove-MsixPackageVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2057,7 +2057,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MsixVolume",
-    "descriptionHe": "מחיקת Msix Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MsixVolume",
     "descriptionEn": "Native PowerShell Command: Remove-MsixVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2065,7 +2065,7 @@ const commandsData = [
   },
   {
     "command": "Remove-ProvisionedAppPackage",
-    "descriptionHe": "מחיקת Provisioned App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-ProvisionedAppPackage",
     "descriptionEn": "Native PowerShell Command: Remove-ProvisionedAppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2073,7 +2073,7 @@ const commandsData = [
   },
   {
     "command": "Remove-ProvisionedAppSharedPackageContainer",
-    "descriptionHe": "מחיקת Provisioned App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-ProvisionedAppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Remove-ProvisionedAppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2081,7 +2081,7 @@ const commandsData = [
   },
   {
     "command": "Remove-ProvisionedAppxPackage",
-    "descriptionHe": "מחיקת Provisioned Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-ProvisionedAppxPackage",
     "descriptionEn": "Native PowerShell Command: Remove-ProvisionedAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2089,7 +2089,7 @@ const commandsData = [
   },
   {
     "command": "Remove-ProvisioningPackage",
-    "descriptionHe": "מחיקת Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Remove-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2097,7 +2097,7 @@ const commandsData = [
   },
   {
     "command": "Remove-TrustedProvisioningCertificate",
-    "descriptionHe": "מחיקת Trusted Provisioning Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-TrustedProvisioningCertificate",
     "descriptionEn": "Native PowerShell Command: Remove-TrustedProvisioningCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2105,7 +2105,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMCheckpoint",
-    "descriptionHe": "מחיקת V M Checkpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMCheckpoint",
     "descriptionEn": "Native PowerShell Command: Remove-VMCheckpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2113,7 +2113,7 @@ const commandsData = [
   },
   {
     "command": "ren",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ren",
+    "descriptionHe": "פקודת PowerShell מקורית: ren",
     "descriptionEn": "Native PowerShell Command: ren",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2121,7 +2121,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMCheckpoint",
-    "descriptionHe": "פעולת PowerShell על V M Checkpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMCheckpoint",
     "descriptionEn": "Native PowerShell Command: Rename-VMCheckpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2129,7 +2129,7 @@ const commandsData = [
   },
   {
     "command": "Reset-AppPackage",
-    "descriptionHe": "פעולת PowerShell על App Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-AppPackage",
     "descriptionEn": "Native PowerShell Command: Reset-AppPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2137,7 +2137,7 @@ const commandsData = [
   },
   {
     "command": "Reset-MsixPackage",
-    "descriptionHe": "פעולת PowerShell על Msix Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-MsixPackage",
     "descriptionEn": "Native PowerShell Command: Reset-MsixPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2145,7 +2145,7 @@ const commandsData = [
   },
   {
     "command": "Restore-VMCheckpoint",
-    "descriptionHe": "פעולת PowerShell על V M Checkpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-VMCheckpoint",
     "descriptionEn": "Native PowerShell Command: Restore-VMCheckpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2153,7 +2153,7 @@ const commandsData = [
   },
   {
     "command": "ri",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ri",
+    "descriptionHe": "פקודת PowerShell מקורית: ri",
     "descriptionEn": "Native PowerShell Command: ri",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2161,7 +2161,7 @@ const commandsData = [
   },
   {
     "command": "rjb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rjb",
+    "descriptionHe": "פקודת PowerShell מקורית: rjb",
     "descriptionEn": "Native PowerShell Command: rjb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2169,7 +2169,7 @@ const commandsData = [
   },
   {
     "command": "rksmba",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rksmba",
+    "descriptionHe": "פקודת PowerShell מקורית: rksmba",
     "descriptionEn": "Native PowerShell Command: rksmba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2177,7 +2177,7 @@ const commandsData = [
   },
   {
     "command": "rksmbclas",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rksmbclas",
+    "descriptionHe": "פקודת PowerShell מקורית: rksmbclas",
     "descriptionEn": "Native PowerShell Command: rksmbclas",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2185,7 +2185,7 @@ const commandsData = [
   },
   {
     "command": "rlg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rlg",
+    "descriptionHe": "פקודת PowerShell מקורית: rlg",
     "descriptionEn": "Native PowerShell Command: rlg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2193,7 +2193,7 @@ const commandsData = [
   },
   {
     "command": "rlgm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rlgm",
+    "descriptionHe": "פקודת PowerShell מקורית: rlgm",
     "descriptionEn": "Native PowerShell Command: rlgm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2201,7 +2201,7 @@ const commandsData = [
   },
   {
     "command": "rlu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rlu",
+    "descriptionHe": "פקודת PowerShell מקורית: rlu",
     "descriptionEn": "Native PowerShell Command: rlu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2209,7 +2209,7 @@ const commandsData = [
   },
   {
     "command": "rm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rm",
+    "descriptionHe": "פקודת PowerShell מקורית: rm",
     "descriptionEn": "Native PowerShell Command: rm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2217,7 +2217,7 @@ const commandsData = [
   },
   {
     "command": "rmdir",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rmdir",
+    "descriptionHe": "פקודת PowerShell מקורית: rmdir",
     "descriptionEn": "Native PowerShell Command: rmdir",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2225,7 +2225,7 @@ const commandsData = [
   },
   {
     "command": "rmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rmo",
+    "descriptionHe": "פקודת PowerShell מקורית: rmo",
     "descriptionEn": "Native PowerShell Command: rmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2233,7 +2233,7 @@ const commandsData = [
   },
   {
     "command": "rni",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rni",
+    "descriptionHe": "פקודת PowerShell מקורית: rni",
     "descriptionEn": "Native PowerShell Command: rni",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2241,7 +2241,7 @@ const commandsData = [
   },
   {
     "command": "rnlg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rnlg",
+    "descriptionHe": "פקודת PowerShell מקורית: rnlg",
     "descriptionEn": "Native PowerShell Command: rnlg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2249,7 +2249,7 @@ const commandsData = [
   },
   {
     "command": "rnlu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rnlu",
+    "descriptionHe": "פקודת PowerShell מקורית: rnlu",
     "descriptionEn": "Native PowerShell Command: rnlu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2257,7 +2257,7 @@ const commandsData = [
   },
   {
     "command": "rnp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rnp",
+    "descriptionHe": "פקודת PowerShell מקורית: rnp",
     "descriptionEn": "Native PowerShell Command: rnp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2265,7 +2265,7 @@ const commandsData = [
   },
   {
     "command": "rp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rp",
+    "descriptionHe": "פקודת PowerShell מקורית: rp",
     "descriptionEn": "Native PowerShell Command: rp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2273,7 +2273,7 @@ const commandsData = [
   },
   {
     "command": "rsmbb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbb",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbb",
     "descriptionEn": "Native PowerShell Command: rsmbb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2281,7 +2281,7 @@ const commandsData = [
   },
   {
     "command": "rsmbc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbc",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbc",
     "descriptionEn": "Native PowerShell Command: rsmbc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2289,7 +2289,7 @@ const commandsData = [
   },
   {
     "command": "rsmbcc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbcc",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbcc",
     "descriptionEn": "Native PowerShell Command: rsmbcc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2297,7 +2297,7 @@ const commandsData = [
   },
   {
     "command": "rsmbccm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbccm",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbccm",
     "descriptionEn": "Native PowerShell Command: rsmbccm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2305,7 +2305,7 @@ const commandsData = [
   },
   {
     "command": "rsmbgm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbgm",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbgm",
     "descriptionEn": "Native PowerShell Command: rsmbgm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2313,7 +2313,7 @@ const commandsData = [
   },
   {
     "command": "rsmbm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbm",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbm",
     "descriptionEn": "Native PowerShell Command: rsmbm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2321,7 +2321,7 @@ const commandsData = [
   },
   {
     "command": "rsmbs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbs",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbs",
     "descriptionEn": "Native PowerShell Command: rsmbs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2329,7 +2329,7 @@ const commandsData = [
   },
   {
     "command": "rsmbsap",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbsap",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbsap",
     "descriptionEn": "Native PowerShell Command: rsmbsap",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2337,7 +2337,7 @@ const commandsData = [
   },
   {
     "command": "rsmbsc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbsc",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbsc",
     "descriptionEn": "Native PowerShell Command: rsmbsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2345,7 +2345,7 @@ const commandsData = [
   },
   {
     "command": "rsmbscm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbscm",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbscm",
     "descriptionEn": "Native PowerShell Command: rsmbscm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2353,7 +2353,7 @@ const commandsData = [
   },
   {
     "command": "rsmbt",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsmbt",
+    "descriptionHe": "פקודת PowerShell מקורית: rsmbt",
     "descriptionEn": "Native PowerShell Command: rsmbt",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2361,7 +2361,7 @@ const commandsData = [
   },
   {
     "command": "rsn",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsn",
+    "descriptionHe": "פקודת PowerShell מקורית: rsn",
     "descriptionEn": "Native PowerShell Command: rsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2369,7 +2369,7 @@ const commandsData = [
   },
   {
     "command": "rsnp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rsnp",
+    "descriptionHe": "פקודת PowerShell מקורית: rsnp",
     "descriptionEn": "Native PowerShell Command: rsnp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2377,7 +2377,7 @@ const commandsData = [
   },
   {
     "command": "rtcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rtcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: rtcfg",
     "descriptionEn": "Native PowerShell Command: rtcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2385,7 +2385,7 @@ const commandsData = [
   },
   {
     "command": "rujb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rujb",
+    "descriptionHe": "פקודת PowerShell מקורית: rujb",
     "descriptionEn": "Native PowerShell Command: rujb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2393,7 +2393,7 @@ const commandsData = [
   },
   {
     "command": "rv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rv",
+    "descriptionHe": "פקודת PowerShell מקורית: rv",
     "descriptionEn": "Native PowerShell Command: rv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2401,7 +2401,7 @@ const commandsData = [
   },
   {
     "command": "rvpa",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rvpa",
+    "descriptionHe": "פקודת PowerShell מקורית: rvpa",
     "descriptionEn": "Native PowerShell Command: rvpa",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2409,7 +2409,7 @@ const commandsData = [
   },
   {
     "command": "rwmi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול rwmi",
+    "descriptionHe": "פקודת PowerShell מקורית: rwmi",
     "descriptionEn": "Native PowerShell Command: rwmi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2417,7 +2417,7 @@ const commandsData = [
   },
   {
     "command": "sacfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sacfg",
+    "descriptionHe": "פקודת PowerShell מקורית: sacfg",
     "descriptionEn": "Native PowerShell Command: sacfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2425,7 +2425,7 @@ const commandsData = [
   },
   {
     "command": "sajb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sajb",
+    "descriptionHe": "פקודת PowerShell מקורית: sajb",
     "descriptionEn": "Native PowerShell Command: sajb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2433,7 +2433,7 @@ const commandsData = [
   },
   {
     "command": "sal",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sal",
+    "descriptionHe": "פקודת PowerShell מקורית: sal",
     "descriptionEn": "Native PowerShell Command: sal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2441,7 +2441,7 @@ const commandsData = [
   },
   {
     "command": "saps",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול saps",
+    "descriptionHe": "פקודת PowerShell מקורית: saps",
     "descriptionEn": "Native PowerShell Command: saps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2449,7 +2449,7 @@ const commandsData = [
   },
   {
     "command": "sasv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sasv",
+    "descriptionHe": "פקודת PowerShell מקורית: sasv",
     "descriptionEn": "Native PowerShell Command: sasv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2457,7 +2457,7 @@ const commandsData = [
   },
   {
     "command": "savm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול savm",
+    "descriptionHe": "פקודת PowerShell מקורית: savm",
     "descriptionEn": "Native PowerShell Command: savm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2465,7 +2465,7 @@ const commandsData = [
   },
   {
     "command": "sbp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sbp",
+    "descriptionHe": "פקודת PowerShell מקורית: sbp",
     "descriptionEn": "Native PowerShell Command: sbp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2473,7 +2473,7 @@ const commandsData = [
   },
   {
     "command": "sc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sc",
+    "descriptionHe": "פקודת PowerShell מקורית: sc",
     "descriptionEn": "Native PowerShell Command: sc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2481,7 +2481,7 @@ const commandsData = [
   },
   {
     "command": "scb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול scb",
+    "descriptionHe": "פקודת PowerShell מקורית: scb",
     "descriptionEn": "Native PowerShell Command: scb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2489,7 +2489,7 @@ const commandsData = [
   },
   {
     "command": "scim",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול scim",
+    "descriptionHe": "פקודת PowerShell מקורית: scim",
     "descriptionEn": "Native PowerShell Command: scim",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2497,7 +2497,7 @@ const commandsData = [
   },
   {
     "command": "select",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול select",
+    "descriptionHe": "פקודת PowerShell מקורית: select",
     "descriptionEn": "Native PowerShell Command: select",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2505,7 +2505,7 @@ const commandsData = [
   },
   {
     "command": "set",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול set",
+    "descriptionHe": "פקודת PowerShell מקורית: set",
     "descriptionEn": "Native PowerShell Command: set",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2513,7 +2513,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppPackageAutoUpdateSettings",
-    "descriptionHe": "הגדרת App Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Set-AppPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2521,7 +2521,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppPackageDefaultVolume",
-    "descriptionHe": "הגדרת App Package Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppPackageDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Set-AppPackageDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2529,7 +2529,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppPackageProvisionedDataFile",
-    "descriptionHe": "הגדרת App Package Provisioned Data File",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppPackageProvisionedDataFile",
     "descriptionEn": "Native PowerShell Command: Set-AppPackageProvisionedDataFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2537,7 +2537,7 @@ const commandsData = [
   },
   {
     "command": "Set-AutologgerConfig",
-    "descriptionHe": "הגדרת Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: Set-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2545,7 +2545,7 @@ const commandsData = [
   },
   {
     "command": "Set-EtwTraceSession",
-    "descriptionHe": "הגדרת Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Set-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2553,7 +2553,7 @@ const commandsData = [
   },
   {
     "command": "Set-MsixDefaultVolume",
-    "descriptionHe": "הגדרת Msix Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-MsixDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Set-MsixDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2561,7 +2561,7 @@ const commandsData = [
   },
   {
     "command": "Set-MsixPackageAutoUpdateSettings",
-    "descriptionHe": "הגדרת Msix Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-MsixPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Set-MsixPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2569,7 +2569,7 @@ const commandsData = [
   },
   {
     "command": "Set-MsixPackageDefaultVolume",
-    "descriptionHe": "הגדרת Msix Package Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-MsixPackageDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Set-MsixPackageDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2577,7 +2577,7 @@ const commandsData = [
   },
   {
     "command": "Set-PreferredLanguage",
-    "descriptionHe": "הגדרת Preferred Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PreferredLanguage",
     "descriptionEn": "Native PowerShell Command: Set-PreferredLanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2585,7 +2585,7 @@ const commandsData = [
   },
   {
     "command": "Set-ProvisionedAppPackageDataFile",
-    "descriptionHe": "הגדרת Provisioned App Package Data File",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ProvisionedAppPackageDataFile",
     "descriptionEn": "Native PowerShell Command: Set-ProvisionedAppPackageDataFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2593,7 +2593,7 @@ const commandsData = [
   },
   {
     "command": "Set-ProvisionedAppXDataFile",
-    "descriptionHe": "הגדרת Provisioned App X Data File",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ProvisionedAppXDataFile",
     "descriptionEn": "Native PowerShell Command: Set-ProvisionedAppXDataFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2601,7 +2601,7 @@ const commandsData = [
   },
   {
     "command": "Set-SystemLanguage",
-    "descriptionHe": "הגדרת System Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SystemLanguage",
     "descriptionEn": "Native PowerShell Command: Set-SystemLanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2609,7 +2609,7 @@ const commandsData = [
   },
   {
     "command": "shcm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול shcm",
+    "descriptionHe": "פקודת PowerShell מקורית: shcm",
     "descriptionEn": "Native PowerShell Command: shcm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2617,7 +2617,7 @@ const commandsData = [
   },
   {
     "command": "si",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול si",
+    "descriptionHe": "פקודת PowerShell מקורית: si",
     "descriptionEn": "Native PowerShell Command: si",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2625,7 +2625,7 @@ const commandsData = [
   },
   {
     "command": "sl",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sl",
+    "descriptionHe": "פקודת PowerShell מקורית: sl",
     "descriptionEn": "Native PowerShell Command: sl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2633,7 +2633,7 @@ const commandsData = [
   },
   {
     "command": "slcm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול slcm",
+    "descriptionHe": "פקודת PowerShell מקורית: slcm",
     "descriptionEn": "Native PowerShell Command: slcm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2641,7 +2641,7 @@ const commandsData = [
   },
   {
     "command": "sleep",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sleep",
+    "descriptionHe": "פקודת PowerShell מקורית: sleep",
     "descriptionEn": "Native PowerShell Command: sleep",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2649,7 +2649,7 @@ const commandsData = [
   },
   {
     "command": "slg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול slg",
+    "descriptionHe": "פקודת PowerShell מקורית: slg",
     "descriptionEn": "Native PowerShell Command: slg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2657,7 +2657,7 @@ const commandsData = [
   },
   {
     "command": "sls",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sls",
+    "descriptionHe": "פקודת PowerShell מקורית: sls",
     "descriptionEn": "Native PowerShell Command: sls",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2665,7 +2665,7 @@ const commandsData = [
   },
   {
     "command": "slu",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול slu",
+    "descriptionHe": "פקודת PowerShell מקורית: slu",
     "descriptionEn": "Native PowerShell Command: slu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2673,7 +2673,7 @@ const commandsData = [
   },
   {
     "command": "sort",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sort",
+    "descriptionHe": "פקודת PowerShell מקורית: sort",
     "descriptionEn": "Native PowerShell Command: sort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2681,7 +2681,7 @@ const commandsData = [
   },
   {
     "command": "sp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sp",
+    "descriptionHe": "פקודת PowerShell מקורית: sp",
     "descriptionEn": "Native PowerShell Command: sp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2689,7 +2689,7 @@ const commandsData = [
   },
   {
     "command": "spjb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול spjb",
+    "descriptionHe": "פקודת PowerShell מקורית: spjb",
     "descriptionEn": "Native PowerShell Command: spjb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2697,7 +2697,7 @@ const commandsData = [
   },
   {
     "command": "spps",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול spps",
+    "descriptionHe": "פקודת PowerShell מקורית: spps",
     "descriptionEn": "Native PowerShell Command: spps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2705,7 +2705,7 @@ const commandsData = [
   },
   {
     "command": "spsv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול spsv",
+    "descriptionHe": "פקודת PowerShell מקורית: spsv",
     "descriptionEn": "Native PowerShell Command: spsv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2713,7 +2713,7 @@ const commandsData = [
   },
   {
     "command": "spvm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול spvm",
+    "descriptionHe": "פקודת PowerShell מקורית: spvm",
     "descriptionEn": "Native PowerShell Command: spvm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2721,7 +2721,7 @@ const commandsData = [
   },
   {
     "command": "ssmbb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbb",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbb",
     "descriptionEn": "Native PowerShell Command: ssmbb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2729,7 +2729,7 @@ const commandsData = [
   },
   {
     "command": "ssmbcc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbcc",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbcc",
     "descriptionEn": "Native PowerShell Command: ssmbcc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2737,7 +2737,7 @@ const commandsData = [
   },
   {
     "command": "ssmbccm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbccm",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbccm",
     "descriptionEn": "Native PowerShell Command: ssmbccm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2745,7 +2745,7 @@ const commandsData = [
   },
   {
     "command": "ssmbp",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbp",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbp",
     "descriptionEn": "Native PowerShell Command: ssmbp",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2753,7 +2753,7 @@ const commandsData = [
   },
   {
     "command": "ssmbs",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbs",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbs",
     "descriptionEn": "Native PowerShell Command: ssmbs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2761,7 +2761,7 @@ const commandsData = [
   },
   {
     "command": "ssmbsap",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbsap",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbsap",
     "descriptionEn": "Native PowerShell Command: ssmbsap",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2769,7 +2769,7 @@ const commandsData = [
   },
   {
     "command": "ssmbsc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbsc",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbsc",
     "descriptionEn": "Native PowerShell Command: ssmbsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2777,7 +2777,7 @@ const commandsData = [
   },
   {
     "command": "ssmbscm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ssmbscm",
+    "descriptionHe": "פקודת PowerShell מקורית: ssmbscm",
     "descriptionEn": "Native PowerShell Command: ssmbscm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2785,7 +2785,7 @@ const commandsData = [
   },
   {
     "command": "start",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול start",
+    "descriptionHe": "פקודת PowerShell מקורית: start",
     "descriptionEn": "Native PowerShell Command: start",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2793,7 +2793,7 @@ const commandsData = [
   },
   {
     "command": "stz",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול stz",
+    "descriptionHe": "פקודת PowerShell מקורית: stz",
     "descriptionEn": "Native PowerShell Command: stz",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2801,7 +2801,7 @@ const commandsData = [
   },
   {
     "command": "sujb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sujb",
+    "descriptionHe": "פקודת PowerShell מקורית: sujb",
     "descriptionEn": "Native PowerShell Command: sujb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2809,7 +2809,7 @@ const commandsData = [
   },
   {
     "command": "sv",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול sv",
+    "descriptionHe": "פקודת PowerShell מקורית: sv",
     "descriptionEn": "Native PowerShell Command: sv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2817,7 +2817,7 @@ const commandsData = [
   },
   {
     "command": "swmi",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול swmi",
+    "descriptionHe": "פקודת PowerShell מקורית: swmi",
     "descriptionEn": "Native PowerShell Command: swmi",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2825,7 +2825,7 @@ const commandsData = [
   },
   {
     "command": "tcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול tcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: tcfg",
     "descriptionEn": "Native PowerShell Command: tcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2833,7 +2833,7 @@ const commandsData = [
   },
   {
     "command": "tee",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול tee",
+    "descriptionHe": "פקודת PowerShell מקורית: tee",
     "descriptionEn": "Native PowerShell Command: tee",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2841,7 +2841,7 @@ const commandsData = [
   },
   {
     "command": "tid",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול tid",
+    "descriptionHe": "פקודת PowerShell מקורית: tid",
     "descriptionEn": "Native PowerShell Command: tid",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2849,7 +2849,7 @@ const commandsData = [
   },
   {
     "command": "TNC",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול TNC",
+    "descriptionHe": "פקודת PowerShell מקורית: TNC",
     "descriptionEn": "Native PowerShell Command: TNC",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2857,7 +2857,7 @@ const commandsData = [
   },
   {
     "command": "trcm",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול trcm",
+    "descriptionHe": "פקודת PowerShell מקורית: trcm",
     "descriptionEn": "Native PowerShell Command: trcm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2865,7 +2865,7 @@ const commandsData = [
   },
   {
     "command": "type",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול type",
+    "descriptionHe": "פקודת PowerShell מקורית: type",
     "descriptionEn": "Native PowerShell Command: type",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2873,7 +2873,7 @@ const commandsData = [
   },
   {
     "command": "udsmbmc",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול udsmbmc",
+    "descriptionHe": "פקודת PowerShell מקורית: udsmbmc",
     "descriptionEn": "Native PowerShell Command: udsmbmc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2881,7 +2881,7 @@ const commandsData = [
   },
   {
     "command": "ulsmba",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ulsmba",
+    "descriptionHe": "פקודת PowerShell מקורית: ulsmba",
     "descriptionEn": "Native PowerShell Command: ulsmba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2889,7 +2889,7 @@ const commandsData = [
   },
   {
     "command": "ulsmbclas",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ulsmbclas",
+    "descriptionHe": "פקודת PowerShell מקורית: ulsmbclas",
     "descriptionEn": "Native PowerShell Command: ulsmbclas",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2897,7 +2897,7 @@ const commandsData = [
   },
   {
     "command": "upcfg",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול upcfg",
+    "descriptionHe": "פקודת PowerShell מקורית: upcfg",
     "descriptionEn": "Native PowerShell Command: upcfg",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2905,7 +2905,7 @@ const commandsData = [
   },
   {
     "command": "upmo",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול upmo",
+    "descriptionHe": "פקודת PowerShell מקורית: upmo",
     "descriptionEn": "Native PowerShell Command: upmo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2913,7 +2913,7 @@ const commandsData = [
   },
   {
     "command": "wget",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול wget",
+    "descriptionHe": "פקודת PowerShell מקורית: wget",
     "descriptionEn": "Native PowerShell Command: wget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2921,7 +2921,7 @@ const commandsData = [
   },
   {
     "command": "where",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול where",
+    "descriptionHe": "פקודת PowerShell מקורית: where",
     "descriptionEn": "Native PowerShell Command: where",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2929,7 +2929,7 @@ const commandsData = [
   },
   {
     "command": "wjb",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול wjb",
+    "descriptionHe": "פקודת PowerShell מקורית: wjb",
     "descriptionEn": "Native PowerShell Command: wjb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2937,7 +2937,7 @@ const commandsData = [
   },
   {
     "command": "write",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול write",
+    "descriptionHe": "פקודת PowerShell מקורית: write",
     "descriptionEn": "Native PowerShell Command: write",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2945,7 +2945,7 @@ const commandsData = [
   },
   {
     "command": "Write-FileSystemCache",
-    "descriptionHe": "כתיבת File System Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-FileSystemCache",
     "descriptionEn": "Native PowerShell Command: Write-FileSystemCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2953,7 +2953,7 @@ const commandsData = [
   },
   {
     "command": "A:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול A:",
+    "descriptionHe": "פקודת PowerShell מקורית: A:",
     "descriptionEn": "Native PowerShell Command: A:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2961,7 +2961,7 @@ const commandsData = [
   },
   {
     "command": "Add-BCDataCacheExtension",
-    "descriptionHe": "הוספת B C Data Cache Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-BCDataCacheExtension",
     "descriptionEn": "Native PowerShell Command: Add-BCDataCacheExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2969,7 +2969,7 @@ const commandsData = [
   },
   {
     "command": "Add-BitLockerKeyProtector",
-    "descriptionHe": "הוספת Bit Locker Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-BitLockerKeyProtector",
     "descriptionEn": "Native PowerShell Command: Add-BitLockerKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2977,7 +2977,7 @@ const commandsData = [
   },
   {
     "command": "Add-DnsClientDohServerAddress",
-    "descriptionHe": "הוספת Dns Client Doh Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-DnsClientDohServerAddress",
     "descriptionEn": "Native PowerShell Command: Add-DnsClientDohServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2985,7 +2985,7 @@ const commandsData = [
   },
   {
     "command": "Add-DnsClientNrptRule",
-    "descriptionHe": "הוספת Dns Client Nrpt Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-DnsClientNrptRule",
     "descriptionEn": "Native PowerShell Command: Add-DnsClientNrptRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -2993,7 +2993,7 @@ const commandsData = [
   },
   {
     "command": "Add-DtcClusterTMMapping",
-    "descriptionHe": "הוספת Dtc Cluster T M Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-DtcClusterTMMapping",
     "descriptionEn": "Native PowerShell Command: Add-DtcClusterTMMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3001,7 +3001,7 @@ const commandsData = [
   },
   {
     "command": "Add-EtwTraceProvider",
-    "descriptionHe": "הוספת Etw Trace Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-EtwTraceProvider",
     "descriptionEn": "Native PowerShell Command: Add-EtwTraceProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3009,7 +3009,7 @@ const commandsData = [
   },
   {
     "command": "Add-InitiatorIdToMaskingSet",
-    "descriptionHe": "הוספת Initiator Id To Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-InitiatorIdToMaskingSet",
     "descriptionEn": "Native PowerShell Command: Add-InitiatorIdToMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3017,7 +3017,7 @@ const commandsData = [
   },
   {
     "command": "Add-MpPreference",
-    "descriptionHe": "הוספת Mp Preference",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-MpPreference",
     "descriptionEn": "Native PowerShell Command: Add-MpPreference",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3025,7 +3025,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventNetworkAdapter",
-    "descriptionHe": "הוספת Net Event Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Add-NetEventNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3033,7 +3033,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventPacketCaptureProvider",
-    "descriptionHe": "הוספת Net Event Packet Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventPacketCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Add-NetEventPacketCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3041,7 +3041,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventProvider",
-    "descriptionHe": "הוספת Net Event Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventProvider",
     "descriptionEn": "Native PowerShell Command: Add-NetEventProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3049,7 +3049,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventVFPProvider",
-    "descriptionHe": "הוספת Net Event V F P Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventVFPProvider",
     "descriptionEn": "Native PowerShell Command: Add-NetEventVFPProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3057,7 +3057,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventVmNetworkAdapter",
-    "descriptionHe": "הוספת Net Event Vm Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventVmNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Add-NetEventVmNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3065,7 +3065,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventVmSwitch",
-    "descriptionHe": "הוספת Net Event Vm Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventVmSwitch",
     "descriptionEn": "Native PowerShell Command: Add-NetEventVmSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3073,7 +3073,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventVmSwitchProvider",
-    "descriptionHe": "הוספת Net Event Vm Switch Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventVmSwitchProvider",
     "descriptionEn": "Native PowerShell Command: Add-NetEventVmSwitchProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3081,7 +3081,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetEventWFPCaptureProvider",
-    "descriptionHe": "הוספת Net Event W F P Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetEventWFPCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Add-NetEventWFPCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3089,7 +3089,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetIPHttpsCertBinding",
-    "descriptionHe": "הוספת Net I P Https Cert Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetIPHttpsCertBinding",
     "descriptionEn": "Native PowerShell Command: Add-NetIPHttpsCertBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3097,7 +3097,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetLbfoTeamMember",
-    "descriptionHe": "הוספת Net Lbfo Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetLbfoTeamMember",
     "descriptionEn": "Native PowerShell Command: Add-NetLbfoTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3105,7 +3105,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetLbfoTeamNic",
-    "descriptionHe": "הוספת Net Lbfo Team Nic",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetLbfoTeamNic",
     "descriptionEn": "Native PowerShell Command: Add-NetLbfoTeamNic",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3113,7 +3113,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetNatExternalAddress",
-    "descriptionHe": "הוספת Net Nat External Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetNatExternalAddress",
     "descriptionEn": "Native PowerShell Command: Add-NetNatExternalAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3121,7 +3121,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetNatStaticMapping",
-    "descriptionHe": "הוספת Net Nat Static Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetNatStaticMapping",
     "descriptionEn": "Native PowerShell Command: Add-NetNatStaticMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3129,7 +3129,7 @@ const commandsData = [
   },
   {
     "command": "Add-NetSwitchTeamMember",
-    "descriptionHe": "הוספת Net Switch Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-NetSwitchTeamMember",
     "descriptionEn": "Native PowerShell Command: Add-NetSwitchTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3137,7 +3137,7 @@ const commandsData = [
   },
   {
     "command": "Add-OdbcDsn",
-    "descriptionHe": "הוספת Odbc Dsn",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-OdbcDsn",
     "descriptionEn": "Native PowerShell Command: Add-OdbcDsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3145,7 +3145,7 @@ const commandsData = [
   },
   {
     "command": "Add-PartitionAccessPath",
-    "descriptionHe": "הוספת Partition Access Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-PartitionAccessPath",
     "descriptionEn": "Native PowerShell Command: Add-PartitionAccessPath",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3153,7 +3153,7 @@ const commandsData = [
   },
   {
     "command": "Add-PhysicalDisk",
-    "descriptionHe": "הוספת Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Add-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3161,7 +3161,7 @@ const commandsData = [
   },
   {
     "command": "Add-Printer",
-    "descriptionHe": "הוספת Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-Printer",
     "descriptionEn": "Native PowerShell Command: Add-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3169,7 +3169,7 @@ const commandsData = [
   },
   {
     "command": "Add-PrinterDriver",
-    "descriptionHe": "הוספת Printer Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-PrinterDriver",
     "descriptionEn": "Native PowerShell Command: Add-PrinterDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3177,7 +3177,7 @@ const commandsData = [
   },
   {
     "command": "Add-PrinterPort",
-    "descriptionHe": "הוספת Printer Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-PrinterPort",
     "descriptionEn": "Native PowerShell Command: Add-PrinterPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3185,7 +3185,7 @@ const commandsData = [
   },
   {
     "command": "Add-StorageFaultDomain",
-    "descriptionHe": "הוספת Storage Fault Domain",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-StorageFaultDomain",
     "descriptionEn": "Native PowerShell Command: Add-StorageFaultDomain",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3193,7 +3193,7 @@ const commandsData = [
   },
   {
     "command": "Add-TargetPortToMaskingSet",
-    "descriptionHe": "הוספת Target Port To Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-TargetPortToMaskingSet",
     "descriptionEn": "Native PowerShell Command: Add-TargetPortToMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3201,7 +3201,7 @@ const commandsData = [
   },
   {
     "command": "Add-VirtualDiskToMaskingSet",
-    "descriptionHe": "הוספת Virtual Disk To Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VirtualDiskToMaskingSet",
     "descriptionEn": "Native PowerShell Command: Add-VirtualDiskToMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3209,7 +3209,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMDirectVirtualDisk",
-    "descriptionHe": "הוספת V M Direct Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMDirectVirtualDisk",
     "descriptionEn": "Native PowerShell Command: Add-VMDirectVirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3217,7 +3217,7 @@ const commandsData = [
   },
   {
     "command": "Add-VpnConnection",
-    "descriptionHe": "הוספת Vpn Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VpnConnection",
     "descriptionEn": "Native PowerShell Command: Add-VpnConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3225,7 +3225,7 @@ const commandsData = [
   },
   {
     "command": "Add-VpnConnectionRoute",
-    "descriptionHe": "הוספת Vpn Connection Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VpnConnectionRoute",
     "descriptionEn": "Native PowerShell Command: Add-VpnConnectionRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3233,7 +3233,7 @@ const commandsData = [
   },
   {
     "command": "Add-VpnConnectionTriggerApplication",
-    "descriptionHe": "הוספת Vpn Connection Trigger Application",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VpnConnectionTriggerApplication",
     "descriptionEn": "Native PowerShell Command: Add-VpnConnectionTriggerApplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3241,7 +3241,7 @@ const commandsData = [
   },
   {
     "command": "Add-VpnConnectionTriggerDnsConfiguration",
-    "descriptionHe": "הוספת Vpn Connection Trigger Dns Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VpnConnectionTriggerDnsConfiguration",
     "descriptionEn": "Native PowerShell Command: Add-VpnConnectionTriggerDnsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3249,7 +3249,7 @@ const commandsData = [
   },
   {
     "command": "Add-VpnConnectionTriggerTrustedNetwork",
-    "descriptionHe": "הוספת Vpn Connection Trigger Trusted Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VpnConnectionTriggerTrustedNetwork",
     "descriptionEn": "Native PowerShell Command: Add-VpnConnectionTriggerTrustedNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3257,7 +3257,7 @@ const commandsData = [
   },
   {
     "command": "AfterAll",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול AfterAll",
+    "descriptionHe": "פקודת PowerShell מקורית: AfterAll",
     "descriptionEn": "Native PowerShell Command: AfterAll",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3265,7 +3265,7 @@ const commandsData = [
   },
   {
     "command": "AfterEach",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול AfterEach",
+    "descriptionHe": "פקודת PowerShell מקורית: AfterEach",
     "descriptionEn": "Native PowerShell Command: AfterEach",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3273,7 +3273,7 @@ const commandsData = [
   },
   {
     "command": "Assert-MockCalled",
-    "descriptionHe": "פעולת PowerShell על Mock Called",
+    "descriptionHe": "פקודת PowerShell מקורית: Assert-MockCalled",
     "descriptionEn": "Native PowerShell Command: Assert-MockCalled",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3281,7 +3281,7 @@ const commandsData = [
   },
   {
     "command": "Assert-VerifiableMocks",
-    "descriptionHe": "פעולת PowerShell על Verifiable Mocks",
+    "descriptionHe": "פקודת PowerShell מקורית: Assert-VerifiableMocks",
     "descriptionEn": "Native PowerShell Command: Assert-VerifiableMocks",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3289,7 +3289,7 @@ const commandsData = [
   },
   {
     "command": "B:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול B:",
+    "descriptionHe": "פקודת PowerShell מקורית: B:",
     "descriptionEn": "Native PowerShell Command: B:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3297,7 +3297,7 @@ const commandsData = [
   },
   {
     "command": "Backup-BitLockerKeyProtector",
-    "descriptionHe": "פעולת PowerShell על Bit Locker Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: Backup-BitLockerKeyProtector",
     "descriptionEn": "Native PowerShell Command: Backup-BitLockerKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3305,7 +3305,7 @@ const commandsData = [
   },
   {
     "command": "BackupToAAD-BitLockerKeyProtector",
-    "descriptionHe": "פעולת PowerShell על Bit Locker Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: BackupToAAD-BitLockerKeyProtector",
     "descriptionEn": "Native PowerShell Command: BackupToAAD-BitLockerKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3313,7 +3313,7 @@ const commandsData = [
   },
   {
     "command": "BackupToMSA-BitLockerKeyProtector",
-    "descriptionHe": "פעולת PowerShell על Bit Locker Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: BackupToMSA-BitLockerKeyProtector",
     "descriptionEn": "Native PowerShell Command: BackupToMSA-BitLockerKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3321,7 +3321,7 @@ const commandsData = [
   },
   {
     "command": "BeforeAll",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול BeforeAll",
+    "descriptionHe": "פקודת PowerShell מקורית: BeforeAll",
     "descriptionEn": "Native PowerShell Command: BeforeAll",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3329,7 +3329,7 @@ const commandsData = [
   },
   {
     "command": "BeforeEach",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול BeforeEach",
+    "descriptionHe": "פקודת PowerShell מקורית: BeforeEach",
     "descriptionEn": "Native PowerShell Command: BeforeEach",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3337,7 +3337,7 @@ const commandsData = [
   },
   {
     "command": "Block-FileShareAccess",
-    "descriptionHe": "פעולת PowerShell על File Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Block-FileShareAccess",
     "descriptionEn": "Native PowerShell Command: Block-FileShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3345,7 +3345,7 @@ const commandsData = [
   },
   {
     "command": "Block-SmbClientAccessToServer",
-    "descriptionHe": "פעולת PowerShell על Smb Client Access To Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Block-SmbClientAccessToServer",
     "descriptionEn": "Native PowerShell Command: Block-SmbClientAccessToServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3353,7 +3353,7 @@ const commandsData = [
   },
   {
     "command": "Block-SmbShareAccess",
-    "descriptionHe": "פעולת PowerShell על Smb Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Block-SmbShareAccess",
     "descriptionEn": "Native PowerShell Command: Block-SmbShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3361,7 +3361,7 @@ const commandsData = [
   },
   {
     "command": "C:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול C:",
+    "descriptionHe": "פקודת PowerShell מקורית: C:",
     "descriptionEn": "Native PowerShell Command: C:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3369,7 +3369,7 @@ const commandsData = [
   },
   {
     "command": "cd..",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cd..",
+    "descriptionHe": "פקודת PowerShell מקורית: cd..",
     "descriptionEn": "Native PowerShell Command: cd..",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3377,7 +3377,7 @@ const commandsData = [
   },
   {
     "command": "cd\\",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול cd\\",
+    "descriptionHe": "פקודת PowerShell מקורית: cd\\",
     "descriptionEn": "Native PowerShell Command: cd\\",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3385,7 +3385,7 @@ const commandsData = [
   },
   {
     "command": "Clear-AssignedAccess",
-    "descriptionHe": "ניקוי Assigned Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-AssignedAccess",
     "descriptionEn": "Native PowerShell Command: Clear-AssignedAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3393,7 +3393,7 @@ const commandsData = [
   },
   {
     "command": "Clear-BCCache",
-    "descriptionHe": "ניקוי B C Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-BCCache",
     "descriptionEn": "Native PowerShell Command: Clear-BCCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3401,7 +3401,7 @@ const commandsData = [
   },
   {
     "command": "Clear-BitLockerAutoUnlock",
-    "descriptionHe": "ניקוי Bit Locker Auto Unlock",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-BitLockerAutoUnlock",
     "descriptionEn": "Native PowerShell Command: Clear-BitLockerAutoUnlock",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3409,7 +3409,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Disk",
-    "descriptionHe": "ניקוי Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Disk",
     "descriptionEn": "Native PowerShell Command: Clear-Disk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3417,7 +3417,7 @@ const commandsData = [
   },
   {
     "command": "Clear-DnsClientCache",
-    "descriptionHe": "ניקוי Dns Client Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-DnsClientCache",
     "descriptionEn": "Native PowerShell Command: Clear-DnsClientCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3425,7 +3425,7 @@ const commandsData = [
   },
   {
     "command": "Clear-FileStorageTier",
-    "descriptionHe": "ניקוי File Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-FileStorageTier",
     "descriptionEn": "Native PowerShell Command: Clear-FileStorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3433,7 +3433,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Host",
-    "descriptionHe": "ניקוי Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Host",
     "descriptionEn": "Native PowerShell Command: Clear-Host",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3441,7 +3441,7 @@ const commandsData = [
   },
   {
     "command": "Clear-PcsvDeviceLog",
-    "descriptionHe": "ניקוי Pcsv Device Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-PcsvDeviceLog",
     "descriptionEn": "Native PowerShell Command: Clear-PcsvDeviceLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3449,7 +3449,7 @@ const commandsData = [
   },
   {
     "command": "Clear-StorageBusDisk",
-    "descriptionHe": "ניקוי Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Clear-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3457,7 +3457,7 @@ const commandsData = [
   },
   {
     "command": "Clear-StorageDiagnosticInfo",
-    "descriptionHe": "ניקוי Storage Diagnostic Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-StorageDiagnosticInfo",
     "descriptionEn": "Native PowerShell Command: Clear-StorageDiagnosticInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3465,7 +3465,7 @@ const commandsData = [
   },
   {
     "command": "Close-SmbOpenFile",
-    "descriptionHe": "פעולת PowerShell על Smb Open File",
+    "descriptionHe": "פקודת PowerShell מקורית: Close-SmbOpenFile",
     "descriptionEn": "Native PowerShell Command: Close-SmbOpenFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3473,7 +3473,7 @@ const commandsData = [
   },
   {
     "command": "Close-SmbSession",
-    "descriptionHe": "פעולת PowerShell על Smb Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Close-SmbSession",
     "descriptionEn": "Native PowerShell Command: Close-SmbSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3481,7 +3481,7 @@ const commandsData = [
   },
   {
     "command": "Compress-Archive",
-    "descriptionHe": "פעולת PowerShell על Archive",
+    "descriptionHe": "פקודת PowerShell מקורית: Compress-Archive",
     "descriptionEn": "Native PowerShell Command: Compress-Archive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3489,7 +3489,7 @@ const commandsData = [
   },
   {
     "command": "Configuration",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Configuration",
     "descriptionEn": "Native PowerShell Command: Configuration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3497,7 +3497,7 @@ const commandsData = [
   },
   {
     "command": "Connect-IscsiTarget",
-    "descriptionHe": "פעולת PowerShell על Iscsi Target",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-IscsiTarget",
     "descriptionEn": "Native PowerShell Command: Connect-IscsiTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3505,7 +3505,7 @@ const commandsData = [
   },
   {
     "command": "Connect-VirtualDisk",
-    "descriptionHe": "פעולת PowerShell על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Connect-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3513,7 +3513,7 @@ const commandsData = [
   },
   {
     "command": "Context",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Context",
+    "descriptionHe": "פקודת PowerShell מקורית: Context",
     "descriptionEn": "Native PowerShell Command: Context",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3521,7 +3521,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-SddlString",
-    "descriptionHe": "פעולת PowerShell על Sddl String",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-SddlString",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-SddlString",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3529,7 +3529,7 @@ const commandsData = [
   },
   {
     "command": "Convert-PhysicalDisk",
-    "descriptionHe": "המרת Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Convert-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Convert-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3537,7 +3537,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-HgsKeyProtector",
-    "descriptionHe": "פעולת PowerShell על Hgs Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-HgsKeyProtector",
     "descriptionEn": "Native PowerShell Command: ConvertTo-HgsKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3545,7 +3545,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetFirewallRule",
-    "descriptionHe": "פעולת PowerShell על Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Copy-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3553,7 +3553,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3561,7 +3561,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecMainModeRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3569,7 +3569,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecPhase1AuthSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3577,7 +3577,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecPhase2AuthSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3585,7 +3585,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3593,7 +3593,7 @@ const commandsData = [
   },
   {
     "command": "Copy-NetIPsecRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Copy-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3601,7 +3601,7 @@ const commandsData = [
   },
   {
     "command": "D:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול D:",
+    "descriptionHe": "פקודת PowerShell מקורית: D:",
     "descriptionEn": "Native PowerShell Command: D:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3609,7 +3609,7 @@ const commandsData = [
   },
   {
     "command": "Debug-FileShare",
-    "descriptionHe": "פעולת PowerShell על File Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-FileShare",
     "descriptionEn": "Native PowerShell Command: Debug-FileShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3617,7 +3617,7 @@ const commandsData = [
   },
   {
     "command": "Debug-MMAppPrelaunch",
-    "descriptionHe": "פעולת PowerShell על M M App Prelaunch",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-MMAppPrelaunch",
     "descriptionEn": "Native PowerShell Command: Debug-MMAppPrelaunch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3625,7 +3625,7 @@ const commandsData = [
   },
   {
     "command": "Debug-StorageSubSystem",
-    "descriptionHe": "פעולת PowerShell על Storage Sub System",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-StorageSubSystem",
     "descriptionEn": "Native PowerShell Command: Debug-StorageSubSystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3633,7 +3633,7 @@ const commandsData = [
   },
   {
     "command": "Debug-Volume",
-    "descriptionHe": "פעולת PowerShell על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-Volume",
     "descriptionEn": "Native PowerShell Command: Debug-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3641,7 +3641,7 @@ const commandsData = [
   },
   {
     "command": "Delete-DeliveryOptimizationCache",
-    "descriptionHe": "פעולת PowerShell על Delivery Optimization Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Delete-DeliveryOptimizationCache",
     "descriptionEn": "Native PowerShell Command: Delete-DeliveryOptimizationCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3649,7 +3649,7 @@ const commandsData = [
   },
   {
     "command": "Describe",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Describe",
+    "descriptionHe": "פקודת PowerShell מקורית: Describe",
     "descriptionEn": "Native PowerShell Command: Describe",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3657,7 +3657,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BC",
-    "descriptionHe": "השבתת B C",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BC",
     "descriptionEn": "Native PowerShell Command: Disable-BC",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3665,7 +3665,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BCDowngrading",
-    "descriptionHe": "השבתת B C Downgrading",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BCDowngrading",
     "descriptionEn": "Native PowerShell Command: Disable-BCDowngrading",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3673,7 +3673,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BCServeOnBattery",
-    "descriptionHe": "השבתת B C Serve On Battery",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BCServeOnBattery",
     "descriptionEn": "Native PowerShell Command: Disable-BCServeOnBattery",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3681,7 +3681,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BitLocker",
-    "descriptionHe": "השבתת Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BitLocker",
     "descriptionEn": "Native PowerShell Command: Disable-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3689,7 +3689,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BitLockerAutoUnlock",
-    "descriptionHe": "השבתת Bit Locker Auto Unlock",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BitLockerAutoUnlock",
     "descriptionEn": "Native PowerShell Command: Disable-BitLockerAutoUnlock",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3697,7 +3697,7 @@ const commandsData = [
   },
   {
     "command": "Disable-DAManualEntryPointSelection",
-    "descriptionHe": "השבתת D A Manual Entry Point Selection",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-DAManualEntryPointSelection",
     "descriptionEn": "Native PowerShell Command: Disable-DAManualEntryPointSelection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3705,7 +3705,7 @@ const commandsData = [
   },
   {
     "command": "Disable-DeliveryOptimizationVerboseLogs",
-    "descriptionHe": "השבתת Delivery Optimization Verbose Logs",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-DeliveryOptimizationVerboseLogs",
     "descriptionEn": "Native PowerShell Command: Disable-DeliveryOptimizationVerboseLogs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3713,7 +3713,7 @@ const commandsData = [
   },
   {
     "command": "Disable-DscDebug",
-    "descriptionHe": "השבתת Dsc Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-DscDebug",
     "descriptionEn": "Native PowerShell Command: Disable-DscDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3721,7 +3721,7 @@ const commandsData = [
   },
   {
     "command": "Disable-MMAgent",
-    "descriptionHe": "השבתת M M Agent",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-MMAgent",
     "descriptionEn": "Native PowerShell Command: Disable-MMAgent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3729,7 +3729,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapter",
-    "descriptionHe": "השבתת Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3737,7 +3737,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterBinding",
-    "descriptionHe": "השבתת Net Adapter Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterBinding",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3745,7 +3745,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterChecksumOffload",
-    "descriptionHe": "השבתת Net Adapter Checksum Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterChecksumOffload",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterChecksumOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3753,7 +3753,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterEncapsulatedPacketTaskOffload",
-    "descriptionHe": "השבתת Net Adapter Encapsulated Packet Task Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterEncapsulatedPacketTaskOffload",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterEncapsulatedPacketTaskOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3761,7 +3761,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterIPsecOffload",
-    "descriptionHe": "השבתת Net Adapter I Psec Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterIPsecOffload",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterIPsecOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3769,7 +3769,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterLso",
-    "descriptionHe": "השבתת Net Adapter Lso",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterLso",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterLso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3777,7 +3777,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterPacketDirect",
-    "descriptionHe": "השבתת Net Adapter Packet Direct",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterPacketDirect",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterPacketDirect",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3785,7 +3785,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterPowerManagement",
-    "descriptionHe": "השבתת Net Adapter Power Management",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterPowerManagement",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterPowerManagement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3793,7 +3793,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterQos",
-    "descriptionHe": "השבתת Net Adapter Qos",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterQos",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterQos",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3801,7 +3801,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterRdma",
-    "descriptionHe": "השבתת Net Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3809,7 +3809,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterRsc",
-    "descriptionHe": "השבתת Net Adapter Rsc",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterRsc",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterRsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3817,7 +3817,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterRss",
-    "descriptionHe": "השבתת Net Adapter Rss",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterRss",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterRss",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3825,7 +3825,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterSriov",
-    "descriptionHe": "השבתת Net Adapter Sriov",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterSriov",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterSriov",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3833,7 +3833,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterUro",
-    "descriptionHe": "השבתת Net Adapter Uro",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterUro",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterUro",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3841,7 +3841,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterUso",
-    "descriptionHe": "השבתת Net Adapter Uso",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterUso",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterUso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3849,7 +3849,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetAdapterVmq",
-    "descriptionHe": "השבתת Net Adapter Vmq",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetAdapterVmq",
     "descriptionEn": "Native PowerShell Command: Disable-NetAdapterVmq",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3857,7 +3857,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetDnsTransitionConfiguration",
-    "descriptionHe": "השבתת Net Dns Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetDnsTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Disable-NetDnsTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3865,7 +3865,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetFirewallHyperVRule",
-    "descriptionHe": "השבתת Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Disable-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3873,7 +3873,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetFirewallRule",
-    "descriptionHe": "השבתת Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Disable-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3881,7 +3881,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetIPHttpsProfile",
-    "descriptionHe": "השבתת Net I P Https Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetIPHttpsProfile",
     "descriptionEn": "Native PowerShell Command: Disable-NetIPHttpsProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3889,7 +3889,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetIPsecMainModeRule",
-    "descriptionHe": "השבתת Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Disable-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3897,7 +3897,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetIPsecRule",
-    "descriptionHe": "השבתת Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Disable-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3905,7 +3905,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetNatTransitionConfiguration",
-    "descriptionHe": "השבתת Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Disable-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3913,7 +3913,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetworkSwitchEthernetPort",
-    "descriptionHe": "השבתת Network Switch Ethernet Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetworkSwitchEthernetPort",
     "descriptionEn": "Native PowerShell Command: Disable-NetworkSwitchEthernetPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3921,7 +3921,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetworkSwitchFeature",
-    "descriptionHe": "השבתת Network Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetworkSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Disable-NetworkSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3929,7 +3929,7 @@ const commandsData = [
   },
   {
     "command": "Disable-NetworkSwitchVlan",
-    "descriptionHe": "השבתת Network Switch Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-NetworkSwitchVlan",
     "descriptionEn": "Native PowerShell Command: Disable-NetworkSwitchVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3937,7 +3937,7 @@ const commandsData = [
   },
   {
     "command": "Disable-OdbcPerfCounter",
-    "descriptionHe": "השבתת Odbc Perf Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-OdbcPerfCounter",
     "descriptionEn": "Native PowerShell Command: Disable-OdbcPerfCounter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3945,7 +3945,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PhysicalDiskIdentification",
-    "descriptionHe": "השבתת Physical Disk Identification",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PhysicalDiskIdentification",
     "descriptionEn": "Native PowerShell Command: Disable-PhysicalDiskIdentification",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3953,7 +3953,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PnpDevice",
-    "descriptionHe": "השבתת Pnp Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PnpDevice",
     "descriptionEn": "Native PowerShell Command: Disable-PnpDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3961,7 +3961,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PSTrace",
-    "descriptionHe": "השבתת P S Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PSTrace",
     "descriptionEn": "Native PowerShell Command: Disable-PSTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3969,7 +3969,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PSWSManCombinedTrace",
-    "descriptionHe": "השבתת P S W S Man Combined Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PSWSManCombinedTrace",
     "descriptionEn": "Native PowerShell Command: Disable-PSWSManCombinedTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3977,7 +3977,7 @@ const commandsData = [
   },
   {
     "command": "Disable-ScheduledTask",
-    "descriptionHe": "השבתת Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Disable-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3985,7 +3985,7 @@ const commandsData = [
   },
   {
     "command": "Disable-SmbDelegation",
-    "descriptionHe": "השבתת Smb Delegation",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-SmbDelegation",
     "descriptionEn": "Native PowerShell Command: Disable-SmbDelegation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -3993,7 +3993,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageBusCache",
-    "descriptionHe": "השבתת Storage Bus Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageBusCache",
     "descriptionEn": "Native PowerShell Command: Disable-StorageBusCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4001,7 +4001,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageBusDisk",
-    "descriptionHe": "השבתת Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Disable-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4009,7 +4009,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageDataCollection",
-    "descriptionHe": "השבתת Storage Data Collection",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageDataCollection",
     "descriptionEn": "Native PowerShell Command: Disable-StorageDataCollection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4017,7 +4017,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageEnclosureIdentification",
-    "descriptionHe": "השבתת Storage Enclosure Identification",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageEnclosureIdentification",
     "descriptionEn": "Native PowerShell Command: Disable-StorageEnclosureIdentification",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4025,7 +4025,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageEnclosurePower",
-    "descriptionHe": "השבתת Storage Enclosure Power",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageEnclosurePower",
     "descriptionEn": "Native PowerShell Command: Disable-StorageEnclosurePower",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4033,7 +4033,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageHighAvailability",
-    "descriptionHe": "השבתת Storage High Availability",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageHighAvailability",
     "descriptionEn": "Native PowerShell Command: Disable-StorageHighAvailability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4041,7 +4041,7 @@ const commandsData = [
   },
   {
     "command": "Disable-StorageMaintenanceMode",
-    "descriptionHe": "השבתת Storage Maintenance Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-StorageMaintenanceMode",
     "descriptionEn": "Native PowerShell Command: Disable-StorageMaintenanceMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4049,7 +4049,7 @@ const commandsData = [
   },
   {
     "command": "Disable-WdacBidTrace",
-    "descriptionHe": "השבתת Wdac Bid Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-WdacBidTrace",
     "descriptionEn": "Native PowerShell Command: Disable-WdacBidTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4057,7 +4057,7 @@ const commandsData = [
   },
   {
     "command": "Disable-WSManTrace",
-    "descriptionHe": "השבתת W S Man Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-WSManTrace",
     "descriptionEn": "Native PowerShell Command: Disable-WSManTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4065,7 +4065,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-IscsiTarget",
-    "descriptionHe": "פעולת PowerShell על Iscsi Target",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-IscsiTarget",
     "descriptionEn": "Native PowerShell Command: Disconnect-IscsiTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4073,7 +4073,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-VirtualDisk",
-    "descriptionHe": "פעולת PowerShell על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Disconnect-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4081,7 +4081,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-DiskImage",
-    "descriptionHe": "פעולת PowerShell על Disk Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-DiskImage",
     "descriptionEn": "Native PowerShell Command: Dismount-DiskImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4089,7 +4089,7 @@ const commandsData = [
   },
   {
     "command": "E:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול E:",
+    "descriptionHe": "פקודת PowerShell מקורית: E:",
     "descriptionEn": "Native PowerShell Command: E:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4097,7 +4097,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCDistributed",
-    "descriptionHe": "הפעלת/אפשור B C Distributed",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCDistributed",
     "descriptionEn": "Native PowerShell Command: Enable-BCDistributed",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4105,7 +4105,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCDowngrading",
-    "descriptionHe": "הפעלת/אפשור B C Downgrading",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCDowngrading",
     "descriptionEn": "Native PowerShell Command: Enable-BCDowngrading",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4113,7 +4113,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCHostedClient",
-    "descriptionHe": "הפעלת/אפשור B C Hosted Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCHostedClient",
     "descriptionEn": "Native PowerShell Command: Enable-BCHostedClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4121,7 +4121,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCHostedServer",
-    "descriptionHe": "הפעלת/אפשור B C Hosted Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCHostedServer",
     "descriptionEn": "Native PowerShell Command: Enable-BCHostedServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4129,7 +4129,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCLocal",
-    "descriptionHe": "הפעלת/אפשור B C Local",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCLocal",
     "descriptionEn": "Native PowerShell Command: Enable-BCLocal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4137,7 +4137,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BCServeOnBattery",
-    "descriptionHe": "הפעלת/אפשור B C Serve On Battery",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BCServeOnBattery",
     "descriptionEn": "Native PowerShell Command: Enable-BCServeOnBattery",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4145,7 +4145,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BitLocker",
-    "descriptionHe": "הפעלת/אפשור Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BitLocker",
     "descriptionEn": "Native PowerShell Command: Enable-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4153,7 +4153,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BitLockerAutoUnlock",
-    "descriptionHe": "הפעלת/אפשור Bit Locker Auto Unlock",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BitLockerAutoUnlock",
     "descriptionEn": "Native PowerShell Command: Enable-BitLockerAutoUnlock",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4161,7 +4161,7 @@ const commandsData = [
   },
   {
     "command": "Enable-DAManualEntryPointSelection",
-    "descriptionHe": "הפעלת/אפשור D A Manual Entry Point Selection",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-DAManualEntryPointSelection",
     "descriptionEn": "Native PowerShell Command: Enable-DAManualEntryPointSelection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4169,7 +4169,7 @@ const commandsData = [
   },
   {
     "command": "Enable-DeliveryOptimizationVerboseLogs",
-    "descriptionHe": "הפעלת/אפשור Delivery Optimization Verbose Logs",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-DeliveryOptimizationVerboseLogs",
     "descriptionEn": "Native PowerShell Command: Enable-DeliveryOptimizationVerboseLogs",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4177,7 +4177,7 @@ const commandsData = [
   },
   {
     "command": "Enable-DscDebug",
-    "descriptionHe": "הפעלת/אפשור Dsc Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-DscDebug",
     "descriptionEn": "Native PowerShell Command: Enable-DscDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4185,7 +4185,7 @@ const commandsData = [
   },
   {
     "command": "Enable-MMAgent",
-    "descriptionHe": "הפעלת/אפשור M M Agent",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-MMAgent",
     "descriptionEn": "Native PowerShell Command: Enable-MMAgent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4193,7 +4193,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapter",
-    "descriptionHe": "הפעלת/אפשור Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4201,7 +4201,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterBinding",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterBinding",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4209,7 +4209,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterChecksumOffload",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Checksum Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterChecksumOffload",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterChecksumOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4217,7 +4217,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterEncapsulatedPacketTaskOffload",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Encapsulated Packet Task Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterEncapsulatedPacketTaskOffload",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterEncapsulatedPacketTaskOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4225,7 +4225,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterIPsecOffload",
-    "descriptionHe": "הפעלת/אפשור Net Adapter I Psec Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterIPsecOffload",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterIPsecOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4233,7 +4233,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterLso",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Lso",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterLso",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterLso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4241,7 +4241,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterPacketDirect",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Packet Direct",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterPacketDirect",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterPacketDirect",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4249,7 +4249,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterPowerManagement",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Power Management",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterPowerManagement",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterPowerManagement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4257,7 +4257,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterQos",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Qos",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterQos",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterQos",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4265,7 +4265,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterRdma",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4273,7 +4273,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterRsc",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Rsc",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterRsc",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterRsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4281,7 +4281,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterRss",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Rss",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterRss",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterRss",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4289,7 +4289,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterSriov",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Sriov",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterSriov",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterSriov",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4297,7 +4297,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterUro",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Uro",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterUro",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterUro",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4305,7 +4305,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterUso",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Uso",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterUso",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterUso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4313,7 +4313,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetAdapterVmq",
-    "descriptionHe": "הפעלת/אפשור Net Adapter Vmq",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetAdapterVmq",
     "descriptionEn": "Native PowerShell Command: Enable-NetAdapterVmq",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4321,7 +4321,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetDnsTransitionConfiguration",
-    "descriptionHe": "הפעלת/אפשור Net Dns Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetDnsTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Enable-NetDnsTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4329,7 +4329,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetFirewallHyperVRule",
-    "descriptionHe": "הפעלת/אפשור Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Enable-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4337,7 +4337,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetFirewallRule",
-    "descriptionHe": "הפעלת/אפשור Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Enable-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4345,7 +4345,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetIPHttpsProfile",
-    "descriptionHe": "הפעלת/אפשור Net I P Https Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetIPHttpsProfile",
     "descriptionEn": "Native PowerShell Command: Enable-NetIPHttpsProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4353,7 +4353,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetIPsecMainModeRule",
-    "descriptionHe": "הפעלת/אפשור Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Enable-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4361,7 +4361,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetIPsecRule",
-    "descriptionHe": "הפעלת/אפשור Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Enable-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4369,7 +4369,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetNatTransitionConfiguration",
-    "descriptionHe": "הפעלת/אפשור Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Enable-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4377,7 +4377,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetworkSwitchEthernetPort",
-    "descriptionHe": "הפעלת/אפשור Network Switch Ethernet Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetworkSwitchEthernetPort",
     "descriptionEn": "Native PowerShell Command: Enable-NetworkSwitchEthernetPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4385,7 +4385,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetworkSwitchFeature",
-    "descriptionHe": "הפעלת/אפשור Network Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetworkSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Enable-NetworkSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4393,7 +4393,7 @@ const commandsData = [
   },
   {
     "command": "Enable-NetworkSwitchVlan",
-    "descriptionHe": "הפעלת/אפשור Network Switch Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-NetworkSwitchVlan",
     "descriptionEn": "Native PowerShell Command: Enable-NetworkSwitchVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4401,7 +4401,7 @@ const commandsData = [
   },
   {
     "command": "Enable-OdbcPerfCounter",
-    "descriptionHe": "הפעלת/אפשור Odbc Perf Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-OdbcPerfCounter",
     "descriptionEn": "Native PowerShell Command: Enable-OdbcPerfCounter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4409,7 +4409,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PhysicalDiskIdentification",
-    "descriptionHe": "הפעלת/אפשור Physical Disk Identification",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PhysicalDiskIdentification",
     "descriptionEn": "Native PowerShell Command: Enable-PhysicalDiskIdentification",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4417,7 +4417,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PnpDevice",
-    "descriptionHe": "הפעלת/אפשור Pnp Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PnpDevice",
     "descriptionEn": "Native PowerShell Command: Enable-PnpDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4425,7 +4425,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PSTrace",
-    "descriptionHe": "הפעלת/אפשור P S Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PSTrace",
     "descriptionEn": "Native PowerShell Command: Enable-PSTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4433,7 +4433,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PSWSManCombinedTrace",
-    "descriptionHe": "הפעלת/אפשור P S W S Man Combined Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PSWSManCombinedTrace",
     "descriptionEn": "Native PowerShell Command: Enable-PSWSManCombinedTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4441,7 +4441,7 @@ const commandsData = [
   },
   {
     "command": "Enable-ScheduledTask",
-    "descriptionHe": "הפעלת/אפשור Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Enable-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4449,7 +4449,7 @@ const commandsData = [
   },
   {
     "command": "Enable-SmbDelegation",
-    "descriptionHe": "הפעלת/אפשור Smb Delegation",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-SmbDelegation",
     "descriptionEn": "Native PowerShell Command: Enable-SmbDelegation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4457,7 +4457,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageBusCache",
-    "descriptionHe": "הפעלת/אפשור Storage Bus Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageBusCache",
     "descriptionEn": "Native PowerShell Command: Enable-StorageBusCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4465,7 +4465,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageBusDisk",
-    "descriptionHe": "הפעלת/אפשור Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Enable-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4473,7 +4473,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageDataCollection",
-    "descriptionHe": "הפעלת/אפשור Storage Data Collection",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageDataCollection",
     "descriptionEn": "Native PowerShell Command: Enable-StorageDataCollection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4481,7 +4481,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageEnclosureIdentification",
-    "descriptionHe": "הפעלת/אפשור Storage Enclosure Identification",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageEnclosureIdentification",
     "descriptionEn": "Native PowerShell Command: Enable-StorageEnclosureIdentification",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4489,7 +4489,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageEnclosurePower",
-    "descriptionHe": "הפעלת/אפשור Storage Enclosure Power",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageEnclosurePower",
     "descriptionEn": "Native PowerShell Command: Enable-StorageEnclosurePower",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4497,7 +4497,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageHighAvailability",
-    "descriptionHe": "הפעלת/אפשור Storage High Availability",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageHighAvailability",
     "descriptionEn": "Native PowerShell Command: Enable-StorageHighAvailability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4505,7 +4505,7 @@ const commandsData = [
   },
   {
     "command": "Enable-StorageMaintenanceMode",
-    "descriptionHe": "הפעלת/אפשור Storage Maintenance Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-StorageMaintenanceMode",
     "descriptionEn": "Native PowerShell Command: Enable-StorageMaintenanceMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4513,7 +4513,7 @@ const commandsData = [
   },
   {
     "command": "Enable-WdacBidTrace",
-    "descriptionHe": "הפעלת/אפשור Wdac Bid Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-WdacBidTrace",
     "descriptionEn": "Native PowerShell Command: Enable-WdacBidTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4521,7 +4521,7 @@ const commandsData = [
   },
   {
     "command": "Enable-WSManTrace",
-    "descriptionHe": "הפעלת/אפשור W S Man Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-WSManTrace",
     "descriptionEn": "Native PowerShell Command: Enable-WSManTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4529,7 +4529,7 @@ const commandsData = [
   },
   {
     "command": "Expand-Archive",
-    "descriptionHe": "פעולת PowerShell על Archive",
+    "descriptionHe": "פקודת PowerShell מקורית: Expand-Archive",
     "descriptionEn": "Native PowerShell Command: Expand-Archive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4537,7 +4537,7 @@ const commandsData = [
   },
   {
     "command": "Export-BCCachePackage",
-    "descriptionHe": "ייצוא נתונים עבור B C Cache Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-BCCachePackage",
     "descriptionEn": "Native PowerShell Command: Export-BCCachePackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4545,7 +4545,7 @@ const commandsData = [
   },
   {
     "command": "Export-BCSecretKey",
-    "descriptionHe": "ייצוא נתונים עבור B C Secret Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-BCSecretKey",
     "descriptionEn": "Native PowerShell Command: Export-BCSecretKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4553,7 +4553,7 @@ const commandsData = [
   },
   {
     "command": "Export-HgsGuardian",
-    "descriptionHe": "ייצוא נתונים עבור Hgs Guardian",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-HgsGuardian",
     "descriptionEn": "Native PowerShell Command: Export-HgsGuardian",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4561,7 +4561,7 @@ const commandsData = [
   },
   {
     "command": "Export-ODataEndpointProxy",
-    "descriptionHe": "ייצוא נתונים עבור O Data Endpoint Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-ODataEndpointProxy",
     "descriptionEn": "Native PowerShell Command: Export-ODataEndpointProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4569,7 +4569,7 @@ const commandsData = [
   },
   {
     "command": "Export-ScheduledTask",
-    "descriptionHe": "ייצוא נתונים עבור Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Export-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4577,7 +4577,7 @@ const commandsData = [
   },
   {
     "command": "Export-WinhttpProxy",
-    "descriptionHe": "ייצוא נתונים עבור Winhttp Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-WinhttpProxy",
     "descriptionEn": "Native PowerShell Command: Export-WinhttpProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4585,7 +4585,7 @@ const commandsData = [
   },
   {
     "command": "F:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול F:",
+    "descriptionHe": "פקודת PowerShell מקורית: F:",
     "descriptionEn": "Native PowerShell Command: F:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4593,7 +4593,7 @@ const commandsData = [
   },
   {
     "command": "Find-Command",
-    "descriptionHe": "פעולת PowerShell על Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-Command",
     "descriptionEn": "Native PowerShell Command: Find-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4601,7 +4601,7 @@ const commandsData = [
   },
   {
     "command": "Find-DscResource",
-    "descriptionHe": "פעולת PowerShell על Dsc Resource",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-DscResource",
     "descriptionEn": "Native PowerShell Command: Find-DscResource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4609,7 +4609,7 @@ const commandsData = [
   },
   {
     "command": "Find-Module",
-    "descriptionHe": "פעולת PowerShell על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-Module",
     "descriptionEn": "Native PowerShell Command: Find-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4617,7 +4617,7 @@ const commandsData = [
   },
   {
     "command": "Find-NetIPsecRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Find-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4625,7 +4625,7 @@ const commandsData = [
   },
   {
     "command": "Find-NetRoute",
-    "descriptionHe": "פעולת PowerShell על Net Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-NetRoute",
     "descriptionEn": "Native PowerShell Command: Find-NetRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4633,7 +4633,7 @@ const commandsData = [
   },
   {
     "command": "Find-RoleCapability",
-    "descriptionHe": "פעולת PowerShell על Role Capability",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-RoleCapability",
     "descriptionEn": "Native PowerShell Command: Find-RoleCapability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4641,7 +4641,7 @@ const commandsData = [
   },
   {
     "command": "Find-Script",
-    "descriptionHe": "פעולת PowerShell על Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-Script",
     "descriptionEn": "Native PowerShell Command: Find-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4649,7 +4649,7 @@ const commandsData = [
   },
   {
     "command": "Flush-EtwTraceSession",
-    "descriptionHe": "פעולת PowerShell על Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Flush-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Flush-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4657,7 +4657,7 @@ const commandsData = [
   },
   {
     "command": "Format-Hex",
-    "descriptionHe": "עיצוב פלט של Hex",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-Hex",
     "descriptionEn": "Native PowerShell Command: Format-Hex",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4665,7 +4665,7 @@ const commandsData = [
   },
   {
     "command": "Format-Volume",
-    "descriptionHe": "עיצוב פלט של Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-Volume",
     "descriptionEn": "Native PowerShell Command: Format-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4673,7 +4673,7 @@ const commandsData = [
   },
   {
     "command": "G:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול G:",
+    "descriptionHe": "פקודת PowerShell מקורית: G:",
     "descriptionEn": "Native PowerShell Command: G:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4681,7 +4681,7 @@ const commandsData = [
   },
   {
     "command": "Get-ADLicenseInfo",
-    "descriptionHe": "קבלת מידע על A D License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ADLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Get-ADLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4689,7 +4689,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppBackgroundTask",
-    "descriptionHe": "קבלת מידע על App Background Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppBackgroundTask",
     "descriptionEn": "Native PowerShell Command: Get-AppBackgroundTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4697,7 +4697,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvVirtualProcess",
-    "descriptionHe": "קבלת מידע על Appv Virtual Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvVirtualProcess",
     "descriptionEn": "Native PowerShell Command: Get-AppvVirtualProcess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4705,7 +4705,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxLastError",
-    "descriptionHe": "קבלת מידע על Appx Last Error",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxLastError",
     "descriptionEn": "Native PowerShell Command: Get-AppxLastError",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4713,7 +4713,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxLog",
-    "descriptionHe": "קבלת מידע על Appx Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxLog",
     "descriptionEn": "Native PowerShell Command: Get-AppxLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4721,7 +4721,7 @@ const commandsData = [
   },
   {
     "command": "Get-AssignedAccess",
-    "descriptionHe": "קבלת מידע על Assigned Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AssignedAccess",
     "descriptionEn": "Native PowerShell Command: Get-AssignedAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4729,7 +4729,7 @@ const commandsData = [
   },
   {
     "command": "Get-AutologgerConfig",
-    "descriptionHe": "קבלת מידע על Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: Get-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4737,7 +4737,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCClientConfiguration",
-    "descriptionHe": "קבלת מידע על B C Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-BCClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4745,7 +4745,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCContentServerConfiguration",
-    "descriptionHe": "קבלת מידע על B C Content Server Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCContentServerConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-BCContentServerConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4753,7 +4753,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCDataCache",
-    "descriptionHe": "קבלת מידע על B C Data Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCDataCache",
     "descriptionEn": "Native PowerShell Command: Get-BCDataCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4761,7 +4761,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCDataCacheExtension",
-    "descriptionHe": "קבלת מידע על B C Data Cache Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCDataCacheExtension",
     "descriptionEn": "Native PowerShell Command: Get-BCDataCacheExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4769,7 +4769,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCHashCache",
-    "descriptionHe": "קבלת מידע על B C Hash Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCHashCache",
     "descriptionEn": "Native PowerShell Command: Get-BCHashCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4777,7 +4777,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCHostedCacheServerConfiguration",
-    "descriptionHe": "קבלת מידע על B C Hosted Cache Server Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCHostedCacheServerConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-BCHostedCacheServerConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4785,7 +4785,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCNetworkConfiguration",
-    "descriptionHe": "קבלת מידע על B C Network Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCNetworkConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-BCNetworkConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4793,7 +4793,7 @@ const commandsData = [
   },
   {
     "command": "Get-BCStatus",
-    "descriptionHe": "קבלת מידע על B C Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BCStatus",
     "descriptionEn": "Native PowerShell Command: Get-BCStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4801,7 +4801,7 @@ const commandsData = [
   },
   {
     "command": "Get-BitLockerVolume",
-    "descriptionHe": "קבלת מידע על Bit Locker Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BitLockerVolume",
     "descriptionEn": "Native PowerShell Command: Get-BitLockerVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4809,7 +4809,7 @@ const commandsData = [
   },
   {
     "command": "Get-ClusteredScheduledTask",
-    "descriptionHe": "קבלת מידע על Clustered Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ClusteredScheduledTask",
     "descriptionEn": "Native PowerShell Command: Get-ClusteredScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4817,7 +4817,7 @@ const commandsData = [
   },
   {
     "command": "Get-DAClientExperienceConfiguration",
-    "descriptionHe": "קבלת מידע על D A Client Experience Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DAClientExperienceConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-DAClientExperienceConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4825,7 +4825,7 @@ const commandsData = [
   },
   {
     "command": "Get-DAConnectionStatus",
-    "descriptionHe": "קבלת מידע על D A Connection Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DAConnectionStatus",
     "descriptionEn": "Native PowerShell Command: Get-DAConnectionStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4833,7 +4833,7 @@ const commandsData = [
   },
   {
     "command": "Get-DAEntryPointTableItem",
-    "descriptionHe": "קבלת מידע על D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: Get-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4841,7 +4841,7 @@ const commandsData = [
   },
   {
     "command": "Get-DedupProperties",
-    "descriptionHe": "קבלת מידע על Dedup Properties",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DedupProperties",
     "descriptionEn": "Native PowerShell Command: Get-DedupProperties",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4849,7 +4849,7 @@ const commandsData = [
   },
   {
     "command": "Get-DeliveryOptimizationPerfSnap",
-    "descriptionHe": "קבלת מידע על Delivery Optimization Perf Snap",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DeliveryOptimizationPerfSnap",
     "descriptionEn": "Native PowerShell Command: Get-DeliveryOptimizationPerfSnap",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4857,7 +4857,7 @@ const commandsData = [
   },
   {
     "command": "Get-DeliveryOptimizationPerfSnapThisMonth",
-    "descriptionHe": "קבלת מידע על Delivery Optimization Perf Snap This Month",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DeliveryOptimizationPerfSnapThisMonth",
     "descriptionEn": "Native PowerShell Command: Get-DeliveryOptimizationPerfSnapThisMonth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4865,7 +4865,7 @@ const commandsData = [
   },
   {
     "command": "Get-DeliveryOptimizationStatus",
-    "descriptionHe": "קבלת מידע על Delivery Optimization Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DeliveryOptimizationStatus",
     "descriptionEn": "Native PowerShell Command: Get-DeliveryOptimizationStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4873,7 +4873,7 @@ const commandsData = [
   },
   {
     "command": "Get-Disk",
-    "descriptionHe": "קבלת מידע על Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Disk",
     "descriptionEn": "Native PowerShell Command: Get-Disk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4881,7 +4881,7 @@ const commandsData = [
   },
   {
     "command": "Get-DiskImage",
-    "descriptionHe": "קבלת מידע על Disk Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DiskImage",
     "descriptionEn": "Native PowerShell Command: Get-DiskImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4889,7 +4889,7 @@ const commandsData = [
   },
   {
     "command": "Get-DiskStorageNodeView",
-    "descriptionHe": "קבלת מידע על Disk Storage Node View",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DiskStorageNodeView",
     "descriptionEn": "Native PowerShell Command: Get-DiskStorageNodeView",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4897,7 +4897,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClient",
-    "descriptionHe": "קבלת מידע על Dns Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClient",
     "descriptionEn": "Native PowerShell Command: Get-DnsClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4905,7 +4905,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientCache",
-    "descriptionHe": "קבלת מידע על Dns Client Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientCache",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4913,7 +4913,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientDohServerAddress",
-    "descriptionHe": "קבלת מידע על Dns Client Doh Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientDohServerAddress",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientDohServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4921,7 +4921,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientGlobalSetting",
-    "descriptionHe": "קבלת מידע על Dns Client Global Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientGlobalSetting",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientGlobalSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4929,7 +4929,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientNrptGlobal",
-    "descriptionHe": "קבלת מידע על Dns Client Nrpt Global",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientNrptGlobal",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientNrptGlobal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4937,7 +4937,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientNrptPolicy",
-    "descriptionHe": "קבלת מידע על Dns Client Nrpt Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientNrptPolicy",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientNrptPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4945,7 +4945,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientNrptRule",
-    "descriptionHe": "קבלת מידע על Dns Client Nrpt Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientNrptRule",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientNrptRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4953,7 +4953,7 @@ const commandsData = [
   },
   {
     "command": "Get-DnsClientServerAddress",
-    "descriptionHe": "קבלת מידע על Dns Client Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DnsClientServerAddress",
     "descriptionEn": "Native PowerShell Command: Get-DnsClientServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4961,7 +4961,7 @@ const commandsData = [
   },
   {
     "command": "Get-DOConfig",
-    "descriptionHe": "קבלת מידע על D O Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DOConfig",
     "descriptionEn": "Native PowerShell Command: Get-DOConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4969,7 +4969,7 @@ const commandsData = [
   },
   {
     "command": "Get-DODownloadMode",
-    "descriptionHe": "קבלת מידע על D O Download Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DODownloadMode",
     "descriptionEn": "Native PowerShell Command: Get-DODownloadMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4977,7 +4977,7 @@ const commandsData = [
   },
   {
     "command": "Get-DOPercentageMaxBackgroundBandwidth",
-    "descriptionHe": "קבלת מידע על D O Percentage Max Background Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DOPercentageMaxBackgroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Get-DOPercentageMaxBackgroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4985,7 +4985,7 @@ const commandsData = [
   },
   {
     "command": "Get-DOPercentageMaxForegroundBandwidth",
-    "descriptionHe": "קבלת מידע על D O Percentage Max Foreground Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DOPercentageMaxForegroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Get-DOPercentageMaxForegroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -4993,7 +4993,7 @@ const commandsData = [
   },
   {
     "command": "Get-DscConfiguration",
-    "descriptionHe": "קבלת מידע על Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5001,7 +5001,7 @@ const commandsData = [
   },
   {
     "command": "Get-DscConfigurationStatus",
-    "descriptionHe": "קבלת מידע על Dsc Configuration Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DscConfigurationStatus",
     "descriptionEn": "Native PowerShell Command: Get-DscConfigurationStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5009,7 +5009,7 @@ const commandsData = [
   },
   {
     "command": "Get-DscLocalConfigurationManager",
-    "descriptionHe": "קבלת מידע על Dsc Local Configuration Manager",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DscLocalConfigurationManager",
     "descriptionEn": "Native PowerShell Command: Get-DscLocalConfigurationManager",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5017,7 +5017,7 @@ const commandsData = [
   },
   {
     "command": "Get-DscResource",
-    "descriptionHe": "קבלת מידע על Dsc Resource",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DscResource",
     "descriptionEn": "Native PowerShell Command: Get-DscResource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5025,7 +5025,7 @@ const commandsData = [
   },
   {
     "command": "Get-Dtc",
-    "descriptionHe": "קבלת מידע על Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Dtc",
     "descriptionEn": "Native PowerShell Command: Get-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5033,7 +5033,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcAdvancedHostSetting",
-    "descriptionHe": "קבלת מידע על Dtc Advanced Host Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcAdvancedHostSetting",
     "descriptionEn": "Native PowerShell Command: Get-DtcAdvancedHostSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5041,7 +5041,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcAdvancedSetting",
-    "descriptionHe": "קבלת מידע על Dtc Advanced Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcAdvancedSetting",
     "descriptionEn": "Native PowerShell Command: Get-DtcAdvancedSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5049,7 +5049,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcClusterDefault",
-    "descriptionHe": "קבלת מידע על Dtc Cluster Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcClusterDefault",
     "descriptionEn": "Native PowerShell Command: Get-DtcClusterDefault",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5057,7 +5057,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcClusterTMMapping",
-    "descriptionHe": "קבלת מידע על Dtc Cluster T M Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcClusterTMMapping",
     "descriptionEn": "Native PowerShell Command: Get-DtcClusterTMMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5065,7 +5065,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcDefault",
-    "descriptionHe": "קבלת מידע על Dtc Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcDefault",
     "descriptionEn": "Native PowerShell Command: Get-DtcDefault",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5073,7 +5073,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcLog",
-    "descriptionHe": "קבלת מידע על Dtc Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcLog",
     "descriptionEn": "Native PowerShell Command: Get-DtcLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5081,7 +5081,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcNetworkSetting",
-    "descriptionHe": "קבלת מידע על Dtc Network Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcNetworkSetting",
     "descriptionEn": "Native PowerShell Command: Get-DtcNetworkSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5089,7 +5089,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcTransaction",
-    "descriptionHe": "קבלת מידע על Dtc Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcTransaction",
     "descriptionEn": "Native PowerShell Command: Get-DtcTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5097,7 +5097,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcTransactionsStatistics",
-    "descriptionHe": "קבלת מידע על Dtc Transactions Statistics",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcTransactionsStatistics",
     "descriptionEn": "Native PowerShell Command: Get-DtcTransactionsStatistics",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5105,7 +5105,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcTransactionsTraceSession",
-    "descriptionHe": "קבלת מידע על Dtc Transactions Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcTransactionsTraceSession",
     "descriptionEn": "Native PowerShell Command: Get-DtcTransactionsTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5113,7 +5113,7 @@ const commandsData = [
   },
   {
     "command": "Get-DtcTransactionsTraceSetting",
-    "descriptionHe": "קבלת מידע על Dtc Transactions Trace Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DtcTransactionsTraceSetting",
     "descriptionEn": "Native PowerShell Command: Get-DtcTransactionsTraceSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5121,7 +5121,7 @@ const commandsData = [
   },
   {
     "command": "Get-EtwTraceProvider",
-    "descriptionHe": "קבלת מידע על Etw Trace Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-EtwTraceProvider",
     "descriptionEn": "Native PowerShell Command: Get-EtwTraceProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5129,7 +5129,7 @@ const commandsData = [
   },
   {
     "command": "Get-EtwTraceSession",
-    "descriptionHe": "קבלת מידע על Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Get-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5137,7 +5137,7 @@ const commandsData = [
   },
   {
     "command": "Get-FileHash",
-    "descriptionHe": "קבלת מידע על File Hash",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FileHash",
     "descriptionEn": "Native PowerShell Command: Get-FileHash",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5145,7 +5145,7 @@ const commandsData = [
   },
   {
     "command": "Get-FileIntegrity",
-    "descriptionHe": "קבלת מידע על File Integrity",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FileIntegrity",
     "descriptionEn": "Native PowerShell Command: Get-FileIntegrity",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5153,7 +5153,7 @@ const commandsData = [
   },
   {
     "command": "Get-FileShare",
-    "descriptionHe": "קבלת מידע על File Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FileShare",
     "descriptionEn": "Native PowerShell Command: Get-FileShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5161,7 +5161,7 @@ const commandsData = [
   },
   {
     "command": "Get-FileShareAccessControlEntry",
-    "descriptionHe": "קבלת מידע על File Share Access Control Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FileShareAccessControlEntry",
     "descriptionEn": "Native PowerShell Command: Get-FileShareAccessControlEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5169,7 +5169,7 @@ const commandsData = [
   },
   {
     "command": "Get-FileStorageTier",
-    "descriptionHe": "קבלת מידע על File Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FileStorageTier",
     "descriptionEn": "Native PowerShell Command: Get-FileStorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5177,7 +5177,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsClientConfiguration",
-    "descriptionHe": "קבלת מידע על Hgs Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-HgsClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5185,7 +5185,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsClientHostKey",
-    "descriptionHe": "קבלת מידע על Hgs Client Host Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsClientHostKey",
     "descriptionEn": "Native PowerShell Command: Get-HgsClientHostKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5193,7 +5193,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsGuardian",
-    "descriptionHe": "קבלת מידע על Hgs Guardian",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsGuardian",
     "descriptionEn": "Native PowerShell Command: Get-HgsGuardian",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5201,7 +5201,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsEndpoint",
-    "descriptionHe": "קבלת מידע על Hns Endpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsEndpoint",
     "descriptionEn": "Native PowerShell Command: Get-HnsEndpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5209,7 +5209,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsEndpointAddresses",
-    "descriptionHe": "קבלת מידע על Hns Endpoint Addresses",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsEndpointAddresses",
     "descriptionEn": "Native PowerShell Command: Get-HnsEndpointAddresses",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5217,7 +5217,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsEndpointStats",
-    "descriptionHe": "קבלת מידע על Hns Endpoint Stats",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsEndpointStats",
     "descriptionEn": "Native PowerShell Command: Get-HnsEndpointStats",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5225,7 +5225,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsNamespace",
-    "descriptionHe": "קבלת מידע על Hns Namespace",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsNamespace",
     "descriptionEn": "Native PowerShell Command: Get-HnsNamespace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5233,7 +5233,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsNetwork",
-    "descriptionHe": "קבלת מידע על Hns Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsNetwork",
     "descriptionEn": "Native PowerShell Command: Get-HnsNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5241,7 +5241,7 @@ const commandsData = [
   },
   {
     "command": "Get-HnsPolicyList",
-    "descriptionHe": "קבלת מידע על Hns Policy List",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HnsPolicyList",
     "descriptionEn": "Native PowerShell Command: Get-HnsPolicyList",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5249,7 +5249,7 @@ const commandsData = [
   },
   {
     "command": "Get-InitiatorId",
-    "descriptionHe": "קבלת מידע על Initiator Id",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-InitiatorId",
     "descriptionEn": "Native PowerShell Command: Get-InitiatorId",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5257,7 +5257,7 @@ const commandsData = [
   },
   {
     "command": "Get-InitiatorPort",
-    "descriptionHe": "קבלת מידע על Initiator Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-InitiatorPort",
     "descriptionEn": "Native PowerShell Command: Get-InitiatorPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5265,7 +5265,7 @@ const commandsData = [
   },
   {
     "command": "Get-InstalledModule",
-    "descriptionHe": "קבלת מידע על Installed Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-InstalledModule",
     "descriptionEn": "Native PowerShell Command: Get-InstalledModule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5273,7 +5273,7 @@ const commandsData = [
   },
   {
     "command": "Get-InstalledScript",
-    "descriptionHe": "קבלת מידע על Installed Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-InstalledScript",
     "descriptionEn": "Native PowerShell Command: Get-InstalledScript",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5281,7 +5281,7 @@ const commandsData = [
   },
   {
     "command": "Get-IscsiConnection",
-    "descriptionHe": "קבלת מידע על Iscsi Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-IscsiConnection",
     "descriptionEn": "Native PowerShell Command: Get-IscsiConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5289,7 +5289,7 @@ const commandsData = [
   },
   {
     "command": "Get-IscsiSession",
-    "descriptionHe": "קבלת מידע על Iscsi Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-IscsiSession",
     "descriptionEn": "Native PowerShell Command: Get-IscsiSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5297,7 +5297,7 @@ const commandsData = [
   },
   {
     "command": "Get-IscsiTarget",
-    "descriptionHe": "קבלת מידע על Iscsi Target",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-IscsiTarget",
     "descriptionEn": "Native PowerShell Command: Get-IscsiTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5305,7 +5305,7 @@ const commandsData = [
   },
   {
     "command": "Get-IscsiTargetPortal",
-    "descriptionHe": "קבלת מידע על Iscsi Target Portal",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-IscsiTargetPortal",
     "descriptionEn": "Native PowerShell Command: Get-IscsiTargetPortal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5313,7 +5313,7 @@ const commandsData = [
   },
   {
     "command": "Get-IseSnippet",
-    "descriptionHe": "קבלת מידע על Ise Snippet",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-IseSnippet",
     "descriptionEn": "Native PowerShell Command: Get-IseSnippet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5321,7 +5321,7 @@ const commandsData = [
   },
   {
     "command": "Get-KmsLicenseInfo",
-    "descriptionHe": "קבלת מידע על Kms License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-KmsLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Get-KmsLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5329,7 +5329,7 @@ const commandsData = [
   },
   {
     "command": "Get-LapsAADPassword",
-    "descriptionHe": "קבלת מידע על Laps A A D Password",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LapsAADPassword",
     "descriptionEn": "Native PowerShell Command: Get-LapsAADPassword",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5337,7 +5337,7 @@ const commandsData = [
   },
   {
     "command": "Get-LapsDiagnostics",
-    "descriptionHe": "קבלת מידע על Laps Diagnostics",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LapsDiagnostics",
     "descriptionEn": "Native PowerShell Command: Get-LapsDiagnostics",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5345,7 +5345,7 @@ const commandsData = [
   },
   {
     "command": "Get-LogProperties",
-    "descriptionHe": "קבלת מידע על Log Properties",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LogProperties",
     "descriptionEn": "Native PowerShell Command: Get-LogProperties",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5353,7 +5353,7 @@ const commandsData = [
   },
   {
     "command": "Get-MaskingSet",
-    "descriptionHe": "קבלת מידע על Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MaskingSet",
     "descriptionEn": "Native PowerShell Command: Get-MaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5361,7 +5361,7 @@ const commandsData = [
   },
   {
     "command": "Get-MMAgent",
-    "descriptionHe": "קבלת מידע על M M Agent",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MMAgent",
     "descriptionEn": "Native PowerShell Command: Get-MMAgent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5369,7 +5369,7 @@ const commandsData = [
   },
   {
     "command": "Get-MockDynamicParameters",
-    "descriptionHe": "קבלת מידע על Mock Dynamic Parameters",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MockDynamicParameters",
     "descriptionEn": "Native PowerShell Command: Get-MockDynamicParameters",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5377,7 +5377,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpBehavioralNetworkBlockingRules",
-    "descriptionHe": "קבלת מידע על Mp Behavioral Network Blocking Rules",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpBehavioralNetworkBlockingRules",
     "descriptionEn": "Native PowerShell Command: Get-MpBehavioralNetworkBlockingRules",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5385,7 +5385,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpComputerStatus",
-    "descriptionHe": "קבלת מידע על Mp Computer Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpComputerStatus",
     "descriptionEn": "Native PowerShell Command: Get-MpComputerStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5393,7 +5393,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpPerformanceReport",
-    "descriptionHe": "קבלת מידע על Mp Performance Report",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpPerformanceReport",
     "descriptionEn": "Native PowerShell Command: Get-MpPerformanceReport",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5401,7 +5401,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpPreference",
-    "descriptionHe": "קבלת מידע על Mp Preference",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpPreference",
     "descriptionEn": "Native PowerShell Command: Get-MpPreference",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5409,7 +5409,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpThreat",
-    "descriptionHe": "קבלת מידע על Mp Threat",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpThreat",
     "descriptionEn": "Native PowerShell Command: Get-MpThreat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5417,7 +5417,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpThreatCatalog",
-    "descriptionHe": "קבלת מידע על Mp Threat Catalog",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpThreatCatalog",
     "descriptionEn": "Native PowerShell Command: Get-MpThreatCatalog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5425,7 +5425,7 @@ const commandsData = [
   },
   {
     "command": "Get-MpThreatDetection",
-    "descriptionHe": "קבלת מידע על Mp Threat Detection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-MpThreatDetection",
     "descriptionEn": "Native PowerShell Command: Get-MpThreatDetection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5433,7 +5433,7 @@ const commandsData = [
   },
   {
     "command": "Get-NCSIPolicyConfiguration",
-    "descriptionHe": "קבלת מידע על N C S I Policy Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NCSIPolicyConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NCSIPolicyConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5441,7 +5441,7 @@ const commandsData = [
   },
   {
     "command": "Get-Net6to4Configuration",
-    "descriptionHe": "קבלת מידע על Net6to4 Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Net6to4Configuration",
     "descriptionEn": "Native PowerShell Command: Get-Net6to4Configuration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5449,7 +5449,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapter",
-    "descriptionHe": "קבלת מידע על Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5457,7 +5457,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterAdvancedProperty",
-    "descriptionHe": "קבלת מידע על Net Adapter Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5465,7 +5465,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterBinding",
-    "descriptionHe": "קבלת מידע על Net Adapter Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterBinding",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5473,7 +5473,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterChecksumOffload",
-    "descriptionHe": "קבלת מידע על Net Adapter Checksum Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterChecksumOffload",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterChecksumOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5481,7 +5481,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterDataPathConfiguration",
-    "descriptionHe": "קבלת מידע על Net Adapter Data Path Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterDataPathConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterDataPathConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5489,7 +5489,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterEncapsulatedPacketTaskOffload",
-    "descriptionHe": "קבלת מידע על Net Adapter Encapsulated Packet Task Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterEncapsulatedPacketTaskOffload",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterEncapsulatedPacketTaskOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5497,7 +5497,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterHardwareInfo",
-    "descriptionHe": "קבלת מידע על Net Adapter Hardware Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterHardwareInfo",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterHardwareInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5505,7 +5505,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterIPsecOffload",
-    "descriptionHe": "קבלת מידע על Net Adapter I Psec Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterIPsecOffload",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterIPsecOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5513,7 +5513,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterLso",
-    "descriptionHe": "קבלת מידע על Net Adapter Lso",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterLso",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterLso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5521,7 +5521,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterPacketDirect",
-    "descriptionHe": "קבלת מידע על Net Adapter Packet Direct",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterPacketDirect",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterPacketDirect",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5529,7 +5529,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterPowerManagement",
-    "descriptionHe": "קבלת מידע על Net Adapter Power Management",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterPowerManagement",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterPowerManagement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5537,7 +5537,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterQos",
-    "descriptionHe": "קבלת מידע על Net Adapter Qos",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterQos",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterQos",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5545,7 +5545,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterRdma",
-    "descriptionHe": "קבלת מידע על Net Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5553,7 +5553,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterRsc",
-    "descriptionHe": "קבלת מידע על Net Adapter Rsc",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterRsc",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterRsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5561,7 +5561,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterRss",
-    "descriptionHe": "קבלת מידע על Net Adapter Rss",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterRss",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterRss",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5569,7 +5569,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterSriov",
-    "descriptionHe": "קבלת מידע על Net Adapter Sriov",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterSriov",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterSriov",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5577,7 +5577,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterSriovVf",
-    "descriptionHe": "קבלת מידע על Net Adapter Sriov Vf",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterSriovVf",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterSriovVf",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5585,7 +5585,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterStatistics",
-    "descriptionHe": "קבלת מידע על Net Adapter Statistics",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterStatistics",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterStatistics",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5593,7 +5593,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterUro",
-    "descriptionHe": "קבלת מידע על Net Adapter Uro",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterUro",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterUro",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5601,7 +5601,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterUso",
-    "descriptionHe": "קבלת מידע על Net Adapter Uso",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterUso",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterUso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5609,7 +5609,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterVmq",
-    "descriptionHe": "קבלת מידע על Net Adapter Vmq",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterVmq",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterVmq",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5617,7 +5617,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterVMQQueue",
-    "descriptionHe": "קבלת מידע על Net Adapter V M Q Queue",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterVMQQueue",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterVMQQueue",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5625,7 +5625,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetAdapterVPort",
-    "descriptionHe": "קבלת מידע על Net Adapter V Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetAdapterVPort",
     "descriptionEn": "Native PowerShell Command: Get-NetAdapterVPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5633,7 +5633,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetCompartment",
-    "descriptionHe": "קבלת מידע על Net Compartment",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetCompartment",
     "descriptionEn": "Native PowerShell Command: Get-NetCompartment",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5641,7 +5641,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetConnectionProfile",
-    "descriptionHe": "קבלת מידע על Net Connection Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetConnectionProfile",
     "descriptionEn": "Native PowerShell Command: Get-NetConnectionProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5649,7 +5649,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetDnsTransitionConfiguration",
-    "descriptionHe": "קבלת מידע על Net Dns Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetDnsTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetDnsTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5657,7 +5657,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetDnsTransitionMonitoring",
-    "descriptionHe": "קבלת מידע על Net Dns Transition Monitoring",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetDnsTransitionMonitoring",
     "descriptionEn": "Native PowerShell Command: Get-NetDnsTransitionMonitoring",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5665,7 +5665,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventNetworkAdapter",
-    "descriptionHe": "קבלת מידע על Net Event Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Get-NetEventNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5673,7 +5673,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventPacketCaptureProvider",
-    "descriptionHe": "קבלת מידע על Net Event Packet Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventPacketCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Get-NetEventPacketCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5681,7 +5681,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventProvider",
-    "descriptionHe": "קבלת מידע על Net Event Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventProvider",
     "descriptionEn": "Native PowerShell Command: Get-NetEventProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5689,7 +5689,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventSession",
-    "descriptionHe": "קבלת מידע על Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventSession",
     "descriptionEn": "Native PowerShell Command: Get-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5697,7 +5697,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventVFPProvider",
-    "descriptionHe": "קבלת מידע על Net Event V F P Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventVFPProvider",
     "descriptionEn": "Native PowerShell Command: Get-NetEventVFPProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5705,7 +5705,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventVmNetworkAdapter",
-    "descriptionHe": "קבלת מידע על Net Event Vm Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventVmNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Get-NetEventVmNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5713,7 +5713,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventVmSwitch",
-    "descriptionHe": "קבלת מידע על Net Event Vm Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventVmSwitch",
     "descriptionEn": "Native PowerShell Command: Get-NetEventVmSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5721,7 +5721,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventVmSwitchProvider",
-    "descriptionHe": "קבלת מידע על Net Event Vm Switch Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventVmSwitchProvider",
     "descriptionEn": "Native PowerShell Command: Get-NetEventVmSwitchProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5729,7 +5729,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetEventWFPCaptureProvider",
-    "descriptionHe": "קבלת מידע על Net Event W F P Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetEventWFPCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Get-NetEventWFPCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5737,7 +5737,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallAddressFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Address Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallAddressFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallAddressFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5745,7 +5745,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallApplicationFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Application Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallApplicationFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallApplicationFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5753,7 +5753,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallDynamicKeywordAddress",
-    "descriptionHe": "קבלת מידע על Net Firewall Dynamic Keyword Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallDynamicKeywordAddress",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallDynamicKeywordAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5761,7 +5761,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallHyperVPort",
-    "descriptionHe": "קבלת מידע על Net Firewall Hyper V Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallHyperVPort",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallHyperVPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5769,7 +5769,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallHyperVProfile",
-    "descriptionHe": "קבלת מידע על Net Firewall Hyper V Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallHyperVProfile",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallHyperVProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5777,7 +5777,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallHyperVRule",
-    "descriptionHe": "קבלת מידע על Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5785,7 +5785,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallHyperVVMCreator",
-    "descriptionHe": "קבלת מידע על Net Firewall Hyper V V M Creator",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallHyperVVMCreator",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallHyperVVMCreator",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5793,7 +5793,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallHyperVVMSetting",
-    "descriptionHe": "קבלת מידע על Net Firewall Hyper V V M Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallHyperVVMSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallHyperVVMSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5801,7 +5801,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallInterfaceFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Interface Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallInterfaceFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallInterfaceFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5809,7 +5809,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallInterfaceTypeFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Interface Type Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallInterfaceTypeFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallInterfaceTypeFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5817,7 +5817,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallPortFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Port Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallPortFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallPortFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5825,7 +5825,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallProfile",
-    "descriptionHe": "קבלת מידע על Net Firewall Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallProfile",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5833,7 +5833,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallRule",
-    "descriptionHe": "קבלת מידע על Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5841,7 +5841,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallSecurityFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Security Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallSecurityFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallSecurityFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5849,7 +5849,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallServiceFilter",
-    "descriptionHe": "קבלת מידע על Net Firewall Service Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallServiceFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallServiceFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5857,7 +5857,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetFirewallSetting",
-    "descriptionHe": "קבלת מידע על Net Firewall Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetFirewallSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetFirewallSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5865,7 +5865,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPAddress",
-    "descriptionHe": "קבלת מידע על Net I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPAddress",
     "descriptionEn": "Native PowerShell Command: Get-NetIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5873,7 +5873,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPConfiguration",
-    "descriptionHe": "קבלת מידע על Net I P Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetIPConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5881,7 +5881,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPHttpsConfiguration",
-    "descriptionHe": "קבלת מידע על Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5889,7 +5889,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPHttpsState",
-    "descriptionHe": "קבלת מידע על Net I P Https State",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPHttpsState",
     "descriptionEn": "Native PowerShell Command: Get-NetIPHttpsState",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5897,7 +5897,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPInterface",
-    "descriptionHe": "קבלת מידע על Net I P Interface",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPInterface",
     "descriptionEn": "Native PowerShell Command: Get-NetIPInterface",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5905,7 +5905,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecDospSetting",
-    "descriptionHe": "קבלת מידע על Net I Psec Dosp Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecDospSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecDospSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5913,7 +5913,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "קבלת מידע על Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5921,7 +5921,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecMainModeRule",
-    "descriptionHe": "קבלת מידע על Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5929,7 +5929,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecMainModeSA",
-    "descriptionHe": "קבלת מידע על Net I Psec Main Mode S A",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecMainModeSA",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecMainModeSA",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5937,7 +5937,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecPhase1AuthSet",
-    "descriptionHe": "קבלת מידע על Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5945,7 +5945,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecPhase2AuthSet",
-    "descriptionHe": "קבלת מידע על Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5953,7 +5953,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "קבלת מידע על Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5961,7 +5961,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecQuickModeSA",
-    "descriptionHe": "קבלת מידע על Net I Psec Quick Mode S A",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecQuickModeSA",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecQuickModeSA",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5969,7 +5969,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPsecRule",
-    "descriptionHe": "קבלת מידע על Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Get-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5977,7 +5977,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPv4Protocol",
-    "descriptionHe": "קבלת מידע על Net I Pv4 Protocol",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPv4Protocol",
     "descriptionEn": "Native PowerShell Command: Get-NetIPv4Protocol",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5985,7 +5985,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIPv6Protocol",
-    "descriptionHe": "קבלת מידע על Net I Pv6 Protocol",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIPv6Protocol",
     "descriptionEn": "Native PowerShell Command: Get-NetIPv6Protocol",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -5993,7 +5993,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetIsatapConfiguration",
-    "descriptionHe": "קבלת מידע על Net Isatap Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetIsatapConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetIsatapConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6001,7 +6001,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetLbfoTeam",
-    "descriptionHe": "קבלת מידע על Net Lbfo Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetLbfoTeam",
     "descriptionEn": "Native PowerShell Command: Get-NetLbfoTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6009,7 +6009,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetLbfoTeamMember",
-    "descriptionHe": "קבלת מידע על Net Lbfo Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetLbfoTeamMember",
     "descriptionEn": "Native PowerShell Command: Get-NetLbfoTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6017,7 +6017,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetLbfoTeamNic",
-    "descriptionHe": "קבלת מידע על Net Lbfo Team Nic",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetLbfoTeamNic",
     "descriptionEn": "Native PowerShell Command: Get-NetLbfoTeamNic",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6025,7 +6025,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNat",
-    "descriptionHe": "קבלת מידע על Net Nat",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNat",
     "descriptionEn": "Native PowerShell Command: Get-NetNat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6033,7 +6033,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatExternalAddress",
-    "descriptionHe": "קבלת מידע על Net Nat External Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatExternalAddress",
     "descriptionEn": "Native PowerShell Command: Get-NetNatExternalAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6041,7 +6041,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatGlobal",
-    "descriptionHe": "קבלת מידע על Net Nat Global",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatGlobal",
     "descriptionEn": "Native PowerShell Command: Get-NetNatGlobal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6049,7 +6049,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatSession",
-    "descriptionHe": "קבלת מידע על Net Nat Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatSession",
     "descriptionEn": "Native PowerShell Command: Get-NetNatSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6057,7 +6057,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatStaticMapping",
-    "descriptionHe": "קבלת מידע על Net Nat Static Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatStaticMapping",
     "descriptionEn": "Native PowerShell Command: Get-NetNatStaticMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6065,7 +6065,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatTransitionConfiguration",
-    "descriptionHe": "קבלת מידע על Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6073,7 +6073,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNatTransitionMonitoring",
-    "descriptionHe": "קבלת מידע על Net Nat Transition Monitoring",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNatTransitionMonitoring",
     "descriptionEn": "Native PowerShell Command: Get-NetNatTransitionMonitoring",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6081,7 +6081,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetNeighbor",
-    "descriptionHe": "קבלת מידע על Net Neighbor",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetNeighbor",
     "descriptionEn": "Native PowerShell Command: Get-NetNeighbor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6089,7 +6089,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetOffloadGlobalSetting",
-    "descriptionHe": "קבלת מידע על Net Offload Global Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetOffloadGlobalSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetOffloadGlobalSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6097,7 +6097,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetPrefixPolicy",
-    "descriptionHe": "קבלת מידע על Net Prefix Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetPrefixPolicy",
     "descriptionEn": "Native PowerShell Command: Get-NetPrefixPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6105,7 +6105,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetQosPolicy",
-    "descriptionHe": "קבלת מידע על Net Qos Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetQosPolicy",
     "descriptionEn": "Native PowerShell Command: Get-NetQosPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6113,7 +6113,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetRoute",
-    "descriptionHe": "קבלת מידע על Net Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetRoute",
     "descriptionEn": "Native PowerShell Command: Get-NetRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6121,7 +6121,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetSwitchTeam",
-    "descriptionHe": "קבלת מידע על Net Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetSwitchTeam",
     "descriptionEn": "Native PowerShell Command: Get-NetSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6129,7 +6129,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetSwitchTeamMember",
-    "descriptionHe": "קבלת מידע על Net Switch Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetSwitchTeamMember",
     "descriptionEn": "Native PowerShell Command: Get-NetSwitchTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6137,7 +6137,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetTCPConnection",
-    "descriptionHe": "קבלת מידע על Net T C P Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetTCPConnection",
     "descriptionEn": "Native PowerShell Command: Get-NetTCPConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6145,7 +6145,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetTCPSetting",
-    "descriptionHe": "קבלת מידע על Net T C P Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetTCPSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetTCPSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6153,7 +6153,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetTeredoConfiguration",
-    "descriptionHe": "קבלת מידע על Net Teredo Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetTeredoConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-NetTeredoConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6161,7 +6161,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetTeredoState",
-    "descriptionHe": "קבלת מידע על Net Teredo State",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetTeredoState",
     "descriptionEn": "Native PowerShell Command: Get-NetTeredoState",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6169,7 +6169,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetTransportFilter",
-    "descriptionHe": "קבלת מידע על Net Transport Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetTransportFilter",
     "descriptionEn": "Native PowerShell Command: Get-NetTransportFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6177,7 +6177,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetUDPEndpoint",
-    "descriptionHe": "קבלת מידע על Net U D P Endpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetUDPEndpoint",
     "descriptionEn": "Native PowerShell Command: Get-NetUDPEndpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6185,7 +6185,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetUDPSetting",
-    "descriptionHe": "קבלת מידע על Net U D P Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetUDPSetting",
     "descriptionEn": "Native PowerShell Command: Get-NetUDPSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6193,7 +6193,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetView",
-    "descriptionHe": "קבלת מידע על Net View",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetView",
     "descriptionEn": "Native PowerShell Command: Get-NetView",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6201,7 +6201,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetworkSwitchEthernetPort",
-    "descriptionHe": "קבלת מידע על Network Switch Ethernet Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetworkSwitchEthernetPort",
     "descriptionEn": "Native PowerShell Command: Get-NetworkSwitchEthernetPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6209,7 +6209,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetworkSwitchFeature",
-    "descriptionHe": "קבלת מידע על Network Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetworkSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Get-NetworkSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6217,7 +6217,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetworkSwitchGlobalData",
-    "descriptionHe": "קבלת מידע על Network Switch Global Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetworkSwitchGlobalData",
     "descriptionEn": "Native PowerShell Command: Get-NetworkSwitchGlobalData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6225,7 +6225,7 @@ const commandsData = [
   },
   {
     "command": "Get-NetworkSwitchVlan",
-    "descriptionHe": "קבלת מידע על Network Switch Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NetworkSwitchVlan",
     "descriptionEn": "Native PowerShell Command: Get-NetworkSwitchVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6233,7 +6233,7 @@ const commandsData = [
   },
   {
     "command": "Get-OdbcDriver",
-    "descriptionHe": "קבלת מידע על Odbc Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OdbcDriver",
     "descriptionEn": "Native PowerShell Command: Get-OdbcDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6241,7 +6241,7 @@ const commandsData = [
   },
   {
     "command": "Get-OdbcDsn",
-    "descriptionHe": "קבלת מידע על Odbc Dsn",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OdbcDsn",
     "descriptionEn": "Native PowerShell Command: Get-OdbcDsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6249,7 +6249,7 @@ const commandsData = [
   },
   {
     "command": "Get-OdbcPerfCounter",
-    "descriptionHe": "קבלת מידע על Odbc Perf Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OdbcPerfCounter",
     "descriptionEn": "Native PowerShell Command: Get-OdbcPerfCounter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6257,7 +6257,7 @@ const commandsData = [
   },
   {
     "command": "Get-OffloadDataTransferSetting",
-    "descriptionHe": "קבלת מידע על Offload Data Transfer Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OffloadDataTransferSetting",
     "descriptionEn": "Native PowerShell Command: Get-OffloadDataTransferSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6265,7 +6265,7 @@ const commandsData = [
   },
   {
     "command": "Get-OperationValidation",
-    "descriptionHe": "קבלת מידע על Operation Validation",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OperationValidation",
     "descriptionEn": "Native PowerShell Command: Get-OperationValidation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6273,7 +6273,7 @@ const commandsData = [
   },
   {
     "command": "Get-OSLicenseInfo",
-    "descriptionHe": "קבלת מידע על O S License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OSLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Get-OSLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6281,7 +6281,7 @@ const commandsData = [
   },
   {
     "command": "Get-Partition",
-    "descriptionHe": "קבלת מידע על Partition",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Partition",
     "descriptionEn": "Native PowerShell Command: Get-Partition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6289,7 +6289,7 @@ const commandsData = [
   },
   {
     "command": "Get-PartitionSupportedSize",
-    "descriptionHe": "קבלת מידע על Partition Supported Size",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PartitionSupportedSize",
     "descriptionEn": "Native PowerShell Command: Get-PartitionSupportedSize",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6297,7 +6297,7 @@ const commandsData = [
   },
   {
     "command": "Get-PcsvDevice",
-    "descriptionHe": "קבלת מידע על Pcsv Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PcsvDevice",
     "descriptionEn": "Native PowerShell Command: Get-PcsvDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6305,7 +6305,7 @@ const commandsData = [
   },
   {
     "command": "Get-PcsvDeviceLog",
-    "descriptionHe": "קבלת מידע על Pcsv Device Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PcsvDeviceLog",
     "descriptionEn": "Native PowerShell Command: Get-PcsvDeviceLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6313,7 +6313,7 @@ const commandsData = [
   },
   {
     "command": "Get-PhysicalDisk",
-    "descriptionHe": "קבלת מידע על Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Get-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6321,7 +6321,7 @@ const commandsData = [
   },
   {
     "command": "Get-PhysicalDiskStorageNodeView",
-    "descriptionHe": "קבלת מידע על Physical Disk Storage Node View",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PhysicalDiskStorageNodeView",
     "descriptionEn": "Native PowerShell Command: Get-PhysicalDiskStorageNodeView",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6329,7 +6329,7 @@ const commandsData = [
   },
   {
     "command": "Get-PhysicalExtent",
-    "descriptionHe": "קבלת מידע על Physical Extent",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PhysicalExtent",
     "descriptionEn": "Native PowerShell Command: Get-PhysicalExtent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6337,7 +6337,7 @@ const commandsData = [
   },
   {
     "command": "Get-PhysicalExtentAssociation",
-    "descriptionHe": "קבלת מידע על Physical Extent Association",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PhysicalExtentAssociation",
     "descriptionEn": "Native PowerShell Command: Get-PhysicalExtentAssociation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6345,7 +6345,7 @@ const commandsData = [
   },
   {
     "command": "Get-PnpDevice",
-    "descriptionHe": "קבלת מידע על Pnp Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PnpDevice",
     "descriptionEn": "Native PowerShell Command: Get-PnpDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6353,7 +6353,7 @@ const commandsData = [
   },
   {
     "command": "Get-PnpDeviceProperty",
-    "descriptionHe": "קבלת מידע על Pnp Device Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PnpDeviceProperty",
     "descriptionEn": "Native PowerShell Command: Get-PnpDeviceProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6361,7 +6361,7 @@ const commandsData = [
   },
   {
     "command": "Get-PrintConfiguration",
-    "descriptionHe": "קבלת מידע על Print Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PrintConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-PrintConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6369,7 +6369,7 @@ const commandsData = [
   },
   {
     "command": "Get-Printer",
-    "descriptionHe": "קבלת מידע על Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Printer",
     "descriptionEn": "Native PowerShell Command: Get-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6377,7 +6377,7 @@ const commandsData = [
   },
   {
     "command": "Get-PrinterDriver",
-    "descriptionHe": "קבלת מידע על Printer Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PrinterDriver",
     "descriptionEn": "Native PowerShell Command: Get-PrinterDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6385,7 +6385,7 @@ const commandsData = [
   },
   {
     "command": "Get-PrinterPort",
-    "descriptionHe": "קבלת מידע על Printer Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PrinterPort",
     "descriptionEn": "Native PowerShell Command: Get-PrinterPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6393,7 +6393,7 @@ const commandsData = [
   },
   {
     "command": "Get-PrinterProperty",
-    "descriptionHe": "קבלת מידע על Printer Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PrinterProperty",
     "descriptionEn": "Native PowerShell Command: Get-PrinterProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6401,7 +6401,7 @@ const commandsData = [
   },
   {
     "command": "Get-PrintJob",
-    "descriptionHe": "קבלת מידע על Print Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PrintJob",
     "descriptionEn": "Native PowerShell Command: Get-PrintJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6409,7 +6409,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSRepository",
-    "descriptionHe": "קבלת מידע על P S Repository",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSRepository",
     "descriptionEn": "Native PowerShell Command: Get-PSRepository",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6417,7 +6417,7 @@ const commandsData = [
   },
   {
     "command": "Get-ResiliencySetting",
-    "descriptionHe": "קבלת מידע על Resiliency Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ResiliencySetting",
     "descriptionEn": "Native PowerShell Command: Get-ResiliencySetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6425,7 +6425,7 @@ const commandsData = [
   },
   {
     "command": "Get-ScheduledTask",
-    "descriptionHe": "קבלת מידע על Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Get-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6433,7 +6433,7 @@ const commandsData = [
   },
   {
     "command": "Get-ScheduledTaskInfo",
-    "descriptionHe": "קבלת מידע על Scheduled Task Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ScheduledTaskInfo",
     "descriptionEn": "Native PowerShell Command: Get-ScheduledTaskInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6441,7 +6441,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbBandWidthLimit",
-    "descriptionHe": "קבלת מידע על Smb Band Width Limit",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbBandWidthLimit",
     "descriptionEn": "Native PowerShell Command: Get-SmbBandWidthLimit",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6449,7 +6449,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbClientAccessToServer",
-    "descriptionHe": "קבלת מידע על Smb Client Access To Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbClientAccessToServer",
     "descriptionEn": "Native PowerShell Command: Get-SmbClientAccessToServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6457,7 +6457,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbClientCertificateMapping",
-    "descriptionHe": "קבלת מידע על Smb Client Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbClientCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Get-SmbClientCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6465,7 +6465,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbClientConfiguration",
-    "descriptionHe": "קבלת מידע על Smb Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-SmbClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6473,7 +6473,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbClientNetworkInterface",
-    "descriptionHe": "קבלת מידע על Smb Client Network Interface",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbClientNetworkInterface",
     "descriptionEn": "Native PowerShell Command: Get-SmbClientNetworkInterface",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6481,7 +6481,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbConnection",
-    "descriptionHe": "קבלת מידע על Smb Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbConnection",
     "descriptionEn": "Native PowerShell Command: Get-SmbConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6489,7 +6489,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbDelegation",
-    "descriptionHe": "קבלת מידע על Smb Delegation",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbDelegation",
     "descriptionEn": "Native PowerShell Command: Get-SmbDelegation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6497,7 +6497,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbGlobalMapping",
-    "descriptionHe": "קבלת מידע על Smb Global Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbGlobalMapping",
     "descriptionEn": "Native PowerShell Command: Get-SmbGlobalMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6505,7 +6505,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbMapping",
-    "descriptionHe": "קבלת מידע על Smb Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbMapping",
     "descriptionEn": "Native PowerShell Command: Get-SmbMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6513,7 +6513,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbMultichannelConnection",
-    "descriptionHe": "קבלת מידע על Smb Multichannel Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbMultichannelConnection",
     "descriptionEn": "Native PowerShell Command: Get-SmbMultichannelConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6521,7 +6521,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbMultichannelConstraint",
-    "descriptionHe": "קבלת מידע על Smb Multichannel Constraint",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbMultichannelConstraint",
     "descriptionEn": "Native PowerShell Command: Get-SmbMultichannelConstraint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6529,7 +6529,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbOpenFile",
-    "descriptionHe": "קבלת מידע על Smb Open File",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbOpenFile",
     "descriptionEn": "Native PowerShell Command: Get-SmbOpenFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6537,7 +6537,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbServerAlternativePort",
-    "descriptionHe": "קבלת מידע על Smb Server Alternative Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbServerAlternativePort",
     "descriptionEn": "Native PowerShell Command: Get-SmbServerAlternativePort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6545,7 +6545,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbServerCertificateMapping",
-    "descriptionHe": "קבלת מידע על Smb Server Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbServerCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Get-SmbServerCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6553,7 +6553,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbServerCertProps",
-    "descriptionHe": "קבלת מידע על Smb Server Cert Props",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbServerCertProps",
     "descriptionEn": "Native PowerShell Command: Get-SmbServerCertProps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6561,7 +6561,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbServerConfiguration",
-    "descriptionHe": "קבלת מידע על Smb Server Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbServerConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-SmbServerConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6569,7 +6569,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbServerNetworkInterface",
-    "descriptionHe": "קבלת מידע על Smb Server Network Interface",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbServerNetworkInterface",
     "descriptionEn": "Native PowerShell Command: Get-SmbServerNetworkInterface",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6577,7 +6577,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbSession",
-    "descriptionHe": "קבלת מידע על Smb Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbSession",
     "descriptionEn": "Native PowerShell Command: Get-SmbSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6585,7 +6585,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbShare",
-    "descriptionHe": "קבלת מידע על Smb Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbShare",
     "descriptionEn": "Native PowerShell Command: Get-SmbShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6593,7 +6593,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbShareAccess",
-    "descriptionHe": "קבלת מידע על Smb Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbShareAccess",
     "descriptionEn": "Native PowerShell Command: Get-SmbShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6601,7 +6601,7 @@ const commandsData = [
   },
   {
     "command": "Get-SmbWitnessClient",
-    "descriptionHe": "קבלת מידע על Smb Witness Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SmbWitnessClient",
     "descriptionEn": "Native PowerShell Command: Get-SmbWitnessClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6609,7 +6609,7 @@ const commandsData = [
   },
   {
     "command": "Get-StartApps",
-    "descriptionHe": "קבלת מידע על Start Apps",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StartApps",
     "descriptionEn": "Native PowerShell Command: Get-StartApps",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6617,7 +6617,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageAdvancedProperty",
-    "descriptionHe": "קבלת מידע על Storage Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: Get-StorageAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6625,7 +6625,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusBinding",
-    "descriptionHe": "קבלת מידע על Storage Bus Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusBinding",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6633,7 +6633,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusCache",
-    "descriptionHe": "קבלת מידע על Storage Bus Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusCache",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6641,7 +6641,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusClientDevice",
-    "descriptionHe": "קבלת מידע על Storage Bus Client Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusClientDevice",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusClientDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6649,7 +6649,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusDisk",
-    "descriptionHe": "קבלת מידע על Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6657,7 +6657,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusTargetCacheStore",
-    "descriptionHe": "קבלת מידע על Storage Bus Target Cache Store",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusTargetCacheStore",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusTargetCacheStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6665,7 +6665,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusTargetCacheStoresInstance",
-    "descriptionHe": "קבלת מידע על Storage Bus Target Cache Stores Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusTargetCacheStoresInstance",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusTargetCacheStoresInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6673,7 +6673,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusTargetDevice",
-    "descriptionHe": "קבלת מידע על Storage Bus Target Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusTargetDevice",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusTargetDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6681,7 +6681,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageBusTargetDeviceInstance",
-    "descriptionHe": "קבלת מידע על Storage Bus Target Device Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageBusTargetDeviceInstance",
     "descriptionEn": "Native PowerShell Command: Get-StorageBusTargetDeviceInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6689,7 +6689,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageChassis",
-    "descriptionHe": "קבלת מידע על Storage Chassis",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageChassis",
     "descriptionEn": "Native PowerShell Command: Get-StorageChassis",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6697,7 +6697,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageDataCollection",
-    "descriptionHe": "קבלת מידע על Storage Data Collection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageDataCollection",
     "descriptionEn": "Native PowerShell Command: Get-StorageDataCollection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6705,7 +6705,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageDiagnosticInfo",
-    "descriptionHe": "קבלת מידע על Storage Diagnostic Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageDiagnosticInfo",
     "descriptionEn": "Native PowerShell Command: Get-StorageDiagnosticInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6713,7 +6713,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageEnclosure",
-    "descriptionHe": "קבלת מידע על Storage Enclosure",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageEnclosure",
     "descriptionEn": "Native PowerShell Command: Get-StorageEnclosure",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6721,7 +6721,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageEnclosureStorageNodeView",
-    "descriptionHe": "קבלת מידע על Storage Enclosure Storage Node View",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageEnclosureStorageNodeView",
     "descriptionEn": "Native PowerShell Command: Get-StorageEnclosureStorageNodeView",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6729,7 +6729,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageEnclosureVendorData",
-    "descriptionHe": "קבלת מידע על Storage Enclosure Vendor Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageEnclosureVendorData",
     "descriptionEn": "Native PowerShell Command: Get-StorageEnclosureVendorData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6737,7 +6737,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageExtendedStatus",
-    "descriptionHe": "קבלת מידע על Storage Extended Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageExtendedStatus",
     "descriptionEn": "Native PowerShell Command: Get-StorageExtendedStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6745,7 +6745,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageFaultDomain",
-    "descriptionHe": "קבלת מידע על Storage Fault Domain",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageFaultDomain",
     "descriptionEn": "Native PowerShell Command: Get-StorageFaultDomain",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6753,7 +6753,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageFileServer",
-    "descriptionHe": "קבלת מידע על Storage File Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageFileServer",
     "descriptionEn": "Native PowerShell Command: Get-StorageFileServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6761,7 +6761,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageFirmwareInformation",
-    "descriptionHe": "קבלת מידע על Storage Firmware Information",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageFirmwareInformation",
     "descriptionEn": "Native PowerShell Command: Get-StorageFirmwareInformation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6769,7 +6769,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageHealthAction",
-    "descriptionHe": "קבלת מידע על Storage Health Action",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageHealthAction",
     "descriptionEn": "Native PowerShell Command: Get-StorageHealthAction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6777,7 +6777,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageHealthReport",
-    "descriptionHe": "קבלת מידע על Storage Health Report",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageHealthReport",
     "descriptionEn": "Native PowerShell Command: Get-StorageHealthReport",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6785,7 +6785,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageHealthSetting",
-    "descriptionHe": "קבלת מידע על Storage Health Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageHealthSetting",
     "descriptionEn": "Native PowerShell Command: Get-StorageHealthSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6793,7 +6793,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageHistory",
-    "descriptionHe": "קבלת מידע על Storage History",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageHistory",
     "descriptionEn": "Native PowerShell Command: Get-StorageHistory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6801,7 +6801,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageJob",
-    "descriptionHe": "קבלת מידע על Storage Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageJob",
     "descriptionEn": "Native PowerShell Command: Get-StorageJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6809,7 +6809,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageNode",
-    "descriptionHe": "קבלת מידע על Storage Node",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageNode",
     "descriptionEn": "Native PowerShell Command: Get-StorageNode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6817,7 +6817,7 @@ const commandsData = [
   },
   {
     "command": "Get-StoragePool",
-    "descriptionHe": "קבלת מידע על Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StoragePool",
     "descriptionEn": "Native PowerShell Command: Get-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6825,7 +6825,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageProvider",
-    "descriptionHe": "קבלת מידע על Storage Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageProvider",
     "descriptionEn": "Native PowerShell Command: Get-StorageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6833,7 +6833,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageRack",
-    "descriptionHe": "קבלת מידע על Storage Rack",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageRack",
     "descriptionEn": "Native PowerShell Command: Get-StorageRack",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6841,7 +6841,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageReliabilityCounter",
-    "descriptionHe": "קבלת מידע על Storage Reliability Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageReliabilityCounter",
     "descriptionEn": "Native PowerShell Command: Get-StorageReliabilityCounter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6849,7 +6849,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageScaleUnit",
-    "descriptionHe": "קבלת מידע על Storage Scale Unit",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageScaleUnit",
     "descriptionEn": "Native PowerShell Command: Get-StorageScaleUnit",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6857,7 +6857,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageSetting",
-    "descriptionHe": "קבלת מידע על Storage Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageSetting",
     "descriptionEn": "Native PowerShell Command: Get-StorageSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6865,7 +6865,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageSite",
-    "descriptionHe": "קבלת מידע על Storage Site",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageSite",
     "descriptionEn": "Native PowerShell Command: Get-StorageSite",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6873,7 +6873,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageSubSystem",
-    "descriptionHe": "קבלת מידע על Storage Sub System",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageSubSystem",
     "descriptionEn": "Native PowerShell Command: Get-StorageSubSystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6881,7 +6881,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageTier",
-    "descriptionHe": "קבלת מידע על Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageTier",
     "descriptionEn": "Native PowerShell Command: Get-StorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6889,7 +6889,7 @@ const commandsData = [
   },
   {
     "command": "Get-StorageTierSupportedSize",
-    "descriptionHe": "קבלת מידע על Storage Tier Supported Size",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-StorageTierSupportedSize",
     "descriptionEn": "Native PowerShell Command: Get-StorageTierSupportedSize",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6897,7 +6897,7 @@ const commandsData = [
   },
   {
     "command": "Get-SubscriptionLicenseInfo",
-    "descriptionHe": "קבלת מידע על Subscription License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SubscriptionLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Get-SubscriptionLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6905,7 +6905,7 @@ const commandsData = [
   },
   {
     "command": "Get-SupportedClusterSizes",
-    "descriptionHe": "קבלת מידע על Supported Cluster Sizes",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SupportedClusterSizes",
     "descriptionEn": "Native PowerShell Command: Get-SupportedClusterSizes",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6913,7 +6913,7 @@ const commandsData = [
   },
   {
     "command": "Get-SupportedFileSystems",
-    "descriptionHe": "קבלת מידע על Supported File Systems",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SupportedFileSystems",
     "descriptionEn": "Native PowerShell Command: Get-SupportedFileSystems",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6921,7 +6921,7 @@ const commandsData = [
   },
   {
     "command": "Get-TargetPort",
-    "descriptionHe": "קבלת מידע על Target Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TargetPort",
     "descriptionEn": "Native PowerShell Command: Get-TargetPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6929,7 +6929,7 @@ const commandsData = [
   },
   {
     "command": "Get-TargetPortal",
-    "descriptionHe": "קבלת מידע על Target Portal",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TargetPortal",
     "descriptionEn": "Native PowerShell Command: Get-TargetPortal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6937,7 +6937,7 @@ const commandsData = [
   },
   {
     "command": "Get-TestDriveItem",
-    "descriptionHe": "קבלת מידע על Test Drive Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TestDriveItem",
     "descriptionEn": "Native PowerShell Command: Get-TestDriveItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6945,7 +6945,7 @@ const commandsData = [
   },
   {
     "command": "Get-Verb",
-    "descriptionHe": "קבלת מידע על Verb",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Verb",
     "descriptionEn": "Native PowerShell Command: Get-Verb",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6953,7 +6953,7 @@ const commandsData = [
   },
   {
     "command": "Get-VirtualDisk",
-    "descriptionHe": "קבלת מידע על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Get-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6961,7 +6961,7 @@ const commandsData = [
   },
   {
     "command": "Get-VirtualDiskSupportedSize",
-    "descriptionHe": "קבלת מידע על Virtual Disk Supported Size",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VirtualDiskSupportedSize",
     "descriptionEn": "Native PowerShell Command: Get-VirtualDiskSupportedSize",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6969,7 +6969,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMDirectVirtualDisk",
-    "descriptionHe": "קבלת מידע על V M Direct Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMDirectVirtualDisk",
     "descriptionEn": "Native PowerShell Command: Get-VMDirectVirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6977,7 +6977,7 @@ const commandsData = [
   },
   {
     "command": "Get-Volume",
-    "descriptionHe": "קבלת מידע על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Volume",
     "descriptionEn": "Native PowerShell Command: Get-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6985,7 +6985,7 @@ const commandsData = [
   },
   {
     "command": "Get-VolumeCorruptionCount",
-    "descriptionHe": "קבלת מידע על Volume Corruption Count",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VolumeCorruptionCount",
     "descriptionEn": "Native PowerShell Command: Get-VolumeCorruptionCount",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -6993,7 +6993,7 @@ const commandsData = [
   },
   {
     "command": "Get-VolumeScrubPolicy",
-    "descriptionHe": "קבלת מידע על Volume Scrub Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VolumeScrubPolicy",
     "descriptionEn": "Native PowerShell Command: Get-VolumeScrubPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7001,7 +7001,7 @@ const commandsData = [
   },
   {
     "command": "Get-VpnConnection",
-    "descriptionHe": "קבלת מידע על Vpn Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VpnConnection",
     "descriptionEn": "Native PowerShell Command: Get-VpnConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7009,7 +7009,7 @@ const commandsData = [
   },
   {
     "command": "Get-VpnConnectionTrigger",
-    "descriptionHe": "קבלת מידע על Vpn Connection Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VpnConnectionTrigger",
     "descriptionEn": "Native PowerShell Command: Get-VpnConnectionTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7017,7 +7017,7 @@ const commandsData = [
   },
   {
     "command": "Get-WdacBidTrace",
-    "descriptionHe": "קבלת מידע על Wdac Bid Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WdacBidTrace",
     "descriptionEn": "Native PowerShell Command: Get-WdacBidTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7025,7 +7025,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsUpdateLog",
-    "descriptionHe": "קבלת מידע על Windows Update Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsUpdateLog",
     "descriptionEn": "Native PowerShell Command: Get-WindowsUpdateLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7033,7 +7033,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinhttpProxy",
-    "descriptionHe": "קבלת מידע על Winhttp Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinhttpProxy",
     "descriptionEn": "Native PowerShell Command: Get-WinhttpProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7041,7 +7041,7 @@ const commandsData = [
   },
   {
     "command": "Grant-FileShareAccess",
-    "descriptionHe": "פעולת PowerShell על File Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Grant-FileShareAccess",
     "descriptionEn": "Native PowerShell Command: Grant-FileShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7049,7 +7049,7 @@ const commandsData = [
   },
   {
     "command": "Grant-HgsKeyProtectorAccess",
-    "descriptionHe": "פעולת PowerShell על Hgs Key Protector Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Grant-HgsKeyProtectorAccess",
     "descriptionEn": "Native PowerShell Command: Grant-HgsKeyProtectorAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7057,7 +7057,7 @@ const commandsData = [
   },
   {
     "command": "Grant-SmbClientAccessToServer",
-    "descriptionHe": "פעולת PowerShell על Smb Client Access To Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Grant-SmbClientAccessToServer",
     "descriptionEn": "Native PowerShell Command: Grant-SmbClientAccessToServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7065,7 +7065,7 @@ const commandsData = [
   },
   {
     "command": "Grant-SmbShareAccess",
-    "descriptionHe": "פעולת PowerShell על Smb Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Grant-SmbShareAccess",
     "descriptionEn": "Native PowerShell Command: Grant-SmbShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7073,7 +7073,7 @@ const commandsData = [
   },
   {
     "command": "H:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול H:",
+    "descriptionHe": "פקודת PowerShell מקורית: H:",
     "descriptionEn": "Native PowerShell Command: H:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7081,7 +7081,7 @@ const commandsData = [
   },
   {
     "command": "help",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול help",
+    "descriptionHe": "פקודת PowerShell מקורית: help",
     "descriptionEn": "Native PowerShell Command: help",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7089,7 +7089,7 @@ const commandsData = [
   },
   {
     "command": "Hide-VirtualDisk",
-    "descriptionHe": "פעולת PowerShell על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Hide-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Hide-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7097,7 +7097,7 @@ const commandsData = [
   },
   {
     "command": "I:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול I:",
+    "descriptionHe": "פקודת PowerShell מקורית: I:",
     "descriptionEn": "Native PowerShell Command: I:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7105,7 +7105,7 @@ const commandsData = [
   },
   {
     "command": "Import-BCCachePackage",
-    "descriptionHe": "ייבוא נתונים עבור B C Cache Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-BCCachePackage",
     "descriptionEn": "Native PowerShell Command: Import-BCCachePackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7113,7 +7113,7 @@ const commandsData = [
   },
   {
     "command": "Import-BCSecretKey",
-    "descriptionHe": "ייבוא נתונים עבור B C Secret Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-BCSecretKey",
     "descriptionEn": "Native PowerShell Command: Import-BCSecretKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7121,7 +7121,7 @@ const commandsData = [
   },
   {
     "command": "Import-HgsGuardian",
-    "descriptionHe": "ייבוא נתונים עבור Hgs Guardian",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-HgsGuardian",
     "descriptionEn": "Native PowerShell Command: Import-HgsGuardian",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7129,7 +7129,7 @@ const commandsData = [
   },
   {
     "command": "Import-IseSnippet",
-    "descriptionHe": "ייבוא נתונים עבור Ise Snippet",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-IseSnippet",
     "descriptionEn": "Native PowerShell Command: Import-IseSnippet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7137,7 +7137,7 @@ const commandsData = [
   },
   {
     "command": "Import-PowerShellDataFile",
-    "descriptionHe": "ייבוא נתונים עבור Power Shell Data File",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-PowerShellDataFile",
     "descriptionEn": "Native PowerShell Command: Import-PowerShellDataFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7145,7 +7145,7 @@ const commandsData = [
   },
   {
     "command": "ImportSystemModules",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול ImportSystemModules",
+    "descriptionHe": "פקודת PowerShell מקורית: ImportSystemModules",
     "descriptionEn": "Native PowerShell Command: ImportSystemModules",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7153,7 +7153,7 @@ const commandsData = [
   },
   {
     "command": "Import-WinhttpProxy",
-    "descriptionHe": "ייבוא נתונים עבור Winhttp Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-WinhttpProxy",
     "descriptionEn": "Native PowerShell Command: Import-WinhttpProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7161,7 +7161,7 @@ const commandsData = [
   },
   {
     "command": "In",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול In",
+    "descriptionHe": "פקודת PowerShell מקורית: In",
     "descriptionEn": "Native PowerShell Command: In",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7169,7 +7169,7 @@ const commandsData = [
   },
   {
     "command": "Initialize-Disk",
-    "descriptionHe": "פעולת PowerShell על Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Initialize-Disk",
     "descriptionEn": "Native PowerShell Command: Initialize-Disk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7177,7 +7177,7 @@ const commandsData = [
   },
   {
     "command": "InModuleScope",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול InModuleScope",
+    "descriptionHe": "פקודת PowerShell מקורית: InModuleScope",
     "descriptionEn": "Native PowerShell Command: InModuleScope",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7185,7 +7185,7 @@ const commandsData = [
   },
   {
     "command": "Install-Dtc",
-    "descriptionHe": "פעולת PowerShell על Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-Dtc",
     "descriptionEn": "Native PowerShell Command: Install-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7193,7 +7193,7 @@ const commandsData = [
   },
   {
     "command": "Install-Module",
-    "descriptionHe": "פעולת PowerShell על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-Module",
     "descriptionEn": "Native PowerShell Command: Install-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7201,7 +7201,7 @@ const commandsData = [
   },
   {
     "command": "Install-Script",
-    "descriptionHe": "פעולת PowerShell על Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-Script",
     "descriptionEn": "Native PowerShell Command: Install-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7209,7 +7209,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-ADLicense",
-    "descriptionHe": "הרצת A D License",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-ADLicense",
     "descriptionEn": "Native PowerShell Command: Invoke-ADLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7217,7 +7217,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-AsWorkflow",
-    "descriptionHe": "הרצת As Workflow",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-AsWorkflow",
     "descriptionEn": "Native PowerShell Command: Invoke-AsWorkflow",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7225,7 +7225,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-KmsLicense",
-    "descriptionHe": "הרצת Kms License",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-KmsLicense",
     "descriptionEn": "Native PowerShell Command: Invoke-KmsLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7233,7 +7233,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-Mock",
-    "descriptionHe": "הרצת Mock",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-Mock",
     "descriptionEn": "Native PowerShell Command: Invoke-Mock",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7241,7 +7241,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-OperationValidation",
-    "descriptionHe": "הרצת Operation Validation",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-OperationValidation",
     "descriptionEn": "Native PowerShell Command: Invoke-OperationValidation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7249,7 +7249,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-OSLicense",
-    "descriptionHe": "הרצת O S License",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-OSLicense",
     "descriptionEn": "Native PowerShell Command: Invoke-OSLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7257,7 +7257,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-Pester",
-    "descriptionHe": "הרצת Pester",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-Pester",
     "descriptionEn": "Native PowerShell Command: Invoke-Pester",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7265,7 +7265,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-SubscriptionLicense",
-    "descriptionHe": "הרצת Subscription License",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-SubscriptionLicense",
     "descriptionEn": "Native PowerShell Command: Invoke-SubscriptionLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7273,7 +7273,7 @@ const commandsData = [
   },
   {
     "command": "It",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול It",
+    "descriptionHe": "פקודת PowerShell מקורית: It",
     "descriptionEn": "Native PowerShell Command: It",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7281,7 +7281,7 @@ const commandsData = [
   },
   {
     "command": "J:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול J:",
+    "descriptionHe": "פקודת PowerShell מקורית: J:",
     "descriptionEn": "Native PowerShell Command: J:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7289,7 +7289,7 @@ const commandsData = [
   },
   {
     "command": "K:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול K:",
+    "descriptionHe": "פקודת PowerShell מקורית: K:",
     "descriptionEn": "Native PowerShell Command: K:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7297,7 +7297,7 @@ const commandsData = [
   },
   {
     "command": "L:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול L:",
+    "descriptionHe": "פקודת PowerShell מקורית: L:",
     "descriptionEn": "Native PowerShell Command: L:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7305,7 +7305,7 @@ const commandsData = [
   },
   {
     "command": "Lock-BitLocker",
-    "descriptionHe": "פעולת PowerShell על Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Lock-BitLocker",
     "descriptionEn": "Native PowerShell Command: Lock-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7313,7 +7313,7 @@ const commandsData = [
   },
   {
     "command": "M:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול M:",
+    "descriptionHe": "פקודת PowerShell מקורית: M:",
     "descriptionEn": "Native PowerShell Command: M:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7321,7 +7321,7 @@ const commandsData = [
   },
   {
     "command": "mkdir",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול mkdir",
+    "descriptionHe": "פקודת PowerShell מקורית: mkdir",
     "descriptionEn": "Native PowerShell Command: mkdir",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7329,7 +7329,7 @@ const commandsData = [
   },
   {
     "command": "Mock",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Mock",
+    "descriptionHe": "פקודת PowerShell מקורית: Mock",
     "descriptionEn": "Native PowerShell Command: Mock",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7337,7 +7337,7 @@ const commandsData = [
   },
   {
     "command": "more",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול more",
+    "descriptionHe": "פקודת PowerShell מקורית: more",
     "descriptionEn": "Native PowerShell Command: more",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7345,7 +7345,7 @@ const commandsData = [
   },
   {
     "command": "Mount-DiskImage",
-    "descriptionHe": "פעולת PowerShell על Disk Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-DiskImage",
     "descriptionEn": "Native PowerShell Command: Mount-DiskImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7353,7 +7353,7 @@ const commandsData = [
   },
   {
     "command": "Move-SmbWitnessClient",
-    "descriptionHe": "פעולת PowerShell על Smb Witness Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-SmbWitnessClient",
     "descriptionEn": "Native PowerShell Command: Move-SmbWitnessClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7361,7 +7361,7 @@ const commandsData = [
   },
   {
     "command": "N:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול N:",
+    "descriptionHe": "פקודת PowerShell מקורית: N:",
     "descriptionEn": "Native PowerShell Command: N:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7369,7 +7369,7 @@ const commandsData = [
   },
   {
     "command": "New-AutologgerConfig",
-    "descriptionHe": "יצירת Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: New-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: New-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7377,7 +7377,7 @@ const commandsData = [
   },
   {
     "command": "New-DAEntryPointTableItem",
-    "descriptionHe": "יצירת D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: New-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: New-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7385,7 +7385,7 @@ const commandsData = [
   },
   {
     "command": "New-DscChecksum",
-    "descriptionHe": "יצירת Dsc Checksum",
+    "descriptionHe": "פקודת PowerShell מקורית: New-DscChecksum",
     "descriptionEn": "Native PowerShell Command: New-DscChecksum",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7393,7 +7393,7 @@ const commandsData = [
   },
   {
     "command": "New-EapConfiguration",
-    "descriptionHe": "יצירת Eap Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: New-EapConfiguration",
     "descriptionEn": "Native PowerShell Command: New-EapConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7401,7 +7401,7 @@ const commandsData = [
   },
   {
     "command": "New-EtwTraceSession",
-    "descriptionHe": "יצירת Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: New-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: New-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7409,7 +7409,7 @@ const commandsData = [
   },
   {
     "command": "New-FileShare",
-    "descriptionHe": "יצירת File Share",
+    "descriptionHe": "פקודת PowerShell מקורית: New-FileShare",
     "descriptionEn": "Native PowerShell Command: New-FileShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7417,7 +7417,7 @@ const commandsData = [
   },
   {
     "command": "New-Fixture",
-    "descriptionHe": "יצירת Fixture",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Fixture",
     "descriptionEn": "Native PowerShell Command: New-Fixture",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7425,7 +7425,7 @@ const commandsData = [
   },
   {
     "command": "New-Guid",
-    "descriptionHe": "יצירת Guid",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Guid",
     "descriptionEn": "Native PowerShell Command: New-Guid",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7433,7 +7433,7 @@ const commandsData = [
   },
   {
     "command": "New-HgsGuardian",
-    "descriptionHe": "יצירת Hgs Guardian",
+    "descriptionHe": "פקודת PowerShell מקורית: New-HgsGuardian",
     "descriptionEn": "Native PowerShell Command: New-HgsGuardian",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7441,7 +7441,7 @@ const commandsData = [
   },
   {
     "command": "New-HgsKeyProtector",
-    "descriptionHe": "יצירת Hgs Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: New-HgsKeyProtector",
     "descriptionEn": "Native PowerShell Command: New-HgsKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7449,7 +7449,7 @@ const commandsData = [
   },
   {
     "command": "New-IscsiTargetPortal",
-    "descriptionHe": "יצירת Iscsi Target Portal",
+    "descriptionHe": "פקודת PowerShell מקורית: New-IscsiTargetPortal",
     "descriptionEn": "Native PowerShell Command: New-IscsiTargetPortal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7457,7 +7457,7 @@ const commandsData = [
   },
   {
     "command": "New-IseSnippet",
-    "descriptionHe": "יצירת Ise Snippet",
+    "descriptionHe": "פקודת PowerShell מקורית: New-IseSnippet",
     "descriptionEn": "Native PowerShell Command: New-IseSnippet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7465,7 +7465,7 @@ const commandsData = [
   },
   {
     "command": "New-MaskingSet",
-    "descriptionHe": "יצירת Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-MaskingSet",
     "descriptionEn": "Native PowerShell Command: New-MaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7473,7 +7473,7 @@ const commandsData = [
   },
   {
     "command": "New-MpPerformanceRecording",
-    "descriptionHe": "יצירת Mp Performance Recording",
+    "descriptionHe": "פקודת PowerShell מקורית: New-MpPerformanceRecording",
     "descriptionEn": "Native PowerShell Command: New-MpPerformanceRecording",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7481,7 +7481,7 @@ const commandsData = [
   },
   {
     "command": "New-NetAdapterAdvancedProperty",
-    "descriptionHe": "יצירת Net Adapter Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetAdapterAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: New-NetAdapterAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7489,7 +7489,7 @@ const commandsData = [
   },
   {
     "command": "New-NetEventSession",
-    "descriptionHe": "יצירת Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetEventSession",
     "descriptionEn": "Native PowerShell Command: New-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7497,7 +7497,7 @@ const commandsData = [
   },
   {
     "command": "New-NetFirewallDynamicKeywordAddress",
-    "descriptionHe": "יצירת Net Firewall Dynamic Keyword Address",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetFirewallDynamicKeywordAddress",
     "descriptionEn": "Native PowerShell Command: New-NetFirewallDynamicKeywordAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7505,7 +7505,7 @@ const commandsData = [
   },
   {
     "command": "New-NetFirewallHyperVProfile",
-    "descriptionHe": "יצירת Net Firewall Hyper V Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetFirewallHyperVProfile",
     "descriptionEn": "Native PowerShell Command: New-NetFirewallHyperVProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7513,7 +7513,7 @@ const commandsData = [
   },
   {
     "command": "New-NetFirewallHyperVRule",
-    "descriptionHe": "יצירת Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: New-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7521,7 +7521,7 @@ const commandsData = [
   },
   {
     "command": "New-NetFirewallHyperVVMSetting",
-    "descriptionHe": "יצירת Net Firewall Hyper V V M Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetFirewallHyperVVMSetting",
     "descriptionEn": "Native PowerShell Command: New-NetFirewallHyperVVMSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7529,7 +7529,7 @@ const commandsData = [
   },
   {
     "command": "New-NetFirewallRule",
-    "descriptionHe": "יצירת Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: New-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7537,7 +7537,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPAddress",
-    "descriptionHe": "יצירת Net I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPAddress",
     "descriptionEn": "Native PowerShell Command: New-NetIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7545,7 +7545,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPHttpsConfiguration",
-    "descriptionHe": "יצירת Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: New-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7553,7 +7553,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecDospSetting",
-    "descriptionHe": "יצירת Net I Psec Dosp Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecDospSetting",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecDospSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7561,7 +7561,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "יצירת Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7569,7 +7569,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecMainModeRule",
-    "descriptionHe": "יצירת Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7577,7 +7577,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecPhase1AuthSet",
-    "descriptionHe": "יצירת Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7585,7 +7585,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecPhase2AuthSet",
-    "descriptionHe": "יצירת Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7593,7 +7593,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "יצירת Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7601,7 +7601,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecRule",
-    "descriptionHe": "יצירת Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7609,7 +7609,7 @@ const commandsData = [
   },
   {
     "command": "New-NetLbfoTeam",
-    "descriptionHe": "יצירת Net Lbfo Team",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetLbfoTeam",
     "descriptionEn": "Native PowerShell Command: New-NetLbfoTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7617,7 +7617,7 @@ const commandsData = [
   },
   {
     "command": "New-NetNat",
-    "descriptionHe": "יצירת Net Nat",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetNat",
     "descriptionEn": "Native PowerShell Command: New-NetNat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7625,7 +7625,7 @@ const commandsData = [
   },
   {
     "command": "New-NetNatTransitionConfiguration",
-    "descriptionHe": "יצירת Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: New-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7633,7 +7633,7 @@ const commandsData = [
   },
   {
     "command": "New-NetNeighbor",
-    "descriptionHe": "יצירת Net Neighbor",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetNeighbor",
     "descriptionEn": "Native PowerShell Command: New-NetNeighbor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7641,7 +7641,7 @@ const commandsData = [
   },
   {
     "command": "New-NetQosPolicy",
-    "descriptionHe": "יצירת Net Qos Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetQosPolicy",
     "descriptionEn": "Native PowerShell Command: New-NetQosPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7649,7 +7649,7 @@ const commandsData = [
   },
   {
     "command": "New-NetRoute",
-    "descriptionHe": "יצירת Net Route",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetRoute",
     "descriptionEn": "Native PowerShell Command: New-NetRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7657,7 +7657,7 @@ const commandsData = [
   },
   {
     "command": "New-NetSwitchTeam",
-    "descriptionHe": "יצירת Net Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetSwitchTeam",
     "descriptionEn": "Native PowerShell Command: New-NetSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7665,7 +7665,7 @@ const commandsData = [
   },
   {
     "command": "New-NetTransportFilter",
-    "descriptionHe": "יצירת Net Transport Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetTransportFilter",
     "descriptionEn": "Native PowerShell Command: New-NetTransportFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7673,7 +7673,7 @@ const commandsData = [
   },
   {
     "command": "New-NetworkSwitchVlan",
-    "descriptionHe": "יצירת Network Switch Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetworkSwitchVlan",
     "descriptionEn": "Native PowerShell Command: New-NetworkSwitchVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7681,7 +7681,7 @@ const commandsData = [
   },
   {
     "command": "New-Partition",
-    "descriptionHe": "יצירת Partition",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Partition",
     "descriptionEn": "Native PowerShell Command: New-Partition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7689,7 +7689,7 @@ const commandsData = [
   },
   {
     "command": "New-PesterOption",
-    "descriptionHe": "יצירת Pester Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PesterOption",
     "descriptionEn": "Native PowerShell Command: New-PesterOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7697,7 +7697,7 @@ const commandsData = [
   },
   {
     "command": "New-PSWorkflowSession",
-    "descriptionHe": "יצירת P S Workflow Session",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSWorkflowSession",
     "descriptionEn": "Native PowerShell Command: New-PSWorkflowSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7705,7 +7705,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledTask",
-    "descriptionHe": "יצירת Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: New-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7713,7 +7713,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledTaskAction",
-    "descriptionHe": "יצירת Scheduled Task Action",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledTaskAction",
     "descriptionEn": "Native PowerShell Command: New-ScheduledTaskAction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7721,7 +7721,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledTaskPrincipal",
-    "descriptionHe": "יצירת Scheduled Task Principal",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledTaskPrincipal",
     "descriptionEn": "Native PowerShell Command: New-ScheduledTaskPrincipal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7729,7 +7729,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledTaskSettingsSet",
-    "descriptionHe": "יצירת Scheduled Task Settings Set",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledTaskSettingsSet",
     "descriptionEn": "Native PowerShell Command: New-ScheduledTaskSettingsSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7737,7 +7737,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledTaskTrigger",
-    "descriptionHe": "יצירת Scheduled Task Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledTaskTrigger",
     "descriptionEn": "Native PowerShell Command: New-ScheduledTaskTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7745,7 +7745,7 @@ const commandsData = [
   },
   {
     "command": "New-ScriptFileInfo",
-    "descriptionHe": "יצירת Script File Info",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScriptFileInfo",
     "descriptionEn": "Native PowerShell Command: New-ScriptFileInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7753,7 +7753,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbClientCertificateMapping",
-    "descriptionHe": "יצירת Smb Client Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbClientCertificateMapping",
     "descriptionEn": "Native PowerShell Command: New-SmbClientCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7761,7 +7761,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbGlobalMapping",
-    "descriptionHe": "יצירת Smb Global Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbGlobalMapping",
     "descriptionEn": "Native PowerShell Command: New-SmbGlobalMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7769,7 +7769,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbMapping",
-    "descriptionHe": "יצירת Smb Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbMapping",
     "descriptionEn": "Native PowerShell Command: New-SmbMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7777,7 +7777,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbMultichannelConstraint",
-    "descriptionHe": "יצירת Smb Multichannel Constraint",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbMultichannelConstraint",
     "descriptionEn": "Native PowerShell Command: New-SmbMultichannelConstraint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7785,7 +7785,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbServerAlternativePort",
-    "descriptionHe": "יצירת Smb Server Alternative Port",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbServerAlternativePort",
     "descriptionEn": "Native PowerShell Command: New-SmbServerAlternativePort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7793,7 +7793,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbServerCertificateMapping",
-    "descriptionHe": "יצירת Smb Server Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbServerCertificateMapping",
     "descriptionEn": "Native PowerShell Command: New-SmbServerCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7801,7 +7801,7 @@ const commandsData = [
   },
   {
     "command": "New-SmbShare",
-    "descriptionHe": "יצירת Smb Share",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SmbShare",
     "descriptionEn": "Native PowerShell Command: New-SmbShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7809,7 +7809,7 @@ const commandsData = [
   },
   {
     "command": "New-StorageBusBinding",
-    "descriptionHe": "יצירת Storage Bus Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StorageBusBinding",
     "descriptionEn": "Native PowerShell Command: New-StorageBusBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7817,7 +7817,7 @@ const commandsData = [
   },
   {
     "command": "New-StorageBusCacheStore",
-    "descriptionHe": "יצירת Storage Bus Cache Store",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StorageBusCacheStore",
     "descriptionEn": "Native PowerShell Command: New-StorageBusCacheStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7825,7 +7825,7 @@ const commandsData = [
   },
   {
     "command": "New-StorageFileServer",
-    "descriptionHe": "יצירת Storage File Server",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StorageFileServer",
     "descriptionEn": "Native PowerShell Command: New-StorageFileServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7833,7 +7833,7 @@ const commandsData = [
   },
   {
     "command": "New-StoragePool",
-    "descriptionHe": "יצירת Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StoragePool",
     "descriptionEn": "Native PowerShell Command: New-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7841,7 +7841,7 @@ const commandsData = [
   },
   {
     "command": "New-StorageSubsystemVirtualDisk",
-    "descriptionHe": "יצירת Storage Subsystem Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StorageSubsystemVirtualDisk",
     "descriptionEn": "Native PowerShell Command: New-StorageSubsystemVirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7849,7 +7849,7 @@ const commandsData = [
   },
   {
     "command": "New-StorageTier",
-    "descriptionHe": "יצירת Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: New-StorageTier",
     "descriptionEn": "Native PowerShell Command: New-StorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7857,7 +7857,7 @@ const commandsData = [
   },
   {
     "command": "New-TemporaryFile",
-    "descriptionHe": "יצירת Temporary File",
+    "descriptionHe": "פקודת PowerShell מקורית: New-TemporaryFile",
     "descriptionEn": "Native PowerShell Command: New-TemporaryFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7865,7 +7865,7 @@ const commandsData = [
   },
   {
     "command": "New-VirtualDisk",
-    "descriptionHe": "יצירת Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: New-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7873,7 +7873,7 @@ const commandsData = [
   },
   {
     "command": "New-VirtualDiskClone",
-    "descriptionHe": "יצירת Virtual Disk Clone",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VirtualDiskClone",
     "descriptionEn": "Native PowerShell Command: New-VirtualDiskClone",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7881,7 +7881,7 @@ const commandsData = [
   },
   {
     "command": "New-VirtualDiskSnapshot",
-    "descriptionHe": "יצירת Virtual Disk Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VirtualDiskSnapshot",
     "descriptionEn": "Native PowerShell Command: New-VirtualDiskSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7889,7 +7889,7 @@ const commandsData = [
   },
   {
     "command": "New-Volume",
-    "descriptionHe": "יצירת Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Volume",
     "descriptionEn": "Native PowerShell Command: New-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7897,7 +7897,7 @@ const commandsData = [
   },
   {
     "command": "New-VpnServerAddress",
-    "descriptionHe": "יצירת Vpn Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VpnServerAddress",
     "descriptionEn": "Native PowerShell Command: New-VpnServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7905,7 +7905,7 @@ const commandsData = [
   },
   {
     "command": "O:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול O:",
+    "descriptionHe": "פקודת PowerShell מקורית: O:",
     "descriptionEn": "Native PowerShell Command: O:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7913,7 +7913,7 @@ const commandsData = [
   },
   {
     "command": "Open-NetGPO",
-    "descriptionHe": "פעולת PowerShell על Net G P O",
+    "descriptionHe": "פקודת PowerShell מקורית: Open-NetGPO",
     "descriptionEn": "Native PowerShell Command: Open-NetGPO",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7921,7 +7921,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-StoragePool",
-    "descriptionHe": "פעולת PowerShell על Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-StoragePool",
     "descriptionEn": "Native PowerShell Command: Optimize-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7929,7 +7929,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-Volume",
-    "descriptionHe": "פעולת PowerShell על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-Volume",
     "descriptionEn": "Native PowerShell Command: Optimize-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7937,7 +7937,7 @@ const commandsData = [
   },
   {
     "command": "oss",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול oss",
+    "descriptionHe": "פקודת PowerShell מקורית: oss",
     "descriptionEn": "Native PowerShell Command: oss",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7945,7 +7945,7 @@ const commandsData = [
   },
   {
     "command": "P:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול P:",
+    "descriptionHe": "פקודת PowerShell מקורית: P:",
     "descriptionEn": "Native PowerShell Command: P:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7953,7 +7953,7 @@ const commandsData = [
   },
   {
     "command": "Pause",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Pause",
+    "descriptionHe": "פקודת PowerShell מקורית: Pause",
     "descriptionEn": "Native PowerShell Command: Pause",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7961,7 +7961,7 @@ const commandsData = [
   },
   {
     "command": "prompt",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול prompt",
+    "descriptionHe": "פקודת PowerShell מקורית: prompt",
     "descriptionEn": "Native PowerShell Command: prompt",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7969,7 +7969,7 @@ const commandsData = [
   },
   {
     "command": "PSConsoleHostReadLine",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול PSConsoleHostReadLine",
+    "descriptionHe": "פקודת PowerShell מקורית: PSConsoleHostReadLine",
     "descriptionEn": "Native PowerShell Command: PSConsoleHostReadLine",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7977,7 +7977,7 @@ const commandsData = [
   },
   {
     "command": "Publish-BCFileContent",
-    "descriptionHe": "פעולת PowerShell על B C File Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-BCFileContent",
     "descriptionEn": "Native PowerShell Command: Publish-BCFileContent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7985,7 +7985,7 @@ const commandsData = [
   },
   {
     "command": "Publish-BCWebContent",
-    "descriptionHe": "פעולת PowerShell על B C Web Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-BCWebContent",
     "descriptionEn": "Native PowerShell Command: Publish-BCWebContent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -7993,7 +7993,7 @@ const commandsData = [
   },
   {
     "command": "Publish-Module",
-    "descriptionHe": "פעולת PowerShell על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-Module",
     "descriptionEn": "Native PowerShell Command: Publish-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8001,7 +8001,7 @@ const commandsData = [
   },
   {
     "command": "Publish-Script",
-    "descriptionHe": "פעולת PowerShell על Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-Script",
     "descriptionEn": "Native PowerShell Command: Publish-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8009,7 +8009,7 @@ const commandsData = [
   },
   {
     "command": "Q:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Q:",
+    "descriptionHe": "פקודת PowerShell מקורית: Q:",
     "descriptionEn": "Native PowerShell Command: Q:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8017,7 +8017,7 @@ const commandsData = [
   },
   {
     "command": "R:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול R:",
+    "descriptionHe": "פקודת PowerShell מקורית: R:",
     "descriptionEn": "Native PowerShell Command: R:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8025,7 +8025,7 @@ const commandsData = [
   },
   {
     "command": "Read-PrinterNfcTag",
-    "descriptionHe": "קריאת Printer Nfc Tag",
+    "descriptionHe": "פקודת PowerShell מקורית: Read-PrinterNfcTag",
     "descriptionEn": "Native PowerShell Command: Read-PrinterNfcTag",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8033,7 +8033,7 @@ const commandsData = [
   },
   {
     "command": "Register-ClusteredScheduledTask",
-    "descriptionHe": "פעולת PowerShell על Clustered Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-ClusteredScheduledTask",
     "descriptionEn": "Native PowerShell Command: Register-ClusteredScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8041,7 +8041,7 @@ const commandsData = [
   },
   {
     "command": "Register-DnsClient",
-    "descriptionHe": "פעולת PowerShell על Dns Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-DnsClient",
     "descriptionEn": "Native PowerShell Command: Register-DnsClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8049,7 +8049,7 @@ const commandsData = [
   },
   {
     "command": "Register-IscsiSession",
-    "descriptionHe": "פעולת PowerShell על Iscsi Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-IscsiSession",
     "descriptionEn": "Native PowerShell Command: Register-IscsiSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8057,7 +8057,7 @@ const commandsData = [
   },
   {
     "command": "Register-PSRepository",
-    "descriptionHe": "פעולת PowerShell על P S Repository",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-PSRepository",
     "descriptionEn": "Native PowerShell Command: Register-PSRepository",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8065,7 +8065,7 @@ const commandsData = [
   },
   {
     "command": "Register-ScheduledTask",
-    "descriptionHe": "פעולת PowerShell על Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Register-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8073,7 +8073,7 @@ const commandsData = [
   },
   {
     "command": "Register-StorageSubsystem",
-    "descriptionHe": "פעולת PowerShell על Storage Subsystem",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-StorageSubsystem",
     "descriptionEn": "Native PowerShell Command: Register-StorageSubsystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8081,7 +8081,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AutologgerConfig",
-    "descriptionHe": "מחיקת Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: Remove-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8089,7 +8089,7 @@ const commandsData = [
   },
   {
     "command": "Remove-BCDataCacheExtension",
-    "descriptionHe": "מחיקת B C Data Cache Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-BCDataCacheExtension",
     "descriptionEn": "Native PowerShell Command: Remove-BCDataCacheExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8097,7 +8097,7 @@ const commandsData = [
   },
   {
     "command": "Remove-BitLockerKeyProtector",
-    "descriptionHe": "מחיקת Bit Locker Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-BitLockerKeyProtector",
     "descriptionEn": "Native PowerShell Command: Remove-BitLockerKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8105,7 +8105,7 @@ const commandsData = [
   },
   {
     "command": "Remove-DAEntryPointTableItem",
-    "descriptionHe": "מחיקת D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: Remove-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8113,7 +8113,7 @@ const commandsData = [
   },
   {
     "command": "Remove-DnsClientDohServerAddress",
-    "descriptionHe": "מחיקת Dns Client Doh Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-DnsClientDohServerAddress",
     "descriptionEn": "Native PowerShell Command: Remove-DnsClientDohServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8121,7 +8121,7 @@ const commandsData = [
   },
   {
     "command": "Remove-DnsClientNrptRule",
-    "descriptionHe": "מחיקת Dns Client Nrpt Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-DnsClientNrptRule",
     "descriptionEn": "Native PowerShell Command: Remove-DnsClientNrptRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8129,7 +8129,7 @@ const commandsData = [
   },
   {
     "command": "Remove-DscConfigurationDocument",
-    "descriptionHe": "מחיקת Dsc Configuration Document",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-DscConfigurationDocument",
     "descriptionEn": "Native PowerShell Command: Remove-DscConfigurationDocument",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8137,7 +8137,7 @@ const commandsData = [
   },
   {
     "command": "Remove-DtcClusterTMMapping",
-    "descriptionHe": "מחיקת Dtc Cluster T M Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-DtcClusterTMMapping",
     "descriptionEn": "Native PowerShell Command: Remove-DtcClusterTMMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8145,7 +8145,7 @@ const commandsData = [
   },
   {
     "command": "Remove-EtwTraceProvider",
-    "descriptionHe": "מחיקת Etw Trace Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-EtwTraceProvider",
     "descriptionEn": "Native PowerShell Command: Remove-EtwTraceProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8153,7 +8153,7 @@ const commandsData = [
   },
   {
     "command": "Remove-FileShare",
-    "descriptionHe": "מחיקת File Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-FileShare",
     "descriptionEn": "Native PowerShell Command: Remove-FileShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8161,7 +8161,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HgsClientHostKey",
-    "descriptionHe": "מחיקת Hgs Client Host Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HgsClientHostKey",
     "descriptionEn": "Native PowerShell Command: Remove-HgsClientHostKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8169,7 +8169,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HgsGuardian",
-    "descriptionHe": "מחיקת Hgs Guardian",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HgsGuardian",
     "descriptionEn": "Native PowerShell Command: Remove-HgsGuardian",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8177,7 +8177,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HnsEndpoint",
-    "descriptionHe": "מחיקת Hns Endpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HnsEndpoint",
     "descriptionEn": "Native PowerShell Command: Remove-HnsEndpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8185,7 +8185,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HnsNamespace",
-    "descriptionHe": "מחיקת Hns Namespace",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HnsNamespace",
     "descriptionEn": "Native PowerShell Command: Remove-HnsNamespace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8193,7 +8193,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HnsNetwork",
-    "descriptionHe": "מחיקת Hns Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HnsNetwork",
     "descriptionEn": "Native PowerShell Command: Remove-HnsNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8201,7 +8201,7 @@ const commandsData = [
   },
   {
     "command": "Remove-HnsPolicyList",
-    "descriptionHe": "מחיקת Hns Policy List",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-HnsPolicyList",
     "descriptionEn": "Native PowerShell Command: Remove-HnsPolicyList",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8209,7 +8209,7 @@ const commandsData = [
   },
   {
     "command": "Remove-InitiatorId",
-    "descriptionHe": "מחיקת Initiator Id",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-InitiatorId",
     "descriptionEn": "Native PowerShell Command: Remove-InitiatorId",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8217,7 +8217,7 @@ const commandsData = [
   },
   {
     "command": "Remove-InitiatorIdFromMaskingSet",
-    "descriptionHe": "מחיקת Initiator Id From Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-InitiatorIdFromMaskingSet",
     "descriptionEn": "Native PowerShell Command: Remove-InitiatorIdFromMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8225,7 +8225,7 @@ const commandsData = [
   },
   {
     "command": "Remove-IscsiTargetPortal",
-    "descriptionHe": "מחיקת Iscsi Target Portal",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-IscsiTargetPortal",
     "descriptionEn": "Native PowerShell Command: Remove-IscsiTargetPortal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8233,7 +8233,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MaskingSet",
-    "descriptionHe": "מחיקת Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MaskingSet",
     "descriptionEn": "Native PowerShell Command: Remove-MaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8241,7 +8241,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MpBehavioralNetworkBlockingRules",
-    "descriptionHe": "מחיקת Mp Behavioral Network Blocking Rules",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MpBehavioralNetworkBlockingRules",
     "descriptionEn": "Native PowerShell Command: Remove-MpBehavioralNetworkBlockingRules",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8249,7 +8249,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MpPreference",
-    "descriptionHe": "מחיקת Mp Preference",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MpPreference",
     "descriptionEn": "Native PowerShell Command: Remove-MpPreference",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8257,7 +8257,7 @@ const commandsData = [
   },
   {
     "command": "Remove-MpThreat",
-    "descriptionHe": "מחיקת Mp Threat",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-MpThreat",
     "descriptionEn": "Native PowerShell Command: Remove-MpThreat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8265,7 +8265,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetAdapterAdvancedProperty",
-    "descriptionHe": "מחיקת Net Adapter Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetAdapterAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: Remove-NetAdapterAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8273,7 +8273,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventNetworkAdapter",
-    "descriptionHe": "מחיקת Net Event Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8281,7 +8281,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventPacketCaptureProvider",
-    "descriptionHe": "מחיקת Net Event Packet Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventPacketCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventPacketCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8289,7 +8289,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventProvider",
-    "descriptionHe": "מחיקת Net Event Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventProvider",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8297,7 +8297,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventSession",
-    "descriptionHe": "מחיקת Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventSession",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8305,7 +8305,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventVFPProvider",
-    "descriptionHe": "מחיקת Net Event V F P Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventVFPProvider",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventVFPProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8313,7 +8313,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventVmNetworkAdapter",
-    "descriptionHe": "מחיקת Net Event Vm Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventVmNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventVmNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8321,7 +8321,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventVmSwitch",
-    "descriptionHe": "מחיקת Net Event Vm Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventVmSwitch",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventVmSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8329,7 +8329,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventVmSwitchProvider",
-    "descriptionHe": "מחיקת Net Event Vm Switch Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventVmSwitchProvider",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventVmSwitchProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8337,7 +8337,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetEventWFPCaptureProvider",
-    "descriptionHe": "מחיקת Net Event W F P Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetEventWFPCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Remove-NetEventWFPCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8345,7 +8345,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetFirewallDynamicKeywordAddress",
-    "descriptionHe": "מחיקת Net Firewall Dynamic Keyword Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetFirewallDynamicKeywordAddress",
     "descriptionEn": "Native PowerShell Command: Remove-NetFirewallDynamicKeywordAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8353,7 +8353,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetFirewallHyperVProfile",
-    "descriptionHe": "מחיקת Net Firewall Hyper V Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetFirewallHyperVProfile",
     "descriptionEn": "Native PowerShell Command: Remove-NetFirewallHyperVProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8361,7 +8361,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetFirewallHyperVRule",
-    "descriptionHe": "מחיקת Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Remove-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8369,7 +8369,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetFirewallHyperVVMSetting",
-    "descriptionHe": "מחיקת Net Firewall Hyper V V M Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetFirewallHyperVVMSetting",
     "descriptionEn": "Native PowerShell Command: Remove-NetFirewallHyperVVMSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8377,7 +8377,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetFirewallRule",
-    "descriptionHe": "מחיקת Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Remove-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8385,7 +8385,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPAddress",
-    "descriptionHe": "מחיקת Net I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPAddress",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8393,7 +8393,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPHttpsCertBinding",
-    "descriptionHe": "מחיקת Net I P Https Cert Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPHttpsCertBinding",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPHttpsCertBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8401,7 +8401,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPHttpsConfiguration",
-    "descriptionHe": "מחיקת Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8409,7 +8409,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecDospSetting",
-    "descriptionHe": "מחיקת Net I Psec Dosp Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecDospSetting",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecDospSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8417,7 +8417,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "מחיקת Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8425,7 +8425,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecMainModeRule",
-    "descriptionHe": "מחיקת Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8433,7 +8433,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecMainModeSA",
-    "descriptionHe": "מחיקת Net I Psec Main Mode S A",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecMainModeSA",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecMainModeSA",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8441,7 +8441,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecPhase1AuthSet",
-    "descriptionHe": "מחיקת Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8449,7 +8449,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecPhase2AuthSet",
-    "descriptionHe": "מחיקת Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8457,7 +8457,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "מחיקת Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8465,7 +8465,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecQuickModeSA",
-    "descriptionHe": "מחיקת Net I Psec Quick Mode S A",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecQuickModeSA",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecQuickModeSA",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8473,7 +8473,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetIPsecRule",
-    "descriptionHe": "מחיקת Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Remove-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8481,7 +8481,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetLbfoTeam",
-    "descriptionHe": "מחיקת Net Lbfo Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetLbfoTeam",
     "descriptionEn": "Native PowerShell Command: Remove-NetLbfoTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8489,7 +8489,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetLbfoTeamMember",
-    "descriptionHe": "מחיקת Net Lbfo Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetLbfoTeamMember",
     "descriptionEn": "Native PowerShell Command: Remove-NetLbfoTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8497,7 +8497,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetLbfoTeamNic",
-    "descriptionHe": "מחיקת Net Lbfo Team Nic",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetLbfoTeamNic",
     "descriptionEn": "Native PowerShell Command: Remove-NetLbfoTeamNic",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8505,7 +8505,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetNat",
-    "descriptionHe": "מחיקת Net Nat",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetNat",
     "descriptionEn": "Native PowerShell Command: Remove-NetNat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8513,7 +8513,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetNatExternalAddress",
-    "descriptionHe": "מחיקת Net Nat External Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetNatExternalAddress",
     "descriptionEn": "Native PowerShell Command: Remove-NetNatExternalAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8521,7 +8521,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetNatStaticMapping",
-    "descriptionHe": "מחיקת Net Nat Static Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetNatStaticMapping",
     "descriptionEn": "Native PowerShell Command: Remove-NetNatStaticMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8529,7 +8529,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetNatTransitionConfiguration",
-    "descriptionHe": "מחיקת Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Remove-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8537,7 +8537,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetNeighbor",
-    "descriptionHe": "מחיקת Net Neighbor",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetNeighbor",
     "descriptionEn": "Native PowerShell Command: Remove-NetNeighbor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8545,7 +8545,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetQosPolicy",
-    "descriptionHe": "מחיקת Net Qos Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetQosPolicy",
     "descriptionEn": "Native PowerShell Command: Remove-NetQosPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8553,7 +8553,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetRoute",
-    "descriptionHe": "מחיקת Net Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetRoute",
     "descriptionEn": "Native PowerShell Command: Remove-NetRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8561,7 +8561,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetSwitchTeam",
-    "descriptionHe": "מחיקת Net Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetSwitchTeam",
     "descriptionEn": "Native PowerShell Command: Remove-NetSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8569,7 +8569,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetSwitchTeamMember",
-    "descriptionHe": "מחיקת Net Switch Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetSwitchTeamMember",
     "descriptionEn": "Native PowerShell Command: Remove-NetSwitchTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8577,7 +8577,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetTransportFilter",
-    "descriptionHe": "מחיקת Net Transport Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetTransportFilter",
     "descriptionEn": "Native PowerShell Command: Remove-NetTransportFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8585,7 +8585,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetworkSwitchEthernetPortIPAddress",
-    "descriptionHe": "מחיקת Network Switch Ethernet Port I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetworkSwitchEthernetPortIPAddress",
     "descriptionEn": "Native PowerShell Command: Remove-NetworkSwitchEthernetPortIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8593,7 +8593,7 @@ const commandsData = [
   },
   {
     "command": "Remove-NetworkSwitchVlan",
-    "descriptionHe": "מחיקת Network Switch Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-NetworkSwitchVlan",
     "descriptionEn": "Native PowerShell Command: Remove-NetworkSwitchVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8601,7 +8601,7 @@ const commandsData = [
   },
   {
     "command": "Remove-OdbcDsn",
-    "descriptionHe": "מחיקת Odbc Dsn",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-OdbcDsn",
     "descriptionEn": "Native PowerShell Command: Remove-OdbcDsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8609,7 +8609,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Partition",
-    "descriptionHe": "מחיקת Partition",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Partition",
     "descriptionEn": "Native PowerShell Command: Remove-Partition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8617,7 +8617,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PartitionAccessPath",
-    "descriptionHe": "מחיקת Partition Access Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PartitionAccessPath",
     "descriptionEn": "Native PowerShell Command: Remove-PartitionAccessPath",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8625,7 +8625,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PhysicalDisk",
-    "descriptionHe": "מחיקת Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Remove-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8633,7 +8633,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Printer",
-    "descriptionHe": "מחיקת Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Printer",
     "descriptionEn": "Native PowerShell Command: Remove-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8641,7 +8641,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PrinterDriver",
-    "descriptionHe": "מחיקת Printer Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PrinterDriver",
     "descriptionEn": "Native PowerShell Command: Remove-PrinterDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8649,7 +8649,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PrinterPort",
-    "descriptionHe": "מחיקת Printer Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PrinterPort",
     "descriptionEn": "Native PowerShell Command: Remove-PrinterPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8657,7 +8657,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PrintJob",
-    "descriptionHe": "מחיקת Print Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PrintJob",
     "descriptionEn": "Native PowerShell Command: Remove-PrintJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8665,7 +8665,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbBandwidthLimit",
-    "descriptionHe": "מחיקת Smb Bandwidth Limit",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbBandwidthLimit",
     "descriptionEn": "Native PowerShell Command: Remove-SmbBandwidthLimit",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8673,7 +8673,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbClientCertificateMapping",
-    "descriptionHe": "מחיקת Smb Client Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbClientCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Remove-SmbClientCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8681,7 +8681,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SMBComponent",
-    "descriptionHe": "מחיקת S M B Component",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SMBComponent",
     "descriptionEn": "Native PowerShell Command: Remove-SMBComponent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8689,7 +8689,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbGlobalMapping",
-    "descriptionHe": "מחיקת Smb Global Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbGlobalMapping",
     "descriptionEn": "Native PowerShell Command: Remove-SmbGlobalMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8697,7 +8697,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbMapping",
-    "descriptionHe": "מחיקת Smb Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbMapping",
     "descriptionEn": "Native PowerShell Command: Remove-SmbMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8705,7 +8705,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbMultichannelConstraint",
-    "descriptionHe": "מחיקת Smb Multichannel Constraint",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbMultichannelConstraint",
     "descriptionEn": "Native PowerShell Command: Remove-SmbMultichannelConstraint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8713,7 +8713,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbServerAlternativePort",
-    "descriptionHe": "מחיקת Smb Server Alternative Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbServerAlternativePort",
     "descriptionEn": "Native PowerShell Command: Remove-SmbServerAlternativePort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8721,7 +8721,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbServerCertificateMapping",
-    "descriptionHe": "מחיקת Smb Server Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbServerCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Remove-SmbServerCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8729,7 +8729,7 @@ const commandsData = [
   },
   {
     "command": "Remove-SmbShare",
-    "descriptionHe": "מחיקת Smb Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-SmbShare",
     "descriptionEn": "Native PowerShell Command: Remove-SmbShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8737,7 +8737,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageBusBinding",
-    "descriptionHe": "מחיקת Storage Bus Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageBusBinding",
     "descriptionEn": "Native PowerShell Command: Remove-StorageBusBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8745,7 +8745,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageFaultDomain",
-    "descriptionHe": "מחיקת Storage Fault Domain",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageFaultDomain",
     "descriptionEn": "Native PowerShell Command: Remove-StorageFaultDomain",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8753,7 +8753,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageFileServer",
-    "descriptionHe": "מחיקת Storage File Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageFileServer",
     "descriptionEn": "Native PowerShell Command: Remove-StorageFileServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8761,7 +8761,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageHealthIntent",
-    "descriptionHe": "מחיקת Storage Health Intent",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageHealthIntent",
     "descriptionEn": "Native PowerShell Command: Remove-StorageHealthIntent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8769,7 +8769,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageHealthSetting",
-    "descriptionHe": "מחיקת Storage Health Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageHealthSetting",
     "descriptionEn": "Native PowerShell Command: Remove-StorageHealthSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8777,7 +8777,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StoragePool",
-    "descriptionHe": "מחיקת Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StoragePool",
     "descriptionEn": "Native PowerShell Command: Remove-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8785,7 +8785,7 @@ const commandsData = [
   },
   {
     "command": "Remove-StorageTier",
-    "descriptionHe": "מחיקת Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-StorageTier",
     "descriptionEn": "Native PowerShell Command: Remove-StorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8793,7 +8793,7 @@ const commandsData = [
   },
   {
     "command": "Remove-TargetPortFromMaskingSet",
-    "descriptionHe": "מחיקת Target Port From Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-TargetPortFromMaskingSet",
     "descriptionEn": "Native PowerShell Command: Remove-TargetPortFromMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8801,7 +8801,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VirtualDisk",
-    "descriptionHe": "מחיקת Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Remove-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8809,7 +8809,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VirtualDiskFromMaskingSet",
-    "descriptionHe": "מחיקת Virtual Disk From Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VirtualDiskFromMaskingSet",
     "descriptionEn": "Native PowerShell Command: Remove-VirtualDiskFromMaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8817,7 +8817,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMDirectVirtualDisk",
-    "descriptionHe": "מחיקת V M Direct Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMDirectVirtualDisk",
     "descriptionEn": "Native PowerShell Command: Remove-VMDirectVirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8825,7 +8825,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VpnConnection",
-    "descriptionHe": "מחיקת Vpn Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VpnConnection",
     "descriptionEn": "Native PowerShell Command: Remove-VpnConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8833,7 +8833,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VpnConnectionRoute",
-    "descriptionHe": "מחיקת Vpn Connection Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VpnConnectionRoute",
     "descriptionEn": "Native PowerShell Command: Remove-VpnConnectionRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8841,7 +8841,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VpnConnectionTriggerApplication",
-    "descriptionHe": "מחיקת Vpn Connection Trigger Application",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VpnConnectionTriggerApplication",
     "descriptionEn": "Native PowerShell Command: Remove-VpnConnectionTriggerApplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8849,7 +8849,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VpnConnectionTriggerDnsConfiguration",
-    "descriptionHe": "מחיקת Vpn Connection Trigger Dns Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VpnConnectionTriggerDnsConfiguration",
     "descriptionEn": "Native PowerShell Command: Remove-VpnConnectionTriggerDnsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8857,7 +8857,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VpnConnectionTriggerTrustedNetwork",
-    "descriptionHe": "מחיקת Vpn Connection Trigger Trusted Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VpnConnectionTriggerTrustedNetwork",
     "descriptionEn": "Native PowerShell Command: Remove-VpnConnectionTriggerTrustedNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8865,7 +8865,7 @@ const commandsData = [
   },
   {
     "command": "Rename-DAEntryPointTableItem",
-    "descriptionHe": "פעולת PowerShell על D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: Rename-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8873,7 +8873,7 @@ const commandsData = [
   },
   {
     "command": "Rename-MaskingSet",
-    "descriptionHe": "פעולת PowerShell על Masking Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-MaskingSet",
     "descriptionEn": "Native PowerShell Command: Rename-MaskingSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8881,7 +8881,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetAdapter",
-    "descriptionHe": "פעולת PowerShell על Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Rename-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8889,7 +8889,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetFirewallHyperVRule",
-    "descriptionHe": "פעולת PowerShell על Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Rename-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8897,7 +8897,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetFirewallRule",
-    "descriptionHe": "פעולת PowerShell על Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Rename-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8905,7 +8905,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPHttpsConfiguration",
-    "descriptionHe": "פעולת PowerShell על Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8913,7 +8913,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8921,7 +8921,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecMainModeRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8929,7 +8929,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecPhase1AuthSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8937,7 +8937,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecPhase2AuthSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8945,7 +8945,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8953,7 +8953,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetIPsecRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Rename-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8961,7 +8961,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetLbfoTeam",
-    "descriptionHe": "פעולת PowerShell על Net Lbfo Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetLbfoTeam",
     "descriptionEn": "Native PowerShell Command: Rename-NetLbfoTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8969,7 +8969,7 @@ const commandsData = [
   },
   {
     "command": "Rename-NetSwitchTeam",
-    "descriptionHe": "פעולת PowerShell על Net Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-NetSwitchTeam",
     "descriptionEn": "Native PowerShell Command: Rename-NetSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8977,7 +8977,7 @@ const commandsData = [
   },
   {
     "command": "Rename-Printer",
-    "descriptionHe": "פעולת PowerShell על Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-Printer",
     "descriptionEn": "Native PowerShell Command: Rename-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8985,7 +8985,7 @@ const commandsData = [
   },
   {
     "command": "Repair-FileIntegrity",
-    "descriptionHe": "פעולת PowerShell על File Integrity",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-FileIntegrity",
     "descriptionEn": "Native PowerShell Command: Repair-FileIntegrity",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -8993,7 +8993,7 @@ const commandsData = [
   },
   {
     "command": "Repair-VirtualDisk",
-    "descriptionHe": "פעולת PowerShell על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Repair-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9001,7 +9001,7 @@ const commandsData = [
   },
   {
     "command": "Repair-Volume",
-    "descriptionHe": "פעולת PowerShell על Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-Volume",
     "descriptionEn": "Native PowerShell Command: Repair-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9009,7 +9009,7 @@ const commandsData = [
   },
   {
     "command": "Reset-BC",
-    "descriptionHe": "פעולת PowerShell על B C",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-BC",
     "descriptionEn": "Native PowerShell Command: Reset-BC",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9017,7 +9017,7 @@ const commandsData = [
   },
   {
     "command": "Reset-DAClientExperienceConfiguration",
-    "descriptionHe": "פעולת PowerShell על D A Client Experience Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-DAClientExperienceConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-DAClientExperienceConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9025,7 +9025,7 @@ const commandsData = [
   },
   {
     "command": "Reset-DAEntryPointTableItem",
-    "descriptionHe": "פעולת PowerShell על D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: Reset-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9033,7 +9033,7 @@ const commandsData = [
   },
   {
     "command": "Reset-DtcLog",
-    "descriptionHe": "פעולת PowerShell על Dtc Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-DtcLog",
     "descriptionEn": "Native PowerShell Command: Reset-DtcLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9041,7 +9041,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NCSIPolicyConfiguration",
-    "descriptionHe": "פעולת PowerShell על N C S I Policy Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NCSIPolicyConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-NCSIPolicyConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9049,7 +9049,7 @@ const commandsData = [
   },
   {
     "command": "Reset-Net6to4Configuration",
-    "descriptionHe": "פעולת PowerShell על Net6to4 Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-Net6to4Configuration",
     "descriptionEn": "Native PowerShell Command: Reset-Net6to4Configuration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9057,7 +9057,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NetAdapterAdvancedProperty",
-    "descriptionHe": "פעולת PowerShell על Net Adapter Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NetAdapterAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: Reset-NetAdapterAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9065,7 +9065,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NetDnsTransitionConfiguration",
-    "descriptionHe": "פעולת PowerShell על Net Dns Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NetDnsTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-NetDnsTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9073,7 +9073,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NetIPHttpsConfiguration",
-    "descriptionHe": "פעולת PowerShell על Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9081,7 +9081,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NetIsatapConfiguration",
-    "descriptionHe": "פעולת PowerShell על Net Isatap Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NetIsatapConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-NetIsatapConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9089,7 +9089,7 @@ const commandsData = [
   },
   {
     "command": "Reset-NetTeredoConfiguration",
-    "descriptionHe": "פעולת PowerShell על Net Teredo Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-NetTeredoConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-NetTeredoConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9097,7 +9097,7 @@ const commandsData = [
   },
   {
     "command": "Reset-PhysicalDisk",
-    "descriptionHe": "פעולת PowerShell על Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Reset-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9105,7 +9105,7 @@ const commandsData = [
   },
   {
     "command": "Reset-SmbClientConfiguration",
-    "descriptionHe": "פעולת PowerShell על Smb Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-SmbClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-SmbClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9113,7 +9113,7 @@ const commandsData = [
   },
   {
     "command": "Reset-SmbServerConfiguration",
-    "descriptionHe": "פעולת PowerShell על Smb Server Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-SmbServerConfiguration",
     "descriptionEn": "Native PowerShell Command: Reset-SmbServerConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9121,7 +9121,7 @@ const commandsData = [
   },
   {
     "command": "Reset-StorageReliabilityCounter",
-    "descriptionHe": "פעולת PowerShell על Storage Reliability Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-StorageReliabilityCounter",
     "descriptionEn": "Native PowerShell Command: Reset-StorageReliabilityCounter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9129,7 +9129,7 @@ const commandsData = [
   },
   {
     "command": "Reset-WinhttpProxy",
-    "descriptionHe": "פעולת PowerShell על Winhttp Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-WinhttpProxy",
     "descriptionEn": "Native PowerShell Command: Reset-WinhttpProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9137,7 +9137,7 @@ const commandsData = [
   },
   {
     "command": "Resize-Partition",
-    "descriptionHe": "פעולת PowerShell על Partition",
+    "descriptionHe": "פקודת PowerShell מקורית: Resize-Partition",
     "descriptionEn": "Native PowerShell Command: Resize-Partition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9145,7 +9145,7 @@ const commandsData = [
   },
   {
     "command": "Resize-StorageTier",
-    "descriptionHe": "פעולת PowerShell על Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Resize-StorageTier",
     "descriptionEn": "Native PowerShell Command: Resize-StorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9153,7 +9153,7 @@ const commandsData = [
   },
   {
     "command": "Resize-VirtualDisk",
-    "descriptionHe": "פעולת PowerShell על Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Resize-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Resize-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9161,7 +9161,7 @@ const commandsData = [
   },
   {
     "command": "Restart-NetAdapter",
-    "descriptionHe": "הפעלה מחדש של Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Restart-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9169,7 +9169,7 @@ const commandsData = [
   },
   {
     "command": "Restart-PcsvDevice",
-    "descriptionHe": "הפעלה מחדש של Pcsv Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-PcsvDevice",
     "descriptionEn": "Native PowerShell Command: Restart-PcsvDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9177,7 +9177,7 @@ const commandsData = [
   },
   {
     "command": "Restart-PrintJob",
-    "descriptionHe": "הפעלה מחדש של Print Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-PrintJob",
     "descriptionEn": "Native PowerShell Command: Restart-PrintJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9185,7 +9185,7 @@ const commandsData = [
   },
   {
     "command": "Restore-DscConfiguration",
-    "descriptionHe": "פעולת PowerShell על Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Restore-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9193,7 +9193,7 @@ const commandsData = [
   },
   {
     "command": "Restore-NetworkSwitchConfiguration",
-    "descriptionHe": "פעולת PowerShell על Network Switch Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-NetworkSwitchConfiguration",
     "descriptionEn": "Native PowerShell Command: Restore-NetworkSwitchConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9201,7 +9201,7 @@ const commandsData = [
   },
   {
     "command": "Resume-BitLocker",
-    "descriptionHe": "פעולת PowerShell על Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-BitLocker",
     "descriptionEn": "Native PowerShell Command: Resume-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9209,7 +9209,7 @@ const commandsData = [
   },
   {
     "command": "Resume-PrintJob",
-    "descriptionHe": "פעולת PowerShell על Print Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-PrintJob",
     "descriptionEn": "Native PowerShell Command: Resume-PrintJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9217,7 +9217,7 @@ const commandsData = [
   },
   {
     "command": "Resume-StorageBusDisk",
-    "descriptionHe": "פעולת PowerShell על Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Resume-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9225,7 +9225,7 @@ const commandsData = [
   },
   {
     "command": "Revoke-FileShareAccess",
-    "descriptionHe": "פעולת PowerShell על File Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Revoke-FileShareAccess",
     "descriptionEn": "Native PowerShell Command: Revoke-FileShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9233,7 +9233,7 @@ const commandsData = [
   },
   {
     "command": "Revoke-HgsKeyProtectorAccess",
-    "descriptionHe": "פעולת PowerShell על Hgs Key Protector Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Revoke-HgsKeyProtectorAccess",
     "descriptionEn": "Native PowerShell Command: Revoke-HgsKeyProtectorAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9241,7 +9241,7 @@ const commandsData = [
   },
   {
     "command": "Revoke-SmbClientAccessToServer",
-    "descriptionHe": "פעולת PowerShell על Smb Client Access To Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Revoke-SmbClientAccessToServer",
     "descriptionEn": "Native PowerShell Command: Revoke-SmbClientAccessToServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9249,7 +9249,7 @@ const commandsData = [
   },
   {
     "command": "Revoke-SmbShareAccess",
-    "descriptionHe": "פעולת PowerShell על Smb Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Revoke-SmbShareAccess",
     "descriptionEn": "Native PowerShell Command: Revoke-SmbShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9257,7 +9257,7 @@ const commandsData = [
   },
   {
     "command": "S:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול S:",
+    "descriptionHe": "פקודת PowerShell מקורית: S:",
     "descriptionEn": "Native PowerShell Command: S:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9265,7 +9265,7 @@ const commandsData = [
   },
   {
     "command": "SafeGetCommand",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול SafeGetCommand",
+    "descriptionHe": "פקודת PowerShell מקורית: SafeGetCommand",
     "descriptionEn": "Native PowerShell Command: SafeGetCommand",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9273,7 +9273,7 @@ const commandsData = [
   },
   {
     "command": "Save-EtwTraceSession",
-    "descriptionHe": "פעולת PowerShell על Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Save-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9281,7 +9281,7 @@ const commandsData = [
   },
   {
     "command": "Save-Module",
-    "descriptionHe": "פעולת PowerShell על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-Module",
     "descriptionEn": "Native PowerShell Command: Save-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9289,7 +9289,7 @@ const commandsData = [
   },
   {
     "command": "Save-NetGPO",
-    "descriptionHe": "פעולת PowerShell על Net G P O",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-NetGPO",
     "descriptionEn": "Native PowerShell Command: Save-NetGPO",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9297,7 +9297,7 @@ const commandsData = [
   },
   {
     "command": "Save-NetworkSwitchConfiguration",
-    "descriptionHe": "פעולת PowerShell על Network Switch Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-NetworkSwitchConfiguration",
     "descriptionEn": "Native PowerShell Command: Save-NetworkSwitchConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9305,7 +9305,7 @@ const commandsData = [
   },
   {
     "command": "Save-Script",
-    "descriptionHe": "פעולת PowerShell על Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-Script",
     "descriptionEn": "Native PowerShell Command: Save-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9313,7 +9313,7 @@ const commandsData = [
   },
   {
     "command": "Save-StorageDataCollection",
-    "descriptionHe": "פעולת PowerShell על Storage Data Collection",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-StorageDataCollection",
     "descriptionEn": "Native PowerShell Command: Save-StorageDataCollection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9321,7 +9321,7 @@ const commandsData = [
   },
   {
     "command": "Send-EtwTraceSession",
-    "descriptionHe": "פעולת PowerShell על Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Send-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Send-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9329,7 +9329,7 @@ const commandsData = [
   },
   {
     "command": "Set-AssignedAccess",
-    "descriptionHe": "הגדרת Assigned Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AssignedAccess",
     "descriptionEn": "Native PowerShell Command: Set-AssignedAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9337,7 +9337,7 @@ const commandsData = [
   },
   {
     "command": "Set-BCAuthentication",
-    "descriptionHe": "הגדרת B C Authentication",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BCAuthentication",
     "descriptionEn": "Native PowerShell Command: Set-BCAuthentication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9345,7 +9345,7 @@ const commandsData = [
   },
   {
     "command": "Set-BCCache",
-    "descriptionHe": "הגדרת B C Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BCCache",
     "descriptionEn": "Native PowerShell Command: Set-BCCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9353,7 +9353,7 @@ const commandsData = [
   },
   {
     "command": "Set-BCDataCacheEntryMaxAge",
-    "descriptionHe": "הגדרת B C Data Cache Entry Max Age",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BCDataCacheEntryMaxAge",
     "descriptionEn": "Native PowerShell Command: Set-BCDataCacheEntryMaxAge",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9361,7 +9361,7 @@ const commandsData = [
   },
   {
     "command": "Set-BCMinSMBLatency",
-    "descriptionHe": "הגדרת B C Min S M B Latency",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BCMinSMBLatency",
     "descriptionEn": "Native PowerShell Command: Set-BCMinSMBLatency",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9369,7 +9369,7 @@ const commandsData = [
   },
   {
     "command": "Set-BCSecretKey",
-    "descriptionHe": "הגדרת B C Secret Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BCSecretKey",
     "descriptionEn": "Native PowerShell Command: Set-BCSecretKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9377,7 +9377,7 @@ const commandsData = [
   },
   {
     "command": "Set-ClusteredScheduledTask",
-    "descriptionHe": "הגדרת Clustered Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ClusteredScheduledTask",
     "descriptionEn": "Native PowerShell Command: Set-ClusteredScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9385,7 +9385,7 @@ const commandsData = [
   },
   {
     "command": "Set-DAClientExperienceConfiguration",
-    "descriptionHe": "הגדרת D A Client Experience Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DAClientExperienceConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-DAClientExperienceConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9393,7 +9393,7 @@ const commandsData = [
   },
   {
     "command": "Set-DAEntryPointTableItem",
-    "descriptionHe": "הגדרת D A Entry Point Table Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DAEntryPointTableItem",
     "descriptionEn": "Native PowerShell Command: Set-DAEntryPointTableItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9401,7 +9401,7 @@ const commandsData = [
   },
   {
     "command": "Set-DeliveryOptimizationStatus",
-    "descriptionHe": "הגדרת Delivery Optimization Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DeliveryOptimizationStatus",
     "descriptionEn": "Native PowerShell Command: Set-DeliveryOptimizationStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9409,7 +9409,7 @@ const commandsData = [
   },
   {
     "command": "Set-Disk",
-    "descriptionHe": "הגדרת Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Disk",
     "descriptionEn": "Native PowerShell Command: Set-Disk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9417,7 +9417,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClient",
-    "descriptionHe": "הגדרת Dns Client",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClient",
     "descriptionEn": "Native PowerShell Command: Set-DnsClient",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9425,7 +9425,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClientDohServerAddress",
-    "descriptionHe": "הגדרת Dns Client Doh Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClientDohServerAddress",
     "descriptionEn": "Native PowerShell Command: Set-DnsClientDohServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9433,7 +9433,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClientGlobalSetting",
-    "descriptionHe": "הגדרת Dns Client Global Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClientGlobalSetting",
     "descriptionEn": "Native PowerShell Command: Set-DnsClientGlobalSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9441,7 +9441,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClientNrptGlobal",
-    "descriptionHe": "הגדרת Dns Client Nrpt Global",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClientNrptGlobal",
     "descriptionEn": "Native PowerShell Command: Set-DnsClientNrptGlobal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9449,7 +9449,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClientNrptRule",
-    "descriptionHe": "הגדרת Dns Client Nrpt Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClientNrptRule",
     "descriptionEn": "Native PowerShell Command: Set-DnsClientNrptRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9457,7 +9457,7 @@ const commandsData = [
   },
   {
     "command": "Set-DnsClientServerAddress",
-    "descriptionHe": "הגדרת Dns Client Server Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DnsClientServerAddress",
     "descriptionEn": "Native PowerShell Command: Set-DnsClientServerAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9465,7 +9465,7 @@ const commandsData = [
   },
   {
     "command": "Set-DODownloadMode",
-    "descriptionHe": "הגדרת D O Download Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DODownloadMode",
     "descriptionEn": "Native PowerShell Command: Set-DODownloadMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9473,7 +9473,7 @@ const commandsData = [
   },
   {
     "command": "Set-DOMaxBackgroundBandwidth",
-    "descriptionHe": "הגדרת D O Max Background Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DOMaxBackgroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Set-DOMaxBackgroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9481,7 +9481,7 @@ const commandsData = [
   },
   {
     "command": "Set-DOMaxForegroundBandwidth",
-    "descriptionHe": "הגדרת D O Max Foreground Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DOMaxForegroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Set-DOMaxForegroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9489,7 +9489,7 @@ const commandsData = [
   },
   {
     "command": "Set-DOPercentageMaxBackgroundBandwidth",
-    "descriptionHe": "הגדרת D O Percentage Max Background Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DOPercentageMaxBackgroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Set-DOPercentageMaxBackgroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9497,7 +9497,7 @@ const commandsData = [
   },
   {
     "command": "Set-DOPercentageMaxForegroundBandwidth",
-    "descriptionHe": "הגדרת D O Percentage Max Foreground Bandwidth",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DOPercentageMaxForegroundBandwidth",
     "descriptionEn": "Native PowerShell Command: Set-DOPercentageMaxForegroundBandwidth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9505,7 +9505,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcAdvancedHostSetting",
-    "descriptionHe": "הגדרת Dtc Advanced Host Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcAdvancedHostSetting",
     "descriptionEn": "Native PowerShell Command: Set-DtcAdvancedHostSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9513,7 +9513,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcAdvancedSetting",
-    "descriptionHe": "הגדרת Dtc Advanced Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcAdvancedSetting",
     "descriptionEn": "Native PowerShell Command: Set-DtcAdvancedSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9521,7 +9521,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcClusterDefault",
-    "descriptionHe": "הגדרת Dtc Cluster Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcClusterDefault",
     "descriptionEn": "Native PowerShell Command: Set-DtcClusterDefault",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9529,7 +9529,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcClusterTMMapping",
-    "descriptionHe": "הגדרת Dtc Cluster T M Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcClusterTMMapping",
     "descriptionEn": "Native PowerShell Command: Set-DtcClusterTMMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9537,7 +9537,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcDefault",
-    "descriptionHe": "הגדרת Dtc Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcDefault",
     "descriptionEn": "Native PowerShell Command: Set-DtcDefault",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9545,7 +9545,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcLog",
-    "descriptionHe": "הגדרת Dtc Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcLog",
     "descriptionEn": "Native PowerShell Command: Set-DtcLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9553,7 +9553,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcNetworkSetting",
-    "descriptionHe": "הגדרת Dtc Network Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcNetworkSetting",
     "descriptionEn": "Native PowerShell Command: Set-DtcNetworkSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9561,7 +9561,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcTransaction",
-    "descriptionHe": "הגדרת Dtc Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcTransaction",
     "descriptionEn": "Native PowerShell Command: Set-DtcTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9569,7 +9569,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcTransactionsTraceSession",
-    "descriptionHe": "הגדרת Dtc Transactions Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcTransactionsTraceSession",
     "descriptionEn": "Native PowerShell Command: Set-DtcTransactionsTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9577,7 +9577,7 @@ const commandsData = [
   },
   {
     "command": "Set-DtcTransactionsTraceSetting",
-    "descriptionHe": "הגדרת Dtc Transactions Trace Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DtcTransactionsTraceSetting",
     "descriptionEn": "Native PowerShell Command: Set-DtcTransactionsTraceSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9585,7 +9585,7 @@ const commandsData = [
   },
   {
     "command": "Set-DynamicParameterVariables",
-    "descriptionHe": "הגדרת Dynamic Parameter Variables",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DynamicParameterVariables",
     "descriptionEn": "Native PowerShell Command: Set-DynamicParameterVariables",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9593,7 +9593,7 @@ const commandsData = [
   },
   {
     "command": "Set-EtwTraceProvider",
-    "descriptionHe": "הגדרת Etw Trace Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-EtwTraceProvider",
     "descriptionEn": "Native PowerShell Command: Set-EtwTraceProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9601,7 +9601,7 @@ const commandsData = [
   },
   {
     "command": "Set-FileIntegrity",
-    "descriptionHe": "הגדרת File Integrity",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-FileIntegrity",
     "descriptionEn": "Native PowerShell Command: Set-FileIntegrity",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9609,7 +9609,7 @@ const commandsData = [
   },
   {
     "command": "Set-FileShare",
-    "descriptionHe": "הגדרת File Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-FileShare",
     "descriptionEn": "Native PowerShell Command: Set-FileShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9617,7 +9617,7 @@ const commandsData = [
   },
   {
     "command": "Set-FileStorageTier",
-    "descriptionHe": "הגדרת File Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-FileStorageTier",
     "descriptionEn": "Native PowerShell Command: Set-FileStorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9625,7 +9625,7 @@ const commandsData = [
   },
   {
     "command": "Set-HgsClientConfiguration",
-    "descriptionHe": "הגדרת Hgs Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-HgsClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-HgsClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9633,7 +9633,7 @@ const commandsData = [
   },
   {
     "command": "Set-HgsClientHostKey",
-    "descriptionHe": "הגדרת Hgs Client Host Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-HgsClientHostKey",
     "descriptionEn": "Native PowerShell Command: Set-HgsClientHostKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9641,7 +9641,7 @@ const commandsData = [
   },
   {
     "command": "Set-InitiatorPort",
-    "descriptionHe": "הגדרת Initiator Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-InitiatorPort",
     "descriptionEn": "Native PowerShell Command: Set-InitiatorPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9649,7 +9649,7 @@ const commandsData = [
   },
   {
     "command": "Set-IscsiChapSecret",
-    "descriptionHe": "הגדרת Iscsi Chap Secret",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-IscsiChapSecret",
     "descriptionEn": "Native PowerShell Command: Set-IscsiChapSecret",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9657,7 +9657,7 @@ const commandsData = [
   },
   {
     "command": "Set-KmsLicenseInfo",
-    "descriptionHe": "הגדרת Kms License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-KmsLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Set-KmsLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9665,7 +9665,7 @@ const commandsData = [
   },
   {
     "command": "Set-LogProperties",
-    "descriptionHe": "הגדרת Log Properties",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LogProperties",
     "descriptionEn": "Native PowerShell Command: Set-LogProperties",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9673,7 +9673,7 @@ const commandsData = [
   },
   {
     "command": "Set-MMAgent",
-    "descriptionHe": "הגדרת M M Agent",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-MMAgent",
     "descriptionEn": "Native PowerShell Command: Set-MMAgent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9681,7 +9681,7 @@ const commandsData = [
   },
   {
     "command": "Set-MpPreference",
-    "descriptionHe": "הגדרת Mp Preference",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-MpPreference",
     "descriptionEn": "Native PowerShell Command: Set-MpPreference",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9689,7 +9689,7 @@ const commandsData = [
   },
   {
     "command": "Set-NCSIPolicyConfiguration",
-    "descriptionHe": "הגדרת N C S I Policy Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NCSIPolicyConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NCSIPolicyConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9697,7 +9697,7 @@ const commandsData = [
   },
   {
     "command": "Set-Net6to4Configuration",
-    "descriptionHe": "הגדרת Net6to4 Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Net6to4Configuration",
     "descriptionEn": "Native PowerShell Command: Set-Net6to4Configuration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9705,7 +9705,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapter",
-    "descriptionHe": "הגדרת Net Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapter",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9713,7 +9713,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterAdvancedProperty",
-    "descriptionHe": "הגדרת Net Adapter Advanced Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterAdvancedProperty",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterAdvancedProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9721,7 +9721,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterBinding",
-    "descriptionHe": "הגדרת Net Adapter Binding",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterBinding",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterBinding",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9729,7 +9729,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterChecksumOffload",
-    "descriptionHe": "הגדרת Net Adapter Checksum Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterChecksumOffload",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterChecksumOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9737,7 +9737,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterDataPathConfiguration",
-    "descriptionHe": "הגדרת Net Adapter Data Path Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterDataPathConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterDataPathConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9745,7 +9745,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterEncapsulatedPacketTaskOffload",
-    "descriptionHe": "הגדרת Net Adapter Encapsulated Packet Task Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterEncapsulatedPacketTaskOffload",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterEncapsulatedPacketTaskOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9753,7 +9753,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterIPsecOffload",
-    "descriptionHe": "הגדרת Net Adapter I Psec Offload",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterIPsecOffload",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterIPsecOffload",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9761,7 +9761,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterLso",
-    "descriptionHe": "הגדרת Net Adapter Lso",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterLso",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterLso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9769,7 +9769,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterPacketDirect",
-    "descriptionHe": "הגדרת Net Adapter Packet Direct",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterPacketDirect",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterPacketDirect",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9777,7 +9777,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterPowerManagement",
-    "descriptionHe": "הגדרת Net Adapter Power Management",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterPowerManagement",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterPowerManagement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9785,7 +9785,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterQos",
-    "descriptionHe": "הגדרת Net Adapter Qos",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterQos",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterQos",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9793,7 +9793,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterRdma",
-    "descriptionHe": "הגדרת Net Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9801,7 +9801,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterRsc",
-    "descriptionHe": "הגדרת Net Adapter Rsc",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterRsc",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterRsc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9809,7 +9809,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterRss",
-    "descriptionHe": "הגדרת Net Adapter Rss",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterRss",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterRss",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9817,7 +9817,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterSriov",
-    "descriptionHe": "הגדרת Net Adapter Sriov",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterSriov",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterSriov",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9825,7 +9825,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterUro",
-    "descriptionHe": "הגדרת Net Adapter Uro",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterUro",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterUro",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9833,7 +9833,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterUso",
-    "descriptionHe": "הגדרת Net Adapter Uso",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterUso",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterUso",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9841,7 +9841,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetAdapterVmq",
-    "descriptionHe": "הגדרת Net Adapter Vmq",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetAdapterVmq",
     "descriptionEn": "Native PowerShell Command: Set-NetAdapterVmq",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9849,7 +9849,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetConnectionProfile",
-    "descriptionHe": "הגדרת Net Connection Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetConnectionProfile",
     "descriptionEn": "Native PowerShell Command: Set-NetConnectionProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9857,7 +9857,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetDnsTransitionConfiguration",
-    "descriptionHe": "הגדרת Net Dns Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetDnsTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetDnsTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9865,7 +9865,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventPacketCaptureProvider",
-    "descriptionHe": "הגדרת Net Event Packet Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventPacketCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Set-NetEventPacketCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9873,7 +9873,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventProvider",
-    "descriptionHe": "הגדרת Net Event Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventProvider",
     "descriptionEn": "Native PowerShell Command: Set-NetEventProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9881,7 +9881,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventSession",
-    "descriptionHe": "הגדרת Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventSession",
     "descriptionEn": "Native PowerShell Command: Set-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9889,7 +9889,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventVFPProvider",
-    "descriptionHe": "הגדרת Net Event V F P Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventVFPProvider",
     "descriptionEn": "Native PowerShell Command: Set-NetEventVFPProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9897,7 +9897,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventVmSwitchProvider",
-    "descriptionHe": "הגדרת Net Event Vm Switch Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventVmSwitchProvider",
     "descriptionEn": "Native PowerShell Command: Set-NetEventVmSwitchProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9905,7 +9905,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetEventWFPCaptureProvider",
-    "descriptionHe": "הגדרת Net Event W F P Capture Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetEventWFPCaptureProvider",
     "descriptionEn": "Native PowerShell Command: Set-NetEventWFPCaptureProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9913,7 +9913,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallAddressFilter",
-    "descriptionHe": "הגדרת Net Firewall Address Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallAddressFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallAddressFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9921,7 +9921,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallApplicationFilter",
-    "descriptionHe": "הגדרת Net Firewall Application Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallApplicationFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallApplicationFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9929,7 +9929,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallHyperVProfile",
-    "descriptionHe": "הגדרת Net Firewall Hyper V Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallHyperVProfile",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallHyperVProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9937,7 +9937,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallHyperVRule",
-    "descriptionHe": "הגדרת Net Firewall Hyper V Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallHyperVRule",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallHyperVRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9945,7 +9945,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallHyperVVMSetting",
-    "descriptionHe": "הגדרת Net Firewall Hyper V V M Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallHyperVVMSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallHyperVVMSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9953,7 +9953,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallInterfaceFilter",
-    "descriptionHe": "הגדרת Net Firewall Interface Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallInterfaceFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallInterfaceFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9961,7 +9961,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallInterfaceTypeFilter",
-    "descriptionHe": "הגדרת Net Firewall Interface Type Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallInterfaceTypeFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallInterfaceTypeFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9969,7 +9969,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallPortFilter",
-    "descriptionHe": "הגדרת Net Firewall Port Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallPortFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallPortFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9977,7 +9977,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallProfile",
-    "descriptionHe": "הגדרת Net Firewall Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallProfile",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9985,7 +9985,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallRule",
-    "descriptionHe": "הגדרת Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -9993,7 +9993,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallSecurityFilter",
-    "descriptionHe": "הגדרת Net Firewall Security Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallSecurityFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallSecurityFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10001,7 +10001,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallServiceFilter",
-    "descriptionHe": "הגדרת Net Firewall Service Filter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallServiceFilter",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallServiceFilter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10009,7 +10009,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetFirewallSetting",
-    "descriptionHe": "הגדרת Net Firewall Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetFirewallSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetFirewallSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10017,7 +10017,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPAddress",
-    "descriptionHe": "הגדרת Net I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPAddress",
     "descriptionEn": "Native PowerShell Command: Set-NetIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10025,7 +10025,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPHttpsConfiguration",
-    "descriptionHe": "הגדרת Net I P Https Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPHttpsConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetIPHttpsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10033,7 +10033,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPInterface",
-    "descriptionHe": "הגדרת Net I P Interface",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPInterface",
     "descriptionEn": "Native PowerShell Command: Set-NetIPInterface",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10041,7 +10041,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecDospSetting",
-    "descriptionHe": "הגדרת Net I Psec Dosp Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecDospSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecDospSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10049,7 +10049,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecMainModeCryptoSet",
-    "descriptionHe": "הגדרת Net I Psec Main Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecMainModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecMainModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10057,7 +10057,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecMainModeRule",
-    "descriptionHe": "הגדרת Net I Psec Main Mode Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecMainModeRule",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecMainModeRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10065,7 +10065,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecPhase1AuthSet",
-    "descriptionHe": "הגדרת Net I Psec Phase1 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecPhase1AuthSet",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecPhase1AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10073,7 +10073,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecPhase2AuthSet",
-    "descriptionHe": "הגדרת Net I Psec Phase2 Auth Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecPhase2AuthSet",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecPhase2AuthSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10081,7 +10081,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecQuickModeCryptoSet",
-    "descriptionHe": "הגדרת Net I Psec Quick Mode Crypto Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecQuickModeCryptoSet",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecQuickModeCryptoSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10089,7 +10089,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPsecRule",
-    "descriptionHe": "הגדרת Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Set-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10097,7 +10097,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPv4Protocol",
-    "descriptionHe": "הגדרת Net I Pv4 Protocol",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPv4Protocol",
     "descriptionEn": "Native PowerShell Command: Set-NetIPv4Protocol",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10105,7 +10105,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIPv6Protocol",
-    "descriptionHe": "הגדרת Net I Pv6 Protocol",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIPv6Protocol",
     "descriptionEn": "Native PowerShell Command: Set-NetIPv6Protocol",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10113,7 +10113,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetIsatapConfiguration",
-    "descriptionHe": "הגדרת Net Isatap Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetIsatapConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetIsatapConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10121,7 +10121,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetLbfoTeam",
-    "descriptionHe": "הגדרת Net Lbfo Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetLbfoTeam",
     "descriptionEn": "Native PowerShell Command: Set-NetLbfoTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10129,7 +10129,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetLbfoTeamMember",
-    "descriptionHe": "הגדרת Net Lbfo Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetLbfoTeamMember",
     "descriptionEn": "Native PowerShell Command: Set-NetLbfoTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10137,7 +10137,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetLbfoTeamNic",
-    "descriptionHe": "הגדרת Net Lbfo Team Nic",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetLbfoTeamNic",
     "descriptionEn": "Native PowerShell Command: Set-NetLbfoTeamNic",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10145,7 +10145,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetNat",
-    "descriptionHe": "הגדרת Net Nat",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetNat",
     "descriptionEn": "Native PowerShell Command: Set-NetNat",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10153,7 +10153,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetNatGlobal",
-    "descriptionHe": "הגדרת Net Nat Global",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetNatGlobal",
     "descriptionEn": "Native PowerShell Command: Set-NetNatGlobal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10161,7 +10161,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetNatTransitionConfiguration",
-    "descriptionHe": "הגדרת Net Nat Transition Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetNatTransitionConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetNatTransitionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10169,7 +10169,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetNeighbor",
-    "descriptionHe": "הגדרת Net Neighbor",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetNeighbor",
     "descriptionEn": "Native PowerShell Command: Set-NetNeighbor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10177,7 +10177,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetOffloadGlobalSetting",
-    "descriptionHe": "הגדרת Net Offload Global Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetOffloadGlobalSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetOffloadGlobalSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10185,7 +10185,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetQosPolicy",
-    "descriptionHe": "הגדרת Net Qos Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetQosPolicy",
     "descriptionEn": "Native PowerShell Command: Set-NetQosPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10193,7 +10193,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetRoute",
-    "descriptionHe": "הגדרת Net Route",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetRoute",
     "descriptionEn": "Native PowerShell Command: Set-NetRoute",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10201,7 +10201,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetTCPSetting",
-    "descriptionHe": "הגדרת Net T C P Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetTCPSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetTCPSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10209,7 +10209,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetTeredoConfiguration",
-    "descriptionHe": "הגדרת Net Teredo Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetTeredoConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-NetTeredoConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10217,7 +10217,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetUDPSetting",
-    "descriptionHe": "הגדרת Net U D P Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetUDPSetting",
     "descriptionEn": "Native PowerShell Command: Set-NetUDPSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10225,7 +10225,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetworkSwitchEthernetPortIPAddress",
-    "descriptionHe": "הגדרת Network Switch Ethernet Port I P Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetworkSwitchEthernetPortIPAddress",
     "descriptionEn": "Native PowerShell Command: Set-NetworkSwitchEthernetPortIPAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10233,7 +10233,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetworkSwitchPortMode",
-    "descriptionHe": "הגדרת Network Switch Port Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetworkSwitchPortMode",
     "descriptionEn": "Native PowerShell Command: Set-NetworkSwitchPortMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10241,7 +10241,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetworkSwitchPortProperty",
-    "descriptionHe": "הגדרת Network Switch Port Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetworkSwitchPortProperty",
     "descriptionEn": "Native PowerShell Command: Set-NetworkSwitchPortProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10249,7 +10249,7 @@ const commandsData = [
   },
   {
     "command": "Set-NetworkSwitchVlanProperty",
-    "descriptionHe": "הגדרת Network Switch Vlan Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NetworkSwitchVlanProperty",
     "descriptionEn": "Native PowerShell Command: Set-NetworkSwitchVlanProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10257,7 +10257,7 @@ const commandsData = [
   },
   {
     "command": "Set-OdbcDriver",
-    "descriptionHe": "הגדרת Odbc Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OdbcDriver",
     "descriptionEn": "Native PowerShell Command: Set-OdbcDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10265,7 +10265,7 @@ const commandsData = [
   },
   {
     "command": "Set-OdbcDsn",
-    "descriptionHe": "הגדרת Odbc Dsn",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OdbcDsn",
     "descriptionEn": "Native PowerShell Command: Set-OdbcDsn",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10273,7 +10273,7 @@ const commandsData = [
   },
   {
     "command": "Set-OSLicenseInfo",
-    "descriptionHe": "הגדרת O S License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OSLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Set-OSLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10281,7 +10281,7 @@ const commandsData = [
   },
   {
     "command": "Set-Partition",
-    "descriptionHe": "הגדרת Partition",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Partition",
     "descriptionEn": "Native PowerShell Command: Set-Partition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10289,7 +10289,7 @@ const commandsData = [
   },
   {
     "command": "Set-PcsvDeviceBootConfiguration",
-    "descriptionHe": "הגדרת Pcsv Device Boot Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PcsvDeviceBootConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-PcsvDeviceBootConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10297,7 +10297,7 @@ const commandsData = [
   },
   {
     "command": "Set-PcsvDeviceNetworkConfiguration",
-    "descriptionHe": "הגדרת Pcsv Device Network Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PcsvDeviceNetworkConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-PcsvDeviceNetworkConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10305,7 +10305,7 @@ const commandsData = [
   },
   {
     "command": "Set-PcsvDeviceUserPassword",
-    "descriptionHe": "הגדרת Pcsv Device User Password",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PcsvDeviceUserPassword",
     "descriptionEn": "Native PowerShell Command: Set-PcsvDeviceUserPassword",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10313,7 +10313,7 @@ const commandsData = [
   },
   {
     "command": "Set-PhysicalDisk",
-    "descriptionHe": "הגדרת Physical Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PhysicalDisk",
     "descriptionEn": "Native PowerShell Command: Set-PhysicalDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10321,7 +10321,7 @@ const commandsData = [
   },
   {
     "command": "Set-PrintConfiguration",
-    "descriptionHe": "הגדרת Print Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PrintConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-PrintConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10329,7 +10329,7 @@ const commandsData = [
   },
   {
     "command": "Set-Printer",
-    "descriptionHe": "הגדרת Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Printer",
     "descriptionEn": "Native PowerShell Command: Set-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10337,7 +10337,7 @@ const commandsData = [
   },
   {
     "command": "Set-PrinterProperty",
-    "descriptionHe": "הגדרת Printer Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PrinterProperty",
     "descriptionEn": "Native PowerShell Command: Set-PrinterProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10345,7 +10345,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSRepository",
-    "descriptionHe": "הגדרת P S Repository",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSRepository",
     "descriptionEn": "Native PowerShell Command: Set-PSRepository",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10353,7 +10353,7 @@ const commandsData = [
   },
   {
     "command": "Set-ResiliencySetting",
-    "descriptionHe": "הגדרת Resiliency Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ResiliencySetting",
     "descriptionEn": "Native PowerShell Command: Set-ResiliencySetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10361,7 +10361,7 @@ const commandsData = [
   },
   {
     "command": "Set-ScheduledTask",
-    "descriptionHe": "הגדרת Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Set-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10369,7 +10369,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbBandwidthLimit",
-    "descriptionHe": "הגדרת Smb Bandwidth Limit",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbBandwidthLimit",
     "descriptionEn": "Native PowerShell Command: Set-SmbBandwidthLimit",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10377,7 +10377,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbClientCertificateMapping",
-    "descriptionHe": "הגדרת Smb Client Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbClientCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Set-SmbClientCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10385,7 +10385,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbClientConfiguration",
-    "descriptionHe": "הגדרת Smb Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-SmbClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10393,7 +10393,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbPathAcl",
-    "descriptionHe": "הגדרת Smb Path Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbPathAcl",
     "descriptionEn": "Native PowerShell Command: Set-SmbPathAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10401,7 +10401,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbServerAlternativePort",
-    "descriptionHe": "הגדרת Smb Server Alternative Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbServerAlternativePort",
     "descriptionEn": "Native PowerShell Command: Set-SmbServerAlternativePort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10409,7 +10409,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbServerCertificateMapping",
-    "descriptionHe": "הגדרת Smb Server Certificate Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbServerCertificateMapping",
     "descriptionEn": "Native PowerShell Command: Set-SmbServerCertificateMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10417,7 +10417,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbServerConfiguration",
-    "descriptionHe": "הגדרת Smb Server Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbServerConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-SmbServerConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10425,7 +10425,7 @@ const commandsData = [
   },
   {
     "command": "Set-SmbShare",
-    "descriptionHe": "הגדרת Smb Share",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SmbShare",
     "descriptionEn": "Native PowerShell Command: Set-SmbShare",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10433,7 +10433,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageBusCache",
-    "descriptionHe": "הגדרת Storage Bus Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageBusCache",
     "descriptionEn": "Native PowerShell Command: Set-StorageBusCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10441,7 +10441,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageBusProfile",
-    "descriptionHe": "הגדרת Storage Bus Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageBusProfile",
     "descriptionEn": "Native PowerShell Command: Set-StorageBusProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10449,7 +10449,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageFileServer",
-    "descriptionHe": "הגדרת Storage File Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageFileServer",
     "descriptionEn": "Native PowerShell Command: Set-StorageFileServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10457,7 +10457,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageHealthSetting",
-    "descriptionHe": "הגדרת Storage Health Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageHealthSetting",
     "descriptionEn": "Native PowerShell Command: Set-StorageHealthSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10465,7 +10465,7 @@ const commandsData = [
   },
   {
     "command": "Set-StoragePool",
-    "descriptionHe": "הגדרת Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StoragePool",
     "descriptionEn": "Native PowerShell Command: Set-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10473,7 +10473,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageProvider",
-    "descriptionHe": "הגדרת Storage Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageProvider",
     "descriptionEn": "Native PowerShell Command: Set-StorageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10481,7 +10481,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageSetting",
-    "descriptionHe": "הגדרת Storage Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageSetting",
     "descriptionEn": "Native PowerShell Command: Set-StorageSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10489,7 +10489,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageSubSystem",
-    "descriptionHe": "הגדרת Storage Sub System",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageSubSystem",
     "descriptionEn": "Native PowerShell Command: Set-StorageSubSystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10497,7 +10497,7 @@ const commandsData = [
   },
   {
     "command": "Set-StorageTier",
-    "descriptionHe": "הגדרת Storage Tier",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StorageTier",
     "descriptionEn": "Native PowerShell Command: Set-StorageTier",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10505,7 +10505,7 @@ const commandsData = [
   },
   {
     "command": "Set-SubscriptionLicenseInfo",
-    "descriptionHe": "הגדרת Subscription License Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SubscriptionLicenseInfo",
     "descriptionEn": "Native PowerShell Command: Set-SubscriptionLicenseInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10513,7 +10513,7 @@ const commandsData = [
   },
   {
     "command": "Set-TestInconclusive",
-    "descriptionHe": "הגדרת Test Inconclusive",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-TestInconclusive",
     "descriptionEn": "Native PowerShell Command: Set-TestInconclusive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10521,7 +10521,7 @@ const commandsData = [
   },
   {
     "command": "Setup",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Setup",
+    "descriptionHe": "פקודת PowerShell מקורית: Setup",
     "descriptionEn": "Native PowerShell Command: Setup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10529,7 +10529,7 @@ const commandsData = [
   },
   {
     "command": "Set-VirtualDisk",
-    "descriptionHe": "הגדרת Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Set-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10537,7 +10537,7 @@ const commandsData = [
   },
   {
     "command": "Set-Volume",
-    "descriptionHe": "הגדרת Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Volume",
     "descriptionEn": "Native PowerShell Command: Set-Volume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10545,7 +10545,7 @@ const commandsData = [
   },
   {
     "command": "Set-VolumeScrubPolicy",
-    "descriptionHe": "הגדרת Volume Scrub Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VolumeScrubPolicy",
     "descriptionEn": "Native PowerShell Command: Set-VolumeScrubPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10553,7 +10553,7 @@ const commandsData = [
   },
   {
     "command": "Set-VpnConnection",
-    "descriptionHe": "הגדרת Vpn Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VpnConnection",
     "descriptionEn": "Native PowerShell Command: Set-VpnConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10561,7 +10561,7 @@ const commandsData = [
   },
   {
     "command": "Set-VpnConnectionIPsecConfiguration",
-    "descriptionHe": "הגדרת Vpn Connection I Psec Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VpnConnectionIPsecConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-VpnConnectionIPsecConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10569,7 +10569,7 @@ const commandsData = [
   },
   {
     "command": "Set-VpnConnectionProxy",
-    "descriptionHe": "הגדרת Vpn Connection Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VpnConnectionProxy",
     "descriptionEn": "Native PowerShell Command: Set-VpnConnectionProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10577,7 +10577,7 @@ const commandsData = [
   },
   {
     "command": "Set-VpnConnectionTriggerDnsConfiguration",
-    "descriptionHe": "הגדרת Vpn Connection Trigger Dns Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VpnConnectionTriggerDnsConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-VpnConnectionTriggerDnsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10585,7 +10585,7 @@ const commandsData = [
   },
   {
     "command": "Set-VpnConnectionTriggerTrustedNetwork",
-    "descriptionHe": "הגדרת Vpn Connection Trigger Trusted Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VpnConnectionTriggerTrustedNetwork",
     "descriptionEn": "Native PowerShell Command: Set-VpnConnectionTriggerTrustedNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10593,7 +10593,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinhttpProxy",
-    "descriptionHe": "הגדרת Winhttp Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinhttpProxy",
     "descriptionEn": "Native PowerShell Command: Set-WinhttpProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10601,7 +10601,7 @@ const commandsData = [
   },
   {
     "command": "Should",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Should",
+    "descriptionHe": "פקודת PowerShell מקורית: Should",
     "descriptionEn": "Native PowerShell Command: Should",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10609,7 +10609,7 @@ const commandsData = [
   },
   {
     "command": "Show-NetFirewallRule",
-    "descriptionHe": "הצגת Net Firewall Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-NetFirewallRule",
     "descriptionEn": "Native PowerShell Command: Show-NetFirewallRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10617,7 +10617,7 @@ const commandsData = [
   },
   {
     "command": "Show-NetIPsecRule",
-    "descriptionHe": "הצגת Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Show-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10625,7 +10625,7 @@ const commandsData = [
   },
   {
     "command": "Show-StorageHistory",
-    "descriptionHe": "הצגת Storage History",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-StorageHistory",
     "descriptionEn": "Native PowerShell Command: Show-StorageHistory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10633,7 +10633,7 @@ const commandsData = [
   },
   {
     "command": "Show-VirtualDisk",
-    "descriptionHe": "הצגת Virtual Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-VirtualDisk",
     "descriptionEn": "Native PowerShell Command: Show-VirtualDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10641,7 +10641,7 @@ const commandsData = [
   },
   {
     "command": "Start-AppBackgroundTask",
-    "descriptionHe": "הפעלת App Background Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-AppBackgroundTask",
     "descriptionEn": "Native PowerShell Command: Start-AppBackgroundTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10649,7 +10649,7 @@ const commandsData = [
   },
   {
     "command": "Start-AppvVirtualProcess",
-    "descriptionHe": "הפעלת Appv Virtual Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-AppvVirtualProcess",
     "descriptionEn": "Native PowerShell Command: Start-AppvVirtualProcess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10657,7 +10657,7 @@ const commandsData = [
   },
   {
     "command": "Start-AutologgerConfig",
-    "descriptionHe": "הפעלת Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: Start-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10665,7 +10665,7 @@ const commandsData = [
   },
   {
     "command": "Start-Dtc",
-    "descriptionHe": "הפעלת Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Dtc",
     "descriptionEn": "Native PowerShell Command: Start-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10673,7 +10673,7 @@ const commandsData = [
   },
   {
     "command": "Start-DtcTransactionsTraceSession",
-    "descriptionHe": "הפעלת Dtc Transactions Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-DtcTransactionsTraceSession",
     "descriptionEn": "Native PowerShell Command: Start-DtcTransactionsTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10681,7 +10681,7 @@ const commandsData = [
   },
   {
     "command": "Start-EtwTraceSession",
-    "descriptionHe": "הפעלת Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Start-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10689,7 +10689,7 @@ const commandsData = [
   },
   {
     "command": "Start-MpRollback",
-    "descriptionHe": "הפעלת Mp Rollback",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-MpRollback",
     "descriptionEn": "Native PowerShell Command: Start-MpRollback",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10697,7 +10697,7 @@ const commandsData = [
   },
   {
     "command": "Start-MpScan",
-    "descriptionHe": "הפעלת Mp Scan",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-MpScan",
     "descriptionEn": "Native PowerShell Command: Start-MpScan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10705,7 +10705,7 @@ const commandsData = [
   },
   {
     "command": "Start-MpWDOScan",
-    "descriptionHe": "הפעלת Mp W D O Scan",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-MpWDOScan",
     "descriptionEn": "Native PowerShell Command: Start-MpWDOScan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10713,7 +10713,7 @@ const commandsData = [
   },
   {
     "command": "Start-NetEventSession",
-    "descriptionHe": "הפעלת Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-NetEventSession",
     "descriptionEn": "Native PowerShell Command: Start-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10721,7 +10721,7 @@ const commandsData = [
   },
   {
     "command": "Start-PcsvDevice",
-    "descriptionHe": "הפעלת Pcsv Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-PcsvDevice",
     "descriptionEn": "Native PowerShell Command: Start-PcsvDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10729,7 +10729,7 @@ const commandsData = [
   },
   {
     "command": "Start-ScheduledTask",
-    "descriptionHe": "הפעלת Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Start-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10737,7 +10737,7 @@ const commandsData = [
   },
   {
     "command": "Start-StorageDiagnosticLog",
-    "descriptionHe": "הפעלת Storage Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-StorageDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Start-StorageDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10745,7 +10745,7 @@ const commandsData = [
   },
   {
     "command": "Start-Trace",
-    "descriptionHe": "הפעלת Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Trace",
     "descriptionEn": "Native PowerShell Command: Start-Trace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10753,7 +10753,7 @@ const commandsData = [
   },
   {
     "command": "Stop-DscConfiguration",
-    "descriptionHe": "עצירת Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Stop-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10761,7 +10761,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Dtc",
-    "descriptionHe": "עצירת Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Dtc",
     "descriptionEn": "Native PowerShell Command: Stop-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10769,7 +10769,7 @@ const commandsData = [
   },
   {
     "command": "Stop-DtcTransactionsTraceSession",
-    "descriptionHe": "עצירת Dtc Transactions Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-DtcTransactionsTraceSession",
     "descriptionEn": "Native PowerShell Command: Stop-DtcTransactionsTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10777,7 +10777,7 @@ const commandsData = [
   },
   {
     "command": "Stop-EtwTraceSession",
-    "descriptionHe": "עצירת Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Stop-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10785,7 +10785,7 @@ const commandsData = [
   },
   {
     "command": "Stop-NetEventSession",
-    "descriptionHe": "עצירת Net Event Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-NetEventSession",
     "descriptionEn": "Native PowerShell Command: Stop-NetEventSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10793,7 +10793,7 @@ const commandsData = [
   },
   {
     "command": "Stop-PcsvDevice",
-    "descriptionHe": "עצירת Pcsv Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-PcsvDevice",
     "descriptionEn": "Native PowerShell Command: Stop-PcsvDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10801,7 +10801,7 @@ const commandsData = [
   },
   {
     "command": "Stop-ScheduledTask",
-    "descriptionHe": "עצירת Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Stop-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10809,7 +10809,7 @@ const commandsData = [
   },
   {
     "command": "Stop-StorageDiagnosticLog",
-    "descriptionHe": "עצירת Storage Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-StorageDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Stop-StorageDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10817,7 +10817,7 @@ const commandsData = [
   },
   {
     "command": "Stop-StorageJob",
-    "descriptionHe": "עצירת Storage Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-StorageJob",
     "descriptionEn": "Native PowerShell Command: Stop-StorageJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10825,7 +10825,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Trace",
-    "descriptionHe": "עצירת Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Trace",
     "descriptionEn": "Native PowerShell Command: Stop-Trace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10833,7 +10833,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-BitLocker",
-    "descriptionHe": "פעולת PowerShell על Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-BitLocker",
     "descriptionEn": "Native PowerShell Command: Suspend-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10841,7 +10841,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-PrintJob",
-    "descriptionHe": "פעולת PowerShell על Print Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-PrintJob",
     "descriptionEn": "Native PowerShell Command: Suspend-PrintJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10849,7 +10849,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-StorageBusDisk",
-    "descriptionHe": "פעולת PowerShell על Storage Bus Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-StorageBusDisk",
     "descriptionEn": "Native PowerShell Command: Suspend-StorageBusDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10857,7 +10857,7 @@ const commandsData = [
   },
   {
     "command": "Sync-NetIPsecRule",
-    "descriptionHe": "פעולת PowerShell על Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Sync-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Sync-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10865,7 +10865,7 @@ const commandsData = [
   },
   {
     "command": "T:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול T:",
+    "descriptionHe": "פקודת PowerShell מקורית: T:",
     "descriptionEn": "Native PowerShell Command: T:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10873,7 +10873,7 @@ const commandsData = [
   },
   {
     "command": "TabExpansion2",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול TabExpansion2",
+    "descriptionHe": "פקודת PowerShell מקורית: TabExpansion2",
     "descriptionEn": "Native PowerShell Command: TabExpansion2",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10881,7 +10881,7 @@ const commandsData = [
   },
   {
     "command": "Test-Dtc",
-    "descriptionHe": "בדיקת תקינות של Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-Dtc",
     "descriptionEn": "Native PowerShell Command: Test-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10889,7 +10889,7 @@ const commandsData = [
   },
   {
     "command": "Test-HgsClientConfiguration",
-    "descriptionHe": "בדיקת תקינות של Hgs Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-HgsClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Test-HgsClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10897,7 +10897,7 @@ const commandsData = [
   },
   {
     "command": "Test-NetConnection",
-    "descriptionHe": "בדיקת תקינות של Net Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-NetConnection",
     "descriptionEn": "Native PowerShell Command: Test-NetConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10905,7 +10905,7 @@ const commandsData = [
   },
   {
     "command": "Test-ScriptFileInfo",
-    "descriptionHe": "בדיקת תקינות של Script File Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-ScriptFileInfo",
     "descriptionEn": "Native PowerShell Command: Test-ScriptFileInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10913,7 +10913,7 @@ const commandsData = [
   },
   {
     "command": "U:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול U:",
+    "descriptionHe": "פקודת PowerShell מקורית: U:",
     "descriptionEn": "Native PowerShell Command: U:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10921,7 +10921,7 @@ const commandsData = [
   },
   {
     "command": "Unblock-FileShareAccess",
-    "descriptionHe": "פעולת PowerShell על File Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Unblock-FileShareAccess",
     "descriptionEn": "Native PowerShell Command: Unblock-FileShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10929,7 +10929,7 @@ const commandsData = [
   },
   {
     "command": "Unblock-SmbClientAccessToServer",
-    "descriptionHe": "פעולת PowerShell על Smb Client Access To Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Unblock-SmbClientAccessToServer",
     "descriptionEn": "Native PowerShell Command: Unblock-SmbClientAccessToServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10937,7 +10937,7 @@ const commandsData = [
   },
   {
     "command": "Unblock-SmbShareAccess",
-    "descriptionHe": "פעולת PowerShell על Smb Share Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Unblock-SmbShareAccess",
     "descriptionEn": "Native PowerShell Command: Unblock-SmbShareAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10945,7 +10945,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-Dtc",
-    "descriptionHe": "פעולת PowerShell על Dtc",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-Dtc",
     "descriptionEn": "Native PowerShell Command: Uninstall-Dtc",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10953,7 +10953,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-Module",
-    "descriptionHe": "פעולת PowerShell על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-Module",
     "descriptionEn": "Native PowerShell Command: Uninstall-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10961,7 +10961,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-Script",
-    "descriptionHe": "פעולת PowerShell על Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-Script",
     "descriptionEn": "Native PowerShell Command: Uninstall-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10969,7 +10969,7 @@ const commandsData = [
   },
   {
     "command": "Unlock-BitLocker",
-    "descriptionHe": "פעולת PowerShell על Bit Locker",
+    "descriptionHe": "פקודת PowerShell מקורית: Unlock-BitLocker",
     "descriptionEn": "Native PowerShell Command: Unlock-BitLocker",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10977,7 +10977,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-AppBackgroundTask",
-    "descriptionHe": "פעולת PowerShell על App Background Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-AppBackgroundTask",
     "descriptionEn": "Native PowerShell Command: Unregister-AppBackgroundTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10985,7 +10985,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-ClusteredScheduledTask",
-    "descriptionHe": "פעולת PowerShell על Clustered Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-ClusteredScheduledTask",
     "descriptionEn": "Native PowerShell Command: Unregister-ClusteredScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -10993,7 +10993,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-IscsiSession",
-    "descriptionHe": "פעולת PowerShell על Iscsi Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-IscsiSession",
     "descriptionEn": "Native PowerShell Command: Unregister-IscsiSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11001,7 +11001,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-PSRepository",
-    "descriptionHe": "פעולת PowerShell על P S Repository",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-PSRepository",
     "descriptionEn": "Native PowerShell Command: Unregister-PSRepository",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11009,7 +11009,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-ScheduledTask",
-    "descriptionHe": "פעולת PowerShell על Scheduled Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-ScheduledTask",
     "descriptionEn": "Native PowerShell Command: Unregister-ScheduledTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11017,7 +11017,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-StorageSubsystem",
-    "descriptionHe": "פעולת PowerShell על Storage Subsystem",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-StorageSubsystem",
     "descriptionEn": "Native PowerShell Command: Unregister-StorageSubsystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11025,7 +11025,7 @@ const commandsData = [
   },
   {
     "command": "Update-AutologgerConfig",
-    "descriptionHe": "עדכון Autologger Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-AutologgerConfig",
     "descriptionEn": "Native PowerShell Command: Update-AutologgerConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11033,7 +11033,7 @@ const commandsData = [
   },
   {
     "command": "Update-Disk",
-    "descriptionHe": "עדכון Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-Disk",
     "descriptionEn": "Native PowerShell Command: Update-Disk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11041,7 +11041,7 @@ const commandsData = [
   },
   {
     "command": "Update-DscConfiguration",
-    "descriptionHe": "עדכון Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Update-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11049,7 +11049,7 @@ const commandsData = [
   },
   {
     "command": "Update-EtwTraceSession",
-    "descriptionHe": "עדכון Etw Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-EtwTraceSession",
     "descriptionEn": "Native PowerShell Command: Update-EtwTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11057,7 +11057,7 @@ const commandsData = [
   },
   {
     "command": "Update-HostStorageCache",
-    "descriptionHe": "עדכון Host Storage Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-HostStorageCache",
     "descriptionEn": "Native PowerShell Command: Update-HostStorageCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11065,7 +11065,7 @@ const commandsData = [
   },
   {
     "command": "Update-IscsiTarget",
-    "descriptionHe": "עדכון Iscsi Target",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-IscsiTarget",
     "descriptionEn": "Native PowerShell Command: Update-IscsiTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11073,7 +11073,7 @@ const commandsData = [
   },
   {
     "command": "Update-IscsiTargetPortal",
-    "descriptionHe": "עדכון Iscsi Target Portal",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-IscsiTargetPortal",
     "descriptionEn": "Native PowerShell Command: Update-IscsiTargetPortal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11081,7 +11081,7 @@ const commandsData = [
   },
   {
     "command": "Update-Module",
-    "descriptionHe": "עדכון Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-Module",
     "descriptionEn": "Native PowerShell Command: Update-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11089,7 +11089,7 @@ const commandsData = [
   },
   {
     "command": "Update-ModuleManifest",
-    "descriptionHe": "עדכון Module Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-ModuleManifest",
     "descriptionEn": "Native PowerShell Command: Update-ModuleManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11097,7 +11097,7 @@ const commandsData = [
   },
   {
     "command": "Update-MpSignature",
-    "descriptionHe": "עדכון Mp Signature",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-MpSignature",
     "descriptionEn": "Native PowerShell Command: Update-MpSignature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11105,7 +11105,7 @@ const commandsData = [
   },
   {
     "command": "Update-NetFirewallDynamicKeywordAddress",
-    "descriptionHe": "עדכון Net Firewall Dynamic Keyword Address",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-NetFirewallDynamicKeywordAddress",
     "descriptionEn": "Native PowerShell Command: Update-NetFirewallDynamicKeywordAddress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11113,7 +11113,7 @@ const commandsData = [
   },
   {
     "command": "Update-NetIPsecRule",
-    "descriptionHe": "עדכון Net I Psec Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-NetIPsecRule",
     "descriptionEn": "Native PowerShell Command: Update-NetIPsecRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11121,7 +11121,7 @@ const commandsData = [
   },
   {
     "command": "Update-Script",
-    "descriptionHe": "עדכון Script",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-Script",
     "descriptionEn": "Native PowerShell Command: Update-Script",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11129,7 +11129,7 @@ const commandsData = [
   },
   {
     "command": "Update-ScriptFileInfo",
-    "descriptionHe": "עדכון Script File Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-ScriptFileInfo",
     "descriptionEn": "Native PowerShell Command: Update-ScriptFileInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11137,7 +11137,7 @@ const commandsData = [
   },
   {
     "command": "Update-SmbMultichannelConnection",
-    "descriptionHe": "עדכון Smb Multichannel Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-SmbMultichannelConnection",
     "descriptionEn": "Native PowerShell Command: Update-SmbMultichannelConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11145,7 +11145,7 @@ const commandsData = [
   },
   {
     "command": "Update-StorageBusCache",
-    "descriptionHe": "עדכון Storage Bus Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-StorageBusCache",
     "descriptionEn": "Native PowerShell Command: Update-StorageBusCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11153,7 +11153,7 @@ const commandsData = [
   },
   {
     "command": "Update-StorageFirmware",
-    "descriptionHe": "עדכון Storage Firmware",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-StorageFirmware",
     "descriptionEn": "Native PowerShell Command: Update-StorageFirmware",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11161,7 +11161,7 @@ const commandsData = [
   },
   {
     "command": "Update-StoragePool",
-    "descriptionHe": "עדכון Storage Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-StoragePool",
     "descriptionEn": "Native PowerShell Command: Update-StoragePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11169,7 +11169,7 @@ const commandsData = [
   },
   {
     "command": "Update-StorageProviderCache",
-    "descriptionHe": "עדכון Storage Provider Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-StorageProviderCache",
     "descriptionEn": "Native PowerShell Command: Update-StorageProviderCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11177,7 +11177,7 @@ const commandsData = [
   },
   {
     "command": "V:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול V:",
+    "descriptionHe": "פקודת PowerShell מקורית: V:",
     "descriptionEn": "Native PowerShell Command: V:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11185,7 +11185,7 @@ const commandsData = [
   },
   {
     "command": "W:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול W:",
+    "descriptionHe": "פקודת PowerShell מקורית: W:",
     "descriptionEn": "Native PowerShell Command: W:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11193,7 +11193,7 @@ const commandsData = [
   },
   {
     "command": "Write-DtcTransactionsTraceSession",
-    "descriptionHe": "כתיבת Dtc Transactions Trace Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-DtcTransactionsTraceSession",
     "descriptionEn": "Native PowerShell Command: Write-DtcTransactionsTraceSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11201,7 +11201,7 @@ const commandsData = [
   },
   {
     "command": "Write-PrinterNfcTag",
-    "descriptionHe": "כתיבת Printer Nfc Tag",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-PrinterNfcTag",
     "descriptionEn": "Native PowerShell Command: Write-PrinterNfcTag",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11209,7 +11209,7 @@ const commandsData = [
   },
   {
     "command": "Write-VolumeCache",
-    "descriptionHe": "כתיבת Volume Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-VolumeCache",
     "descriptionEn": "Native PowerShell Command: Write-VolumeCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11217,7 +11217,7 @@ const commandsData = [
   },
   {
     "command": "X:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול X:",
+    "descriptionHe": "פקודת PowerShell מקורית: X:",
     "descriptionEn": "Native PowerShell Command: X:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11225,7 +11225,7 @@ const commandsData = [
   },
   {
     "command": "Y:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Y:",
+    "descriptionHe": "פקודת PowerShell מקורית: Y:",
     "descriptionEn": "Native PowerShell Command: Y:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11233,7 +11233,7 @@ const commandsData = [
   },
   {
     "command": "Z:",
-    "descriptionHe": "פקודת מערכת מתקדמת לניהול Z:",
+    "descriptionHe": "פקודת PowerShell מקורית: Z:",
     "descriptionEn": "Native PowerShell Command: Z:",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11241,7 +11241,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppProvisionedSharedPackageContainer",
-    "descriptionHe": "הוספת App Provisioned Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppProvisionedSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Add-AppProvisionedSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11249,7 +11249,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppSharedPackageContainer",
-    "descriptionHe": "הוספת App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Add-AppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11257,7 +11257,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppvClientConnectionGroup",
-    "descriptionHe": "הוספת Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Add-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11265,7 +11265,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppvClientPackage",
-    "descriptionHe": "הוספת Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Add-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11273,7 +11273,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppvPublishingServer",
-    "descriptionHe": "הוספת Appv Publishing Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppvPublishingServer",
     "descriptionEn": "Native PowerShell Command: Add-AppvPublishingServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11281,7 +11281,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppxPackage",
-    "descriptionHe": "הוספת Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppxPackage",
     "descriptionEn": "Native PowerShell Command: Add-AppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11289,7 +11289,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppxProvisionedPackage",
-    "descriptionHe": "הוספת Appx Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppxProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Add-AppxProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11297,7 +11297,7 @@ const commandsData = [
   },
   {
     "command": "Add-AppxVolume",
-    "descriptionHe": "הוספת Appx Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-AppxVolume",
     "descriptionEn": "Native PowerShell Command: Add-AppxVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11305,7 +11305,7 @@ const commandsData = [
   },
   {
     "command": "Add-BitsFile",
-    "descriptionHe": "הוספת Bits File",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-BitsFile",
     "descriptionEn": "Native PowerShell Command: Add-BitsFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11313,7 +11313,7 @@ const commandsData = [
   },
   {
     "command": "Add-CertificateEnrollmentPolicyServer",
-    "descriptionHe": "הוספת Certificate Enrollment Policy Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-CertificateEnrollmentPolicyServer",
     "descriptionEn": "Native PowerShell Command: Add-CertificateEnrollmentPolicyServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11321,7 +11321,7 @@ const commandsData = [
   },
   {
     "command": "Add-Computer",
-    "descriptionHe": "הוספת Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-Computer",
     "descriptionEn": "Native PowerShell Command: Add-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11329,7 +11329,7 @@ const commandsData = [
   },
   {
     "command": "Add-Content",
-    "descriptionHe": "הוספת Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-Content",
     "descriptionEn": "Native PowerShell Command: Add-Content",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11337,7 +11337,7 @@ const commandsData = [
   },
   {
     "command": "Add-History",
-    "descriptionHe": "הוספת History",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-History",
     "descriptionEn": "Native PowerShell Command: Add-History",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11345,7 +11345,7 @@ const commandsData = [
   },
   {
     "command": "Add-JobTrigger",
-    "descriptionHe": "הוספת Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Add-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11353,7 +11353,7 @@ const commandsData = [
   },
   {
     "command": "Add-KdsRootKey",
-    "descriptionHe": "הוספת Kds Root Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-KdsRootKey",
     "descriptionEn": "Native PowerShell Command: Add-KdsRootKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11361,7 +11361,7 @@ const commandsData = [
   },
   {
     "command": "Add-LocalGroupMember",
-    "descriptionHe": "הוספת Local Group Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-LocalGroupMember",
     "descriptionEn": "Native PowerShell Command: Add-LocalGroupMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11369,7 +11369,7 @@ const commandsData = [
   },
   {
     "command": "Add-Member",
-    "descriptionHe": "הוספת Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-Member",
     "descriptionEn": "Native PowerShell Command: Add-Member",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11377,7 +11377,7 @@ const commandsData = [
   },
   {
     "command": "Add-PSSnapin",
-    "descriptionHe": "הוספת P S Snapin",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-PSSnapin",
     "descriptionEn": "Native PowerShell Command: Add-PSSnapin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11385,7 +11385,7 @@ const commandsData = [
   },
   {
     "command": "Add-SignerRule",
-    "descriptionHe": "הוספת Signer Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-SignerRule",
     "descriptionEn": "Native PowerShell Command: Add-SignerRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11393,7 +11393,7 @@ const commandsData = [
   },
   {
     "command": "Add-Type",
-    "descriptionHe": "הוספת Type",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-Type",
     "descriptionEn": "Native PowerShell Command: Add-Type",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11401,7 +11401,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMAssignableDevice",
-    "descriptionHe": "הוספת V M Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Add-VMAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11409,7 +11409,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMDvdDrive",
-    "descriptionHe": "הוספת V M Dvd Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMDvdDrive",
     "descriptionEn": "Native PowerShell Command: Add-VMDvdDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11417,7 +11417,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMFibreChannelHba",
-    "descriptionHe": "הוספת V M Fibre Channel Hba",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMFibreChannelHba",
     "descriptionEn": "Native PowerShell Command: Add-VMFibreChannelHba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11425,7 +11425,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMGpuPartitionAdapter",
-    "descriptionHe": "הוספת V M Gpu Partition Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMGpuPartitionAdapter",
     "descriptionEn": "Native PowerShell Command: Add-VMGpuPartitionAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11433,7 +11433,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMGroupMember",
-    "descriptionHe": "הוספת V M Group Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMGroupMember",
     "descriptionEn": "Native PowerShell Command: Add-VMGroupMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11441,7 +11441,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMHardDiskDrive",
-    "descriptionHe": "הוספת V M Hard Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMHardDiskDrive",
     "descriptionEn": "Native PowerShell Command: Add-VMHardDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11449,7 +11449,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMHostAssignableDevice",
-    "descriptionHe": "הוספת V M Host Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMHostAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Add-VMHostAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11457,7 +11457,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMKeyStorageDrive",
-    "descriptionHe": "הוספת V M Key Storage Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMKeyStorageDrive",
     "descriptionEn": "Native PowerShell Command: Add-VMKeyStorageDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11465,7 +11465,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMMigrationNetwork",
-    "descriptionHe": "הוספת V M Migration Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMMigrationNetwork",
     "descriptionEn": "Native PowerShell Command: Add-VMMigrationNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11473,7 +11473,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMNetworkAdapter",
-    "descriptionHe": "הוספת V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Add-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11481,7 +11481,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMNetworkAdapterAcl",
-    "descriptionHe": "הוספת V M Network Adapter Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMNetworkAdapterAcl",
     "descriptionEn": "Native PowerShell Command: Add-VMNetworkAdapterAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11489,7 +11489,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMNetworkAdapterExtendedAcl",
-    "descriptionHe": "הוספת V M Network Adapter Extended Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMNetworkAdapterExtendedAcl",
     "descriptionEn": "Native PowerShell Command: Add-VMNetworkAdapterExtendedAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11497,7 +11497,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMNetworkAdapterRoutingDomainMapping",
-    "descriptionHe": "הוספת V M Network Adapter Routing Domain Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMNetworkAdapterRoutingDomainMapping",
     "descriptionEn": "Native PowerShell Command: Add-VMNetworkAdapterRoutingDomainMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11505,7 +11505,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMPmemController",
-    "descriptionHe": "הוספת V M Pmem Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMPmemController",
     "descriptionEn": "Native PowerShell Command: Add-VMPmemController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11513,7 +11513,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMRemoteFx3dVideoAdapter",
-    "descriptionHe": "הוספת V M Remote Fx3d Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMRemoteFx3dVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Add-VMRemoteFx3dVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11521,7 +11521,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMScsiController",
-    "descriptionHe": "הוספת V M Scsi Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMScsiController",
     "descriptionEn": "Native PowerShell Command: Add-VMScsiController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11529,7 +11529,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMStoragePath",
-    "descriptionHe": "הוספת V M Storage Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMStoragePath",
     "descriptionEn": "Native PowerShell Command: Add-VMStoragePath",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11537,7 +11537,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMSwitch",
-    "descriptionHe": "הוספת V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMSwitch",
     "descriptionEn": "Native PowerShell Command: Add-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11545,7 +11545,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMSwitchExtensionPortFeature",
-    "descriptionHe": "הוספת V M Switch Extension Port Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMSwitchExtensionPortFeature",
     "descriptionEn": "Native PowerShell Command: Add-VMSwitchExtensionPortFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11553,7 +11553,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMSwitchExtensionSwitchFeature",
-    "descriptionHe": "הוספת V M Switch Extension Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMSwitchExtensionSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Add-VMSwitchExtensionSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11561,7 +11561,7 @@ const commandsData = [
   },
   {
     "command": "Add-VMSwitchTeamMember",
-    "descriptionHe": "הוספת V M Switch Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-VMSwitchTeamMember",
     "descriptionEn": "Native PowerShell Command: Add-VMSwitchTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11569,7 +11569,7 @@ const commandsData = [
   },
   {
     "command": "Add-WindowsCapability",
-    "descriptionHe": "הוספת Windows Capability",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-WindowsCapability",
     "descriptionEn": "Native PowerShell Command: Add-WindowsCapability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11577,7 +11577,7 @@ const commandsData = [
   },
   {
     "command": "Add-WindowsDriver",
-    "descriptionHe": "הוספת Windows Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-WindowsDriver",
     "descriptionEn": "Native PowerShell Command: Add-WindowsDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11585,7 +11585,7 @@ const commandsData = [
   },
   {
     "command": "Add-WindowsImage",
-    "descriptionHe": "הוספת Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Add-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11593,7 +11593,7 @@ const commandsData = [
   },
   {
     "command": "Add-WindowsPackage",
-    "descriptionHe": "הוספת Windows Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Add-WindowsPackage",
     "descriptionEn": "Native PowerShell Command: Add-WindowsPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11601,7 +11601,7 @@ const commandsData = [
   },
   {
     "command": "Checkpoint-Computer",
-    "descriptionHe": "פעולת PowerShell על Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Checkpoint-Computer",
     "descriptionEn": "Native PowerShell Command: Checkpoint-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11609,7 +11609,7 @@ const commandsData = [
   },
   {
     "command": "Checkpoint-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Checkpoint-VM",
     "descriptionEn": "Native PowerShell Command: Checkpoint-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11617,7 +11617,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Content",
-    "descriptionHe": "ניקוי Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Content",
     "descriptionEn": "Native PowerShell Command: Clear-Content",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11625,7 +11625,7 @@ const commandsData = [
   },
   {
     "command": "Clear-EventLog",
-    "descriptionHe": "ניקוי Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-EventLog",
     "descriptionEn": "Native PowerShell Command: Clear-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11633,7 +11633,7 @@ const commandsData = [
   },
   {
     "command": "Clear-History",
-    "descriptionHe": "ניקוי History",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-History",
     "descriptionEn": "Native PowerShell Command: Clear-History",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11641,7 +11641,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Item",
-    "descriptionHe": "ניקוי Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Item",
     "descriptionEn": "Native PowerShell Command: Clear-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11649,7 +11649,7 @@ const commandsData = [
   },
   {
     "command": "Clear-ItemProperty",
-    "descriptionHe": "ניקוי Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Clear-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11657,7 +11657,7 @@ const commandsData = [
   },
   {
     "command": "Clear-KdsCache",
-    "descriptionHe": "ניקוי Kds Cache",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-KdsCache",
     "descriptionEn": "Native PowerShell Command: Clear-KdsCache",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11665,7 +11665,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Recyclebin",
-    "descriptionHe": "ניקוי Recyclebin",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Recyclebin",
     "descriptionEn": "Native PowerShell Command: Clear-Recyclebin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11673,7 +11673,7 @@ const commandsData = [
   },
   {
     "command": "Clear-ReFSDedupSchedule",
-    "descriptionHe": "ניקוי Re F S Dedup Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-ReFSDedupSchedule",
     "descriptionEn": "Native PowerShell Command: Clear-ReFSDedupSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11681,7 +11681,7 @@ const commandsData = [
   },
   {
     "command": "Clear-ReFSDedupScrubSchedule",
-    "descriptionHe": "ניקוי Re F S Dedup Scrub Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-ReFSDedupScrubSchedule",
     "descriptionEn": "Native PowerShell Command: Clear-ReFSDedupScrubSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11689,7 +11689,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Tpm",
-    "descriptionHe": "ניקוי Tpm",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Tpm",
     "descriptionEn": "Native PowerShell Command: Clear-Tpm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11697,7 +11697,7 @@ const commandsData = [
   },
   {
     "command": "Clear-UevAppxPackage",
-    "descriptionHe": "ניקוי Uev Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-UevAppxPackage",
     "descriptionEn": "Native PowerShell Command: Clear-UevAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11705,7 +11705,7 @@ const commandsData = [
   },
   {
     "command": "Clear-UevConfiguration",
-    "descriptionHe": "ניקוי Uev Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-UevConfiguration",
     "descriptionEn": "Native PowerShell Command: Clear-UevConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11713,7 +11713,7 @@ const commandsData = [
   },
   {
     "command": "Clear-Variable",
-    "descriptionHe": "ניקוי Variable",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-Variable",
     "descriptionEn": "Native PowerShell Command: Clear-Variable",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11721,7 +11721,7 @@ const commandsData = [
   },
   {
     "command": "Clear-WindowsCorruptMountPoint",
-    "descriptionHe": "ניקוי Windows Corrupt Mount Point",
+    "descriptionHe": "פקודת PowerShell מקורית: Clear-WindowsCorruptMountPoint",
     "descriptionEn": "Native PowerShell Command: Clear-WindowsCorruptMountPoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11729,7 +11729,7 @@ const commandsData = [
   },
   {
     "command": "Compare-Object",
-    "descriptionHe": "פעולת PowerShell על Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Compare-Object",
     "descriptionEn": "Native PowerShell Command: Compare-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11737,7 +11737,7 @@ const commandsData = [
   },
   {
     "command": "Compare-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Compare-VM",
     "descriptionEn": "Native PowerShell Command: Compare-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11745,7 +11745,7 @@ const commandsData = [
   },
   {
     "command": "Complete-BitsTransfer",
-    "descriptionHe": "פעולת PowerShell על Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Complete-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Complete-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11753,7 +11753,7 @@ const commandsData = [
   },
   {
     "command": "Complete-DtcDiagnosticTransaction",
-    "descriptionHe": "פעולת PowerShell על Dtc Diagnostic Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Complete-DtcDiagnosticTransaction",
     "descriptionEn": "Native PowerShell Command: Complete-DtcDiagnosticTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11761,7 +11761,7 @@ const commandsData = [
   },
   {
     "command": "Complete-Transaction",
-    "descriptionHe": "פעולת PowerShell על Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Complete-Transaction",
     "descriptionEn": "Native PowerShell Command: Complete-Transaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11769,7 +11769,7 @@ const commandsData = [
   },
   {
     "command": "Complete-VMFailover",
-    "descriptionHe": "פעולת PowerShell על V M Failover",
+    "descriptionHe": "פקודת PowerShell מקורית: Complete-VMFailover",
     "descriptionEn": "Native PowerShell Command: Complete-VMFailover",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11777,7 +11777,7 @@ const commandsData = [
   },
   {
     "command": "Confirm-SecureBootUEFI",
-    "descriptionHe": "פעולת PowerShell על Secure Boot U E F I",
+    "descriptionHe": "פקודת PowerShell מקורית: Confirm-SecureBootUEFI",
     "descriptionEn": "Native PowerShell Command: Confirm-SecureBootUEFI",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11785,7 +11785,7 @@ const commandsData = [
   },
   {
     "command": "Connect-PSSession",
-    "descriptionHe": "פעולת PowerShell על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-PSSession",
     "descriptionEn": "Native PowerShell Command: Connect-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11793,7 +11793,7 @@ const commandsData = [
   },
   {
     "command": "Connect-VMNetworkAdapter",
-    "descriptionHe": "פעולת PowerShell על V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Connect-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11801,7 +11801,7 @@ const commandsData = [
   },
   {
     "command": "Connect-VMSan",
-    "descriptionHe": "פעולת PowerShell על V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-VMSan",
     "descriptionEn": "Native PowerShell Command: Connect-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11809,7 +11809,7 @@ const commandsData = [
   },
   {
     "command": "Connect-WSMan",
-    "descriptionHe": "פעולת PowerShell על W S Man",
+    "descriptionHe": "פקודת PowerShell מקורית: Connect-WSMan",
     "descriptionEn": "Native PowerShell Command: Connect-WSMan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11817,7 +11817,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-CIPolicy",
-    "descriptionHe": "פעולת PowerShell על C I Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-CIPolicy",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-CIPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11825,7 +11825,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-Csv",
-    "descriptionHe": "פעולת PowerShell על Csv",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-Csv",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-Csv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11833,7 +11833,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-Json",
-    "descriptionHe": "פעולת PowerShell על Json",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-Json",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-Json",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11841,7 +11841,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-SecureString",
-    "descriptionHe": "פעולת PowerShell על Secure String",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-SecureString",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-SecureString",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11849,7 +11849,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-String",
-    "descriptionHe": "פעולת PowerShell על String",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-String",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-String",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11857,7 +11857,7 @@ const commandsData = [
   },
   {
     "command": "ConvertFrom-StringData",
-    "descriptionHe": "פעולת PowerShell על String Data",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertFrom-StringData",
     "descriptionEn": "Native PowerShell Command: ConvertFrom-StringData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11865,7 +11865,7 @@ const commandsData = [
   },
   {
     "command": "Convert-Path",
-    "descriptionHe": "המרת Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Convert-Path",
     "descriptionEn": "Native PowerShell Command: Convert-Path",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11873,7 +11873,7 @@ const commandsData = [
   },
   {
     "command": "Convert-String",
-    "descriptionHe": "המרת String",
+    "descriptionHe": "פקודת PowerShell מקורית: Convert-String",
     "descriptionEn": "Native PowerShell Command: Convert-String",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11881,7 +11881,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-Csv",
-    "descriptionHe": "פעולת PowerShell על Csv",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-Csv",
     "descriptionEn": "Native PowerShell Command: ConvertTo-Csv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11889,7 +11889,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-Html",
-    "descriptionHe": "פעולת PowerShell על Html",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-Html",
     "descriptionEn": "Native PowerShell Command: ConvertTo-Html",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11897,7 +11897,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-Json",
-    "descriptionHe": "פעולת PowerShell על Json",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-Json",
     "descriptionEn": "Native PowerShell Command: ConvertTo-Json",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11905,7 +11905,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-ProcessMitigationPolicy",
-    "descriptionHe": "פעולת PowerShell על Process Mitigation Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-ProcessMitigationPolicy",
     "descriptionEn": "Native PowerShell Command: ConvertTo-ProcessMitigationPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11913,7 +11913,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-SecureString",
-    "descriptionHe": "פעולת PowerShell על Secure String",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-SecureString",
     "descriptionEn": "Native PowerShell Command: ConvertTo-SecureString",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11921,7 +11921,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-TpmOwnerAuth",
-    "descriptionHe": "פעולת PowerShell על Tpm Owner Auth",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-TpmOwnerAuth",
     "descriptionEn": "Native PowerShell Command: ConvertTo-TpmOwnerAuth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11929,7 +11929,7 @@ const commandsData = [
   },
   {
     "command": "ConvertTo-Xml",
-    "descriptionHe": "פעולת PowerShell על Xml",
+    "descriptionHe": "פקודת PowerShell מקורית: ConvertTo-Xml",
     "descriptionEn": "Native PowerShell Command: ConvertTo-Xml",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11937,7 +11937,7 @@ const commandsData = [
   },
   {
     "command": "Convert-VHD",
-    "descriptionHe": "המרת V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Convert-VHD",
     "descriptionEn": "Native PowerShell Command: Convert-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11945,7 +11945,7 @@ const commandsData = [
   },
   {
     "command": "Copy-BcdEntry",
-    "descriptionHe": "פעולת PowerShell על Bcd Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-BcdEntry",
     "descriptionEn": "Native PowerShell Command: Copy-BcdEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11953,7 +11953,7 @@ const commandsData = [
   },
   {
     "command": "Copy-Item",
-    "descriptionHe": "פעולת PowerShell על Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-Item",
     "descriptionEn": "Native PowerShell Command: Copy-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11961,7 +11961,7 @@ const commandsData = [
   },
   {
     "command": "Copy-ItemProperty",
-    "descriptionHe": "פעולת PowerShell על Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Copy-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11969,7 +11969,7 @@ const commandsData = [
   },
   {
     "command": "Copy-UserInternationalSettingsToSystem",
-    "descriptionHe": "פעולת PowerShell על User International Settings To System",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-UserInternationalSettingsToSystem",
     "descriptionEn": "Native PowerShell Command: Copy-UserInternationalSettingsToSystem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11977,7 +11977,7 @@ const commandsData = [
   },
   {
     "command": "Copy-VMFile",
-    "descriptionHe": "פעולת PowerShell על V M File",
+    "descriptionHe": "פקודת PowerShell מקורית: Copy-VMFile",
     "descriptionEn": "Native PowerShell Command: Copy-VMFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11985,7 +11985,7 @@ const commandsData = [
   },
   {
     "command": "Debug-Job",
-    "descriptionHe": "פעולת PowerShell על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-Job",
     "descriptionEn": "Native PowerShell Command: Debug-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -11993,7 +11993,7 @@ const commandsData = [
   },
   {
     "command": "Debug-Process",
-    "descriptionHe": "פעולת PowerShell על Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-Process",
     "descriptionEn": "Native PowerShell Command: Debug-Process",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12001,7 +12001,7 @@ const commandsData = [
   },
   {
     "command": "Debug-Runspace",
-    "descriptionHe": "פעולת PowerShell על Runspace",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-Runspace",
     "descriptionEn": "Native PowerShell Command: Debug-Runspace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12009,7 +12009,7 @@ const commandsData = [
   },
   {
     "command": "Debug-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Debug-VM",
     "descriptionEn": "Native PowerShell Command: Debug-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12017,7 +12017,7 @@ const commandsData = [
   },
   {
     "command": "Disable-AppBackgroundTaskDiagnosticLog",
-    "descriptionHe": "השבתת App Background Task Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-AppBackgroundTaskDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Disable-AppBackgroundTaskDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12025,7 +12025,7 @@ const commandsData = [
   },
   {
     "command": "Disable-Appv",
-    "descriptionHe": "השבתת Appv",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-Appv",
     "descriptionEn": "Native PowerShell Command: Disable-Appv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12033,7 +12033,7 @@ const commandsData = [
   },
   {
     "command": "Disable-AppvClientConnectionGroup",
-    "descriptionHe": "השבתת Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Disable-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12041,7 +12041,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementBootDebug",
-    "descriptionHe": "השבתת Bcd Element Boot Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementBootDebug",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementBootDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12049,7 +12049,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementBootEms",
-    "descriptionHe": "השבתת Bcd Element Boot Ems",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementBootEms",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementBootEms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12057,7 +12057,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementDebug",
-    "descriptionHe": "השבתת Bcd Element Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementDebug",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12065,7 +12065,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementEms",
-    "descriptionHe": "השבתת Bcd Element Ems",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementEms",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementEms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12073,7 +12073,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementEventLogging",
-    "descriptionHe": "השבתת Bcd Element Event Logging",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementEventLogging",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementEventLogging",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12081,7 +12081,7 @@ const commandsData = [
   },
   {
     "command": "Disable-BcdElementHypervisorDebug",
-    "descriptionHe": "השבתת Bcd Element Hypervisor Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-BcdElementHypervisorDebug",
     "descriptionEn": "Native PowerShell Command: Disable-BcdElementHypervisorDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12089,7 +12089,7 @@ const commandsData = [
   },
   {
     "command": "Disable-ComputerRestore",
-    "descriptionHe": "השבתת Computer Restore",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-ComputerRestore",
     "descriptionEn": "Native PowerShell Command: Disable-ComputerRestore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12097,7 +12097,7 @@ const commandsData = [
   },
   {
     "command": "Disable-JobTrigger",
-    "descriptionHe": "השבתת Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Disable-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12105,7 +12105,7 @@ const commandsData = [
   },
   {
     "command": "Disable-LocalUser",
-    "descriptionHe": "השבתת Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-LocalUser",
     "descriptionEn": "Native PowerShell Command: Disable-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12113,7 +12113,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PSBreakpoint",
-    "descriptionHe": "השבתת P S Breakpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PSBreakpoint",
     "descriptionEn": "Native PowerShell Command: Disable-PSBreakpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12121,7 +12121,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PSRemoting",
-    "descriptionHe": "השבתת P S Remoting",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PSRemoting",
     "descriptionEn": "Native PowerShell Command: Disable-PSRemoting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12129,7 +12129,7 @@ const commandsData = [
   },
   {
     "command": "Disable-PSSessionConfiguration",
-    "descriptionHe": "השבתת P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Disable-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12137,7 +12137,7 @@ const commandsData = [
   },
   {
     "command": "Disable-ReFSDedup",
-    "descriptionHe": "השבתת Re F S Dedup",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-ReFSDedup",
     "descriptionEn": "Native PowerShell Command: Disable-ReFSDedup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12145,7 +12145,7 @@ const commandsData = [
   },
   {
     "command": "Disable-RunspaceDebug",
-    "descriptionHe": "השבתת Runspace Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-RunspaceDebug",
     "descriptionEn": "Native PowerShell Command: Disable-RunspaceDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12153,7 +12153,7 @@ const commandsData = [
   },
   {
     "command": "Disable-ScheduledJob",
-    "descriptionHe": "השבתת Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Disable-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12161,7 +12161,7 @@ const commandsData = [
   },
   {
     "command": "Disable-TlsCipherSuite",
-    "descriptionHe": "השבתת Tls Cipher Suite",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-TlsCipherSuite",
     "descriptionEn": "Native PowerShell Command: Disable-TlsCipherSuite",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12169,7 +12169,7 @@ const commandsData = [
   },
   {
     "command": "Disable-TlsEccCurve",
-    "descriptionHe": "השבתת Tls Ecc Curve",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-TlsEccCurve",
     "descriptionEn": "Native PowerShell Command: Disable-TlsEccCurve",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12177,7 +12177,7 @@ const commandsData = [
   },
   {
     "command": "Disable-TlsSessionTicketKey",
-    "descriptionHe": "השבתת Tls Session Ticket Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-TlsSessionTicketKey",
     "descriptionEn": "Native PowerShell Command: Disable-TlsSessionTicketKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12185,7 +12185,7 @@ const commandsData = [
   },
   {
     "command": "Disable-TpmAutoProvisioning",
-    "descriptionHe": "השבתת Tpm Auto Provisioning",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-TpmAutoProvisioning",
     "descriptionEn": "Native PowerShell Command: Disable-TpmAutoProvisioning",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12193,7 +12193,7 @@ const commandsData = [
   },
   {
     "command": "Disable-Uev",
-    "descriptionHe": "השבתת Uev",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-Uev",
     "descriptionEn": "Native PowerShell Command: Disable-Uev",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12201,7 +12201,7 @@ const commandsData = [
   },
   {
     "command": "Disable-UevAppxPackage",
-    "descriptionHe": "השבתת Uev Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-UevAppxPackage",
     "descriptionEn": "Native PowerShell Command: Disable-UevAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12209,7 +12209,7 @@ const commandsData = [
   },
   {
     "command": "Disable-UevTemplate",
-    "descriptionHe": "השבתת Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Disable-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12217,7 +12217,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMConsoleSupport",
-    "descriptionHe": "השבתת V M Console Support",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMConsoleSupport",
     "descriptionEn": "Native PowerShell Command: Disable-VMConsoleSupport",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12225,7 +12225,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMEventing",
-    "descriptionHe": "השבתת V M Eventing",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMEventing",
     "descriptionEn": "Native PowerShell Command: Disable-VMEventing",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12233,7 +12233,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMIntegrationService",
-    "descriptionHe": "השבתת V M Integration Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMIntegrationService",
     "descriptionEn": "Native PowerShell Command: Disable-VMIntegrationService",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12241,7 +12241,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMMigration",
-    "descriptionHe": "השבתת V M Migration",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMMigration",
     "descriptionEn": "Native PowerShell Command: Disable-VMMigration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12249,7 +12249,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMRemoteFXPhysicalVideoAdapter",
-    "descriptionHe": "השבתת V M Remote F X Physical Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMRemoteFXPhysicalVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Disable-VMRemoteFXPhysicalVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12257,7 +12257,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMResourceMetering",
-    "descriptionHe": "השבתת V M Resource Metering",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMResourceMetering",
     "descriptionEn": "Native PowerShell Command: Disable-VMResourceMetering",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12265,7 +12265,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMSwitchExtension",
-    "descriptionHe": "השבתת V M Switch Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMSwitchExtension",
     "descriptionEn": "Native PowerShell Command: Disable-VMSwitchExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12273,7 +12273,7 @@ const commandsData = [
   },
   {
     "command": "Disable-VMTPM",
-    "descriptionHe": "השבתת V M T P M",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-VMTPM",
     "descriptionEn": "Native PowerShell Command: Disable-VMTPM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12281,7 +12281,7 @@ const commandsData = [
   },
   {
     "command": "Disable-WindowsErrorReporting",
-    "descriptionHe": "השבתת Windows Error Reporting",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-WindowsErrorReporting",
     "descriptionEn": "Native PowerShell Command: Disable-WindowsErrorReporting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12289,7 +12289,7 @@ const commandsData = [
   },
   {
     "command": "Disable-WindowsOptionalFeature",
-    "descriptionHe": "השבתת Windows Optional Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-WindowsOptionalFeature",
     "descriptionEn": "Native PowerShell Command: Disable-WindowsOptionalFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12297,7 +12297,7 @@ const commandsData = [
   },
   {
     "command": "Disable-WSManCredSSP",
-    "descriptionHe": "השבתת W S Man Cred S S P",
+    "descriptionHe": "פקודת PowerShell מקורית: Disable-WSManCredSSP",
     "descriptionEn": "Native PowerShell Command: Disable-WSManCredSSP",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12305,7 +12305,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-PSSession",
-    "descriptionHe": "פעולת PowerShell על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-PSSession",
     "descriptionEn": "Native PowerShell Command: Disconnect-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12313,7 +12313,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-VMNetworkAdapter",
-    "descriptionHe": "פעולת PowerShell על V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Disconnect-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12321,7 +12321,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-VMSan",
-    "descriptionHe": "פעולת PowerShell על V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-VMSan",
     "descriptionEn": "Native PowerShell Command: Disconnect-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12329,7 +12329,7 @@ const commandsData = [
   },
   {
     "command": "Disconnect-WSMan",
-    "descriptionHe": "פעולת PowerShell על W S Man",
+    "descriptionHe": "פקודת PowerShell מקורית: Disconnect-WSMan",
     "descriptionEn": "Native PowerShell Command: Disconnect-WSMan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12337,7 +12337,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-AppxVolume",
-    "descriptionHe": "פעולת PowerShell על Appx Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-AppxVolume",
     "descriptionEn": "Native PowerShell Command: Dismount-AppxVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12345,7 +12345,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-VHD",
-    "descriptionHe": "פעולת PowerShell על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-VHD",
     "descriptionEn": "Native PowerShell Command: Dismount-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12353,7 +12353,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-VMHostAssignableDevice",
-    "descriptionHe": "פעולת PowerShell על V M Host Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-VMHostAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Dismount-VMHostAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12361,7 +12361,7 @@ const commandsData = [
   },
   {
     "command": "Dismount-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Dismount-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Dismount-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12369,7 +12369,7 @@ const commandsData = [
   },
   {
     "command": "Edit-CIPolicyRule",
-    "descriptionHe": "פעולת PowerShell על C I Policy Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Edit-CIPolicyRule",
     "descriptionEn": "Native PowerShell Command: Edit-CIPolicyRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12377,7 +12377,7 @@ const commandsData = [
   },
   {
     "command": "Enable-AppBackgroundTaskDiagnosticLog",
-    "descriptionHe": "הפעלת/אפשור App Background Task Diagnostic Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-AppBackgroundTaskDiagnosticLog",
     "descriptionEn": "Native PowerShell Command: Enable-AppBackgroundTaskDiagnosticLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12385,7 +12385,7 @@ const commandsData = [
   },
   {
     "command": "Enable-Appv",
-    "descriptionHe": "הפעלת/אפשור Appv",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-Appv",
     "descriptionEn": "Native PowerShell Command: Enable-Appv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12393,7 +12393,7 @@ const commandsData = [
   },
   {
     "command": "Enable-AppvClientConnectionGroup",
-    "descriptionHe": "הפעלת/אפשור Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Enable-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12401,7 +12401,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementBootDebug",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Boot Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementBootDebug",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementBootDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12409,7 +12409,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementBootEms",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Boot Ems",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementBootEms",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementBootEms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12417,7 +12417,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementDebug",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementDebug",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12425,7 +12425,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementEms",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Ems",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementEms",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementEms",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12433,7 +12433,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementEventLogging",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Event Logging",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementEventLogging",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementEventLogging",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12441,7 +12441,7 @@ const commandsData = [
   },
   {
     "command": "Enable-BcdElementHypervisorDebug",
-    "descriptionHe": "הפעלת/אפשור Bcd Element Hypervisor Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-BcdElementHypervisorDebug",
     "descriptionEn": "Native PowerShell Command: Enable-BcdElementHypervisorDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12449,7 +12449,7 @@ const commandsData = [
   },
   {
     "command": "Enable-ComputerRestore",
-    "descriptionHe": "הפעלת/אפשור Computer Restore",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-ComputerRestore",
     "descriptionEn": "Native PowerShell Command: Enable-ComputerRestore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12457,7 +12457,7 @@ const commandsData = [
   },
   {
     "command": "Enable-JobTrigger",
-    "descriptionHe": "הפעלת/אפשור Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Enable-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12465,7 +12465,7 @@ const commandsData = [
   },
   {
     "command": "Enable-LocalUser",
-    "descriptionHe": "הפעלת/אפשור Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-LocalUser",
     "descriptionEn": "Native PowerShell Command: Enable-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12473,7 +12473,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PSBreakpoint",
-    "descriptionHe": "הפעלת/אפשור P S Breakpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PSBreakpoint",
     "descriptionEn": "Native PowerShell Command: Enable-PSBreakpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12481,7 +12481,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PSRemoting",
-    "descriptionHe": "הפעלת/אפשור P S Remoting",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PSRemoting",
     "descriptionEn": "Native PowerShell Command: Enable-PSRemoting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12489,7 +12489,7 @@ const commandsData = [
   },
   {
     "command": "Enable-PSSessionConfiguration",
-    "descriptionHe": "הפעלת/אפשור P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Enable-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12497,7 +12497,7 @@ const commandsData = [
   },
   {
     "command": "Enable-ReFSDedup",
-    "descriptionHe": "הפעלת/אפשור Re F S Dedup",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-ReFSDedup",
     "descriptionEn": "Native PowerShell Command: Enable-ReFSDedup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12505,7 +12505,7 @@ const commandsData = [
   },
   {
     "command": "Enable-RunspaceDebug",
-    "descriptionHe": "הפעלת/אפשור Runspace Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-RunspaceDebug",
     "descriptionEn": "Native PowerShell Command: Enable-RunspaceDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12513,7 +12513,7 @@ const commandsData = [
   },
   {
     "command": "Enable-ScheduledJob",
-    "descriptionHe": "הפעלת/אפשור Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Enable-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12521,7 +12521,7 @@ const commandsData = [
   },
   {
     "command": "Enable-TlsCipherSuite",
-    "descriptionHe": "הפעלת/אפשור Tls Cipher Suite",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-TlsCipherSuite",
     "descriptionEn": "Native PowerShell Command: Enable-TlsCipherSuite",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12529,7 +12529,7 @@ const commandsData = [
   },
   {
     "command": "Enable-TlsEccCurve",
-    "descriptionHe": "הפעלת/אפשור Tls Ecc Curve",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-TlsEccCurve",
     "descriptionEn": "Native PowerShell Command: Enable-TlsEccCurve",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12537,7 +12537,7 @@ const commandsData = [
   },
   {
     "command": "Enable-TlsSessionTicketKey",
-    "descriptionHe": "הפעלת/אפשור Tls Session Ticket Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-TlsSessionTicketKey",
     "descriptionEn": "Native PowerShell Command: Enable-TlsSessionTicketKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12545,7 +12545,7 @@ const commandsData = [
   },
   {
     "command": "Enable-TpmAutoProvisioning",
-    "descriptionHe": "הפעלת/אפשור Tpm Auto Provisioning",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-TpmAutoProvisioning",
     "descriptionEn": "Native PowerShell Command: Enable-TpmAutoProvisioning",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12553,7 +12553,7 @@ const commandsData = [
   },
   {
     "command": "Enable-Uev",
-    "descriptionHe": "הפעלת/אפשור Uev",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-Uev",
     "descriptionEn": "Native PowerShell Command: Enable-Uev",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12561,7 +12561,7 @@ const commandsData = [
   },
   {
     "command": "Enable-UevAppxPackage",
-    "descriptionHe": "הפעלת/אפשור Uev Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-UevAppxPackage",
     "descriptionEn": "Native PowerShell Command: Enable-UevAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12569,7 +12569,7 @@ const commandsData = [
   },
   {
     "command": "Enable-UevTemplate",
-    "descriptionHe": "הפעלת/אפשור Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Enable-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12577,7 +12577,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMConsoleSupport",
-    "descriptionHe": "הפעלת/אפשור V M Console Support",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMConsoleSupport",
     "descriptionEn": "Native PowerShell Command: Enable-VMConsoleSupport",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12585,7 +12585,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMEventing",
-    "descriptionHe": "הפעלת/אפשור V M Eventing",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMEventing",
     "descriptionEn": "Native PowerShell Command: Enable-VMEventing",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12593,7 +12593,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMIntegrationService",
-    "descriptionHe": "הפעלת/אפשור V M Integration Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMIntegrationService",
     "descriptionEn": "Native PowerShell Command: Enable-VMIntegrationService",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12601,7 +12601,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMMigration",
-    "descriptionHe": "הפעלת/אפשור V M Migration",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMMigration",
     "descriptionEn": "Native PowerShell Command: Enable-VMMigration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12609,7 +12609,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMRemoteFXPhysicalVideoAdapter",
-    "descriptionHe": "הפעלת/אפשור V M Remote F X Physical Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMRemoteFXPhysicalVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Enable-VMRemoteFXPhysicalVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12617,7 +12617,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMReplication",
-    "descriptionHe": "הפעלת/אפשור V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMReplication",
     "descriptionEn": "Native PowerShell Command: Enable-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12625,7 +12625,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMResourceMetering",
-    "descriptionHe": "הפעלת/אפשור V M Resource Metering",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMResourceMetering",
     "descriptionEn": "Native PowerShell Command: Enable-VMResourceMetering",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12633,7 +12633,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMSwitchExtension",
-    "descriptionHe": "הפעלת/אפשור V M Switch Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMSwitchExtension",
     "descriptionEn": "Native PowerShell Command: Enable-VMSwitchExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12641,7 +12641,7 @@ const commandsData = [
   },
   {
     "command": "Enable-VMTPM",
-    "descriptionHe": "הפעלת/אפשור V M T P M",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-VMTPM",
     "descriptionEn": "Native PowerShell Command: Enable-VMTPM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12649,7 +12649,7 @@ const commandsData = [
   },
   {
     "command": "Enable-WindowsErrorReporting",
-    "descriptionHe": "הפעלת/אפשור Windows Error Reporting",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-WindowsErrorReporting",
     "descriptionEn": "Native PowerShell Command: Enable-WindowsErrorReporting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12657,7 +12657,7 @@ const commandsData = [
   },
   {
     "command": "Enable-WindowsOptionalFeature",
-    "descriptionHe": "הפעלת/אפשור Windows Optional Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-WindowsOptionalFeature",
     "descriptionEn": "Native PowerShell Command: Enable-WindowsOptionalFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12665,7 +12665,7 @@ const commandsData = [
   },
   {
     "command": "Enable-WSManCredSSP",
-    "descriptionHe": "הפעלת/אפשור W S Man Cred S S P",
+    "descriptionHe": "פקודת PowerShell מקורית: Enable-WSManCredSSP",
     "descriptionEn": "Native PowerShell Command: Enable-WSManCredSSP",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12673,7 +12673,7 @@ const commandsData = [
   },
   {
     "command": "Enter-PSHostProcess",
-    "descriptionHe": "פעולת PowerShell על P S Host Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Enter-PSHostProcess",
     "descriptionEn": "Native PowerShell Command: Enter-PSHostProcess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12681,7 +12681,7 @@ const commandsData = [
   },
   {
     "command": "Enter-PSSession",
-    "descriptionHe": "פעולת PowerShell על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Enter-PSSession",
     "descriptionEn": "Native PowerShell Command: Enter-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12689,7 +12689,7 @@ const commandsData = [
   },
   {
     "command": "Exit-PSHostProcess",
-    "descriptionHe": "פעולת PowerShell על P S Host Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Exit-PSHostProcess",
     "descriptionEn": "Native PowerShell Command: Exit-PSHostProcess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12697,7 +12697,7 @@ const commandsData = [
   },
   {
     "command": "Exit-PSSession",
-    "descriptionHe": "פעולת PowerShell על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Exit-PSSession",
     "descriptionEn": "Native PowerShell Command: Exit-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12705,7 +12705,7 @@ const commandsData = [
   },
   {
     "command": "Expand-OsImage",
-    "descriptionHe": "פעולת PowerShell על Os Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Expand-OsImage",
     "descriptionEn": "Native PowerShell Command: Expand-OsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12713,7 +12713,7 @@ const commandsData = [
   },
   {
     "command": "Expand-WindowsCustomDataImage",
-    "descriptionHe": "פעולת PowerShell על Windows Custom Data Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Expand-WindowsCustomDataImage",
     "descriptionEn": "Native PowerShell Command: Expand-WindowsCustomDataImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12721,7 +12721,7 @@ const commandsData = [
   },
   {
     "command": "Expand-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Expand-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Expand-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12729,7 +12729,7 @@ const commandsData = [
   },
   {
     "command": "Export-Alias",
-    "descriptionHe": "ייצוא נתונים עבור Alias",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Alias",
     "descriptionEn": "Native PowerShell Command: Export-Alias",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12737,7 +12737,7 @@ const commandsData = [
   },
   {
     "command": "Export-BcdStore",
-    "descriptionHe": "ייצוא נתונים עבור Bcd Store",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-BcdStore",
     "descriptionEn": "Native PowerShell Command: Export-BcdStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12745,7 +12745,7 @@ const commandsData = [
   },
   {
     "command": "Export-BinaryMiLog",
-    "descriptionHe": "ייצוא נתונים עבור Binary Mi Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-BinaryMiLog",
     "descriptionEn": "Native PowerShell Command: Export-BinaryMiLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12753,7 +12753,7 @@ const commandsData = [
   },
   {
     "command": "Export-Certificate",
-    "descriptionHe": "ייצוא נתונים עבור Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Certificate",
     "descriptionEn": "Native PowerShell Command: Export-Certificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12761,7 +12761,7 @@ const commandsData = [
   },
   {
     "command": "Export-Clixml",
-    "descriptionHe": "ייצוא נתונים עבור Clixml",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Clixml",
     "descriptionEn": "Native PowerShell Command: Export-Clixml",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12769,7 +12769,7 @@ const commandsData = [
   },
   {
     "command": "Export-Console",
-    "descriptionHe": "ייצוא נתונים עבור Console",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Console",
     "descriptionEn": "Native PowerShell Command: Export-Console",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12777,7 +12777,7 @@ const commandsData = [
   },
   {
     "command": "Export-Counter",
-    "descriptionHe": "ייצוא נתונים עבור Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Counter",
     "descriptionEn": "Native PowerShell Command: Export-Counter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12785,7 +12785,7 @@ const commandsData = [
   },
   {
     "command": "Export-Csv",
-    "descriptionHe": "ייצוא נתונים עבור Csv",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Csv",
     "descriptionEn": "Native PowerShell Command: Export-Csv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12793,7 +12793,7 @@ const commandsData = [
   },
   {
     "command": "Export-FormatData",
-    "descriptionHe": "ייצוא נתונים עבור Format Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-FormatData",
     "descriptionEn": "Native PowerShell Command: Export-FormatData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12801,7 +12801,7 @@ const commandsData = [
   },
   {
     "command": "Export-ModuleMember",
-    "descriptionHe": "ייצוא נתונים עבור Module Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-ModuleMember",
     "descriptionEn": "Native PowerShell Command: Export-ModuleMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12809,7 +12809,7 @@ const commandsData = [
   },
   {
     "command": "Export-OsImage",
-    "descriptionHe": "ייצוא נתונים עבור Os Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-OsImage",
     "descriptionEn": "Native PowerShell Command: Export-OsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12817,7 +12817,7 @@ const commandsData = [
   },
   {
     "command": "Export-PfxCertificate",
-    "descriptionHe": "ייצוא נתונים עבור Pfx Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-PfxCertificate",
     "descriptionEn": "Native PowerShell Command: Export-PfxCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12825,7 +12825,7 @@ const commandsData = [
   },
   {
     "command": "Export-ProvisioningPackage",
-    "descriptionHe": "ייצוא נתונים עבור Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Export-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12833,7 +12833,7 @@ const commandsData = [
   },
   {
     "command": "Export-PSSession",
-    "descriptionHe": "ייצוא נתונים עבור P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-PSSession",
     "descriptionEn": "Native PowerShell Command: Export-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12841,7 +12841,7 @@ const commandsData = [
   },
   {
     "command": "Export-StartLayout",
-    "descriptionHe": "ייצוא נתונים עבור Start Layout",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-StartLayout",
     "descriptionEn": "Native PowerShell Command: Export-StartLayout",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12849,7 +12849,7 @@ const commandsData = [
   },
   {
     "command": "Export-StartLayoutEdgeAssets",
-    "descriptionHe": "ייצוא נתונים עבור Start Layout Edge Assets",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-StartLayoutEdgeAssets",
     "descriptionEn": "Native PowerShell Command: Export-StartLayoutEdgeAssets",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12857,7 +12857,7 @@ const commandsData = [
   },
   {
     "command": "Export-TlsSessionTicketKey",
-    "descriptionHe": "ייצוא נתונים עבור Tls Session Ticket Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-TlsSessionTicketKey",
     "descriptionEn": "Native PowerShell Command: Export-TlsSessionTicketKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12865,7 +12865,7 @@ const commandsData = [
   },
   {
     "command": "Export-Trace",
-    "descriptionHe": "ייצוא נתונים עבור Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-Trace",
     "descriptionEn": "Native PowerShell Command: Export-Trace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12873,7 +12873,7 @@ const commandsData = [
   },
   {
     "command": "Export-UevConfiguration",
-    "descriptionHe": "ייצוא נתונים עבור Uev Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-UevConfiguration",
     "descriptionEn": "Native PowerShell Command: Export-UevConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12881,7 +12881,7 @@ const commandsData = [
   },
   {
     "command": "Export-UevPackage",
-    "descriptionHe": "ייצוא נתונים עבור Uev Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-UevPackage",
     "descriptionEn": "Native PowerShell Command: Export-UevPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12889,7 +12889,7 @@ const commandsData = [
   },
   {
     "command": "Export-VM",
-    "descriptionHe": "ייצוא נתונים עבור V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-VM",
     "descriptionEn": "Native PowerShell Command: Export-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12897,7 +12897,7 @@ const commandsData = [
   },
   {
     "command": "Export-VMSnapshot",
-    "descriptionHe": "ייצוא נתונים עבור V M Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-VMSnapshot",
     "descriptionEn": "Native PowerShell Command: Export-VMSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12905,7 +12905,7 @@ const commandsData = [
   },
   {
     "command": "Export-WindowsCapabilitySource",
-    "descriptionHe": "ייצוא נתונים עבור Windows Capability Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-WindowsCapabilitySource",
     "descriptionEn": "Native PowerShell Command: Export-WindowsCapabilitySource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12913,7 +12913,7 @@ const commandsData = [
   },
   {
     "command": "Export-WindowsDriver",
-    "descriptionHe": "ייצוא נתונים עבור Windows Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-WindowsDriver",
     "descriptionEn": "Native PowerShell Command: Export-WindowsDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12921,7 +12921,7 @@ const commandsData = [
   },
   {
     "command": "Export-WindowsImage",
-    "descriptionHe": "ייצוא נתונים עבור Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Export-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Export-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12929,7 +12929,7 @@ const commandsData = [
   },
   {
     "command": "Find-LapsADExtendedRights",
-    "descriptionHe": "פעולת PowerShell על Laps A D Extended Rights",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-LapsADExtendedRights",
     "descriptionEn": "Native PowerShell Command: Find-LapsADExtendedRights",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12937,7 +12937,7 @@ const commandsData = [
   },
   {
     "command": "Find-Package",
-    "descriptionHe": "פעולת PowerShell על Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-Package",
     "descriptionEn": "Native PowerShell Command: Find-Package",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12945,7 +12945,7 @@ const commandsData = [
   },
   {
     "command": "Find-PackageProvider",
-    "descriptionHe": "פעולת PowerShell על Package Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Find-PackageProvider",
     "descriptionEn": "Native PowerShell Command: Find-PackageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12953,7 +12953,7 @@ const commandsData = [
   },
   {
     "command": "ForEach-Object",
-    "descriptionHe": "פעולת PowerShell על Object",
+    "descriptionHe": "פקודת PowerShell מקורית: ForEach-Object",
     "descriptionEn": "Native PowerShell Command: ForEach-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12961,7 +12961,7 @@ const commandsData = [
   },
   {
     "command": "Format-Custom",
-    "descriptionHe": "עיצוב פלט של Custom",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-Custom",
     "descriptionEn": "Native PowerShell Command: Format-Custom",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12969,7 +12969,7 @@ const commandsData = [
   },
   {
     "command": "Format-List",
-    "descriptionHe": "עיצוב פלט של List",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-List",
     "descriptionEn": "Native PowerShell Command: Format-List",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12977,7 +12977,7 @@ const commandsData = [
   },
   {
     "command": "Format-SecureBootUEFI",
-    "descriptionHe": "עיצוב פלט של Secure Boot U E F I",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-SecureBootUEFI",
     "descriptionEn": "Native PowerShell Command: Format-SecureBootUEFI",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12985,7 +12985,7 @@ const commandsData = [
   },
   {
     "command": "Format-Table",
-    "descriptionHe": "עיצוב פלט של Table",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-Table",
     "descriptionEn": "Native PowerShell Command: Format-Table",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -12993,7 +12993,7 @@ const commandsData = [
   },
   {
     "command": "Format-Wide",
-    "descriptionHe": "עיצוב פלט של Wide",
+    "descriptionHe": "פקודת PowerShell מקורית: Format-Wide",
     "descriptionEn": "Native PowerShell Command: Format-Wide",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13001,7 +13001,7 @@ const commandsData = [
   },
   {
     "command": "Get-Acl",
-    "descriptionHe": "קבלת מידע על Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Acl",
     "descriptionEn": "Native PowerShell Command: Get-Acl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13009,7 +13009,7 @@ const commandsData = [
   },
   {
     "command": "Get-Alias",
-    "descriptionHe": "קבלת מידע על Alias",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Alias",
     "descriptionEn": "Native PowerShell Command: Get-Alias",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13017,7 +13017,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppLockerFileInformation",
-    "descriptionHe": "קבלת מידע על App Locker File Information",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppLockerFileInformation",
     "descriptionEn": "Native PowerShell Command: Get-AppLockerFileInformation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13025,7 +13025,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppLockerPolicy",
-    "descriptionHe": "קבלת מידע על App Locker Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppLockerPolicy",
     "descriptionEn": "Native PowerShell Command: Get-AppLockerPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13033,7 +13033,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppProvisionedSharedPackageContainer",
-    "descriptionHe": "קבלת מידע על App Provisioned Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppProvisionedSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Get-AppProvisionedSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13041,7 +13041,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppSharedPackageContainer",
-    "descriptionHe": "קבלת מידע על App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Get-AppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13049,7 +13049,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvClientApplication",
-    "descriptionHe": "קבלת מידע על Appv Client Application",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvClientApplication",
     "descriptionEn": "Native PowerShell Command: Get-AppvClientApplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13057,7 +13057,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvClientConfiguration",
-    "descriptionHe": "קבלת מידע על Appv Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-AppvClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13065,7 +13065,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvClientConnectionGroup",
-    "descriptionHe": "קבלת מידע על Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Get-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13073,7 +13073,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvClientMode",
-    "descriptionHe": "קבלת מידע על Appv Client Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvClientMode",
     "descriptionEn": "Native PowerShell Command: Get-AppvClientMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13081,7 +13081,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvClientPackage",
-    "descriptionHe": "קבלת מידע על Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Get-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13089,7 +13089,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvPublishingServer",
-    "descriptionHe": "קבלת מידע על Appv Publishing Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvPublishingServer",
     "descriptionEn": "Native PowerShell Command: Get-AppvPublishingServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13097,7 +13097,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppvStatus",
-    "descriptionHe": "קבלת מידע על Appv Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppvStatus",
     "descriptionEn": "Native PowerShell Command: Get-AppvStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13105,7 +13105,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxDefaultVolume",
-    "descriptionHe": "קבלת מידע על Appx Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Get-AppxDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13113,7 +13113,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxPackage",
-    "descriptionHe": "קבלת מידע על Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxPackage",
     "descriptionEn": "Native PowerShell Command: Get-AppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13121,7 +13121,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxPackageAutoUpdateSettings",
-    "descriptionHe": "קבלת מידע על Appx Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Get-AppxPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13129,7 +13129,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxPackageManifest",
-    "descriptionHe": "קבלת מידע על Appx Package Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxPackageManifest",
     "descriptionEn": "Native PowerShell Command: Get-AppxPackageManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13137,7 +13137,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxProvisionedPackage",
-    "descriptionHe": "קבלת מידע על Appx Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Get-AppxProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13145,7 +13145,7 @@ const commandsData = [
   },
   {
     "command": "Get-AppxVolume",
-    "descriptionHe": "קבלת מידע על Appx Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AppxVolume",
     "descriptionEn": "Native PowerShell Command: Get-AppxVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13153,7 +13153,7 @@ const commandsData = [
   },
   {
     "command": "Get-AuthenticodeSignature",
-    "descriptionHe": "קבלת מידע על Authenticode Signature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-AuthenticodeSignature",
     "descriptionEn": "Native PowerShell Command: Get-AuthenticodeSignature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13161,7 +13161,7 @@ const commandsData = [
   },
   {
     "command": "Get-BcdEntry",
-    "descriptionHe": "קבלת מידע על Bcd Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BcdEntry",
     "descriptionEn": "Native PowerShell Command: Get-BcdEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13169,7 +13169,7 @@ const commandsData = [
   },
   {
     "command": "Get-BcdEntryDebugSettings",
-    "descriptionHe": "קבלת מידע על Bcd Entry Debug Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BcdEntryDebugSettings",
     "descriptionEn": "Native PowerShell Command: Get-BcdEntryDebugSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13177,7 +13177,7 @@ const commandsData = [
   },
   {
     "command": "Get-BcdEntryHypervisorSettings",
-    "descriptionHe": "קבלת מידע על Bcd Entry Hypervisor Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BcdEntryHypervisorSettings",
     "descriptionEn": "Native PowerShell Command: Get-BcdEntryHypervisorSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13185,7 +13185,7 @@ const commandsData = [
   },
   {
     "command": "Get-BcdStore",
-    "descriptionHe": "קבלת מידע על Bcd Store",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BcdStore",
     "descriptionEn": "Native PowerShell Command: Get-BcdStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13193,7 +13193,7 @@ const commandsData = [
   },
   {
     "command": "Get-BitsTransfer",
-    "descriptionHe": "קבלת מידע על Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Get-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13201,7 +13201,7 @@ const commandsData = [
   },
   {
     "command": "Get-Certificate",
-    "descriptionHe": "קבלת מידע על Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Certificate",
     "descriptionEn": "Native PowerShell Command: Get-Certificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13209,7 +13209,7 @@ const commandsData = [
   },
   {
     "command": "Get-CertificateAutoEnrollmentPolicy",
-    "descriptionHe": "קבלת מידע על Certificate Auto Enrollment Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CertificateAutoEnrollmentPolicy",
     "descriptionEn": "Native PowerShell Command: Get-CertificateAutoEnrollmentPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13217,7 +13217,7 @@ const commandsData = [
   },
   {
     "command": "Get-CertificateEnrollmentPolicyServer",
-    "descriptionHe": "קבלת מידע על Certificate Enrollment Policy Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CertificateEnrollmentPolicyServer",
     "descriptionEn": "Native PowerShell Command: Get-CertificateEnrollmentPolicyServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13225,7 +13225,7 @@ const commandsData = [
   },
   {
     "command": "Get-CertificateNotificationTask",
-    "descriptionHe": "קבלת מידע על Certificate Notification Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CertificateNotificationTask",
     "descriptionEn": "Native PowerShell Command: Get-CertificateNotificationTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13233,7 +13233,7 @@ const commandsData = [
   },
   {
     "command": "Get-ChildItem",
-    "descriptionHe": "קבלת מידע על Child Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ChildItem",
     "descriptionEn": "Native PowerShell Command: Get-ChildItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13241,7 +13241,7 @@ const commandsData = [
   },
   {
     "command": "Get-CimAssociatedInstance",
-    "descriptionHe": "קבלת מידע על Cim Associated Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CimAssociatedInstance",
     "descriptionEn": "Native PowerShell Command: Get-CimAssociatedInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13249,7 +13249,7 @@ const commandsData = [
   },
   {
     "command": "Get-CimClass",
-    "descriptionHe": "קבלת מידע על Cim Class",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CimClass",
     "descriptionEn": "Native PowerShell Command: Get-CimClass",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13257,7 +13257,7 @@ const commandsData = [
   },
   {
     "command": "Get-CimInstance",
-    "descriptionHe": "קבלת מידע על Cim Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CimInstance",
     "descriptionEn": "Native PowerShell Command: Get-CimInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13265,7 +13265,7 @@ const commandsData = [
   },
   {
     "command": "Get-CimSession",
-    "descriptionHe": "קבלת מידע על Cim Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CimSession",
     "descriptionEn": "Native PowerShell Command: Get-CimSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13273,7 +13273,7 @@ const commandsData = [
   },
   {
     "command": "Get-CIPolicy",
-    "descriptionHe": "קבלת מידע על C I Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CIPolicy",
     "descriptionEn": "Native PowerShell Command: Get-CIPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13281,7 +13281,7 @@ const commandsData = [
   },
   {
     "command": "Get-CIPolicyIdInfo",
-    "descriptionHe": "קבלת מידע על C I Policy Id Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CIPolicyIdInfo",
     "descriptionEn": "Native PowerShell Command: Get-CIPolicyIdInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13289,7 +13289,7 @@ const commandsData = [
   },
   {
     "command": "Get-CIPolicyInfo",
-    "descriptionHe": "קבלת מידע על C I Policy Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CIPolicyInfo",
     "descriptionEn": "Native PowerShell Command: Get-CIPolicyInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13297,7 +13297,7 @@ const commandsData = [
   },
   {
     "command": "Get-Clipboard",
-    "descriptionHe": "קבלת מידע על Clipboard",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Clipboard",
     "descriptionEn": "Native PowerShell Command: Get-Clipboard",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13305,7 +13305,7 @@ const commandsData = [
   },
   {
     "command": "Get-CmsMessage",
-    "descriptionHe": "קבלת מידע על Cms Message",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-CmsMessage",
     "descriptionEn": "Native PowerShell Command: Get-CmsMessage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13313,7 +13313,7 @@ const commandsData = [
   },
   {
     "command": "Get-Command",
-    "descriptionHe": "קבלת מידע על Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Command",
     "descriptionEn": "Native PowerShell Command: Get-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13321,7 +13321,7 @@ const commandsData = [
   },
   {
     "command": "Get-ComputerInfo",
-    "descriptionHe": "קבלת מידע על Computer Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ComputerInfo",
     "descriptionEn": "Native PowerShell Command: Get-ComputerInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13329,7 +13329,7 @@ const commandsData = [
   },
   {
     "command": "Get-ComputerRestorePoint",
-    "descriptionHe": "קבלת מידע על Computer Restore Point",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ComputerRestorePoint",
     "descriptionEn": "Native PowerShell Command: Get-ComputerRestorePoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13337,7 +13337,7 @@ const commandsData = [
   },
   {
     "command": "Get-Content",
-    "descriptionHe": "קבלת מידע על Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Content",
     "descriptionEn": "Native PowerShell Command: Get-Content",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13345,7 +13345,7 @@ const commandsData = [
   },
   {
     "command": "Get-ControlPanelItem",
-    "descriptionHe": "קבלת מידע על Control Panel Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ControlPanelItem",
     "descriptionEn": "Native PowerShell Command: Get-ControlPanelItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13353,7 +13353,7 @@ const commandsData = [
   },
   {
     "command": "Get-Counter",
-    "descriptionHe": "קבלת מידע על Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Counter",
     "descriptionEn": "Native PowerShell Command: Get-Counter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13361,7 +13361,7 @@ const commandsData = [
   },
   {
     "command": "Get-Credential",
-    "descriptionHe": "קבלת מידע על Credential",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Credential",
     "descriptionEn": "Native PowerShell Command: Get-Credential",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13369,7 +13369,7 @@ const commandsData = [
   },
   {
     "command": "Get-Culture",
-    "descriptionHe": "קבלת מידע על Culture",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Culture",
     "descriptionEn": "Native PowerShell Command: Get-Culture",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13377,7 +13377,7 @@ const commandsData = [
   },
   {
     "command": "Get-DAPolicyChange",
-    "descriptionHe": "קבלת מידע על D A Policy Change",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DAPolicyChange",
     "descriptionEn": "Native PowerShell Command: Get-DAPolicyChange",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13385,7 +13385,7 @@ const commandsData = [
   },
   {
     "command": "Get-Date",
-    "descriptionHe": "קבלת מידע על Date",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Date",
     "descriptionEn": "Native PowerShell Command: Get-Date",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13393,7 +13393,7 @@ const commandsData = [
   },
   {
     "command": "Get-DeliveryOptimizationLog",
-    "descriptionHe": "קבלת מידע על Delivery Optimization Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DeliveryOptimizationLog",
     "descriptionEn": "Native PowerShell Command: Get-DeliveryOptimizationLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13401,7 +13401,7 @@ const commandsData = [
   },
   {
     "command": "Get-DeliveryOptimizationLogAnalysis",
-    "descriptionHe": "קבלת מידע על Delivery Optimization Log Analysis",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-DeliveryOptimizationLogAnalysis",
     "descriptionEn": "Native PowerShell Command: Get-DeliveryOptimizationLogAnalysis",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13409,7 +13409,7 @@ const commandsData = [
   },
   {
     "command": "Get-Event",
-    "descriptionHe": "קבלת מידע על Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Event",
     "descriptionEn": "Native PowerShell Command: Get-Event",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13417,7 +13417,7 @@ const commandsData = [
   },
   {
     "command": "Get-EventLog",
-    "descriptionHe": "קבלת מידע על Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-EventLog",
     "descriptionEn": "Native PowerShell Command: Get-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13425,7 +13425,7 @@ const commandsData = [
   },
   {
     "command": "Get-EventSubscriber",
-    "descriptionHe": "קבלת מידע על Event Subscriber",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-EventSubscriber",
     "descriptionEn": "Native PowerShell Command: Get-EventSubscriber",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13433,7 +13433,7 @@ const commandsData = [
   },
   {
     "command": "Get-ExecutionPolicy",
-    "descriptionHe": "קבלת מידע על Execution Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ExecutionPolicy",
     "descriptionEn": "Native PowerShell Command: Get-ExecutionPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13441,7 +13441,7 @@ const commandsData = [
   },
   {
     "command": "Get-FormatData",
-    "descriptionHe": "קבלת מידע על Format Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-FormatData",
     "descriptionEn": "Native PowerShell Command: Get-FormatData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13449,7 +13449,7 @@ const commandsData = [
   },
   {
     "command": "Get-Help",
-    "descriptionHe": "קבלת מידע על Help",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Help",
     "descriptionEn": "Native PowerShell Command: Get-Help",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13457,7 +13457,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsAttestationBaselinePolicy",
-    "descriptionHe": "קבלת מידע על Hgs Attestation Baseline Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsAttestationBaselinePolicy",
     "descriptionEn": "Native PowerShell Command: Get-HgsAttestationBaselinePolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13465,7 +13465,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsTrace",
-    "descriptionHe": "קבלת מידע על Hgs Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsTrace",
     "descriptionEn": "Native PowerShell Command: Get-HgsTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13473,7 +13473,7 @@ const commandsData = [
   },
   {
     "command": "Get-HgsTraceFileData",
-    "descriptionHe": "קבלת מידע על Hgs Trace File Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HgsTraceFileData",
     "descriptionEn": "Native PowerShell Command: Get-HgsTraceFileData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13481,7 +13481,7 @@ const commandsData = [
   },
   {
     "command": "Get-History",
-    "descriptionHe": "קבלת מידע על History",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-History",
     "descriptionEn": "Native PowerShell Command: Get-History",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13489,7 +13489,7 @@ const commandsData = [
   },
   {
     "command": "Get-Host",
-    "descriptionHe": "קבלת מידע על Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Host",
     "descriptionEn": "Native PowerShell Command: Get-Host",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13497,7 +13497,7 @@ const commandsData = [
   },
   {
     "command": "Get-HotFix",
-    "descriptionHe": "קבלת מידע על Hot Fix",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-HotFix",
     "descriptionEn": "Native PowerShell Command: Get-HotFix",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13505,7 +13505,7 @@ const commandsData = [
   },
   {
     "command": "Get-InstalledLanguage",
-    "descriptionHe": "קבלת מידע על Installed Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-InstalledLanguage",
     "descriptionEn": "Native PowerShell Command: Get-InstalledLanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13513,7 +13513,7 @@ const commandsData = [
   },
   {
     "command": "Get-Item",
-    "descriptionHe": "קבלת מידע על Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Item",
     "descriptionEn": "Native PowerShell Command: Get-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13521,7 +13521,7 @@ const commandsData = [
   },
   {
     "command": "Get-ItemProperty",
-    "descriptionHe": "קבלת מידע על Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Get-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13529,7 +13529,7 @@ const commandsData = [
   },
   {
     "command": "Get-ItemPropertyValue",
-    "descriptionHe": "קבלת מידע על Item Property Value",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ItemPropertyValue",
     "descriptionEn": "Native PowerShell Command: Get-ItemPropertyValue",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13537,7 +13537,7 @@ const commandsData = [
   },
   {
     "command": "Get-Job",
-    "descriptionHe": "קבלת מידע על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Job",
     "descriptionEn": "Native PowerShell Command: Get-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13545,7 +13545,7 @@ const commandsData = [
   },
   {
     "command": "Get-JobTrigger",
-    "descriptionHe": "קבלת מידע על Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Get-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13553,7 +13553,7 @@ const commandsData = [
   },
   {
     "command": "Get-KdsConfiguration",
-    "descriptionHe": "קבלת מידע על Kds Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-KdsConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-KdsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13561,7 +13561,7 @@ const commandsData = [
   },
   {
     "command": "Get-KdsRootKey",
-    "descriptionHe": "קבלת מידע על Kds Root Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-KdsRootKey",
     "descriptionEn": "Native PowerShell Command: Get-KdsRootKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13569,7 +13569,7 @@ const commandsData = [
   },
   {
     "command": "Get-LapsADPassword",
-    "descriptionHe": "קבלת מידע על Laps A D Password",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LapsADPassword",
     "descriptionEn": "Native PowerShell Command: Get-LapsADPassword",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13577,7 +13577,7 @@ const commandsData = [
   },
   {
     "command": "Get-LocalGroup",
-    "descriptionHe": "קבלת מידע על Local Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LocalGroup",
     "descriptionEn": "Native PowerShell Command: Get-LocalGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13585,7 +13585,7 @@ const commandsData = [
   },
   {
     "command": "Get-LocalGroupMember",
-    "descriptionHe": "קבלת מידע על Local Group Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LocalGroupMember",
     "descriptionEn": "Native PowerShell Command: Get-LocalGroupMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13593,7 +13593,7 @@ const commandsData = [
   },
   {
     "command": "Get-LocalUser",
-    "descriptionHe": "קבלת מידע על Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-LocalUser",
     "descriptionEn": "Native PowerShell Command: Get-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13601,7 +13601,7 @@ const commandsData = [
   },
   {
     "command": "Get-Location",
-    "descriptionHe": "קבלת מידע על Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Location",
     "descriptionEn": "Native PowerShell Command: Get-Location",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13609,7 +13609,7 @@ const commandsData = [
   },
   {
     "command": "Get-Member",
-    "descriptionHe": "קבלת מידע על Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Member",
     "descriptionEn": "Native PowerShell Command: Get-Member",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13617,7 +13617,7 @@ const commandsData = [
   },
   {
     "command": "Get-Module",
-    "descriptionHe": "קבלת מידע על Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Module",
     "descriptionEn": "Native PowerShell Command: Get-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13625,7 +13625,7 @@ const commandsData = [
   },
   {
     "command": "Get-NonRemovableAppsPolicy",
-    "descriptionHe": "קבלת מידע על Non Removable Apps Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-NonRemovableAppsPolicy",
     "descriptionEn": "Native PowerShell Command: Get-NonRemovableAppsPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13633,7 +13633,7 @@ const commandsData = [
   },
   {
     "command": "Get-OSConfiguration",
-    "descriptionHe": "קבלת מידע על O S Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OSConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-OSConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13641,7 +13641,7 @@ const commandsData = [
   },
   {
     "command": "Get-OsConfigurationDocument",
-    "descriptionHe": "קבלת מידע על Os Configuration Document",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OsConfigurationDocument",
     "descriptionEn": "Native PowerShell Command: Get-OsConfigurationDocument",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13649,7 +13649,7 @@ const commandsData = [
   },
   {
     "command": "Get-OsConfigurationDocumentContent",
-    "descriptionHe": "קבלת מידע על Os Configuration Document Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OsConfigurationDocumentContent",
     "descriptionEn": "Native PowerShell Command: Get-OsConfigurationDocumentContent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13657,7 +13657,7 @@ const commandsData = [
   },
   {
     "command": "Get-OsConfigurationDocumentResult",
-    "descriptionHe": "קבלת מידע על Os Configuration Document Result",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OsConfigurationDocumentResult",
     "descriptionEn": "Native PowerShell Command: Get-OsConfigurationDocumentResult",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13665,7 +13665,7 @@ const commandsData = [
   },
   {
     "command": "Get-OsConfigurationProperty",
-    "descriptionHe": "קבלת מידע על Os Configuration Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OsConfigurationProperty",
     "descriptionEn": "Native PowerShell Command: Get-OsConfigurationProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13673,7 +13673,7 @@ const commandsData = [
   },
   {
     "command": "Get-OSConfigurationScenarioDefinition",
-    "descriptionHe": "קבלת מידע על O S Configuration Scenario Definition",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OSConfigurationScenarioDefinition",
     "descriptionEn": "Native PowerShell Command: Get-OSConfigurationScenarioDefinition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13681,7 +13681,7 @@ const commandsData = [
   },
   {
     "command": "Get-OSConfigurationScenarioDefinitionInfo",
-    "descriptionHe": "קבלת מידע על O S Configuration Scenario Definition Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-OSConfigurationScenarioDefinitionInfo",
     "descriptionEn": "Native PowerShell Command: Get-OSConfigurationScenarioDefinitionInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13689,7 +13689,7 @@ const commandsData = [
   },
   {
     "command": "Get-Package",
-    "descriptionHe": "קבלת מידע על Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Package",
     "descriptionEn": "Native PowerShell Command: Get-Package",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13697,7 +13697,7 @@ const commandsData = [
   },
   {
     "command": "Get-PackageProvider",
-    "descriptionHe": "קבלת מידע על Package Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PackageProvider",
     "descriptionEn": "Native PowerShell Command: Get-PackageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13705,7 +13705,7 @@ const commandsData = [
   },
   {
     "command": "Get-PackageSource",
-    "descriptionHe": "קבלת מידע על Package Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PackageSource",
     "descriptionEn": "Native PowerShell Command: Get-PackageSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13713,7 +13713,7 @@ const commandsData = [
   },
   {
     "command": "Get-PfxCertificate",
-    "descriptionHe": "קבלת מידע על Pfx Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PfxCertificate",
     "descriptionEn": "Native PowerShell Command: Get-PfxCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13721,7 +13721,7 @@ const commandsData = [
   },
   {
     "command": "Get-PfxData",
-    "descriptionHe": "קבלת מידע על Pfx Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PfxData",
     "descriptionEn": "Native PowerShell Command: Get-PfxData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13729,7 +13729,7 @@ const commandsData = [
   },
   {
     "command": "Get-PmemDedicatedMemory",
-    "descriptionHe": "קבלת מידע על Pmem Dedicated Memory",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PmemDedicatedMemory",
     "descriptionEn": "Native PowerShell Command: Get-PmemDedicatedMemory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13737,7 +13737,7 @@ const commandsData = [
   },
   {
     "command": "Get-PmemDisk",
-    "descriptionHe": "קבלת מידע על Pmem Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PmemDisk",
     "descriptionEn": "Native PowerShell Command: Get-PmemDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13745,7 +13745,7 @@ const commandsData = [
   },
   {
     "command": "Get-PmemPhysicalDevice",
-    "descriptionHe": "קבלת מידע על Pmem Physical Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PmemPhysicalDevice",
     "descriptionEn": "Native PowerShell Command: Get-PmemPhysicalDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13753,7 +13753,7 @@ const commandsData = [
   },
   {
     "command": "Get-PmemUnusedRegion",
-    "descriptionHe": "קבלת מידע על Pmem Unused Region",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PmemUnusedRegion",
     "descriptionEn": "Native PowerShell Command: Get-PmemUnusedRegion",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13761,7 +13761,7 @@ const commandsData = [
   },
   {
     "command": "Get-Process",
-    "descriptionHe": "קבלת מידע על Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Process",
     "descriptionEn": "Native PowerShell Command: Get-Process",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13769,7 +13769,7 @@ const commandsData = [
   },
   {
     "command": "Get-ProcessMitigation",
-    "descriptionHe": "קבלת מידע על Process Mitigation",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ProcessMitigation",
     "descriptionEn": "Native PowerShell Command: Get-ProcessMitigation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13777,7 +13777,7 @@ const commandsData = [
   },
   {
     "command": "Get-ProvisioningPackage",
-    "descriptionHe": "קבלת מידע על Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Get-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13785,7 +13785,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSBreakpoint",
-    "descriptionHe": "קבלת מידע על P S Breakpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSBreakpoint",
     "descriptionEn": "Native PowerShell Command: Get-PSBreakpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13793,7 +13793,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSCallStack",
-    "descriptionHe": "קבלת מידע על P S Call Stack",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSCallStack",
     "descriptionEn": "Native PowerShell Command: Get-PSCallStack",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13801,7 +13801,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSDrive",
-    "descriptionHe": "קבלת מידע על P S Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSDrive",
     "descriptionEn": "Native PowerShell Command: Get-PSDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13809,7 +13809,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSHostProcessInfo",
-    "descriptionHe": "קבלת מידע על P S Host Process Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSHostProcessInfo",
     "descriptionEn": "Native PowerShell Command: Get-PSHostProcessInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13817,7 +13817,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSProvider",
-    "descriptionHe": "קבלת מידע על P S Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSProvider",
     "descriptionEn": "Native PowerShell Command: Get-PSProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13825,7 +13825,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSReadLineKeyHandler",
-    "descriptionHe": "קבלת מידע על P S Read Line Key Handler",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSReadLineKeyHandler",
     "descriptionEn": "Native PowerShell Command: Get-PSReadLineKeyHandler",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13833,7 +13833,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSReadLineOption",
-    "descriptionHe": "קבלת מידע על P S Read Line Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSReadLineOption",
     "descriptionEn": "Native PowerShell Command: Get-PSReadLineOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13841,7 +13841,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSSession",
-    "descriptionHe": "קבלת מידע על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSSession",
     "descriptionEn": "Native PowerShell Command: Get-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13849,7 +13849,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSSessionCapability",
-    "descriptionHe": "קבלת מידע על P S Session Capability",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSSessionCapability",
     "descriptionEn": "Native PowerShell Command: Get-PSSessionCapability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13857,7 +13857,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSSessionConfiguration",
-    "descriptionHe": "קבלת מידע על P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13865,7 +13865,7 @@ const commandsData = [
   },
   {
     "command": "Get-PSSnapin",
-    "descriptionHe": "קבלת מידע על P S Snapin",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-PSSnapin",
     "descriptionEn": "Native PowerShell Command: Get-PSSnapin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13873,7 +13873,7 @@ const commandsData = [
   },
   {
     "command": "Get-Random",
-    "descriptionHe": "קבלת מידע על Random",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Random",
     "descriptionEn": "Native PowerShell Command: Get-Random",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13881,7 +13881,7 @@ const commandsData = [
   },
   {
     "command": "Get-RecoveryManagementPluginAltitude",
-    "descriptionHe": "קבלת מידע על Recovery Management Plugin Altitude",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-RecoveryManagementPluginAltitude",
     "descriptionEn": "Native PowerShell Command: Get-RecoveryManagementPluginAltitude",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13889,7 +13889,7 @@ const commandsData = [
   },
   {
     "command": "Get-RecoveryManagementPluginInfo",
-    "descriptionHe": "קבלת מידע על Recovery Management Plugin Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-RecoveryManagementPluginInfo",
     "descriptionEn": "Native PowerShell Command: Get-RecoveryManagementPluginInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13897,7 +13897,7 @@ const commandsData = [
   },
   {
     "command": "Get-RecoveryManagementPlugins",
-    "descriptionHe": "קבלת מידע על Recovery Management Plugins",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-RecoveryManagementPlugins",
     "descriptionEn": "Native PowerShell Command: Get-RecoveryManagementPlugins",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13905,7 +13905,7 @@ const commandsData = [
   },
   {
     "command": "Get-RecoveryRemoteManagementStatus",
-    "descriptionHe": "קבלת מידע על Recovery Remote Management Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-RecoveryRemoteManagementStatus",
     "descriptionEn": "Native PowerShell Command: Get-RecoveryRemoteManagementStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13913,7 +13913,7 @@ const commandsData = [
   },
   {
     "command": "Get-ReFSDedupSchedule",
-    "descriptionHe": "קבלת מידע על Re F S Dedup Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ReFSDedupSchedule",
     "descriptionEn": "Native PowerShell Command: Get-ReFSDedupSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13921,7 +13921,7 @@ const commandsData = [
   },
   {
     "command": "Get-ReFSDedupScrubSchedule",
-    "descriptionHe": "קבלת מידע על Re F S Dedup Scrub Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ReFSDedupScrubSchedule",
     "descriptionEn": "Native PowerShell Command: Get-ReFSDedupScrubSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13929,7 +13929,7 @@ const commandsData = [
   },
   {
     "command": "Get-ReFSDedupStatus",
-    "descriptionHe": "קבלת מידע על Re F S Dedup Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ReFSDedupStatus",
     "descriptionEn": "Native PowerShell Command: Get-ReFSDedupStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13937,7 +13937,7 @@ const commandsData = [
   },
   {
     "command": "Get-Runspace",
-    "descriptionHe": "קבלת מידע על Runspace",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Runspace",
     "descriptionEn": "Native PowerShell Command: Get-Runspace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13945,7 +13945,7 @@ const commandsData = [
   },
   {
     "command": "Get-RunspaceDebug",
-    "descriptionHe": "קבלת מידע על Runspace Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-RunspaceDebug",
     "descriptionEn": "Native PowerShell Command: Get-RunspaceDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13953,7 +13953,7 @@ const commandsData = [
   },
   {
     "command": "Get-ScheduledJob",
-    "descriptionHe": "קבלת מידע על Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Get-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13961,7 +13961,7 @@ const commandsData = [
   },
   {
     "command": "Get-ScheduledJobOption",
-    "descriptionHe": "קבלת מידע על Scheduled Job Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-ScheduledJobOption",
     "descriptionEn": "Native PowerShell Command: Get-ScheduledJobOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13969,7 +13969,7 @@ const commandsData = [
   },
   {
     "command": "Get-SecureBootPolicy",
-    "descriptionHe": "קבלת מידע על Secure Boot Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SecureBootPolicy",
     "descriptionEn": "Native PowerShell Command: Get-SecureBootPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13977,7 +13977,7 @@ const commandsData = [
   },
   {
     "command": "Get-SecureBootSVN",
-    "descriptionHe": "קבלת מידע על Secure Boot S V N",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SecureBootSVN",
     "descriptionEn": "Native PowerShell Command: Get-SecureBootSVN",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13985,7 +13985,7 @@ const commandsData = [
   },
   {
     "command": "Get-SecureBootUEFI",
-    "descriptionHe": "קבלת מידע על Secure Boot U E F I",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SecureBootUEFI",
     "descriptionEn": "Native PowerShell Command: Get-SecureBootUEFI",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -13993,7 +13993,7 @@ const commandsData = [
   },
   {
     "command": "Get-Service",
-    "descriptionHe": "קבלת מידע על Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Service",
     "descriptionEn": "Native PowerShell Command: Get-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14001,7 +14001,7 @@ const commandsData = [
   },
   {
     "command": "Get-SystemDriver",
-    "descriptionHe": "קבלת מידע על System Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SystemDriver",
     "descriptionEn": "Native PowerShell Command: Get-SystemDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14009,7 +14009,7 @@ const commandsData = [
   },
   {
     "command": "Get-SystemPreferredUILanguage",
-    "descriptionHe": "קבלת מידע על System Preferred U I Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-SystemPreferredUILanguage",
     "descriptionEn": "Native PowerShell Command: Get-SystemPreferredUILanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14017,7 +14017,7 @@ const commandsData = [
   },
   {
     "command": "Get-TimeZone",
-    "descriptionHe": "קבלת מידע על Time Zone",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TimeZone",
     "descriptionEn": "Native PowerShell Command: Get-TimeZone",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14025,7 +14025,7 @@ const commandsData = [
   },
   {
     "command": "Get-TlsCipherSuite",
-    "descriptionHe": "קבלת מידע על Tls Cipher Suite",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TlsCipherSuite",
     "descriptionEn": "Native PowerShell Command: Get-TlsCipherSuite",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14033,7 +14033,7 @@ const commandsData = [
   },
   {
     "command": "Get-TlsEccCurve",
-    "descriptionHe": "קבלת מידע על Tls Ecc Curve",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TlsEccCurve",
     "descriptionEn": "Native PowerShell Command: Get-TlsEccCurve",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14041,7 +14041,7 @@ const commandsData = [
   },
   {
     "command": "Get-Tpm",
-    "descriptionHe": "קבלת מידע על Tpm",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Tpm",
     "descriptionEn": "Native PowerShell Command: Get-Tpm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14049,7 +14049,7 @@ const commandsData = [
   },
   {
     "command": "Get-TpmEndorsementKeyInfo",
-    "descriptionHe": "קבלת מידע על Tpm Endorsement Key Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TpmEndorsementKeyInfo",
     "descriptionEn": "Native PowerShell Command: Get-TpmEndorsementKeyInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14057,7 +14057,7 @@ const commandsData = [
   },
   {
     "command": "Get-TpmSupportedFeature",
-    "descriptionHe": "קבלת מידע על Tpm Supported Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TpmSupportedFeature",
     "descriptionEn": "Native PowerShell Command: Get-TpmSupportedFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14065,7 +14065,7 @@ const commandsData = [
   },
   {
     "command": "Get-TraceSource",
-    "descriptionHe": "קבלת מידע על Trace Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TraceSource",
     "descriptionEn": "Native PowerShell Command: Get-TraceSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14073,7 +14073,7 @@ const commandsData = [
   },
   {
     "command": "Get-Transaction",
-    "descriptionHe": "קבלת מידע על Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Transaction",
     "descriptionEn": "Native PowerShell Command: Get-Transaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14081,7 +14081,7 @@ const commandsData = [
   },
   {
     "command": "Get-TroubleshootingPack",
-    "descriptionHe": "קבלת מידע על Troubleshooting Pack",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TroubleshootingPack",
     "descriptionEn": "Native PowerShell Command: Get-TroubleshootingPack",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14089,7 +14089,7 @@ const commandsData = [
   },
   {
     "command": "Get-TrustedProvisioningCertificate",
-    "descriptionHe": "קבלת מידע על Trusted Provisioning Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TrustedProvisioningCertificate",
     "descriptionEn": "Native PowerShell Command: Get-TrustedProvisioningCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14097,7 +14097,7 @@ const commandsData = [
   },
   {
     "command": "Get-TypeData",
-    "descriptionHe": "קבלת מידע על Type Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-TypeData",
     "descriptionEn": "Native PowerShell Command: Get-TypeData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14105,7 +14105,7 @@ const commandsData = [
   },
   {
     "command": "Get-UevAppxPackage",
-    "descriptionHe": "קבלת מידע על Uev Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UevAppxPackage",
     "descriptionEn": "Native PowerShell Command: Get-UevAppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14113,7 +14113,7 @@ const commandsData = [
   },
   {
     "command": "Get-UevConfiguration",
-    "descriptionHe": "קבלת מידע על Uev Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UevConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-UevConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14121,7 +14121,7 @@ const commandsData = [
   },
   {
     "command": "Get-UevStatus",
-    "descriptionHe": "קבלת מידע על Uev Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UevStatus",
     "descriptionEn": "Native PowerShell Command: Get-UevStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14129,7 +14129,7 @@ const commandsData = [
   },
   {
     "command": "Get-UevTemplate",
-    "descriptionHe": "קבלת מידע על Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Get-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14137,7 +14137,7 @@ const commandsData = [
   },
   {
     "command": "Get-UevTemplateProgram",
-    "descriptionHe": "קבלת מידע על Uev Template Program",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UevTemplateProgram",
     "descriptionEn": "Native PowerShell Command: Get-UevTemplateProgram",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14145,7 +14145,7 @@ const commandsData = [
   },
   {
     "command": "Get-UICulture",
-    "descriptionHe": "קבלת מידע על U I Culture",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-UICulture",
     "descriptionEn": "Native PowerShell Command: Get-UICulture",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14153,7 +14153,7 @@ const commandsData = [
   },
   {
     "command": "Get-Unique",
-    "descriptionHe": "קבלת מידע על Unique",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Unique",
     "descriptionEn": "Native PowerShell Command: Get-Unique",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14161,7 +14161,7 @@ const commandsData = [
   },
   {
     "command": "Get-Variable",
-    "descriptionHe": "קבלת מידע על Variable",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-Variable",
     "descriptionEn": "Native PowerShell Command: Get-Variable",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14169,7 +14169,7 @@ const commandsData = [
   },
   {
     "command": "Get-VHD",
-    "descriptionHe": "קבלת מידע על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VHD",
     "descriptionEn": "Native PowerShell Command: Get-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14177,7 +14177,7 @@ const commandsData = [
   },
   {
     "command": "Get-VHDSet",
-    "descriptionHe": "קבלת מידע על V H D Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VHDSet",
     "descriptionEn": "Native PowerShell Command: Get-VHDSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14185,7 +14185,7 @@ const commandsData = [
   },
   {
     "command": "Get-VHDSnapshot",
-    "descriptionHe": "קבלת מידע על V H D Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VHDSnapshot",
     "descriptionEn": "Native PowerShell Command: Get-VHDSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14193,7 +14193,7 @@ const commandsData = [
   },
   {
     "command": "Get-VM",
-    "descriptionHe": "קבלת מידע על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VM",
     "descriptionEn": "Native PowerShell Command: Get-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14201,7 +14201,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMAssignableDevice",
-    "descriptionHe": "קבלת מידע על V M Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Get-VMAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14209,7 +14209,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMBios",
-    "descriptionHe": "קבלת מידע על V M Bios",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMBios",
     "descriptionEn": "Native PowerShell Command: Get-VMBios",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14217,7 +14217,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMComPort",
-    "descriptionHe": "קבלת מידע על V M Com Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMComPort",
     "descriptionEn": "Native PowerShell Command: Get-VMComPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14225,7 +14225,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMConnectAccess",
-    "descriptionHe": "קבלת מידע על V M Connect Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMConnectAccess",
     "descriptionEn": "Native PowerShell Command: Get-VMConnectAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14233,7 +14233,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMDvdDrive",
-    "descriptionHe": "קבלת מידע על V M Dvd Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMDvdDrive",
     "descriptionEn": "Native PowerShell Command: Get-VMDvdDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14241,7 +14241,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMFibreChannelHba",
-    "descriptionHe": "קבלת מידע על V M Fibre Channel Hba",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMFibreChannelHba",
     "descriptionEn": "Native PowerShell Command: Get-VMFibreChannelHba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14249,7 +14249,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMFirmware",
-    "descriptionHe": "קבלת מידע על V M Firmware",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMFirmware",
     "descriptionEn": "Native PowerShell Command: Get-VMFirmware",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14257,7 +14257,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMFloppyDiskDrive",
-    "descriptionHe": "קבלת מידע על V M Floppy Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMFloppyDiskDrive",
     "descriptionEn": "Native PowerShell Command: Get-VMFloppyDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14265,7 +14265,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMGpuPartitionAdapter",
-    "descriptionHe": "קבלת מידע על V M Gpu Partition Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMGpuPartitionAdapter",
     "descriptionEn": "Native PowerShell Command: Get-VMGpuPartitionAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14273,7 +14273,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMGroup",
-    "descriptionHe": "קבלת מידע על V M Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMGroup",
     "descriptionEn": "Native PowerShell Command: Get-VMGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14281,7 +14281,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHardDiskDrive",
-    "descriptionHe": "קבלת מידע על V M Hard Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHardDiskDrive",
     "descriptionEn": "Native PowerShell Command: Get-VMHardDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14289,7 +14289,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHost",
-    "descriptionHe": "קבלת מידע על V M Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHost",
     "descriptionEn": "Native PowerShell Command: Get-VMHost",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14297,7 +14297,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostAssignableDevice",
-    "descriptionHe": "קבלת מידע על V M Host Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Get-VMHostAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14305,7 +14305,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostCluster",
-    "descriptionHe": "קבלת מידע על V M Host Cluster",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostCluster",
     "descriptionEn": "Native PowerShell Command: Get-VMHostCluster",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14313,7 +14313,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostNumaNode",
-    "descriptionHe": "קבלת מידע על V M Host Numa Node",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostNumaNode",
     "descriptionEn": "Native PowerShell Command: Get-VMHostNumaNode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14321,7 +14321,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostNumaNodeStatus",
-    "descriptionHe": "קבלת מידע על V M Host Numa Node Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostNumaNodeStatus",
     "descriptionEn": "Native PowerShell Command: Get-VMHostNumaNodeStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14329,7 +14329,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostPartitionableGpu",
-    "descriptionHe": "קבלת מידע על V M Host Partitionable Gpu",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostPartitionableGpu",
     "descriptionEn": "Native PowerShell Command: Get-VMHostPartitionableGpu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14337,7 +14337,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMHostSupportedVersion",
-    "descriptionHe": "קבלת מידע על V M Host Supported Version",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMHostSupportedVersion",
     "descriptionEn": "Native PowerShell Command: Get-VMHostSupportedVersion",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14345,7 +14345,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMIdeController",
-    "descriptionHe": "קבלת מידע על V M Ide Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMIdeController",
     "descriptionEn": "Native PowerShell Command: Get-VMIdeController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14353,7 +14353,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMIntegrationService",
-    "descriptionHe": "קבלת מידע על V M Integration Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMIntegrationService",
     "descriptionEn": "Native PowerShell Command: Get-VMIntegrationService",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14361,7 +14361,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMKeyProtector",
-    "descriptionHe": "קבלת מידע על V M Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMKeyProtector",
     "descriptionEn": "Native PowerShell Command: Get-VMKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14369,7 +14369,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMKeyStorageDrive",
-    "descriptionHe": "קבלת מידע על V M Key Storage Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMKeyStorageDrive",
     "descriptionEn": "Native PowerShell Command: Get-VMKeyStorageDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14377,7 +14377,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMMemory",
-    "descriptionHe": "קבלת מידע על V M Memory",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMMemory",
     "descriptionEn": "Native PowerShell Command: Get-VMMemory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14385,7 +14385,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMMigrationNetwork",
-    "descriptionHe": "קבלת מידע על V M Migration Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMMigrationNetwork",
     "descriptionEn": "Native PowerShell Command: Get-VMMigrationNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14393,7 +14393,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapter",
-    "descriptionHe": "קבלת מידע על V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14401,7 +14401,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterAcl",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterAcl",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14409,7 +14409,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterExtendedAcl",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Extended Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterExtendedAcl",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterExtendedAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14417,7 +14417,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterFailoverConfiguration",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Failover Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterFailoverConfiguration",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterFailoverConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14425,7 +14425,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterIsolation",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Isolation",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterIsolation",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterIsolation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14433,7 +14433,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterRdma",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14441,7 +14441,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterRoutingDomainMapping",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Routing Domain Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterRoutingDomainMapping",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterRoutingDomainMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14449,7 +14449,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterTeamMapping",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Team Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterTeamMapping",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterTeamMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14457,7 +14457,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMNetworkAdapterVlan",
-    "descriptionHe": "קבלת מידע על V M Network Adapter Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMNetworkAdapterVlan",
     "descriptionEn": "Native PowerShell Command: Get-VMNetworkAdapterVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14465,7 +14465,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMPartitionableGpu",
-    "descriptionHe": "קבלת מידע על V M Partitionable Gpu",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMPartitionableGpu",
     "descriptionEn": "Native PowerShell Command: Get-VMPartitionableGpu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14473,7 +14473,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMPmemController",
-    "descriptionHe": "קבלת מידע על V M Pmem Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMPmemController",
     "descriptionEn": "Native PowerShell Command: Get-VMPmemController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14481,7 +14481,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMProcessor",
-    "descriptionHe": "קבלת מידע על V M Processor",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMProcessor",
     "descriptionEn": "Native PowerShell Command: Get-VMProcessor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14489,7 +14489,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMRemoteFx3dVideoAdapter",
-    "descriptionHe": "קבלת מידע על V M Remote Fx3d Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMRemoteFx3dVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Get-VMRemoteFx3dVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14497,7 +14497,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMRemoteFXPhysicalVideoAdapter",
-    "descriptionHe": "קבלת מידע על V M Remote F X Physical Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMRemoteFXPhysicalVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Get-VMRemoteFXPhysicalVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14505,7 +14505,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMReplication",
-    "descriptionHe": "קבלת מידע על V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMReplication",
     "descriptionEn": "Native PowerShell Command: Get-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14513,7 +14513,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMReplicationAuthorizationEntry",
-    "descriptionHe": "קבלת מידע על V M Replication Authorization Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMReplicationAuthorizationEntry",
     "descriptionEn": "Native PowerShell Command: Get-VMReplicationAuthorizationEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14521,7 +14521,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMReplicationServer",
-    "descriptionHe": "קבלת מידע על V M Replication Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMReplicationServer",
     "descriptionEn": "Native PowerShell Command: Get-VMReplicationServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14529,7 +14529,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMResourcePool",
-    "descriptionHe": "קבלת מידע על V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: Get-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14537,7 +14537,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSan",
-    "descriptionHe": "קבלת מידע על V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSan",
     "descriptionEn": "Native PowerShell Command: Get-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14545,7 +14545,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMScsiController",
-    "descriptionHe": "קבלת מידע על V M Scsi Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMScsiController",
     "descriptionEn": "Native PowerShell Command: Get-VMScsiController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14553,7 +14553,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSecurity",
-    "descriptionHe": "קבלת מידע על V M Security",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSecurity",
     "descriptionEn": "Native PowerShell Command: Get-VMSecurity",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14561,7 +14561,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSnapshot",
-    "descriptionHe": "קבלת מידע על V M Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSnapshot",
     "descriptionEn": "Native PowerShell Command: Get-VMSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14569,7 +14569,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMStoragePath",
-    "descriptionHe": "קבלת מידע על V M Storage Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMStoragePath",
     "descriptionEn": "Native PowerShell Command: Get-VMStoragePath",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14577,7 +14577,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMStorageSettings",
-    "descriptionHe": "קבלת מידע על V M Storage Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMStorageSettings",
     "descriptionEn": "Native PowerShell Command: Get-VMStorageSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14585,7 +14585,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitch",
-    "descriptionHe": "קבלת מידע על V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitch",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14593,7 +14593,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchExtension",
-    "descriptionHe": "קבלת מידע על V M Switch Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchExtension",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14601,7 +14601,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchExtensionPortData",
-    "descriptionHe": "קבלת מידע על V M Switch Extension Port Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchExtensionPortData",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchExtensionPortData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14609,7 +14609,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchExtensionPortFeature",
-    "descriptionHe": "קבלת מידע על V M Switch Extension Port Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchExtensionPortFeature",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchExtensionPortFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14617,7 +14617,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchExtensionSwitchData",
-    "descriptionHe": "קבלת מידע על V M Switch Extension Switch Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchExtensionSwitchData",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchExtensionSwitchData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14625,7 +14625,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchExtensionSwitchFeature",
-    "descriptionHe": "קבלת מידע על V M Switch Extension Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchExtensionSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchExtensionSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14633,7 +14633,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSwitchTeam",
-    "descriptionHe": "קבלת מידע על V M Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSwitchTeam",
     "descriptionEn": "Native PowerShell Command: Get-VMSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14641,7 +14641,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSystemSwitchExtension",
-    "descriptionHe": "קבלת מידע על V M System Switch Extension",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSystemSwitchExtension",
     "descriptionEn": "Native PowerShell Command: Get-VMSystemSwitchExtension",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14649,7 +14649,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSystemSwitchExtensionPortFeature",
-    "descriptionHe": "קבלת מידע על V M System Switch Extension Port Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSystemSwitchExtensionPortFeature",
     "descriptionEn": "Native PowerShell Command: Get-VMSystemSwitchExtensionPortFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14657,7 +14657,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMSystemSwitchExtensionSwitchFeature",
-    "descriptionHe": "קבלת מידע על V M System Switch Extension Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMSystemSwitchExtensionSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Get-VMSystemSwitchExtensionSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14665,7 +14665,7 @@ const commandsData = [
   },
   {
     "command": "Get-VMVideo",
-    "descriptionHe": "קבלת מידע על V M Video",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-VMVideo",
     "descriptionEn": "Native PowerShell Command: Get-VMVideo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14673,7 +14673,7 @@ const commandsData = [
   },
   {
     "command": "Get-WheaMemoryPolicy",
-    "descriptionHe": "קבלת מידע על Whea Memory Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WheaMemoryPolicy",
     "descriptionEn": "Native PowerShell Command: Get-WheaMemoryPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14681,7 +14681,7 @@ const commandsData = [
   },
   {
     "command": "Get-WIMBootEntry",
-    "descriptionHe": "קבלת מידע על W I M Boot Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WIMBootEntry",
     "descriptionEn": "Native PowerShell Command: Get-WIMBootEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14689,7 +14689,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinAcceptLanguageFromLanguageListOptOut",
-    "descriptionHe": "קבלת מידע על Win Accept Language From Language List Opt Out",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinAcceptLanguageFromLanguageListOptOut",
     "descriptionEn": "Native PowerShell Command: Get-WinAcceptLanguageFromLanguageListOptOut",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14697,7 +14697,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinCultureFromLanguageListOptOut",
-    "descriptionHe": "קבלת מידע על Win Culture From Language List Opt Out",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinCultureFromLanguageListOptOut",
     "descriptionEn": "Native PowerShell Command: Get-WinCultureFromLanguageListOptOut",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14705,7 +14705,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinDefaultInputMethodOverride",
-    "descriptionHe": "קבלת מידע על Win Default Input Method Override",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinDefaultInputMethodOverride",
     "descriptionEn": "Native PowerShell Command: Get-WinDefaultInputMethodOverride",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14713,7 +14713,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsCapability",
-    "descriptionHe": "קבלת מידע על Windows Capability",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsCapability",
     "descriptionEn": "Native PowerShell Command: Get-WindowsCapability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14721,7 +14721,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsDeveloperLicense",
-    "descriptionHe": "קבלת מידע על Windows Developer License",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsDeveloperLicense",
     "descriptionEn": "Native PowerShell Command: Get-WindowsDeveloperLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14729,7 +14729,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsDriver",
-    "descriptionHe": "קבלת מידע על Windows Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsDriver",
     "descriptionEn": "Native PowerShell Command: Get-WindowsDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14737,7 +14737,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsEdition",
-    "descriptionHe": "קבלת מידע על Windows Edition",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsEdition",
     "descriptionEn": "Native PowerShell Command: Get-WindowsEdition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14745,7 +14745,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsErrorReporting",
-    "descriptionHe": "קבלת מידע על Windows Error Reporting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsErrorReporting",
     "descriptionEn": "Native PowerShell Command: Get-WindowsErrorReporting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14753,7 +14753,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsImage",
-    "descriptionHe": "קבלת מידע על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Get-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14761,7 +14761,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsImageContent",
-    "descriptionHe": "קבלת מידע על Windows Image Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsImageContent",
     "descriptionEn": "Native PowerShell Command: Get-WindowsImageContent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14769,7 +14769,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsOptionalFeature",
-    "descriptionHe": "קבלת מידע על Windows Optional Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsOptionalFeature",
     "descriptionEn": "Native PowerShell Command: Get-WindowsOptionalFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14777,7 +14777,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsPackage",
-    "descriptionHe": "קבלת מידע על Windows Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsPackage",
     "descriptionEn": "Native PowerShell Command: Get-WindowsPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14785,7 +14785,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsReservedStorageState",
-    "descriptionHe": "קבלת מידע על Windows Reserved Storage State",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsReservedStorageState",
     "descriptionEn": "Native PowerShell Command: Get-WindowsReservedStorageState",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14793,7 +14793,7 @@ const commandsData = [
   },
   {
     "command": "Get-WindowsSearchSetting",
-    "descriptionHe": "קבלת מידע על Windows Search Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WindowsSearchSetting",
     "descriptionEn": "Native PowerShell Command: Get-WindowsSearchSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14801,7 +14801,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinEvent",
-    "descriptionHe": "קבלת מידע על Win Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinEvent",
     "descriptionEn": "Native PowerShell Command: Get-WinEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14809,7 +14809,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinHomeLocation",
-    "descriptionHe": "קבלת מידע על Win Home Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinHomeLocation",
     "descriptionEn": "Native PowerShell Command: Get-WinHomeLocation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14817,7 +14817,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinLanguageBarOption",
-    "descriptionHe": "קבלת מידע על Win Language Bar Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinLanguageBarOption",
     "descriptionEn": "Native PowerShell Command: Get-WinLanguageBarOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14825,7 +14825,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinSystemLocale",
-    "descriptionHe": "קבלת מידע על Win System Locale",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinSystemLocale",
     "descriptionEn": "Native PowerShell Command: Get-WinSystemLocale",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14833,7 +14833,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinUILanguageOverride",
-    "descriptionHe": "קבלת מידע על Win U I Language Override",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinUILanguageOverride",
     "descriptionEn": "Native PowerShell Command: Get-WinUILanguageOverride",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14841,7 +14841,7 @@ const commandsData = [
   },
   {
     "command": "Get-WinUserLanguageList",
-    "descriptionHe": "קבלת מידע על Win User Language List",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WinUserLanguageList",
     "descriptionEn": "Native PowerShell Command: Get-WinUserLanguageList",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14849,7 +14849,7 @@ const commandsData = [
   },
   {
     "command": "Get-WmiObject",
-    "descriptionHe": "קבלת מידע על Wmi Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WmiObject",
     "descriptionEn": "Native PowerShell Command: Get-WmiObject",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14857,7 +14857,7 @@ const commandsData = [
   },
   {
     "command": "Get-WSManCredSSP",
-    "descriptionHe": "קבלת מידע על W S Man Cred S S P",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WSManCredSSP",
     "descriptionEn": "Native PowerShell Command: Get-WSManCredSSP",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14865,7 +14865,7 @@ const commandsData = [
   },
   {
     "command": "Get-WSManInstance",
-    "descriptionHe": "קבלת מידע על W S Man Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Get-WSManInstance",
     "descriptionEn": "Native PowerShell Command: Get-WSManInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14873,7 +14873,7 @@ const commandsData = [
   },
   {
     "command": "Grant-VMConnectAccess",
-    "descriptionHe": "פעולת PowerShell על V M Connect Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Grant-VMConnectAccess",
     "descriptionEn": "Native PowerShell Command: Grant-VMConnectAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14881,7 +14881,7 @@ const commandsData = [
   },
   {
     "command": "Group-Object",
-    "descriptionHe": "פעולת PowerShell על Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Group-Object",
     "descriptionEn": "Native PowerShell Command: Group-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14889,7 +14889,7 @@ const commandsData = [
   },
   {
     "command": "Import-Alias",
-    "descriptionHe": "ייבוא נתונים עבור Alias",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Alias",
     "descriptionEn": "Native PowerShell Command: Import-Alias",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14897,7 +14897,7 @@ const commandsData = [
   },
   {
     "command": "Import-BcdStore",
-    "descriptionHe": "ייבוא נתונים עבור Bcd Store",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-BcdStore",
     "descriptionEn": "Native PowerShell Command: Import-BcdStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14905,7 +14905,7 @@ const commandsData = [
   },
   {
     "command": "Import-BinaryMiLog",
-    "descriptionHe": "ייבוא נתונים עבור Binary Mi Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-BinaryMiLog",
     "descriptionEn": "Native PowerShell Command: Import-BinaryMiLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14913,7 +14913,7 @@ const commandsData = [
   },
   {
     "command": "Import-Certificate",
-    "descriptionHe": "ייבוא נתונים עבור Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Certificate",
     "descriptionEn": "Native PowerShell Command: Import-Certificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14921,7 +14921,7 @@ const commandsData = [
   },
   {
     "command": "Import-Clixml",
-    "descriptionHe": "ייבוא נתונים עבור Clixml",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Clixml",
     "descriptionEn": "Native PowerShell Command: Import-Clixml",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14929,7 +14929,7 @@ const commandsData = [
   },
   {
     "command": "Import-Counter",
-    "descriptionHe": "ייבוא נתונים עבור Counter",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Counter",
     "descriptionEn": "Native PowerShell Command: Import-Counter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14937,7 +14937,7 @@ const commandsData = [
   },
   {
     "command": "Import-Csv",
-    "descriptionHe": "ייבוא נתונים עבור Csv",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Csv",
     "descriptionEn": "Native PowerShell Command: Import-Csv",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14945,7 +14945,7 @@ const commandsData = [
   },
   {
     "command": "Import-LocalizedData",
-    "descriptionHe": "ייבוא נתונים עבור Localized Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-LocalizedData",
     "descriptionEn": "Native PowerShell Command: Import-LocalizedData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14953,7 +14953,7 @@ const commandsData = [
   },
   {
     "command": "Import-Module",
-    "descriptionHe": "ייבוא נתונים עבור Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-Module",
     "descriptionEn": "Native PowerShell Command: Import-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14961,7 +14961,7 @@ const commandsData = [
   },
   {
     "command": "Import-PackageProvider",
-    "descriptionHe": "ייבוא נתונים עבור Package Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-PackageProvider",
     "descriptionEn": "Native PowerShell Command: Import-PackageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14969,7 +14969,7 @@ const commandsData = [
   },
   {
     "command": "Import-PfxCertificate",
-    "descriptionHe": "ייבוא נתונים עבור Pfx Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-PfxCertificate",
     "descriptionEn": "Native PowerShell Command: Import-PfxCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14977,7 +14977,7 @@ const commandsData = [
   },
   {
     "command": "Import-PSSession",
-    "descriptionHe": "ייבוא נתונים עבור P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-PSSession",
     "descriptionEn": "Native PowerShell Command: Import-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14985,7 +14985,7 @@ const commandsData = [
   },
   {
     "command": "Import-StartLayout",
-    "descriptionHe": "ייבוא נתונים עבור Start Layout",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-StartLayout",
     "descriptionEn": "Native PowerShell Command: Import-StartLayout",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -14993,7 +14993,7 @@ const commandsData = [
   },
   {
     "command": "Import-TpmOwnerAuth",
-    "descriptionHe": "ייבוא נתונים עבור Tpm Owner Auth",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-TpmOwnerAuth",
     "descriptionEn": "Native PowerShell Command: Import-TpmOwnerAuth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15001,7 +15001,7 @@ const commandsData = [
   },
   {
     "command": "Import-UevConfiguration",
-    "descriptionHe": "ייבוא נתונים עבור Uev Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-UevConfiguration",
     "descriptionEn": "Native PowerShell Command: Import-UevConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15009,7 +15009,7 @@ const commandsData = [
   },
   {
     "command": "Import-VM",
-    "descriptionHe": "ייבוא נתונים עבור V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-VM",
     "descriptionEn": "Native PowerShell Command: Import-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15017,7 +15017,7 @@ const commandsData = [
   },
   {
     "command": "Import-VMInitialReplication",
-    "descriptionHe": "ייבוא נתונים עבור V M Initial Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Import-VMInitialReplication",
     "descriptionEn": "Native PowerShell Command: Import-VMInitialReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15025,7 +15025,7 @@ const commandsData = [
   },
   {
     "command": "Initialize-PmemPhysicalDevice",
-    "descriptionHe": "פעולת PowerShell על Pmem Physical Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Initialize-PmemPhysicalDevice",
     "descriptionEn": "Native PowerShell Command: Initialize-PmemPhysicalDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15033,7 +15033,7 @@ const commandsData = [
   },
   {
     "command": "Initialize-Tpm",
-    "descriptionHe": "פעולת PowerShell על Tpm",
+    "descriptionHe": "פקודת PowerShell מקורית: Initialize-Tpm",
     "descriptionEn": "Native PowerShell Command: Initialize-Tpm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15041,7 +15041,7 @@ const commandsData = [
   },
   {
     "command": "Install-Language",
-    "descriptionHe": "פעולת PowerShell על Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-Language",
     "descriptionEn": "Native PowerShell Command: Install-Language",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15049,7 +15049,7 @@ const commandsData = [
   },
   {
     "command": "Install-Package",
-    "descriptionHe": "פעולת PowerShell על Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-Package",
     "descriptionEn": "Native PowerShell Command: Install-Package",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15057,7 +15057,7 @@ const commandsData = [
   },
   {
     "command": "Install-PackageProvider",
-    "descriptionHe": "פעולת PowerShell על Package Provider",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-PackageProvider",
     "descriptionEn": "Native PowerShell Command: Install-PackageProvider",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15065,7 +15065,7 @@ const commandsData = [
   },
   {
     "command": "Install-ProvisioningPackage",
-    "descriptionHe": "פעולת PowerShell על Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Install-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15073,7 +15073,7 @@ const commandsData = [
   },
   {
     "command": "Install-TrustedProvisioningCertificate",
-    "descriptionHe": "פעולת PowerShell על Trusted Provisioning Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Install-TrustedProvisioningCertificate",
     "descriptionEn": "Native PowerShell Command: Install-TrustedProvisioningCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15081,7 +15081,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-CimMethod",
-    "descriptionHe": "הרצת Cim Method",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-CimMethod",
     "descriptionEn": "Native PowerShell Command: Invoke-CimMethod",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15089,7 +15089,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-Command",
-    "descriptionHe": "הרצת Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-Command",
     "descriptionEn": "Native PowerShell Command: Invoke-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15097,7 +15097,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-CommandInDesktopPackage",
-    "descriptionHe": "הרצת Command In Desktop Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-CommandInDesktopPackage",
     "descriptionEn": "Native PowerShell Command: Invoke-CommandInDesktopPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15105,7 +15105,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-DscResource",
-    "descriptionHe": "הרצת Dsc Resource",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-DscResource",
     "descriptionEn": "Native PowerShell Command: Invoke-DscResource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15113,7 +15113,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-Expression",
-    "descriptionHe": "הרצת Expression",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-Expression",
     "descriptionEn": "Native PowerShell Command: Invoke-Expression",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15121,7 +15121,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-History",
-    "descriptionHe": "הרצת History",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-History",
     "descriptionEn": "Native PowerShell Command: Invoke-History",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15129,7 +15129,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-Item",
-    "descriptionHe": "הרצת Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-Item",
     "descriptionEn": "Native PowerShell Command: Invoke-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15137,7 +15137,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-LapsPolicyProcessing",
-    "descriptionHe": "הרצת Laps Policy Processing",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-LapsPolicyProcessing",
     "descriptionEn": "Native PowerShell Command: Invoke-LapsPolicyProcessing",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15145,7 +15145,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-RestMethod",
-    "descriptionHe": "הרצת Rest Method",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-RestMethod",
     "descriptionEn": "Native PowerShell Command: Invoke-RestMethod",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15153,7 +15153,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-TroubleshootingPack",
-    "descriptionHe": "הרצת Troubleshooting Pack",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-TroubleshootingPack",
     "descriptionEn": "Native PowerShell Command: Invoke-TroubleshootingPack",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15161,7 +15161,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-WebRequest",
-    "descriptionHe": "הרצת Web Request",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-WebRequest",
     "descriptionEn": "Native PowerShell Command: Invoke-WebRequest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15169,7 +15169,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-WmiMethod",
-    "descriptionHe": "הרצת Wmi Method",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-WmiMethod",
     "descriptionEn": "Native PowerShell Command: Invoke-WmiMethod",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15177,7 +15177,7 @@ const commandsData = [
   },
   {
     "command": "Invoke-WSManAction",
-    "descriptionHe": "הרצת W S Man Action",
+    "descriptionHe": "פקודת PowerShell מקורית: Invoke-WSManAction",
     "descriptionEn": "Native PowerShell Command: Invoke-WSManAction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15185,7 +15185,7 @@ const commandsData = [
   },
   {
     "command": "Join-DtcDiagnosticResourceManager",
-    "descriptionHe": "פעולת PowerShell על Dtc Diagnostic Resource Manager",
+    "descriptionHe": "פקודת PowerShell מקורית: Join-DtcDiagnosticResourceManager",
     "descriptionEn": "Native PowerShell Command: Join-DtcDiagnosticResourceManager",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15193,7 +15193,7 @@ const commandsData = [
   },
   {
     "command": "Join-Path",
-    "descriptionHe": "פעולת PowerShell על Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Join-Path",
     "descriptionEn": "Native PowerShell Command: Join-Path",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15201,7 +15201,7 @@ const commandsData = [
   },
   {
     "command": "Limit-EventLog",
-    "descriptionHe": "פעולת PowerShell על Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Limit-EventLog",
     "descriptionEn": "Native PowerShell Command: Limit-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15209,7 +15209,7 @@ const commandsData = [
   },
   {
     "command": "Measure-Command",
-    "descriptionHe": "מדידת Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Measure-Command",
     "descriptionEn": "Native PowerShell Command: Measure-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15217,7 +15217,7 @@ const commandsData = [
   },
   {
     "command": "Measure-Object",
-    "descriptionHe": "מדידת Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Measure-Object",
     "descriptionEn": "Native PowerShell Command: Measure-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15225,7 +15225,7 @@ const commandsData = [
   },
   {
     "command": "Measure-VM",
-    "descriptionHe": "מדידת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Measure-VM",
     "descriptionEn": "Native PowerShell Command: Measure-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15233,7 +15233,7 @@ const commandsData = [
   },
   {
     "command": "Measure-VMReplication",
-    "descriptionHe": "מדידת V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Measure-VMReplication",
     "descriptionEn": "Native PowerShell Command: Measure-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15241,7 +15241,7 @@ const commandsData = [
   },
   {
     "command": "Measure-VMResourcePool",
-    "descriptionHe": "מדידת V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Measure-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: Measure-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15249,7 +15249,7 @@ const commandsData = [
   },
   {
     "command": "Merge-CIPolicy",
-    "descriptionHe": "פעולת PowerShell על C I Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Merge-CIPolicy",
     "descriptionEn": "Native PowerShell Command: Merge-CIPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15257,7 +15257,7 @@ const commandsData = [
   },
   {
     "command": "Merge-VHD",
-    "descriptionHe": "פעולת PowerShell על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Merge-VHD",
     "descriptionEn": "Native PowerShell Command: Merge-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15265,7 +15265,7 @@ const commandsData = [
   },
   {
     "command": "Mount-AppvClientConnectionGroup",
-    "descriptionHe": "פעולת PowerShell על Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Mount-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15273,7 +15273,7 @@ const commandsData = [
   },
   {
     "command": "Mount-AppvClientPackage",
-    "descriptionHe": "פעולת PowerShell על Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Mount-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15281,7 +15281,7 @@ const commandsData = [
   },
   {
     "command": "Mount-AppxVolume",
-    "descriptionHe": "פעולת PowerShell על Appx Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-AppxVolume",
     "descriptionEn": "Native PowerShell Command: Mount-AppxVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15289,7 +15289,7 @@ const commandsData = [
   },
   {
     "command": "Mount-VHD",
-    "descriptionHe": "פעולת PowerShell על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-VHD",
     "descriptionEn": "Native PowerShell Command: Mount-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15297,7 +15297,7 @@ const commandsData = [
   },
   {
     "command": "Mount-VMHostAssignableDevice",
-    "descriptionHe": "פעולת PowerShell על V M Host Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-VMHostAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Mount-VMHostAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15305,7 +15305,7 @@ const commandsData = [
   },
   {
     "command": "Mount-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Mount-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Mount-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15313,7 +15313,7 @@ const commandsData = [
   },
   {
     "command": "Move-AppxPackage",
-    "descriptionHe": "פעולת PowerShell על Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-AppxPackage",
     "descriptionEn": "Native PowerShell Command: Move-AppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15321,7 +15321,7 @@ const commandsData = [
   },
   {
     "command": "Move-Item",
-    "descriptionHe": "פעולת PowerShell על Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-Item",
     "descriptionEn": "Native PowerShell Command: Move-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15329,7 +15329,7 @@ const commandsData = [
   },
   {
     "command": "Move-ItemProperty",
-    "descriptionHe": "פעולת PowerShell על Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Move-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15337,7 +15337,7 @@ const commandsData = [
   },
   {
     "command": "Move-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-VM",
     "descriptionEn": "Native PowerShell Command: Move-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15345,7 +15345,7 @@ const commandsData = [
   },
   {
     "command": "Move-VMStorage",
-    "descriptionHe": "פעולת PowerShell על V M Storage",
+    "descriptionHe": "פקודת PowerShell מקורית: Move-VMStorage",
     "descriptionEn": "Native PowerShell Command: Move-VMStorage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15353,7 +15353,7 @@ const commandsData = [
   },
   {
     "command": "New-Alias",
-    "descriptionHe": "יצירת Alias",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Alias",
     "descriptionEn": "Native PowerShell Command: New-Alias",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15361,7 +15361,7 @@ const commandsData = [
   },
   {
     "command": "New-AppLockerPolicy",
-    "descriptionHe": "יצירת App Locker Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: New-AppLockerPolicy",
     "descriptionEn": "Native PowerShell Command: New-AppLockerPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15369,7 +15369,7 @@ const commandsData = [
   },
   {
     "command": "New-BcdEntry",
-    "descriptionHe": "יצירת Bcd Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: New-BcdEntry",
     "descriptionEn": "Native PowerShell Command: New-BcdEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15377,7 +15377,7 @@ const commandsData = [
   },
   {
     "command": "New-BcdStore",
-    "descriptionHe": "יצירת Bcd Store",
+    "descriptionHe": "פקודת PowerShell מקורית: New-BcdStore",
     "descriptionEn": "Native PowerShell Command: New-BcdStore",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15385,7 +15385,7 @@ const commandsData = [
   },
   {
     "command": "New-CertificateNotificationTask",
-    "descriptionHe": "יצירת Certificate Notification Task",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CertificateNotificationTask",
     "descriptionEn": "Native PowerShell Command: New-CertificateNotificationTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15393,7 +15393,7 @@ const commandsData = [
   },
   {
     "command": "New-CimInstance",
-    "descriptionHe": "יצירת Cim Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CimInstance",
     "descriptionEn": "Native PowerShell Command: New-CimInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15401,7 +15401,7 @@ const commandsData = [
   },
   {
     "command": "New-CimSession",
-    "descriptionHe": "יצירת Cim Session",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CimSession",
     "descriptionEn": "Native PowerShell Command: New-CimSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15409,7 +15409,7 @@ const commandsData = [
   },
   {
     "command": "New-CimSessionOption",
-    "descriptionHe": "יצירת Cim Session Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CimSessionOption",
     "descriptionEn": "Native PowerShell Command: New-CimSessionOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15417,7 +15417,7 @@ const commandsData = [
   },
   {
     "command": "New-CIPolicy",
-    "descriptionHe": "יצירת C I Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CIPolicy",
     "descriptionEn": "Native PowerShell Command: New-CIPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15425,7 +15425,7 @@ const commandsData = [
   },
   {
     "command": "New-CIPolicyRule",
-    "descriptionHe": "יצירת C I Policy Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: New-CIPolicyRule",
     "descriptionEn": "Native PowerShell Command: New-CIPolicyRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15433,7 +15433,7 @@ const commandsData = [
   },
   {
     "command": "New-DtcDiagnosticTransaction",
-    "descriptionHe": "יצירת Dtc Diagnostic Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: New-DtcDiagnosticTransaction",
     "descriptionEn": "Native PowerShell Command: New-DtcDiagnosticTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15441,7 +15441,7 @@ const commandsData = [
   },
   {
     "command": "New-Event",
-    "descriptionHe": "יצירת Event",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Event",
     "descriptionEn": "Native PowerShell Command: New-Event",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15449,7 +15449,7 @@ const commandsData = [
   },
   {
     "command": "New-EventLog",
-    "descriptionHe": "יצירת Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: New-EventLog",
     "descriptionEn": "Native PowerShell Command: New-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15457,7 +15457,7 @@ const commandsData = [
   },
   {
     "command": "New-FileCatalog",
-    "descriptionHe": "יצירת File Catalog",
+    "descriptionHe": "פקודת PowerShell מקורית: New-FileCatalog",
     "descriptionEn": "Native PowerShell Command: New-FileCatalog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15465,7 +15465,7 @@ const commandsData = [
   },
   {
     "command": "New-HgsTraceTarget",
-    "descriptionHe": "יצירת Hgs Trace Target",
+    "descriptionHe": "פקודת PowerShell מקורית: New-HgsTraceTarget",
     "descriptionEn": "Native PowerShell Command: New-HgsTraceTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15473,7 +15473,7 @@ const commandsData = [
   },
   {
     "command": "New-Item",
-    "descriptionHe": "יצירת Item",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Item",
     "descriptionEn": "Native PowerShell Command: New-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15481,7 +15481,7 @@ const commandsData = [
   },
   {
     "command": "New-ItemProperty",
-    "descriptionHe": "יצירת Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ItemProperty",
     "descriptionEn": "Native PowerShell Command: New-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15489,7 +15489,7 @@ const commandsData = [
   },
   {
     "command": "New-JobTrigger",
-    "descriptionHe": "יצירת Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: New-JobTrigger",
     "descriptionEn": "Native PowerShell Command: New-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15497,7 +15497,7 @@ const commandsData = [
   },
   {
     "command": "New-LocalGroup",
-    "descriptionHe": "יצירת Local Group",
+    "descriptionHe": "פקודת PowerShell מקורית: New-LocalGroup",
     "descriptionEn": "Native PowerShell Command: New-LocalGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15505,7 +15505,7 @@ const commandsData = [
   },
   {
     "command": "New-LocalUser",
-    "descriptionHe": "יצירת Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: New-LocalUser",
     "descriptionEn": "Native PowerShell Command: New-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15513,7 +15513,7 @@ const commandsData = [
   },
   {
     "command": "New-Module",
-    "descriptionHe": "יצירת Module",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Module",
     "descriptionEn": "Native PowerShell Command: New-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15521,7 +15521,7 @@ const commandsData = [
   },
   {
     "command": "New-ModuleManifest",
-    "descriptionHe": "יצירת Module Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ModuleManifest",
     "descriptionEn": "Native PowerShell Command: New-ModuleManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15529,7 +15529,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecAuthProposal",
-    "descriptionHe": "יצירת Net I Psec Auth Proposal",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecAuthProposal",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecAuthProposal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15537,7 +15537,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecMainModeCryptoProposal",
-    "descriptionHe": "יצירת Net I Psec Main Mode Crypto Proposal",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecMainModeCryptoProposal",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecMainModeCryptoProposal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15545,7 +15545,7 @@ const commandsData = [
   },
   {
     "command": "New-NetIPsecQuickModeCryptoProposal",
-    "descriptionHe": "יצירת Net I Psec Quick Mode Crypto Proposal",
+    "descriptionHe": "פקודת PowerShell מקורית: New-NetIPsecQuickModeCryptoProposal",
     "descriptionEn": "Native PowerShell Command: New-NetIPsecQuickModeCryptoProposal",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15553,7 +15553,7 @@ const commandsData = [
   },
   {
     "command": "New-Object",
-    "descriptionHe": "יצירת Object",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Object",
     "descriptionEn": "Native PowerShell Command: New-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15561,7 +15561,7 @@ const commandsData = [
   },
   {
     "command": "New-PmemDedicatedMemory",
-    "descriptionHe": "יצירת Pmem Dedicated Memory",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PmemDedicatedMemory",
     "descriptionEn": "Native PowerShell Command: New-PmemDedicatedMemory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15569,7 +15569,7 @@ const commandsData = [
   },
   {
     "command": "New-PmemDisk",
-    "descriptionHe": "יצירת Pmem Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PmemDisk",
     "descriptionEn": "Native PowerShell Command: New-PmemDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15577,7 +15577,7 @@ const commandsData = [
   },
   {
     "command": "New-ProvisioningRepro",
-    "descriptionHe": "יצירת Provisioning Repro",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ProvisioningRepro",
     "descriptionEn": "Native PowerShell Command: New-ProvisioningRepro",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15585,7 +15585,7 @@ const commandsData = [
   },
   {
     "command": "New-PSDrive",
-    "descriptionHe": "יצירת P S Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSDrive",
     "descriptionEn": "Native PowerShell Command: New-PSDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15593,7 +15593,7 @@ const commandsData = [
   },
   {
     "command": "New-PSRoleCapabilityFile",
-    "descriptionHe": "יצירת P S Role Capability File",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSRoleCapabilityFile",
     "descriptionEn": "Native PowerShell Command: New-PSRoleCapabilityFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15601,7 +15601,7 @@ const commandsData = [
   },
   {
     "command": "New-PSSession",
-    "descriptionHe": "יצירת P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSSession",
     "descriptionEn": "Native PowerShell Command: New-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15609,7 +15609,7 @@ const commandsData = [
   },
   {
     "command": "New-PSSessionConfigurationFile",
-    "descriptionHe": "יצירת P S Session Configuration File",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSSessionConfigurationFile",
     "descriptionEn": "Native PowerShell Command: New-PSSessionConfigurationFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15617,7 +15617,7 @@ const commandsData = [
   },
   {
     "command": "New-PSSessionOption",
-    "descriptionHe": "יצירת P S Session Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSSessionOption",
     "descriptionEn": "Native PowerShell Command: New-PSSessionOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15625,7 +15625,7 @@ const commandsData = [
   },
   {
     "command": "New-PSTransportOption",
-    "descriptionHe": "יצירת P S Transport Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSTransportOption",
     "descriptionEn": "Native PowerShell Command: New-PSTransportOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15633,7 +15633,7 @@ const commandsData = [
   },
   {
     "command": "New-PSWorkflowExecutionOption",
-    "descriptionHe": "יצירת P S Workflow Execution Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-PSWorkflowExecutionOption",
     "descriptionEn": "Native PowerShell Command: New-PSWorkflowExecutionOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15641,7 +15641,7 @@ const commandsData = [
   },
   {
     "command": "New-ScheduledJobOption",
-    "descriptionHe": "יצירת Scheduled Job Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-ScheduledJobOption",
     "descriptionEn": "Native PowerShell Command: New-ScheduledJobOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15649,7 +15649,7 @@ const commandsData = [
   },
   {
     "command": "New-SelfSignedCertificate",
-    "descriptionHe": "יצירת Self Signed Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: New-SelfSignedCertificate",
     "descriptionEn": "Native PowerShell Command: New-SelfSignedCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15657,7 +15657,7 @@ const commandsData = [
   },
   {
     "command": "New-Service",
-    "descriptionHe": "יצירת Service",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Service",
     "descriptionEn": "Native PowerShell Command: New-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15665,7 +15665,7 @@ const commandsData = [
   },
   {
     "command": "New-TimeSpan",
-    "descriptionHe": "יצירת Time Span",
+    "descriptionHe": "פקודת PowerShell מקורית: New-TimeSpan",
     "descriptionEn": "Native PowerShell Command: New-TimeSpan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15673,7 +15673,7 @@ const commandsData = [
   },
   {
     "command": "New-TlsSessionTicketKey",
-    "descriptionHe": "יצירת Tls Session Ticket Key",
+    "descriptionHe": "פקודת PowerShell מקורית: New-TlsSessionTicketKey",
     "descriptionEn": "Native PowerShell Command: New-TlsSessionTicketKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15681,7 +15681,7 @@ const commandsData = [
   },
   {
     "command": "New-Variable",
-    "descriptionHe": "יצירת Variable",
+    "descriptionHe": "פקודת PowerShell מקורית: New-Variable",
     "descriptionEn": "Native PowerShell Command: New-Variable",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15689,7 +15689,7 @@ const commandsData = [
   },
   {
     "command": "New-VFD",
-    "descriptionHe": "יצירת V F D",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VFD",
     "descriptionEn": "Native PowerShell Command: New-VFD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15697,7 +15697,7 @@ const commandsData = [
   },
   {
     "command": "New-VHD",
-    "descriptionHe": "יצירת V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VHD",
     "descriptionEn": "Native PowerShell Command: New-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15705,7 +15705,7 @@ const commandsData = [
   },
   {
     "command": "New-VM",
-    "descriptionHe": "יצירת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VM",
     "descriptionEn": "Native PowerShell Command: New-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15713,7 +15713,7 @@ const commandsData = [
   },
   {
     "command": "New-VMGroup",
-    "descriptionHe": "יצירת V M Group",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VMGroup",
     "descriptionEn": "Native PowerShell Command: New-VMGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15721,7 +15721,7 @@ const commandsData = [
   },
   {
     "command": "New-VMReplicationAuthorizationEntry",
-    "descriptionHe": "יצירת V M Replication Authorization Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VMReplicationAuthorizationEntry",
     "descriptionEn": "Native PowerShell Command: New-VMReplicationAuthorizationEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15729,7 +15729,7 @@ const commandsData = [
   },
   {
     "command": "New-VMResourcePool",
-    "descriptionHe": "יצירת V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: New-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15737,7 +15737,7 @@ const commandsData = [
   },
   {
     "command": "New-VMSan",
-    "descriptionHe": "יצירת V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VMSan",
     "descriptionEn": "Native PowerShell Command: New-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15745,7 +15745,7 @@ const commandsData = [
   },
   {
     "command": "New-VMSwitch",
-    "descriptionHe": "יצירת V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: New-VMSwitch",
     "descriptionEn": "Native PowerShell Command: New-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15753,7 +15753,7 @@ const commandsData = [
   },
   {
     "command": "New-WebServiceProxy",
-    "descriptionHe": "יצירת Web Service Proxy",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WebServiceProxy",
     "descriptionEn": "Native PowerShell Command: New-WebServiceProxy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15761,7 +15761,7 @@ const commandsData = [
   },
   {
     "command": "New-WindowsCustomImage",
-    "descriptionHe": "יצירת Windows Custom Image",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WindowsCustomImage",
     "descriptionEn": "Native PowerShell Command: New-WindowsCustomImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15769,7 +15769,7 @@ const commandsData = [
   },
   {
     "command": "New-WindowsImage",
-    "descriptionHe": "יצירת Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WindowsImage",
     "descriptionEn": "Native PowerShell Command: New-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15777,7 +15777,7 @@ const commandsData = [
   },
   {
     "command": "New-WinEvent",
-    "descriptionHe": "יצירת Win Event",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WinEvent",
     "descriptionEn": "Native PowerShell Command: New-WinEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15785,7 +15785,7 @@ const commandsData = [
   },
   {
     "command": "New-WinUserLanguageList",
-    "descriptionHe": "יצירת Win User Language List",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WinUserLanguageList",
     "descriptionEn": "Native PowerShell Command: New-WinUserLanguageList",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15793,7 +15793,7 @@ const commandsData = [
   },
   {
     "command": "New-WSManInstance",
-    "descriptionHe": "יצירת W S Man Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WSManInstance",
     "descriptionEn": "Native PowerShell Command: New-WSManInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15801,7 +15801,7 @@ const commandsData = [
   },
   {
     "command": "New-WSManSessionOption",
-    "descriptionHe": "יצירת W S Man Session Option",
+    "descriptionHe": "פקודת PowerShell מקורית: New-WSManSessionOption",
     "descriptionEn": "Native PowerShell Command: New-WSManSessionOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15809,7 +15809,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-AppxProvisionedPackages",
-    "descriptionHe": "פעולת PowerShell על Appx Provisioned Packages",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-AppxProvisionedPackages",
     "descriptionEn": "Native PowerShell Command: Optimize-AppxProvisionedPackages",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15817,7 +15817,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-VHD",
-    "descriptionHe": "פעולת PowerShell על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-VHD",
     "descriptionEn": "Native PowerShell Command: Optimize-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15825,7 +15825,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-VHDSet",
-    "descriptionHe": "פעולת PowerShell על V H D Set",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-VHDSet",
     "descriptionEn": "Native PowerShell Command: Optimize-VHDSet",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15833,7 +15833,7 @@ const commandsData = [
   },
   {
     "command": "Optimize-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Optimize-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Optimize-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15841,7 +15841,7 @@ const commandsData = [
   },
   {
     "command": "Out-Default",
-    "descriptionHe": "פלט אל Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-Default",
     "descriptionEn": "Native PowerShell Command: Out-Default",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15849,7 +15849,7 @@ const commandsData = [
   },
   {
     "command": "Out-File",
-    "descriptionHe": "פלט אל File",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-File",
     "descriptionEn": "Native PowerShell Command: Out-File",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15857,7 +15857,7 @@ const commandsData = [
   },
   {
     "command": "Out-GridView",
-    "descriptionHe": "פלט אל Grid View",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-GridView",
     "descriptionEn": "Native PowerShell Command: Out-GridView",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15865,7 +15865,7 @@ const commandsData = [
   },
   {
     "command": "Out-Host",
-    "descriptionHe": "פלט אל Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-Host",
     "descriptionEn": "Native PowerShell Command: Out-Host",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15873,7 +15873,7 @@ const commandsData = [
   },
   {
     "command": "Out-Null",
-    "descriptionHe": "פלט אל Null",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-Null",
     "descriptionEn": "Native PowerShell Command: Out-Null",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15881,7 +15881,7 @@ const commandsData = [
   },
   {
     "command": "Out-Printer",
-    "descriptionHe": "פלט אל Printer",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-Printer",
     "descriptionEn": "Native PowerShell Command: Out-Printer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15889,7 +15889,7 @@ const commandsData = [
   },
   {
     "command": "Out-String",
-    "descriptionHe": "פלט אל String",
+    "descriptionHe": "פקודת PowerShell מקורית: Out-String",
     "descriptionEn": "Native PowerShell Command: Out-String",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15897,7 +15897,7 @@ const commandsData = [
   },
   {
     "command": "Pop-Location",
-    "descriptionHe": "פעולת PowerShell על Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Pop-Location",
     "descriptionEn": "Native PowerShell Command: Pop-Location",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15905,7 +15905,7 @@ const commandsData = [
   },
   {
     "command": "Protect-CmsMessage",
-    "descriptionHe": "פעולת PowerShell על Cms Message",
+    "descriptionHe": "פקודת PowerShell מקורית: Protect-CmsMessage",
     "descriptionEn": "Native PowerShell Command: Protect-CmsMessage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15913,7 +15913,7 @@ const commandsData = [
   },
   {
     "command": "Publish-AppvClientPackage",
-    "descriptionHe": "פעולת PowerShell על Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Publish-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15921,7 +15921,7 @@ const commandsData = [
   },
   {
     "command": "Publish-DscConfiguration",
-    "descriptionHe": "פעולת PowerShell על Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Publish-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Publish-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15929,7 +15929,7 @@ const commandsData = [
   },
   {
     "command": "Push-Location",
-    "descriptionHe": "פעולת PowerShell על Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Push-Location",
     "descriptionEn": "Native PowerShell Command: Push-Location",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15937,7 +15937,7 @@ const commandsData = [
   },
   {
     "command": "Read-Host",
-    "descriptionHe": "קריאת Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Read-Host",
     "descriptionEn": "Native PowerShell Command: Read-Host",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15945,7 +15945,7 @@ const commandsData = [
   },
   {
     "command": "Receive-DtcDiagnosticTransaction",
-    "descriptionHe": "פעולת PowerShell על Dtc Diagnostic Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Receive-DtcDiagnosticTransaction",
     "descriptionEn": "Native PowerShell Command: Receive-DtcDiagnosticTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15953,7 +15953,7 @@ const commandsData = [
   },
   {
     "command": "Receive-Job",
-    "descriptionHe": "פעולת PowerShell על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Receive-Job",
     "descriptionEn": "Native PowerShell Command: Receive-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15961,7 +15961,7 @@ const commandsData = [
   },
   {
     "command": "Receive-PSSession",
-    "descriptionHe": "פעולת PowerShell על P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Receive-PSSession",
     "descriptionEn": "Native PowerShell Command: Receive-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15969,7 +15969,7 @@ const commandsData = [
   },
   {
     "command": "Register-ArgumentCompleter",
-    "descriptionHe": "פעולת PowerShell על Argument Completer",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-ArgumentCompleter",
     "descriptionEn": "Native PowerShell Command: Register-ArgumentCompleter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15977,7 +15977,7 @@ const commandsData = [
   },
   {
     "command": "Register-CimIndicationEvent",
-    "descriptionHe": "פעולת PowerShell על Cim Indication Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-CimIndicationEvent",
     "descriptionEn": "Native PowerShell Command: Register-CimIndicationEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15985,7 +15985,7 @@ const commandsData = [
   },
   {
     "command": "Register-EngineEvent",
-    "descriptionHe": "פעולת PowerShell על Engine Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-EngineEvent",
     "descriptionEn": "Native PowerShell Command: Register-EngineEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -15993,7 +15993,7 @@ const commandsData = [
   },
   {
     "command": "Register-ObjectEvent",
-    "descriptionHe": "פעולת PowerShell על Object Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-ObjectEvent",
     "descriptionEn": "Native PowerShell Command: Register-ObjectEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16001,7 +16001,7 @@ const commandsData = [
   },
   {
     "command": "Register-PackageSource",
-    "descriptionHe": "פעולת PowerShell על Package Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-PackageSource",
     "descriptionEn": "Native PowerShell Command: Register-PackageSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16009,7 +16009,7 @@ const commandsData = [
   },
   {
     "command": "Register-PSSessionConfiguration",
-    "descriptionHe": "פעולת PowerShell על P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Register-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16017,7 +16017,7 @@ const commandsData = [
   },
   {
     "command": "Register-RecoveryManagementPlugin",
-    "descriptionHe": "פעולת PowerShell על Recovery Management Plugin",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-RecoveryManagementPlugin",
     "descriptionEn": "Native PowerShell Command: Register-RecoveryManagementPlugin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16025,7 +16025,7 @@ const commandsData = [
   },
   {
     "command": "Register-ScheduledJob",
-    "descriptionHe": "פעולת PowerShell על Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Register-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16033,7 +16033,7 @@ const commandsData = [
   },
   {
     "command": "Register-UevTemplate",
-    "descriptionHe": "פעולת PowerShell על Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Register-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16041,7 +16041,7 @@ const commandsData = [
   },
   {
     "command": "Register-WmiEvent",
-    "descriptionHe": "פעולת PowerShell על Wmi Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Register-WmiEvent",
     "descriptionEn": "Native PowerShell Command: Register-WmiEvent",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16049,7 +16049,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppProvisionedSharedPackageContainer",
-    "descriptionHe": "מחיקת App Provisioned Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppProvisionedSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Remove-AppProvisionedSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16057,7 +16057,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppSharedPackageContainer",
-    "descriptionHe": "מחיקת App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Remove-AppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16065,7 +16065,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppvClientConnectionGroup",
-    "descriptionHe": "מחיקת Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Remove-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16073,7 +16073,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppvClientPackage",
-    "descriptionHe": "מחיקת Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Remove-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16081,7 +16081,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppvPublishingServer",
-    "descriptionHe": "מחיקת Appv Publishing Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppvPublishingServer",
     "descriptionEn": "Native PowerShell Command: Remove-AppvPublishingServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16089,7 +16089,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppxPackage",
-    "descriptionHe": "מחיקת Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppxPackage",
     "descriptionEn": "Native PowerShell Command: Remove-AppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16097,7 +16097,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppxPackageAutoUpdateSettings",
-    "descriptionHe": "מחיקת Appx Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppxPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Remove-AppxPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16105,7 +16105,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppxProvisionedPackage",
-    "descriptionHe": "מחיקת Appx Provisioned Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppxProvisionedPackage",
     "descriptionEn": "Native PowerShell Command: Remove-AppxProvisionedPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16113,7 +16113,7 @@ const commandsData = [
   },
   {
     "command": "Remove-AppxVolume",
-    "descriptionHe": "מחיקת Appx Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-AppxVolume",
     "descriptionEn": "Native PowerShell Command: Remove-AppxVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16121,7 +16121,7 @@ const commandsData = [
   },
   {
     "command": "Remove-BcdElement",
-    "descriptionHe": "מחיקת Bcd Element",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-BcdElement",
     "descriptionEn": "Native PowerShell Command: Remove-BcdElement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16129,7 +16129,7 @@ const commandsData = [
   },
   {
     "command": "Remove-BcdEntry",
-    "descriptionHe": "מחיקת Bcd Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-BcdEntry",
     "descriptionEn": "Native PowerShell Command: Remove-BcdEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16137,7 +16137,7 @@ const commandsData = [
   },
   {
     "command": "Remove-BitsTransfer",
-    "descriptionHe": "מחיקת Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Remove-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16145,7 +16145,7 @@ const commandsData = [
   },
   {
     "command": "Remove-CertificateEnrollmentPolicyServer",
-    "descriptionHe": "מחיקת Certificate Enrollment Policy Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-CertificateEnrollmentPolicyServer",
     "descriptionEn": "Native PowerShell Command: Remove-CertificateEnrollmentPolicyServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16153,7 +16153,7 @@ const commandsData = [
   },
   {
     "command": "Remove-CertificateNotificationTask",
-    "descriptionHe": "מחיקת Certificate Notification Task",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-CertificateNotificationTask",
     "descriptionEn": "Native PowerShell Command: Remove-CertificateNotificationTask",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16161,7 +16161,7 @@ const commandsData = [
   },
   {
     "command": "Remove-CimInstance",
-    "descriptionHe": "מחיקת Cim Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-CimInstance",
     "descriptionEn": "Native PowerShell Command: Remove-CimInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16169,7 +16169,7 @@ const commandsData = [
   },
   {
     "command": "Remove-CimSession",
-    "descriptionHe": "מחיקת Cim Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-CimSession",
     "descriptionEn": "Native PowerShell Command: Remove-CimSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16177,7 +16177,7 @@ const commandsData = [
   },
   {
     "command": "Remove-CIPolicyRule",
-    "descriptionHe": "מחיקת C I Policy Rule",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-CIPolicyRule",
     "descriptionEn": "Native PowerShell Command: Remove-CIPolicyRule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16185,7 +16185,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Computer",
-    "descriptionHe": "מחיקת Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Computer",
     "descriptionEn": "Native PowerShell Command: Remove-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16193,7 +16193,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Event",
-    "descriptionHe": "מחיקת Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Event",
     "descriptionEn": "Native PowerShell Command: Remove-Event",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16201,7 +16201,7 @@ const commandsData = [
   },
   {
     "command": "Remove-EventLog",
-    "descriptionHe": "מחיקת Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-EventLog",
     "descriptionEn": "Native PowerShell Command: Remove-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16209,7 +16209,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Item",
-    "descriptionHe": "מחיקת Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Item",
     "descriptionEn": "Native PowerShell Command: Remove-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16217,7 +16217,7 @@ const commandsData = [
   },
   {
     "command": "Remove-ItemProperty",
-    "descriptionHe": "מחיקת Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Remove-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16225,7 +16225,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Job",
-    "descriptionHe": "מחיקת Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Job",
     "descriptionEn": "Native PowerShell Command: Remove-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16233,7 +16233,7 @@ const commandsData = [
   },
   {
     "command": "Remove-JobTrigger",
-    "descriptionHe": "מחיקת Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Remove-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16241,7 +16241,7 @@ const commandsData = [
   },
   {
     "command": "Remove-LocalGroup",
-    "descriptionHe": "מחיקת Local Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-LocalGroup",
     "descriptionEn": "Native PowerShell Command: Remove-LocalGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16249,7 +16249,7 @@ const commandsData = [
   },
   {
     "command": "Remove-LocalGroupMember",
-    "descriptionHe": "מחיקת Local Group Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-LocalGroupMember",
     "descriptionEn": "Native PowerShell Command: Remove-LocalGroupMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16257,7 +16257,7 @@ const commandsData = [
   },
   {
     "command": "Remove-LocalUser",
-    "descriptionHe": "מחיקת Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-LocalUser",
     "descriptionEn": "Native PowerShell Command: Remove-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16265,7 +16265,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Module",
-    "descriptionHe": "מחיקת Module",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Module",
     "descriptionEn": "Native PowerShell Command: Remove-Module",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16273,7 +16273,7 @@ const commandsData = [
   },
   {
     "command": "Remove-OsConfigurationDocument",
-    "descriptionHe": "מחיקת Os Configuration Document",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-OsConfigurationDocument",
     "descriptionEn": "Native PowerShell Command: Remove-OsConfigurationDocument",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16281,7 +16281,7 @@ const commandsData = [
   },
   {
     "command": "Remove-OSConfigurationScenarioDefinition",
-    "descriptionHe": "מחיקת O S Configuration Scenario Definition",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-OSConfigurationScenarioDefinition",
     "descriptionEn": "Native PowerShell Command: Remove-OSConfigurationScenarioDefinition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16289,7 +16289,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PmemDedicatedMemory",
-    "descriptionHe": "מחיקת Pmem Dedicated Memory",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PmemDedicatedMemory",
     "descriptionEn": "Native PowerShell Command: Remove-PmemDedicatedMemory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16297,7 +16297,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PmemDisk",
-    "descriptionHe": "מחיקת Pmem Disk",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PmemDisk",
     "descriptionEn": "Native PowerShell Command: Remove-PmemDisk",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16305,7 +16305,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PSBreakpoint",
-    "descriptionHe": "מחיקת P S Breakpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PSBreakpoint",
     "descriptionEn": "Native PowerShell Command: Remove-PSBreakpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16313,7 +16313,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PSDrive",
-    "descriptionHe": "מחיקת P S Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PSDrive",
     "descriptionEn": "Native PowerShell Command: Remove-PSDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16321,7 +16321,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PSReadLineKeyHandler",
-    "descriptionHe": "מחיקת P S Read Line Key Handler",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PSReadLineKeyHandler",
     "descriptionEn": "Native PowerShell Command: Remove-PSReadLineKeyHandler",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16329,7 +16329,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PSSession",
-    "descriptionHe": "מחיקת P S Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PSSession",
     "descriptionEn": "Native PowerShell Command: Remove-PSSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16337,7 +16337,7 @@ const commandsData = [
   },
   {
     "command": "Remove-PSSnapin",
-    "descriptionHe": "מחיקת P S Snapin",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-PSSnapin",
     "descriptionEn": "Native PowerShell Command: Remove-PSSnapin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16345,7 +16345,7 @@ const commandsData = [
   },
   {
     "command": "Remove-RecoveryManagementPluginAltitude",
-    "descriptionHe": "מחיקת Recovery Management Plugin Altitude",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-RecoveryManagementPluginAltitude",
     "descriptionEn": "Native PowerShell Command: Remove-RecoveryManagementPluginAltitude",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16353,7 +16353,7 @@ const commandsData = [
   },
   {
     "command": "Remove-TypeData",
-    "descriptionHe": "מחיקת Type Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-TypeData",
     "descriptionEn": "Native PowerShell Command: Remove-TypeData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16361,7 +16361,7 @@ const commandsData = [
   },
   {
     "command": "Remove-Variable",
-    "descriptionHe": "מחיקת Variable",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-Variable",
     "descriptionEn": "Native PowerShell Command: Remove-Variable",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16369,7 +16369,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VHDSnapshot",
-    "descriptionHe": "מחיקת V H D Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VHDSnapshot",
     "descriptionEn": "Native PowerShell Command: Remove-VHDSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16377,7 +16377,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VM",
-    "descriptionHe": "מחיקת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VM",
     "descriptionEn": "Native PowerShell Command: Remove-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16385,7 +16385,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMAssignableDevice",
-    "descriptionHe": "מחיקת V M Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Remove-VMAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16393,7 +16393,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMDvdDrive",
-    "descriptionHe": "מחיקת V M Dvd Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMDvdDrive",
     "descriptionEn": "Native PowerShell Command: Remove-VMDvdDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16401,7 +16401,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMFibreChannelHba",
-    "descriptionHe": "מחיקת V M Fibre Channel Hba",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMFibreChannelHba",
     "descriptionEn": "Native PowerShell Command: Remove-VMFibreChannelHba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16409,7 +16409,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMGpuPartitionAdapter",
-    "descriptionHe": "מחיקת V M Gpu Partition Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMGpuPartitionAdapter",
     "descriptionEn": "Native PowerShell Command: Remove-VMGpuPartitionAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16417,7 +16417,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMGroup",
-    "descriptionHe": "מחיקת V M Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMGroup",
     "descriptionEn": "Native PowerShell Command: Remove-VMGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16425,7 +16425,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMGroupMember",
-    "descriptionHe": "מחיקת V M Group Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMGroupMember",
     "descriptionEn": "Native PowerShell Command: Remove-VMGroupMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16433,7 +16433,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMHardDiskDrive",
-    "descriptionHe": "מחיקת V M Hard Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMHardDiskDrive",
     "descriptionEn": "Native PowerShell Command: Remove-VMHardDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16441,7 +16441,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMHostAssignableDevice",
-    "descriptionHe": "מחיקת V M Host Assignable Device",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMHostAssignableDevice",
     "descriptionEn": "Native PowerShell Command: Remove-VMHostAssignableDevice",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16449,7 +16449,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMKeyStorageDrive",
-    "descriptionHe": "מחיקת V M Key Storage Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMKeyStorageDrive",
     "descriptionEn": "Native PowerShell Command: Remove-VMKeyStorageDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16457,7 +16457,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMMigrationNetwork",
-    "descriptionHe": "מחיקת V M Migration Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMMigrationNetwork",
     "descriptionEn": "Native PowerShell Command: Remove-VMMigrationNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16465,7 +16465,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMNetworkAdapter",
-    "descriptionHe": "מחיקת V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Remove-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16473,7 +16473,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMNetworkAdapterAcl",
-    "descriptionHe": "מחיקת V M Network Adapter Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMNetworkAdapterAcl",
     "descriptionEn": "Native PowerShell Command: Remove-VMNetworkAdapterAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16481,7 +16481,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMNetworkAdapterExtendedAcl",
-    "descriptionHe": "מחיקת V M Network Adapter Extended Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMNetworkAdapterExtendedAcl",
     "descriptionEn": "Native PowerShell Command: Remove-VMNetworkAdapterExtendedAcl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16489,7 +16489,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMNetworkAdapterRoutingDomainMapping",
-    "descriptionHe": "מחיקת V M Network Adapter Routing Domain Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMNetworkAdapterRoutingDomainMapping",
     "descriptionEn": "Native PowerShell Command: Remove-VMNetworkAdapterRoutingDomainMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16497,7 +16497,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMNetworkAdapterTeamMapping",
-    "descriptionHe": "מחיקת V M Network Adapter Team Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMNetworkAdapterTeamMapping",
     "descriptionEn": "Native PowerShell Command: Remove-VMNetworkAdapterTeamMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16505,7 +16505,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMPmemController",
-    "descriptionHe": "מחיקת V M Pmem Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMPmemController",
     "descriptionEn": "Native PowerShell Command: Remove-VMPmemController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16513,7 +16513,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMRemoteFx3dVideoAdapter",
-    "descriptionHe": "מחיקת V M Remote Fx3d Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMRemoteFx3dVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Remove-VMRemoteFx3dVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16521,7 +16521,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMReplication",
-    "descriptionHe": "מחיקת V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMReplication",
     "descriptionEn": "Native PowerShell Command: Remove-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16529,7 +16529,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMReplicationAuthorizationEntry",
-    "descriptionHe": "מחיקת V M Replication Authorization Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMReplicationAuthorizationEntry",
     "descriptionEn": "Native PowerShell Command: Remove-VMReplicationAuthorizationEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16537,7 +16537,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMResourcePool",
-    "descriptionHe": "מחיקת V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: Remove-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16545,7 +16545,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSan",
-    "descriptionHe": "מחיקת V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSan",
     "descriptionEn": "Native PowerShell Command: Remove-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16553,7 +16553,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSavedState",
-    "descriptionHe": "מחיקת V M Saved State",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSavedState",
     "descriptionEn": "Native PowerShell Command: Remove-VMSavedState",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16561,7 +16561,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMScsiController",
-    "descriptionHe": "מחיקת V M Scsi Controller",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMScsiController",
     "descriptionEn": "Native PowerShell Command: Remove-VMScsiController",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16569,7 +16569,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSnapshot",
-    "descriptionHe": "מחיקת V M Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSnapshot",
     "descriptionEn": "Native PowerShell Command: Remove-VMSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16577,7 +16577,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMStoragePath",
-    "descriptionHe": "מחיקת V M Storage Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMStoragePath",
     "descriptionEn": "Native PowerShell Command: Remove-VMStoragePath",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16585,7 +16585,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSwitch",
-    "descriptionHe": "מחיקת V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSwitch",
     "descriptionEn": "Native PowerShell Command: Remove-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16593,7 +16593,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSwitchExtensionPortFeature",
-    "descriptionHe": "מחיקת V M Switch Extension Port Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSwitchExtensionPortFeature",
     "descriptionEn": "Native PowerShell Command: Remove-VMSwitchExtensionPortFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16601,7 +16601,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSwitchExtensionSwitchFeature",
-    "descriptionHe": "מחיקת V M Switch Extension Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSwitchExtensionSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Remove-VMSwitchExtensionSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16609,7 +16609,7 @@ const commandsData = [
   },
   {
     "command": "Remove-VMSwitchTeamMember",
-    "descriptionHe": "מחיקת V M Switch Team Member",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-VMSwitchTeamMember",
     "descriptionEn": "Native PowerShell Command: Remove-VMSwitchTeamMember",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16617,7 +16617,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WindowsCapability",
-    "descriptionHe": "מחיקת Windows Capability",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WindowsCapability",
     "descriptionEn": "Native PowerShell Command: Remove-WindowsCapability",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16625,7 +16625,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WindowsDriver",
-    "descriptionHe": "מחיקת Windows Driver",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WindowsDriver",
     "descriptionEn": "Native PowerShell Command: Remove-WindowsDriver",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16633,7 +16633,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WindowsImage",
-    "descriptionHe": "מחיקת Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Remove-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16641,7 +16641,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WindowsPackage",
-    "descriptionHe": "מחיקת Windows Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WindowsPackage",
     "descriptionEn": "Native PowerShell Command: Remove-WindowsPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16649,7 +16649,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WmiObject",
-    "descriptionHe": "מחיקת Wmi Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WmiObject",
     "descriptionEn": "Native PowerShell Command: Remove-WmiObject",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16657,7 +16657,7 @@ const commandsData = [
   },
   {
     "command": "Remove-WSManInstance",
-    "descriptionHe": "מחיקת W S Man Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Remove-WSManInstance",
     "descriptionEn": "Native PowerShell Command: Remove-WSManInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16665,7 +16665,7 @@ const commandsData = [
   },
   {
     "command": "Rename-Computer",
-    "descriptionHe": "פעולת PowerShell על Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-Computer",
     "descriptionEn": "Native PowerShell Command: Rename-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16673,7 +16673,7 @@ const commandsData = [
   },
   {
     "command": "Rename-Item",
-    "descriptionHe": "פעולת PowerShell על Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-Item",
     "descriptionEn": "Native PowerShell Command: Rename-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16681,7 +16681,7 @@ const commandsData = [
   },
   {
     "command": "Rename-ItemProperty",
-    "descriptionHe": "פעולת PowerShell על Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Rename-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16689,7 +16689,7 @@ const commandsData = [
   },
   {
     "command": "Rename-LocalGroup",
-    "descriptionHe": "פעולת PowerShell על Local Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-LocalGroup",
     "descriptionEn": "Native PowerShell Command: Rename-LocalGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16697,7 +16697,7 @@ const commandsData = [
   },
   {
     "command": "Rename-LocalUser",
-    "descriptionHe": "פעולת PowerShell על Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-LocalUser",
     "descriptionEn": "Native PowerShell Command: Rename-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16705,7 +16705,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VM",
     "descriptionEn": "Native PowerShell Command: Rename-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16713,7 +16713,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMGroup",
-    "descriptionHe": "פעולת PowerShell על V M Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMGroup",
     "descriptionEn": "Native PowerShell Command: Rename-VMGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16721,7 +16721,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMNetworkAdapter",
-    "descriptionHe": "פעולת PowerShell על V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Rename-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16729,7 +16729,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMResourcePool",
-    "descriptionHe": "פעולת PowerShell על V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: Rename-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16737,7 +16737,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMSan",
-    "descriptionHe": "פעולת PowerShell על V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMSan",
     "descriptionEn": "Native PowerShell Command: Rename-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16745,7 +16745,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMSnapshot",
-    "descriptionHe": "פעולת PowerShell על V M Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMSnapshot",
     "descriptionEn": "Native PowerShell Command: Rename-VMSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16753,7 +16753,7 @@ const commandsData = [
   },
   {
     "command": "Rename-VMSwitch",
-    "descriptionHe": "פעולת PowerShell על V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Rename-VMSwitch",
     "descriptionEn": "Native PowerShell Command: Rename-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16761,7 +16761,7 @@ const commandsData = [
   },
   {
     "command": "Repair-AppvClientConnectionGroup",
-    "descriptionHe": "פעולת PowerShell על Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Repair-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16769,7 +16769,7 @@ const commandsData = [
   },
   {
     "command": "Repair-AppvClientPackage",
-    "descriptionHe": "פעולת PowerShell על Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Repair-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16777,7 +16777,7 @@ const commandsData = [
   },
   {
     "command": "Repair-UevTemplateIndex",
-    "descriptionHe": "פעולת PowerShell על Uev Template Index",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-UevTemplateIndex",
     "descriptionEn": "Native PowerShell Command: Repair-UevTemplateIndex",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16785,7 +16785,7 @@ const commandsData = [
   },
   {
     "command": "Repair-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-VM",
     "descriptionEn": "Native PowerShell Command: Repair-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16793,7 +16793,7 @@ const commandsData = [
   },
   {
     "command": "Repair-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Repair-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Repair-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16801,7 +16801,7 @@ const commandsData = [
   },
   {
     "command": "Reset-AppSharedPackageContainer",
-    "descriptionHe": "פעולת PowerShell על App Shared Package Container",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-AppSharedPackageContainer",
     "descriptionEn": "Native PowerShell Command: Reset-AppSharedPackageContainer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16809,7 +16809,7 @@ const commandsData = [
   },
   {
     "command": "Reset-AppxPackage",
-    "descriptionHe": "פעולת PowerShell על Appx Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-AppxPackage",
     "descriptionEn": "Native PowerShell Command: Reset-AppxPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16817,7 +16817,7 @@ const commandsData = [
   },
   {
     "command": "Reset-ComputerMachinePassword",
-    "descriptionHe": "פעולת PowerShell על Computer Machine Password",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-ComputerMachinePassword",
     "descriptionEn": "Native PowerShell Command: Reset-ComputerMachinePassword",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16825,7 +16825,7 @@ const commandsData = [
   },
   {
     "command": "Reset-LapsPassword",
-    "descriptionHe": "פעולת PowerShell על Laps Password",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-LapsPassword",
     "descriptionEn": "Native PowerShell Command: Reset-LapsPassword",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16833,7 +16833,7 @@ const commandsData = [
   },
   {
     "command": "Reset-VMReplicationStatistics",
-    "descriptionHe": "פעולת PowerShell על V M Replication Statistics",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-VMReplicationStatistics",
     "descriptionEn": "Native PowerShell Command: Reset-VMReplicationStatistics",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16841,7 +16841,7 @@ const commandsData = [
   },
   {
     "command": "Reset-VMResourceMetering",
-    "descriptionHe": "פעולת PowerShell על V M Resource Metering",
+    "descriptionHe": "פקודת PowerShell מקורית: Reset-VMResourceMetering",
     "descriptionEn": "Native PowerShell Command: Reset-VMResourceMetering",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16849,7 +16849,7 @@ const commandsData = [
   },
   {
     "command": "Resize-VHD",
-    "descriptionHe": "פעולת PowerShell על V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Resize-VHD",
     "descriptionEn": "Native PowerShell Command: Resize-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16857,7 +16857,7 @@ const commandsData = [
   },
   {
     "command": "Resolve-DnsName",
-    "descriptionHe": "פעולת PowerShell על Dns Name",
+    "descriptionHe": "פקודת PowerShell מקורית: Resolve-DnsName",
     "descriptionEn": "Native PowerShell Command: Resolve-DnsName",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16865,7 +16865,7 @@ const commandsData = [
   },
   {
     "command": "Resolve-Path",
-    "descriptionHe": "פעולת PowerShell על Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Resolve-Path",
     "descriptionEn": "Native PowerShell Command: Resolve-Path",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16873,7 +16873,7 @@ const commandsData = [
   },
   {
     "command": "Restart-Computer",
-    "descriptionHe": "הפעלה מחדש של Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-Computer",
     "descriptionEn": "Native PowerShell Command: Restart-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16881,7 +16881,7 @@ const commandsData = [
   },
   {
     "command": "Restart-Service",
-    "descriptionHe": "הפעלה מחדש של Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-Service",
     "descriptionEn": "Native PowerShell Command: Restart-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16889,7 +16889,7 @@ const commandsData = [
   },
   {
     "command": "Restart-VM",
-    "descriptionHe": "הפעלה מחדש של V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Restart-VM",
     "descriptionEn": "Native PowerShell Command: Restart-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16897,7 +16897,7 @@ const commandsData = [
   },
   {
     "command": "Restore-Computer",
-    "descriptionHe": "פעולת PowerShell על Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-Computer",
     "descriptionEn": "Native PowerShell Command: Restore-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16905,7 +16905,7 @@ const commandsData = [
   },
   {
     "command": "Restore-UevBackup",
-    "descriptionHe": "פעולת PowerShell על Uev Backup",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-UevBackup",
     "descriptionEn": "Native PowerShell Command: Restore-UevBackup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16913,7 +16913,7 @@ const commandsData = [
   },
   {
     "command": "Restore-UevUserSetting",
-    "descriptionHe": "פעולת PowerShell על Uev User Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-UevUserSetting",
     "descriptionEn": "Native PowerShell Command: Restore-UevUserSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16921,7 +16921,7 @@ const commandsData = [
   },
   {
     "command": "Restore-VMSnapshot",
-    "descriptionHe": "פעולת PowerShell על V M Snapshot",
+    "descriptionHe": "פקודת PowerShell מקורית: Restore-VMSnapshot",
     "descriptionEn": "Native PowerShell Command: Restore-VMSnapshot",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16929,7 +16929,7 @@ const commandsData = [
   },
   {
     "command": "Resume-BitsTransfer",
-    "descriptionHe": "פעולת PowerShell על Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Resume-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16937,7 +16937,7 @@ const commandsData = [
   },
   {
     "command": "Resume-Job",
-    "descriptionHe": "פעולת PowerShell על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-Job",
     "descriptionEn": "Native PowerShell Command: Resume-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16945,7 +16945,7 @@ const commandsData = [
   },
   {
     "command": "Resume-ProvisioningSession",
-    "descriptionHe": "פעולת PowerShell על Provisioning Session",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-ProvisioningSession",
     "descriptionEn": "Native PowerShell Command: Resume-ProvisioningSession",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16953,7 +16953,7 @@ const commandsData = [
   },
   {
     "command": "Resume-ReFSDedupSchedule",
-    "descriptionHe": "פעולת PowerShell על Re F S Dedup Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-ReFSDedupSchedule",
     "descriptionEn": "Native PowerShell Command: Resume-ReFSDedupSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16961,7 +16961,7 @@ const commandsData = [
   },
   {
     "command": "Resume-Service",
-    "descriptionHe": "פעולת PowerShell על Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-Service",
     "descriptionEn": "Native PowerShell Command: Resume-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16969,7 +16969,7 @@ const commandsData = [
   },
   {
     "command": "Resume-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-VM",
     "descriptionEn": "Native PowerShell Command: Resume-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16977,7 +16977,7 @@ const commandsData = [
   },
   {
     "command": "Resume-VMReplication",
-    "descriptionHe": "פעולת PowerShell על V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Resume-VMReplication",
     "descriptionEn": "Native PowerShell Command: Resume-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16985,7 +16985,7 @@ const commandsData = [
   },
   {
     "command": "Revoke-VMConnectAccess",
-    "descriptionHe": "פעולת PowerShell על V M Connect Access",
+    "descriptionHe": "פקודת PowerShell מקורית: Revoke-VMConnectAccess",
     "descriptionEn": "Native PowerShell Command: Revoke-VMConnectAccess",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -16993,7 +16993,7 @@ const commandsData = [
   },
   {
     "command": "Save-Help",
-    "descriptionHe": "פעולת PowerShell על Help",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-Help",
     "descriptionEn": "Native PowerShell Command: Save-Help",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17001,7 +17001,7 @@ const commandsData = [
   },
   {
     "command": "Save-OsImage",
-    "descriptionHe": "פעולת PowerShell על Os Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-OsImage",
     "descriptionEn": "Native PowerShell Command: Save-OsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17009,7 +17009,7 @@ const commandsData = [
   },
   {
     "command": "Save-Package",
-    "descriptionHe": "פעולת PowerShell על Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-Package",
     "descriptionEn": "Native PowerShell Command: Save-Package",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17017,7 +17017,7 @@ const commandsData = [
   },
   {
     "command": "Save-SoftwareInventory",
-    "descriptionHe": "פעולת PowerShell על Software Inventory",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-SoftwareInventory",
     "descriptionEn": "Native PowerShell Command: Save-SoftwareInventory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17025,7 +17025,7 @@ const commandsData = [
   },
   {
     "command": "Save-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-VM",
     "descriptionEn": "Native PowerShell Command: Save-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17033,7 +17033,7 @@ const commandsData = [
   },
   {
     "command": "Save-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Save-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Save-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17041,7 +17041,7 @@ const commandsData = [
   },
   {
     "command": "Select-Object",
-    "descriptionHe": "בחירת Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Select-Object",
     "descriptionEn": "Native PowerShell Command: Select-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17049,7 +17049,7 @@ const commandsData = [
   },
   {
     "command": "Select-String",
-    "descriptionHe": "בחירת String",
+    "descriptionHe": "פקודת PowerShell מקורית: Select-String",
     "descriptionEn": "Native PowerShell Command: Select-String",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17057,7 +17057,7 @@ const commandsData = [
   },
   {
     "command": "Select-Xml",
-    "descriptionHe": "בחירת Xml",
+    "descriptionHe": "פקודת PowerShell מקורית: Select-Xml",
     "descriptionEn": "Native PowerShell Command: Select-Xml",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17065,7 +17065,7 @@ const commandsData = [
   },
   {
     "command": "Send-AppvClientReport",
-    "descriptionHe": "פעולת PowerShell על Appv Client Report",
+    "descriptionHe": "פקודת PowerShell מקורית: Send-AppvClientReport",
     "descriptionEn": "Native PowerShell Command: Send-AppvClientReport",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17073,7 +17073,7 @@ const commandsData = [
   },
   {
     "command": "Send-DtcDiagnosticTransaction",
-    "descriptionHe": "פעולת PowerShell על Dtc Diagnostic Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Send-DtcDiagnosticTransaction",
     "descriptionEn": "Native PowerShell Command: Send-DtcDiagnosticTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17081,7 +17081,7 @@ const commandsData = [
   },
   {
     "command": "Send-MailMessage",
-    "descriptionHe": "פעולת PowerShell על Mail Message",
+    "descriptionHe": "פקודת PowerShell מקורית: Send-MailMessage",
     "descriptionEn": "Native PowerShell Command: Send-MailMessage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17089,7 +17089,7 @@ const commandsData = [
   },
   {
     "command": "Set-Acl",
-    "descriptionHe": "הגדרת Acl",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Acl",
     "descriptionEn": "Native PowerShell Command: Set-Acl",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17097,7 +17097,7 @@ const commandsData = [
   },
   {
     "command": "Set-Alias",
-    "descriptionHe": "הגדרת Alias",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Alias",
     "descriptionEn": "Native PowerShell Command: Set-Alias",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17105,7 +17105,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppBackgroundTaskResourcePolicy",
-    "descriptionHe": "הגדרת App Background Task Resource Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppBackgroundTaskResourcePolicy",
     "descriptionEn": "Native PowerShell Command: Set-AppBackgroundTaskResourcePolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17113,7 +17113,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppLockerPolicy",
-    "descriptionHe": "הגדרת App Locker Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppLockerPolicy",
     "descriptionEn": "Native PowerShell Command: Set-AppLockerPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17121,7 +17121,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppvClientConfiguration",
-    "descriptionHe": "הגדרת Appv Client Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppvClientConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-AppvClientConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17129,7 +17129,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppvClientMode",
-    "descriptionHe": "הגדרת Appv Client Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppvClientMode",
     "descriptionEn": "Native PowerShell Command: Set-AppvClientMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17137,7 +17137,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppvClientPackage",
-    "descriptionHe": "הגדרת Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Set-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17145,7 +17145,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppvPublishingServer",
-    "descriptionHe": "הגדרת Appv Publishing Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppvPublishingServer",
     "descriptionEn": "Native PowerShell Command: Set-AppvPublishingServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17153,7 +17153,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppxDefaultVolume",
-    "descriptionHe": "הגדרת Appx Default Volume",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppxDefaultVolume",
     "descriptionEn": "Native PowerShell Command: Set-AppxDefaultVolume",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17161,7 +17161,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppxPackageAutoUpdateSettings",
-    "descriptionHe": "הגדרת Appx Package Auto Update Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppxPackageAutoUpdateSettings",
     "descriptionEn": "Native PowerShell Command: Set-AppxPackageAutoUpdateSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17169,7 +17169,7 @@ const commandsData = [
   },
   {
     "command": "Set-AppXProvisionedDataFile",
-    "descriptionHe": "הגדרת App X Provisioned Data File",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AppXProvisionedDataFile",
     "descriptionEn": "Native PowerShell Command: Set-AppXProvisionedDataFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17177,7 +17177,7 @@ const commandsData = [
   },
   {
     "command": "Set-AuthenticodeSignature",
-    "descriptionHe": "הגדרת Authenticode Signature",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-AuthenticodeSignature",
     "descriptionEn": "Native PowerShell Command: Set-AuthenticodeSignature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17185,7 +17185,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdBootDefault",
-    "descriptionHe": "הגדרת Bcd Boot Default",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdBootDefault",
     "descriptionEn": "Native PowerShell Command: Set-BcdBootDefault",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17193,7 +17193,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdBootDisplayOrder",
-    "descriptionHe": "הגדרת Bcd Boot Display Order",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdBootDisplayOrder",
     "descriptionEn": "Native PowerShell Command: Set-BcdBootDisplayOrder",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17201,7 +17201,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdBootSequence",
-    "descriptionHe": "הגדרת Bcd Boot Sequence",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdBootSequence",
     "descriptionEn": "Native PowerShell Command: Set-BcdBootSequence",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17209,7 +17209,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdBootTimeout",
-    "descriptionHe": "הגדרת Bcd Boot Timeout",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdBootTimeout",
     "descriptionEn": "Native PowerShell Command: Set-BcdBootTimeout",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17217,7 +17217,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdBootToolsDisplayOrder",
-    "descriptionHe": "הגדרת Bcd Boot Tools Display Order",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdBootToolsDisplayOrder",
     "descriptionEn": "Native PowerShell Command: Set-BcdBootToolsDisplayOrder",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17225,7 +17225,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdDebugSettings",
-    "descriptionHe": "הגדרת Bcd Debug Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdDebugSettings",
     "descriptionEn": "Native PowerShell Command: Set-BcdDebugSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17233,7 +17233,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdElement",
-    "descriptionHe": "הגדרת Bcd Element",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdElement",
     "descriptionEn": "Native PowerShell Command: Set-BcdElement",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17241,7 +17241,7 @@ const commandsData = [
   },
   {
     "command": "Set-BcdHypervisorSettings",
-    "descriptionHe": "הגדרת Bcd Hypervisor Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BcdHypervisorSettings",
     "descriptionEn": "Native PowerShell Command: Set-BcdHypervisorSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17249,7 +17249,7 @@ const commandsData = [
   },
   {
     "command": "Set-BitsTransfer",
-    "descriptionHe": "הגדרת Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Set-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17257,7 +17257,7 @@ const commandsData = [
   },
   {
     "command": "Set-CertificateAutoEnrollmentPolicy",
-    "descriptionHe": "הגדרת Certificate Auto Enrollment Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-CertificateAutoEnrollmentPolicy",
     "descriptionEn": "Native PowerShell Command: Set-CertificateAutoEnrollmentPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17265,7 +17265,7 @@ const commandsData = [
   },
   {
     "command": "Set-CimInstance",
-    "descriptionHe": "הגדרת Cim Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-CimInstance",
     "descriptionEn": "Native PowerShell Command: Set-CimInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17273,7 +17273,7 @@ const commandsData = [
   },
   {
     "command": "Set-CIPolicyIdInfo",
-    "descriptionHe": "הגדרת C I Policy Id Info",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-CIPolicyIdInfo",
     "descriptionEn": "Native PowerShell Command: Set-CIPolicyIdInfo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17281,7 +17281,7 @@ const commandsData = [
   },
   {
     "command": "Set-CIPolicySetting",
-    "descriptionHe": "הגדרת C I Policy Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-CIPolicySetting",
     "descriptionEn": "Native PowerShell Command: Set-CIPolicySetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17289,7 +17289,7 @@ const commandsData = [
   },
   {
     "command": "Set-CIPolicyVersion",
-    "descriptionHe": "הגדרת C I Policy Version",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-CIPolicyVersion",
     "descriptionEn": "Native PowerShell Command: Set-CIPolicyVersion",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17297,7 +17297,7 @@ const commandsData = [
   },
   {
     "command": "Set-Clipboard",
-    "descriptionHe": "הגדרת Clipboard",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Clipboard",
     "descriptionEn": "Native PowerShell Command: Set-Clipboard",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17305,7 +17305,7 @@ const commandsData = [
   },
   {
     "command": "Set-Content",
-    "descriptionHe": "הגדרת Content",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Content",
     "descriptionEn": "Native PowerShell Command: Set-Content",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17313,7 +17313,7 @@ const commandsData = [
   },
   {
     "command": "Set-Culture",
-    "descriptionHe": "הגדרת Culture",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Culture",
     "descriptionEn": "Native PowerShell Command: Set-Culture",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17321,7 +17321,7 @@ const commandsData = [
   },
   {
     "command": "Set-Date",
-    "descriptionHe": "הגדרת Date",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Date",
     "descriptionEn": "Native PowerShell Command: Set-Date",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17329,7 +17329,7 @@ const commandsData = [
   },
   {
     "command": "Set-DscLocalConfigurationManager",
-    "descriptionHe": "הגדרת Dsc Local Configuration Manager",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-DscLocalConfigurationManager",
     "descriptionEn": "Native PowerShell Command: Set-DscLocalConfigurationManager",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17337,7 +17337,7 @@ const commandsData = [
   },
   {
     "command": "Set-ExecutionPolicy",
-    "descriptionHe": "הגדרת Execution Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ExecutionPolicy",
     "descriptionEn": "Native PowerShell Command: Set-ExecutionPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17345,7 +17345,7 @@ const commandsData = [
   },
   {
     "command": "Set-HVCIOptions",
-    "descriptionHe": "הגדרת H V C I Options",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-HVCIOptions",
     "descriptionEn": "Native PowerShell Command: Set-HVCIOptions",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17353,7 +17353,7 @@ const commandsData = [
   },
   {
     "command": "Set-Item",
-    "descriptionHe": "הגדרת Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Item",
     "descriptionEn": "Native PowerShell Command: Set-Item",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17361,7 +17361,7 @@ const commandsData = [
   },
   {
     "command": "Set-ItemProperty",
-    "descriptionHe": "הגדרת Item Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ItemProperty",
     "descriptionEn": "Native PowerShell Command: Set-ItemProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17369,7 +17369,7 @@ const commandsData = [
   },
   {
     "command": "Set-JobTrigger",
-    "descriptionHe": "הגדרת Job Trigger",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-JobTrigger",
     "descriptionEn": "Native PowerShell Command: Set-JobTrigger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17377,7 +17377,7 @@ const commandsData = [
   },
   {
     "command": "Set-KdsConfiguration",
-    "descriptionHe": "הגדרת Kds Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-KdsConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-KdsConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17385,7 +17385,7 @@ const commandsData = [
   },
   {
     "command": "Set-LapsADAuditing",
-    "descriptionHe": "הגדרת Laps A D Auditing",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LapsADAuditing",
     "descriptionEn": "Native PowerShell Command: Set-LapsADAuditing",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17393,7 +17393,7 @@ const commandsData = [
   },
   {
     "command": "Set-LapsADComputerSelfPermission",
-    "descriptionHe": "הגדרת Laps A D Computer Self Permission",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LapsADComputerSelfPermission",
     "descriptionEn": "Native PowerShell Command: Set-LapsADComputerSelfPermission",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17401,7 +17401,7 @@ const commandsData = [
   },
   {
     "command": "Set-LapsADPasswordExpirationTime",
-    "descriptionHe": "הגדרת Laps A D Password Expiration Time",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LapsADPasswordExpirationTime",
     "descriptionEn": "Native PowerShell Command: Set-LapsADPasswordExpirationTime",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17409,7 +17409,7 @@ const commandsData = [
   },
   {
     "command": "Set-LapsADReadPasswordPermission",
-    "descriptionHe": "הגדרת Laps A D Read Password Permission",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LapsADReadPasswordPermission",
     "descriptionEn": "Native PowerShell Command: Set-LapsADReadPasswordPermission",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17417,7 +17417,7 @@ const commandsData = [
   },
   {
     "command": "Set-LapsADResetPasswordPermission",
-    "descriptionHe": "הגדרת Laps A D Reset Password Permission",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LapsADResetPasswordPermission",
     "descriptionEn": "Native PowerShell Command: Set-LapsADResetPasswordPermission",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17425,7 +17425,7 @@ const commandsData = [
   },
   {
     "command": "Set-LocalGroup",
-    "descriptionHe": "הגדרת Local Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LocalGroup",
     "descriptionEn": "Native PowerShell Command: Set-LocalGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17433,7 +17433,7 @@ const commandsData = [
   },
   {
     "command": "Set-LocalUser",
-    "descriptionHe": "הגדרת Local User",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-LocalUser",
     "descriptionEn": "Native PowerShell Command: Set-LocalUser",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17441,7 +17441,7 @@ const commandsData = [
   },
   {
     "command": "Set-Location",
-    "descriptionHe": "הגדרת Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Location",
     "descriptionEn": "Native PowerShell Command: Set-Location",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17449,7 +17449,7 @@ const commandsData = [
   },
   {
     "command": "Set-NonRemovableAppsPolicy",
-    "descriptionHe": "הגדרת Non Removable Apps Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-NonRemovableAppsPolicy",
     "descriptionEn": "Native PowerShell Command: Set-NonRemovableAppsPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17457,7 +17457,7 @@ const commandsData = [
   },
   {
     "command": "Set-OsConfigurationDocument",
-    "descriptionHe": "הגדרת Os Configuration Document",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OsConfigurationDocument",
     "descriptionEn": "Native PowerShell Command: Set-OsConfigurationDocument",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17465,7 +17465,7 @@ const commandsData = [
   },
   {
     "command": "Set-OsConfigurationProperty",
-    "descriptionHe": "הגדרת Os Configuration Property",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OsConfigurationProperty",
     "descriptionEn": "Native PowerShell Command: Set-OsConfigurationProperty",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17473,7 +17473,7 @@ const commandsData = [
   },
   {
     "command": "Set-OSConfigurationScenarioDefinition",
-    "descriptionHe": "הגדרת O S Configuration Scenario Definition",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-OSConfigurationScenarioDefinition",
     "descriptionEn": "Native PowerShell Command: Set-OSConfigurationScenarioDefinition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17481,7 +17481,7 @@ const commandsData = [
   },
   {
     "command": "Set-PackageSource",
-    "descriptionHe": "הגדרת Package Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PackageSource",
     "descriptionEn": "Native PowerShell Command: Set-PackageSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17489,7 +17489,7 @@ const commandsData = [
   },
   {
     "command": "Set-ProcessMitigation",
-    "descriptionHe": "הגדרת Process Mitigation",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ProcessMitigation",
     "descriptionEn": "Native PowerShell Command: Set-ProcessMitigation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17497,7 +17497,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSBreakpoint",
-    "descriptionHe": "הגדרת P S Breakpoint",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSBreakpoint",
     "descriptionEn": "Native PowerShell Command: Set-PSBreakpoint",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17505,7 +17505,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSDebug",
-    "descriptionHe": "הגדרת P S Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSDebug",
     "descriptionEn": "Native PowerShell Command: Set-PSDebug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17513,7 +17513,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSReadLineKeyHandler",
-    "descriptionHe": "הגדרת P S Read Line Key Handler",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSReadLineKeyHandler",
     "descriptionEn": "Native PowerShell Command: Set-PSReadLineKeyHandler",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17521,7 +17521,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSReadLineOption",
-    "descriptionHe": "הגדרת P S Read Line Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSReadLineOption",
     "descriptionEn": "Native PowerShell Command: Set-PSReadLineOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17529,7 +17529,7 @@ const commandsData = [
   },
   {
     "command": "Set-PSSessionConfiguration",
-    "descriptionHe": "הגדרת P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17537,7 +17537,7 @@ const commandsData = [
   },
   {
     "command": "Set-RecoveryManagementPluginAltitude",
-    "descriptionHe": "הגדרת Recovery Management Plugin Altitude",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-RecoveryManagementPluginAltitude",
     "descriptionEn": "Native PowerShell Command: Set-RecoveryManagementPluginAltitude",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17545,7 +17545,7 @@ const commandsData = [
   },
   {
     "command": "Set-RecoveryRemoteManagementStatus",
-    "descriptionHe": "הגדרת Recovery Remote Management Status",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-RecoveryRemoteManagementStatus",
     "descriptionEn": "Native PowerShell Command: Set-RecoveryRemoteManagementStatus",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17553,7 +17553,7 @@ const commandsData = [
   },
   {
     "command": "Set-ReFSDedupSchedule",
-    "descriptionHe": "הגדרת Re F S Dedup Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ReFSDedupSchedule",
     "descriptionEn": "Native PowerShell Command: Set-ReFSDedupSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17561,7 +17561,7 @@ const commandsData = [
   },
   {
     "command": "Set-ReFSDedupScrubSchedule",
-    "descriptionHe": "הגדרת Re F S Dedup Scrub Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ReFSDedupScrubSchedule",
     "descriptionEn": "Native PowerShell Command: Set-ReFSDedupScrubSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17569,7 +17569,7 @@ const commandsData = [
   },
   {
     "command": "Set-RuleOption",
-    "descriptionHe": "הגדרת Rule Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-RuleOption",
     "descriptionEn": "Native PowerShell Command: Set-RuleOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17577,7 +17577,7 @@ const commandsData = [
   },
   {
     "command": "Set-ScheduledJob",
-    "descriptionHe": "הגדרת Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Set-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17585,7 +17585,7 @@ const commandsData = [
   },
   {
     "command": "Set-ScheduledJobOption",
-    "descriptionHe": "הגדרת Scheduled Job Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-ScheduledJobOption",
     "descriptionEn": "Native PowerShell Command: Set-ScheduledJobOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17593,7 +17593,7 @@ const commandsData = [
   },
   {
     "command": "Set-SecureBootUEFI",
-    "descriptionHe": "הגדרת Secure Boot U E F I",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SecureBootUEFI",
     "descriptionEn": "Native PowerShell Command: Set-SecureBootUEFI",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17601,7 +17601,7 @@ const commandsData = [
   },
   {
     "command": "Set-Service",
-    "descriptionHe": "הגדרת Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Service",
     "descriptionEn": "Native PowerShell Command: Set-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17609,7 +17609,7 @@ const commandsData = [
   },
   {
     "command": "Set-StrictMode",
-    "descriptionHe": "הגדרת Strict Mode",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-StrictMode",
     "descriptionEn": "Native PowerShell Command: Set-StrictMode",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17617,7 +17617,7 @@ const commandsData = [
   },
   {
     "command": "Set-SystemPreferredUILanguage",
-    "descriptionHe": "הגדרת System Preferred U I Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-SystemPreferredUILanguage",
     "descriptionEn": "Native PowerShell Command: Set-SystemPreferredUILanguage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17625,7 +17625,7 @@ const commandsData = [
   },
   {
     "command": "Set-TimeZone",
-    "descriptionHe": "הגדרת Time Zone",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-TimeZone",
     "descriptionEn": "Native PowerShell Command: Set-TimeZone",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17633,7 +17633,7 @@ const commandsData = [
   },
   {
     "command": "Set-TpmOwnerAuth",
-    "descriptionHe": "הגדרת Tpm Owner Auth",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-TpmOwnerAuth",
     "descriptionEn": "Native PowerShell Command: Set-TpmOwnerAuth",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17641,7 +17641,7 @@ const commandsData = [
   },
   {
     "command": "Set-TraceSource",
-    "descriptionHe": "הגדרת Trace Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-TraceSource",
     "descriptionEn": "Native PowerShell Command: Set-TraceSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17649,7 +17649,7 @@ const commandsData = [
   },
   {
     "command": "Set-UevConfiguration",
-    "descriptionHe": "הגדרת Uev Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-UevConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-UevConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17657,7 +17657,7 @@ const commandsData = [
   },
   {
     "command": "Set-UevTemplateProfile",
-    "descriptionHe": "הגדרת Uev Template Profile",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-UevTemplateProfile",
     "descriptionEn": "Native PowerShell Command: Set-UevTemplateProfile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17665,7 +17665,7 @@ const commandsData = [
   },
   {
     "command": "Set-Variable",
-    "descriptionHe": "הגדרת Variable",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-Variable",
     "descriptionEn": "Native PowerShell Command: Set-Variable",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17673,7 +17673,7 @@ const commandsData = [
   },
   {
     "command": "Set-VHD",
-    "descriptionHe": "הגדרת V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VHD",
     "descriptionEn": "Native PowerShell Command: Set-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17681,7 +17681,7 @@ const commandsData = [
   },
   {
     "command": "Set-VM",
-    "descriptionHe": "הגדרת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VM",
     "descriptionEn": "Native PowerShell Command: Set-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17689,7 +17689,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMBios",
-    "descriptionHe": "הגדרת V M Bios",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMBios",
     "descriptionEn": "Native PowerShell Command: Set-VMBios",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17697,7 +17697,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMComPort",
-    "descriptionHe": "הגדרת V M Com Port",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMComPort",
     "descriptionEn": "Native PowerShell Command: Set-VMComPort",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17705,7 +17705,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMDvdDrive",
-    "descriptionHe": "הגדרת V M Dvd Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMDvdDrive",
     "descriptionEn": "Native PowerShell Command: Set-VMDvdDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17713,7 +17713,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMFibreChannelHba",
-    "descriptionHe": "הגדרת V M Fibre Channel Hba",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMFibreChannelHba",
     "descriptionEn": "Native PowerShell Command: Set-VMFibreChannelHba",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17721,7 +17721,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMFirmware",
-    "descriptionHe": "הגדרת V M Firmware",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMFirmware",
     "descriptionEn": "Native PowerShell Command: Set-VMFirmware",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17729,7 +17729,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMFloppyDiskDrive",
-    "descriptionHe": "הגדרת V M Floppy Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMFloppyDiskDrive",
     "descriptionEn": "Native PowerShell Command: Set-VMFloppyDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17737,7 +17737,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMGpuPartitionAdapter",
-    "descriptionHe": "הגדרת V M Gpu Partition Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMGpuPartitionAdapter",
     "descriptionEn": "Native PowerShell Command: Set-VMGpuPartitionAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17745,7 +17745,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMHardDiskDrive",
-    "descriptionHe": "הגדרת V M Hard Disk Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMHardDiskDrive",
     "descriptionEn": "Native PowerShell Command: Set-VMHardDiskDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17753,7 +17753,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMHost",
-    "descriptionHe": "הגדרת V M Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMHost",
     "descriptionEn": "Native PowerShell Command: Set-VMHost",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17761,7 +17761,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMHostCluster",
-    "descriptionHe": "הגדרת V M Host Cluster",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMHostCluster",
     "descriptionEn": "Native PowerShell Command: Set-VMHostCluster",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17769,7 +17769,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMHostPartitionableGpu",
-    "descriptionHe": "הגדרת V M Host Partitionable Gpu",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMHostPartitionableGpu",
     "descriptionEn": "Native PowerShell Command: Set-VMHostPartitionableGpu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17777,7 +17777,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMKeyProtector",
-    "descriptionHe": "הגדרת V M Key Protector",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMKeyProtector",
     "descriptionEn": "Native PowerShell Command: Set-VMKeyProtector",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17785,7 +17785,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMKeyStorageDrive",
-    "descriptionHe": "הגדרת V M Key Storage Drive",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMKeyStorageDrive",
     "descriptionEn": "Native PowerShell Command: Set-VMKeyStorageDrive",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17793,7 +17793,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMMemory",
-    "descriptionHe": "הגדרת V M Memory",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMMemory",
     "descriptionEn": "Native PowerShell Command: Set-VMMemory",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17801,7 +17801,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMMigrationNetwork",
-    "descriptionHe": "הגדרת V M Migration Network",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMMigrationNetwork",
     "descriptionEn": "Native PowerShell Command: Set-VMMigrationNetwork",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17809,7 +17809,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapter",
-    "descriptionHe": "הגדרת V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17817,7 +17817,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterFailoverConfiguration",
-    "descriptionHe": "הגדרת V M Network Adapter Failover Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterFailoverConfiguration",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterFailoverConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17825,7 +17825,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterIsolation",
-    "descriptionHe": "הגדרת V M Network Adapter Isolation",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterIsolation",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterIsolation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17833,7 +17833,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterRdma",
-    "descriptionHe": "הגדרת V M Network Adapter Rdma",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterRdma",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterRdma",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17841,7 +17841,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterRoutingDomainMapping",
-    "descriptionHe": "הגדרת V M Network Adapter Routing Domain Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterRoutingDomainMapping",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterRoutingDomainMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17849,7 +17849,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterTeamMapping",
-    "descriptionHe": "הגדרת V M Network Adapter Team Mapping",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterTeamMapping",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterTeamMapping",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17857,7 +17857,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMNetworkAdapterVlan",
-    "descriptionHe": "הגדרת V M Network Adapter Vlan",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMNetworkAdapterVlan",
     "descriptionEn": "Native PowerShell Command: Set-VMNetworkAdapterVlan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17865,7 +17865,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMPartitionableGpu",
-    "descriptionHe": "הגדרת V M Partitionable Gpu",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMPartitionableGpu",
     "descriptionEn": "Native PowerShell Command: Set-VMPartitionableGpu",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17873,7 +17873,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMProcessor",
-    "descriptionHe": "הגדרת V M Processor",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMProcessor",
     "descriptionEn": "Native PowerShell Command: Set-VMProcessor",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17881,7 +17881,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMRemoteFx3dVideoAdapter",
-    "descriptionHe": "הגדרת V M Remote Fx3d Video Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMRemoteFx3dVideoAdapter",
     "descriptionEn": "Native PowerShell Command: Set-VMRemoteFx3dVideoAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17889,7 +17889,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMReplication",
-    "descriptionHe": "הגדרת V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMReplication",
     "descriptionEn": "Native PowerShell Command: Set-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17897,7 +17897,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMReplicationAuthorizationEntry",
-    "descriptionHe": "הגדרת V M Replication Authorization Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMReplicationAuthorizationEntry",
     "descriptionEn": "Native PowerShell Command: Set-VMReplicationAuthorizationEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17905,7 +17905,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMReplicationServer",
-    "descriptionHe": "הגדרת V M Replication Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMReplicationServer",
     "descriptionEn": "Native PowerShell Command: Set-VMReplicationServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17913,7 +17913,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMResourcePool",
-    "descriptionHe": "הגדרת V M Resource Pool",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMResourcePool",
     "descriptionEn": "Native PowerShell Command: Set-VMResourcePool",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17921,7 +17921,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSan",
-    "descriptionHe": "הגדרת V M San",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSan",
     "descriptionEn": "Native PowerShell Command: Set-VMSan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17929,7 +17929,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSecurity",
-    "descriptionHe": "הגדרת V M Security",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSecurity",
     "descriptionEn": "Native PowerShell Command: Set-VMSecurity",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17937,7 +17937,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSecurityPolicy",
-    "descriptionHe": "הגדרת V M Security Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSecurityPolicy",
     "descriptionEn": "Native PowerShell Command: Set-VMSecurityPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17945,7 +17945,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMStorageSettings",
-    "descriptionHe": "הגדרת V M Storage Settings",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMStorageSettings",
     "descriptionEn": "Native PowerShell Command: Set-VMStorageSettings",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17953,7 +17953,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSwitch",
-    "descriptionHe": "הגדרת V M Switch",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSwitch",
     "descriptionEn": "Native PowerShell Command: Set-VMSwitch",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17961,7 +17961,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSwitchExtensionPortFeature",
-    "descriptionHe": "הגדרת V M Switch Extension Port Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSwitchExtensionPortFeature",
     "descriptionEn": "Native PowerShell Command: Set-VMSwitchExtensionPortFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17969,7 +17969,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSwitchExtensionSwitchFeature",
-    "descriptionHe": "הגדרת V M Switch Extension Switch Feature",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSwitchExtensionSwitchFeature",
     "descriptionEn": "Native PowerShell Command: Set-VMSwitchExtensionSwitchFeature",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17977,7 +17977,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMSwitchTeam",
-    "descriptionHe": "הגדרת V M Switch Team",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMSwitchTeam",
     "descriptionEn": "Native PowerShell Command: Set-VMSwitchTeam",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17985,7 +17985,7 @@ const commandsData = [
   },
   {
     "command": "Set-VMVideo",
-    "descriptionHe": "הגדרת V M Video",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-VMVideo",
     "descriptionEn": "Native PowerShell Command: Set-VMVideo",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -17993,7 +17993,7 @@ const commandsData = [
   },
   {
     "command": "Set-WheaMemoryPolicy",
-    "descriptionHe": "הגדרת Whea Memory Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WheaMemoryPolicy",
     "descriptionEn": "Native PowerShell Command: Set-WheaMemoryPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18001,7 +18001,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinAcceptLanguageFromLanguageListOptOut",
-    "descriptionHe": "הגדרת Win Accept Language From Language List Opt Out",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinAcceptLanguageFromLanguageListOptOut",
     "descriptionEn": "Native PowerShell Command: Set-WinAcceptLanguageFromLanguageListOptOut",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18009,7 +18009,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinCultureFromLanguageListOptOut",
-    "descriptionHe": "הגדרת Win Culture From Language List Opt Out",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinCultureFromLanguageListOptOut",
     "descriptionEn": "Native PowerShell Command: Set-WinCultureFromLanguageListOptOut",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18017,7 +18017,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinDefaultInputMethodOverride",
-    "descriptionHe": "הגדרת Win Default Input Method Override",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinDefaultInputMethodOverride",
     "descriptionEn": "Native PowerShell Command: Set-WinDefaultInputMethodOverride",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18025,7 +18025,7 @@ const commandsData = [
   },
   {
     "command": "Set-WindowsEdition",
-    "descriptionHe": "הגדרת Windows Edition",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WindowsEdition",
     "descriptionEn": "Native PowerShell Command: Set-WindowsEdition",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18033,7 +18033,7 @@ const commandsData = [
   },
   {
     "command": "Set-WindowsProductKey",
-    "descriptionHe": "הגדרת Windows Product Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WindowsProductKey",
     "descriptionEn": "Native PowerShell Command: Set-WindowsProductKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18041,7 +18041,7 @@ const commandsData = [
   },
   {
     "command": "Set-WindowsReservedStorageState",
-    "descriptionHe": "הגדרת Windows Reserved Storage State",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WindowsReservedStorageState",
     "descriptionEn": "Native PowerShell Command: Set-WindowsReservedStorageState",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18049,7 +18049,7 @@ const commandsData = [
   },
   {
     "command": "Set-WindowsSearchSetting",
-    "descriptionHe": "הגדרת Windows Search Setting",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WindowsSearchSetting",
     "descriptionEn": "Native PowerShell Command: Set-WindowsSearchSetting",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18057,7 +18057,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinHomeLocation",
-    "descriptionHe": "הגדרת Win Home Location",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinHomeLocation",
     "descriptionEn": "Native PowerShell Command: Set-WinHomeLocation",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18065,7 +18065,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinLanguageBarOption",
-    "descriptionHe": "הגדרת Win Language Bar Option",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinLanguageBarOption",
     "descriptionEn": "Native PowerShell Command: Set-WinLanguageBarOption",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18073,7 +18073,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinSystemLocale",
-    "descriptionHe": "הגדרת Win System Locale",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinSystemLocale",
     "descriptionEn": "Native PowerShell Command: Set-WinSystemLocale",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18081,7 +18081,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinUILanguageOverride",
-    "descriptionHe": "הגדרת Win U I Language Override",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinUILanguageOverride",
     "descriptionEn": "Native PowerShell Command: Set-WinUILanguageOverride",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18089,7 +18089,7 @@ const commandsData = [
   },
   {
     "command": "Set-WinUserLanguageList",
-    "descriptionHe": "הגדרת Win User Language List",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WinUserLanguageList",
     "descriptionEn": "Native PowerShell Command: Set-WinUserLanguageList",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18097,7 +18097,7 @@ const commandsData = [
   },
   {
     "command": "Set-WmiInstance",
-    "descriptionHe": "הגדרת Wmi Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WmiInstance",
     "descriptionEn": "Native PowerShell Command: Set-WmiInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18105,7 +18105,7 @@ const commandsData = [
   },
   {
     "command": "Set-WSManInstance",
-    "descriptionHe": "הגדרת W S Man Instance",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WSManInstance",
     "descriptionEn": "Native PowerShell Command: Set-WSManInstance",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18113,7 +18113,7 @@ const commandsData = [
   },
   {
     "command": "Set-WSManQuickConfig",
-    "descriptionHe": "הגדרת W S Man Quick Config",
+    "descriptionHe": "פקודת PowerShell מקורית: Set-WSManQuickConfig",
     "descriptionEn": "Native PowerShell Command: Set-WSManQuickConfig",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18121,7 +18121,7 @@ const commandsData = [
   },
   {
     "command": "Show-Command",
-    "descriptionHe": "הצגת Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-Command",
     "descriptionEn": "Native PowerShell Command: Show-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18129,7 +18129,7 @@ const commandsData = [
   },
   {
     "command": "Show-ControlPanelItem",
-    "descriptionHe": "הצגת Control Panel Item",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-ControlPanelItem",
     "descriptionEn": "Native PowerShell Command: Show-ControlPanelItem",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18137,7 +18137,7 @@ const commandsData = [
   },
   {
     "command": "Show-EventLog",
-    "descriptionHe": "הצגת Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-EventLog",
     "descriptionEn": "Native PowerShell Command: Show-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18145,7 +18145,7 @@ const commandsData = [
   },
   {
     "command": "Show-WindowsDeveloperLicenseRegistration",
-    "descriptionHe": "הצגת Windows Developer License Registration",
+    "descriptionHe": "פקודת PowerShell מקורית: Show-WindowsDeveloperLicenseRegistration",
     "descriptionEn": "Native PowerShell Command: Show-WindowsDeveloperLicenseRegistration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18153,7 +18153,7 @@ const commandsData = [
   },
   {
     "command": "Sort-Object",
-    "descriptionHe": "מיון Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Sort-Object",
     "descriptionEn": "Native PowerShell Command: Sort-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18161,7 +18161,7 @@ const commandsData = [
   },
   {
     "command": "Split-Path",
-    "descriptionHe": "פעולת PowerShell על Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Split-Path",
     "descriptionEn": "Native PowerShell Command: Split-Path",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18169,7 +18169,7 @@ const commandsData = [
   },
   {
     "command": "Split-WindowsImage",
-    "descriptionHe": "פעולת PowerShell על Windows Image",
+    "descriptionHe": "פקודת PowerShell מקורית: Split-WindowsImage",
     "descriptionEn": "Native PowerShell Command: Split-WindowsImage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18177,7 +18177,7 @@ const commandsData = [
   },
   {
     "command": "Start-BitsTransfer",
-    "descriptionHe": "הפעלת Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Start-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18185,7 +18185,7 @@ const commandsData = [
   },
   {
     "command": "Start-DscConfiguration",
-    "descriptionHe": "הפעלת Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Start-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18193,7 +18193,7 @@ const commandsData = [
   },
   {
     "command": "Start-DtcDiagnosticResourceManager",
-    "descriptionHe": "הפעלת Dtc Diagnostic Resource Manager",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-DtcDiagnosticResourceManager",
     "descriptionEn": "Native PowerShell Command: Start-DtcDiagnosticResourceManager",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18201,7 +18201,7 @@ const commandsData = [
   },
   {
     "command": "Start-Job",
-    "descriptionHe": "הפעלת Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Job",
     "descriptionEn": "Native PowerShell Command: Start-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18209,7 +18209,7 @@ const commandsData = [
   },
   {
     "command": "Start-OSUninstall",
-    "descriptionHe": "הפעלת O S Uninstall",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-OSUninstall",
     "descriptionEn": "Native PowerShell Command: Start-OSUninstall",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18217,7 +18217,7 @@ const commandsData = [
   },
   {
     "command": "Start-Process",
-    "descriptionHe": "הפעלת Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Process",
     "descriptionEn": "Native PowerShell Command: Start-Process",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18225,7 +18225,7 @@ const commandsData = [
   },
   {
     "command": "Start-ReFSDedupJob",
-    "descriptionHe": "הפעלת Re F S Dedup Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-ReFSDedupJob",
     "descriptionEn": "Native PowerShell Command: Start-ReFSDedupJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18233,7 +18233,7 @@ const commandsData = [
   },
   {
     "command": "Start-Service",
-    "descriptionHe": "הפעלת Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Service",
     "descriptionEn": "Native PowerShell Command: Start-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18241,7 +18241,7 @@ const commandsData = [
   },
   {
     "command": "Start-Sleep",
-    "descriptionHe": "הפעלת Sleep",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Sleep",
     "descriptionEn": "Native PowerShell Command: Start-Sleep",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18249,7 +18249,7 @@ const commandsData = [
   },
   {
     "command": "Start-Transaction",
-    "descriptionHe": "הפעלת Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Transaction",
     "descriptionEn": "Native PowerShell Command: Start-Transaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18257,7 +18257,7 @@ const commandsData = [
   },
   {
     "command": "Start-Transcript",
-    "descriptionHe": "הפעלת Transcript",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-Transcript",
     "descriptionEn": "Native PowerShell Command: Start-Transcript",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18265,7 +18265,7 @@ const commandsData = [
   },
   {
     "command": "Start-VM",
-    "descriptionHe": "הפעלת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-VM",
     "descriptionEn": "Native PowerShell Command: Start-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18273,7 +18273,7 @@ const commandsData = [
   },
   {
     "command": "Start-VMFailover",
-    "descriptionHe": "הפעלת V M Failover",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-VMFailover",
     "descriptionEn": "Native PowerShell Command: Start-VMFailover",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18281,7 +18281,7 @@ const commandsData = [
   },
   {
     "command": "Start-VMInitialReplication",
-    "descriptionHe": "הפעלת V M Initial Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-VMInitialReplication",
     "descriptionEn": "Native PowerShell Command: Start-VMInitialReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18289,7 +18289,7 @@ const commandsData = [
   },
   {
     "command": "Start-VMTrace",
-    "descriptionHe": "הפעלת V M Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Start-VMTrace",
     "descriptionEn": "Native PowerShell Command: Start-VMTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18297,7 +18297,7 @@ const commandsData = [
   },
   {
     "command": "Stop-AppvClientConnectionGroup",
-    "descriptionHe": "עצירת Appv Client Connection Group",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-AppvClientConnectionGroup",
     "descriptionEn": "Native PowerShell Command: Stop-AppvClientConnectionGroup",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18305,7 +18305,7 @@ const commandsData = [
   },
   {
     "command": "Stop-AppvClientPackage",
-    "descriptionHe": "עצירת Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Stop-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18313,7 +18313,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Computer",
-    "descriptionHe": "עצירת Computer",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Computer",
     "descriptionEn": "Native PowerShell Command: Stop-Computer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18321,7 +18321,7 @@ const commandsData = [
   },
   {
     "command": "Stop-DtcDiagnosticResourceManager",
-    "descriptionHe": "עצירת Dtc Diagnostic Resource Manager",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-DtcDiagnosticResourceManager",
     "descriptionEn": "Native PowerShell Command: Stop-DtcDiagnosticResourceManager",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18329,7 +18329,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Job",
-    "descriptionHe": "עצירת Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Job",
     "descriptionEn": "Native PowerShell Command: Stop-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18337,7 +18337,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Process",
-    "descriptionHe": "עצירת Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Process",
     "descriptionEn": "Native PowerShell Command: Stop-Process",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18345,7 +18345,7 @@ const commandsData = [
   },
   {
     "command": "Stop-ReFSDedupJob",
-    "descriptionHe": "עצירת Re F S Dedup Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-ReFSDedupJob",
     "descriptionEn": "Native PowerShell Command: Stop-ReFSDedupJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18353,7 +18353,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Service",
-    "descriptionHe": "עצירת Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Service",
     "descriptionEn": "Native PowerShell Command: Stop-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18361,7 +18361,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Transcript",
-    "descriptionHe": "עצירת Transcript",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-Transcript",
     "descriptionEn": "Native PowerShell Command: Stop-Transcript",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18369,7 +18369,7 @@ const commandsData = [
   },
   {
     "command": "Stop-VM",
-    "descriptionHe": "עצירת V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-VM",
     "descriptionEn": "Native PowerShell Command: Stop-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18377,7 +18377,7 @@ const commandsData = [
   },
   {
     "command": "Stop-VMFailover",
-    "descriptionHe": "עצירת V M Failover",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-VMFailover",
     "descriptionEn": "Native PowerShell Command: Stop-VMFailover",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18385,7 +18385,7 @@ const commandsData = [
   },
   {
     "command": "Stop-VMInitialReplication",
-    "descriptionHe": "עצירת V M Initial Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-VMInitialReplication",
     "descriptionEn": "Native PowerShell Command: Stop-VMInitialReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18393,7 +18393,7 @@ const commandsData = [
   },
   {
     "command": "Stop-VMReplication",
-    "descriptionHe": "עצירת V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-VMReplication",
     "descriptionEn": "Native PowerShell Command: Stop-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18401,7 +18401,7 @@ const commandsData = [
   },
   {
     "command": "Stop-VMTrace",
-    "descriptionHe": "עצירת V M Trace",
+    "descriptionHe": "פקודת PowerShell מקורית: Stop-VMTrace",
     "descriptionEn": "Native PowerShell Command: Stop-VMTrace",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18409,7 +18409,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-BitsTransfer",
-    "descriptionHe": "פעולת PowerShell על Bits Transfer",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-BitsTransfer",
     "descriptionEn": "Native PowerShell Command: Suspend-BitsTransfer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18417,7 +18417,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-Job",
-    "descriptionHe": "פעולת PowerShell על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-Job",
     "descriptionEn": "Native PowerShell Command: Suspend-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18425,7 +18425,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-ReFSDedupSchedule",
-    "descriptionHe": "פעולת PowerShell על Re F S Dedup Schedule",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-ReFSDedupSchedule",
     "descriptionEn": "Native PowerShell Command: Suspend-ReFSDedupSchedule",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18433,7 +18433,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-Service",
-    "descriptionHe": "פעולת PowerShell על Service",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-Service",
     "descriptionEn": "Native PowerShell Command: Suspend-Service",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18441,7 +18441,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-VM",
     "descriptionEn": "Native PowerShell Command: Suspend-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18449,7 +18449,7 @@ const commandsData = [
   },
   {
     "command": "Suspend-VMReplication",
-    "descriptionHe": "פעולת PowerShell על V M Replication",
+    "descriptionHe": "פקודת PowerShell מקורית: Suspend-VMReplication",
     "descriptionEn": "Native PowerShell Command: Suspend-VMReplication",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18457,7 +18457,7 @@ const commandsData = [
   },
   {
     "command": "Switch-Certificate",
-    "descriptionHe": "פעולת PowerShell על Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Switch-Certificate",
     "descriptionEn": "Native PowerShell Command: Switch-Certificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18465,7 +18465,7 @@ const commandsData = [
   },
   {
     "command": "Sync-AppvPublishingServer",
-    "descriptionHe": "פעולת PowerShell על Appv Publishing Server",
+    "descriptionHe": "פקודת PowerShell מקורית: Sync-AppvPublishingServer",
     "descriptionEn": "Native PowerShell Command: Sync-AppvPublishingServer",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18473,7 +18473,7 @@ const commandsData = [
   },
   {
     "command": "Tee-Object",
-    "descriptionHe": "פעולת PowerShell על Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Tee-Object",
     "descriptionEn": "Native PowerShell Command: Tee-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18481,7 +18481,7 @@ const commandsData = [
   },
   {
     "command": "Test-AppLockerPolicy",
-    "descriptionHe": "בדיקת תקינות של App Locker Policy",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-AppLockerPolicy",
     "descriptionEn": "Native PowerShell Command: Test-AppLockerPolicy",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18489,7 +18489,7 @@ const commandsData = [
   },
   {
     "command": "Test-Certificate",
-    "descriptionHe": "בדיקת תקינות של Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-Certificate",
     "descriptionEn": "Native PowerShell Command: Test-Certificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18497,7 +18497,7 @@ const commandsData = [
   },
   {
     "command": "Test-ComputerSecureChannel",
-    "descriptionHe": "בדיקת תקינות של Computer Secure Channel",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-ComputerSecureChannel",
     "descriptionEn": "Native PowerShell Command: Test-ComputerSecureChannel",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18505,7 +18505,7 @@ const commandsData = [
   },
   {
     "command": "Test-Connection",
-    "descriptionHe": "בדיקת תקינות של Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-Connection",
     "descriptionEn": "Native PowerShell Command: Test-Connection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18513,7 +18513,7 @@ const commandsData = [
   },
   {
     "command": "Test-DscConfiguration",
-    "descriptionHe": "בדיקת תקינות של Dsc Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-DscConfiguration",
     "descriptionEn": "Native PowerShell Command: Test-DscConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18521,7 +18521,7 @@ const commandsData = [
   },
   {
     "command": "Test-FileCatalog",
-    "descriptionHe": "בדיקת תקינות של File Catalog",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-FileCatalog",
     "descriptionEn": "Native PowerShell Command: Test-FileCatalog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18529,7 +18529,7 @@ const commandsData = [
   },
   {
     "command": "Test-HgsTraceTarget",
-    "descriptionHe": "בדיקת תקינות של Hgs Trace Target",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-HgsTraceTarget",
     "descriptionEn": "Native PowerShell Command: Test-HgsTraceTarget",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18537,7 +18537,7 @@ const commandsData = [
   },
   {
     "command": "Test-KdsRootKey",
-    "descriptionHe": "בדיקת תקינות של Kds Root Key",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-KdsRootKey",
     "descriptionEn": "Native PowerShell Command: Test-KdsRootKey",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18545,7 +18545,7 @@ const commandsData = [
   },
   {
     "command": "Test-ModuleManifest",
-    "descriptionHe": "בדיקת תקינות של Module Manifest",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-ModuleManifest",
     "descriptionEn": "Native PowerShell Command: Test-ModuleManifest",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18553,7 +18553,7 @@ const commandsData = [
   },
   {
     "command": "Test-Path",
-    "descriptionHe": "בדיקת תקינות של Path",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-Path",
     "descriptionEn": "Native PowerShell Command: Test-Path",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18561,7 +18561,7 @@ const commandsData = [
   },
   {
     "command": "Test-PSSessionConfigurationFile",
-    "descriptionHe": "בדיקת תקינות של P S Session Configuration File",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-PSSessionConfigurationFile",
     "descriptionEn": "Native PowerShell Command: Test-PSSessionConfigurationFile",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18569,7 +18569,7 @@ const commandsData = [
   },
   {
     "command": "Test-UevTemplate",
-    "descriptionHe": "בדיקת תקינות של Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Test-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18577,7 +18577,7 @@ const commandsData = [
   },
   {
     "command": "Test-VHD",
-    "descriptionHe": "בדיקת תקינות של V H D",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-VHD",
     "descriptionEn": "Native PowerShell Command: Test-VHD",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18585,7 +18585,7 @@ const commandsData = [
   },
   {
     "command": "Test-VMNetworkAdapter",
-    "descriptionHe": "בדיקת תקינות של V M Network Adapter",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-VMNetworkAdapter",
     "descriptionEn": "Native PowerShell Command: Test-VMNetworkAdapter",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18593,7 +18593,7 @@ const commandsData = [
   },
   {
     "command": "Test-VMReplicationConnection",
-    "descriptionHe": "בדיקת תקינות של V M Replication Connection",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-VMReplicationConnection",
     "descriptionEn": "Native PowerShell Command: Test-VMReplicationConnection",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18601,7 +18601,7 @@ const commandsData = [
   },
   {
     "command": "Test-WSMan",
-    "descriptionHe": "בדיקת תקינות של W S Man",
+    "descriptionHe": "פקודת PowerShell מקורית: Test-WSMan",
     "descriptionEn": "Native PowerShell Command: Test-WSMan",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18609,7 +18609,7 @@ const commandsData = [
   },
   {
     "command": "Trace-Command",
-    "descriptionHe": "פעולת PowerShell על Command",
+    "descriptionHe": "פקודת PowerShell מקורית: Trace-Command",
     "descriptionEn": "Native PowerShell Command: Trace-Command",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18617,7 +18617,7 @@ const commandsData = [
   },
   {
     "command": "Unblock-File",
-    "descriptionHe": "פעולת PowerShell על File",
+    "descriptionHe": "פקודת PowerShell מקורית: Unblock-File",
     "descriptionEn": "Native PowerShell Command: Unblock-File",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18625,7 +18625,7 @@ const commandsData = [
   },
   {
     "command": "Unblock-Tpm",
-    "descriptionHe": "פעולת PowerShell על Tpm",
+    "descriptionHe": "פקודת PowerShell מקורית: Unblock-Tpm",
     "descriptionEn": "Native PowerShell Command: Unblock-Tpm",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18633,7 +18633,7 @@ const commandsData = [
   },
   {
     "command": "Undo-DtcDiagnosticTransaction",
-    "descriptionHe": "פעולת PowerShell על Dtc Diagnostic Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Undo-DtcDiagnosticTransaction",
     "descriptionEn": "Native PowerShell Command: Undo-DtcDiagnosticTransaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18641,7 +18641,7 @@ const commandsData = [
   },
   {
     "command": "Undo-Transaction",
-    "descriptionHe": "פעולת PowerShell על Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Undo-Transaction",
     "descriptionEn": "Native PowerShell Command: Undo-Transaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18649,7 +18649,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-Language",
-    "descriptionHe": "פעולת PowerShell על Language",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-Language",
     "descriptionEn": "Native PowerShell Command: Uninstall-Language",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18657,7 +18657,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-Package",
-    "descriptionHe": "פעולת PowerShell על Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-Package",
     "descriptionEn": "Native PowerShell Command: Uninstall-Package",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18665,7 +18665,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-ProvisioningPackage",
-    "descriptionHe": "פעולת PowerShell על Provisioning Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-ProvisioningPackage",
     "descriptionEn": "Native PowerShell Command: Uninstall-ProvisioningPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18673,7 +18673,7 @@ const commandsData = [
   },
   {
     "command": "Uninstall-TrustedProvisioningCertificate",
-    "descriptionHe": "פעולת PowerShell על Trusted Provisioning Certificate",
+    "descriptionHe": "פקודת PowerShell מקורית: Uninstall-TrustedProvisioningCertificate",
     "descriptionEn": "Native PowerShell Command: Uninstall-TrustedProvisioningCertificate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18681,7 +18681,7 @@ const commandsData = [
   },
   {
     "command": "Unprotect-CmsMessage",
-    "descriptionHe": "פעולת PowerShell על Cms Message",
+    "descriptionHe": "פקודת PowerShell מקורית: Unprotect-CmsMessage",
     "descriptionEn": "Native PowerShell Command: Unprotect-CmsMessage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18689,7 +18689,7 @@ const commandsData = [
   },
   {
     "command": "Unpublish-AppvClientPackage",
-    "descriptionHe": "פעולת PowerShell על Appv Client Package",
+    "descriptionHe": "פקודת PowerShell מקורית: Unpublish-AppvClientPackage",
     "descriptionEn": "Native PowerShell Command: Unpublish-AppvClientPackage",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18697,7 +18697,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-Event",
-    "descriptionHe": "פעולת PowerShell על Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-Event",
     "descriptionEn": "Native PowerShell Command: Unregister-Event",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18705,7 +18705,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-PackageSource",
-    "descriptionHe": "פעולת PowerShell על Package Source",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-PackageSource",
     "descriptionEn": "Native PowerShell Command: Unregister-PackageSource",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18713,7 +18713,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-PSSessionConfiguration",
-    "descriptionHe": "פעולת PowerShell על P S Session Configuration",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-PSSessionConfiguration",
     "descriptionEn": "Native PowerShell Command: Unregister-PSSessionConfiguration",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18721,7 +18721,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-RecoveryManagementPlugin",
-    "descriptionHe": "פעולת PowerShell על Recovery Management Plugin",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-RecoveryManagementPlugin",
     "descriptionEn": "Native PowerShell Command: Unregister-RecoveryManagementPlugin",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18729,7 +18729,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-ScheduledJob",
-    "descriptionHe": "פעולת PowerShell על Scheduled Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-ScheduledJob",
     "descriptionEn": "Native PowerShell Command: Unregister-ScheduledJob",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18737,7 +18737,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-UevTemplate",
-    "descriptionHe": "פעולת PowerShell על Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Unregister-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18745,7 +18745,7 @@ const commandsData = [
   },
   {
     "command": "Unregister-WindowsDeveloperLicense",
-    "descriptionHe": "פעולת PowerShell על Windows Developer License",
+    "descriptionHe": "פקודת PowerShell מקורית: Unregister-WindowsDeveloperLicense",
     "descriptionEn": "Native PowerShell Command: Unregister-WindowsDeveloperLicense",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18753,7 +18753,7 @@ const commandsData = [
   },
   {
     "command": "Update-FormatData",
-    "descriptionHe": "עדכון Format Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-FormatData",
     "descriptionEn": "Native PowerShell Command: Update-FormatData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18761,7 +18761,7 @@ const commandsData = [
   },
   {
     "command": "Update-Help",
-    "descriptionHe": "עדכון Help",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-Help",
     "descriptionEn": "Native PowerShell Command: Update-Help",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18769,7 +18769,7 @@ const commandsData = [
   },
   {
     "command": "Update-LapsADSchema",
-    "descriptionHe": "עדכון Laps A D Schema",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-LapsADSchema",
     "descriptionEn": "Native PowerShell Command: Update-LapsADSchema",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18777,7 +18777,7 @@ const commandsData = [
   },
   {
     "command": "Update-List",
-    "descriptionHe": "עדכון List",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-List",
     "descriptionEn": "Native PowerShell Command: Update-List",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18785,7 +18785,7 @@ const commandsData = [
   },
   {
     "command": "Update-TypeData",
-    "descriptionHe": "עדכון Type Data",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-TypeData",
     "descriptionEn": "Native PowerShell Command: Update-TypeData",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18793,7 +18793,7 @@ const commandsData = [
   },
   {
     "command": "Update-UevTemplate",
-    "descriptionHe": "עדכון Uev Template",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-UevTemplate",
     "descriptionEn": "Native PowerShell Command: Update-UevTemplate",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18801,7 +18801,7 @@ const commandsData = [
   },
   {
     "command": "Update-VMVersion",
-    "descriptionHe": "עדכון V M Version",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-VMVersion",
     "descriptionEn": "Native PowerShell Command: Update-VMVersion",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18809,7 +18809,7 @@ const commandsData = [
   },
   {
     "command": "Update-WIMBootEntry",
-    "descriptionHe": "עדכון W I M Boot Entry",
+    "descriptionHe": "פקודת PowerShell מקורית: Update-WIMBootEntry",
     "descriptionEn": "Native PowerShell Command: Update-WIMBootEntry",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18817,7 +18817,7 @@ const commandsData = [
   },
   {
     "command": "Use-Transaction",
-    "descriptionHe": "פעולת PowerShell על Transaction",
+    "descriptionHe": "פקודת PowerShell מקורית: Use-Transaction",
     "descriptionEn": "Native PowerShell Command: Use-Transaction",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18825,7 +18825,7 @@ const commandsData = [
   },
   {
     "command": "Use-WindowsUnattend",
-    "descriptionHe": "פעולת PowerShell על Windows Unattend",
+    "descriptionHe": "פקודת PowerShell מקורית: Use-WindowsUnattend",
     "descriptionEn": "Native PowerShell Command: Use-WindowsUnattend",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18833,7 +18833,7 @@ const commandsData = [
   },
   {
     "command": "Wait-Debugger",
-    "descriptionHe": "פעולת PowerShell על Debugger",
+    "descriptionHe": "פקודת PowerShell מקורית: Wait-Debugger",
     "descriptionEn": "Native PowerShell Command: Wait-Debugger",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18841,7 +18841,7 @@ const commandsData = [
   },
   {
     "command": "Wait-Event",
-    "descriptionHe": "פעולת PowerShell על Event",
+    "descriptionHe": "פקודת PowerShell מקורית: Wait-Event",
     "descriptionEn": "Native PowerShell Command: Wait-Event",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18849,7 +18849,7 @@ const commandsData = [
   },
   {
     "command": "Wait-Job",
-    "descriptionHe": "פעולת PowerShell על Job",
+    "descriptionHe": "פקודת PowerShell מקורית: Wait-Job",
     "descriptionEn": "Native PowerShell Command: Wait-Job",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18857,7 +18857,7 @@ const commandsData = [
   },
   {
     "command": "Wait-Process",
-    "descriptionHe": "פעולת PowerShell על Process",
+    "descriptionHe": "פקודת PowerShell מקורית: Wait-Process",
     "descriptionEn": "Native PowerShell Command: Wait-Process",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18865,7 +18865,7 @@ const commandsData = [
   },
   {
     "command": "Wait-VM",
-    "descriptionHe": "פעולת PowerShell על V M",
+    "descriptionHe": "פקודת PowerShell מקורית: Wait-VM",
     "descriptionEn": "Native PowerShell Command: Wait-VM",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18873,7 +18873,7 @@ const commandsData = [
   },
   {
     "command": "Where-Object",
-    "descriptionHe": "סינון Object",
+    "descriptionHe": "פקודת PowerShell מקורית: Where-Object",
     "descriptionEn": "Native PowerShell Command: Where-Object",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18881,7 +18881,7 @@ const commandsData = [
   },
   {
     "command": "Write-Debug",
-    "descriptionHe": "כתיבת Debug",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Debug",
     "descriptionEn": "Native PowerShell Command: Write-Debug",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18889,7 +18889,7 @@ const commandsData = [
   },
   {
     "command": "Write-Error",
-    "descriptionHe": "כתיבת Error",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Error",
     "descriptionEn": "Native PowerShell Command: Write-Error",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18897,7 +18897,7 @@ const commandsData = [
   },
   {
     "command": "Write-EventLog",
-    "descriptionHe": "כתיבת Event Log",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-EventLog",
     "descriptionEn": "Native PowerShell Command: Write-EventLog",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18905,7 +18905,7 @@ const commandsData = [
   },
   {
     "command": "Write-Host",
-    "descriptionHe": "כתיבת Host",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Host",
     "descriptionEn": "Native PowerShell Command: Write-Host",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18913,7 +18913,7 @@ const commandsData = [
   },
   {
     "command": "Write-Information",
-    "descriptionHe": "כתיבת Information",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Information",
     "descriptionEn": "Native PowerShell Command: Write-Information",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18921,7 +18921,7 @@ const commandsData = [
   },
   {
     "command": "Write-Output",
-    "descriptionHe": "כתיבת Output",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Output",
     "descriptionEn": "Native PowerShell Command: Write-Output",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18929,7 +18929,7 @@ const commandsData = [
   },
   {
     "command": "Write-Progress",
-    "descriptionHe": "כתיבת Progress",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Progress",
     "descriptionEn": "Native PowerShell Command: Write-Progress",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18937,7 +18937,7 @@ const commandsData = [
   },
   {
     "command": "Write-Verbose",
-    "descriptionHe": "כתיבת Verbose",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Verbose",
     "descriptionEn": "Native PowerShell Command: Write-Verbose",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -18945,7 +18945,7 @@ const commandsData = [
   },
   {
     "command": "Write-Warning",
-    "descriptionHe": "כתיבת Warning",
+    "descriptionHe": "פקודת PowerShell מקורית: Write-Warning",
     "descriptionEn": "Native PowerShell Command: Write-Warning",
     "category": "PowerShell Cmdlets",
     "shell": "PowerShell",
@@ -20873,7 +20873,7 @@ const commandsData = [
   },
   {
     "command": "Start-Service -Name \"vmicvmsession\"",
-    "descriptionHe": "הפעלת Service",
+    "descriptionHe": "הפעלת שירות מערכת: Hyper-V PowerShell Direct Service",
     "descriptionEn": "Start system service: Hyper-V PowerShell Direct Service",
     "category": "Windows Services",
     "shell": "PowerShell",
@@ -37368,6 +37368,118 @@ const commandsData = [
     "os": "Windows"
   },
   {
+    "command": "fsck /dev/sda1",
+    "descriptionHe": "סריקה ותיקון שגיאות בדיסק בלינוקס",
+    "descriptionEn": "Filesystem consistency check and repair",
+    "category": "System Repair",
+    "shell": "Bash (Root)",
+    "os": "Linux"
+  },
+  {
+    "command": "update-grub",
+    "descriptionHe": "עדכון תפריט האתחול של GRUB",
+    "descriptionEn": "Update GRUB bootloader menu",
+    "category": "System Repair",
+    "shell": "Bash (Root)",
+    "os": "Linux"
+  },
+  {
+    "command": "systemctl failed",
+    "descriptionHe": "הצגת שירותים שנכשלו בעליית המערכת",
+    "descriptionEn": "List failed systemd services",
+    "category": "System Repair",
+    "shell": "Bash",
+    "os": "Linux"
+  },
+  {
+    "command": "dpkg --configure -a",
+    "descriptionHe": "תיקון חבילות שבורות שלא הותקנו כראוי",
+    "descriptionEn": "Fix broken package installations",
+    "category": "System Repair",
+    "shell": "Bash (Root)",
+    "os": "Linux"
+  },
+  {
+    "command": "apt-get install -f",
+    "descriptionHe": "תיקון תלויות שבורות במערכת",
+    "descriptionEn": "Fix broken dependencies",
+    "category": "System Repair",
+    "shell": "Bash (Root)",
+    "os": "Linux"
+  },
+  {
+    "command": "netstat -tuln",
+    "descriptionHe": "הצגת כל הפורטים הפתוחים והמאזינים",
+    "descriptionEn": "Show all listening ports",
+    "category": "Networking",
+    "shell": "Bash",
+    "os": "Linux"
+  },
+  {
+    "command": "ss -tulpn",
+    "descriptionHe": "הצגת תהליכים ופורטים פעילים (חלופה ל-netstat)",
+    "descriptionEn": "Show socket stats and processes",
+    "category": "Networking",
+    "shell": "Bash",
+    "os": "Linux"
+  },
+  {
+    "command": "dig +short example.com",
+    "descriptionHe": "שליפת כתובת IP מדומיין",
+    "descriptionEn": "DNS lookup for domain",
+    "category": "Networking",
+    "shell": "Bash",
+    "os": "Linux"
+  },
+  {
+    "command": "iptables -L -n -v",
+    "descriptionHe": "הצגת כל חוקי חומת האש",
+    "descriptionEn": "List firewall rules",
+    "category": "Networking",
+    "shell": "Bash (Root)",
+    "os": "Linux"
+  },
+  {
+    "command": "adb devices",
+    "descriptionHe": "הצגת כל המכשירים המחוברים",
+    "descriptionEn": "List connected devices",
+    "category": "Device Management",
+    "shell": "ADB",
+    "os": "ADB"
+  },
+  {
+    "command": "adb reboot recovery",
+    "descriptionHe": "הפעלה מחדש למצב צריבה (Recovery)",
+    "descriptionEn": "Reboot into Recovery mode",
+    "category": "System Repair",
+    "shell": "ADB",
+    "os": "ADB"
+  },
+  {
+    "command": "adb reboot bootloader",
+    "descriptionHe": "הפעלה מחדש למצב Fastboot",
+    "descriptionEn": "Reboot into Fastboot mode",
+    "category": "System Repair",
+    "shell": "ADB",
+    "os": "ADB"
+  },
+  {
+    "command": "adb logcat -c",
+    "descriptionHe": "ניקוי יומן הרישום של המכשיר",
+    "descriptionEn": "Clear device log buffer",
+    "category": "System Repair",
+    "shell": "ADB",
+    "os": "ADB"
+  },
+  {
+    "command": "adb shell pm clear com.android.chrome",
+    "descriptionHe": "איפוס נתוני אפליקציה (כרום לדוגמה)",
+    "descriptionEn": "Clear app data (e.g. Chrome)",
+    "category": "System Repair",
+    "shell": "ADB",
+    "os": "ADB"
+  },
+  {
     "command": "Restart-Service -Name \"AarSvc_90a81\" -Force",
     "descriptionHe": "הפעלה מחדש של שירות מערכת: Agent Activation Runtime_90a81",
     "descriptionEn": "Restart system service: Agent Activation Runtime_90a81",
@@ -41209,7 +41321,7 @@ const commandsData = [
   },
   {
     "command": "Restart-Service -Name \"vmicvmsession\" -Force",
-    "descriptionHe": "הפעלה מחדש של Service",
+    "descriptionHe": "הפעלה מחדש של שירות מערכת: Hyper-V PowerShell Direct Service",
     "descriptionEn": "Restart system service: Hyper-V PowerShell Direct Service",
     "category": "Windows Services",
     "shell": "PowerShell (Admin)",
@@ -41217,7 +41329,7 @@ const commandsData = [
   },
   {
     "command": "Stop-Service -Name \"vmicvmsession\" -Force",
-    "descriptionHe": "עצירת Service",
+    "descriptionHe": "עצירת שירות מערכת: Hyper-V PowerShell Direct Service",
     "descriptionEn": "Stop system service: Hyper-V PowerShell Direct Service",
     "category": "Windows Services",
     "shell": "PowerShell (Admin)",
@@ -42040,118 +42152,6 @@ const commandsData = [
     "os": "Windows"
   },
   {
-    "command": "fsck /dev/sda1",
-    "descriptionHe": "סריקה ותיקון שגיאות בדיסק בלינוקס",
-    "descriptionEn": "Filesystem consistency check and repair",
-    "category": "System Repair",
-    "shell": "Bash (Root)",
-    "os": "Linux"
-  },
-  {
-    "command": "update-grub",
-    "descriptionHe": "עדכון תפריט האתחול של GRUB",
-    "descriptionEn": "Update GRUB bootloader menu",
-    "category": "System Repair",
-    "shell": "Bash (Root)",
-    "os": "Linux"
-  },
-  {
-    "command": "systemctl failed",
-    "descriptionHe": "הצגת שירותים שנכשלו בעליית המערכת",
-    "descriptionEn": "List failed systemd services",
-    "category": "System Repair",
-    "shell": "Bash",
-    "os": "Linux"
-  },
-  {
-    "command": "dpkg --configure -a",
-    "descriptionHe": "תיקון חבילות שבורות שלא הותקנו כראוי",
-    "descriptionEn": "Fix broken package installations",
-    "category": "System Repair",
-    "shell": "Bash (Root)",
-    "os": "Linux"
-  },
-  {
-    "command": "apt-get install -f",
-    "descriptionHe": "תיקון תלויות שבורות במערכת",
-    "descriptionEn": "Fix broken dependencies",
-    "category": "System Repair",
-    "shell": "Bash (Root)",
-    "os": "Linux"
-  },
-  {
-    "command": "netstat -tuln",
-    "descriptionHe": "הצגת כל הפורטים הפתוחים והמאזינים",
-    "descriptionEn": "Show all listening ports",
-    "category": "Networking",
-    "shell": "Bash",
-    "os": "Linux"
-  },
-  {
-    "command": "ss -tulpn",
-    "descriptionHe": "הצגת תהליכים ופורטים פעילים (חלופה ל-netstat)",
-    "descriptionEn": "Show socket stats and processes",
-    "category": "Networking",
-    "shell": "Bash",
-    "os": "Linux"
-  },
-  {
-    "command": "dig +short example.com",
-    "descriptionHe": "שליפת כתובת IP מדומיין",
-    "descriptionEn": "DNS lookup for domain",
-    "category": "Networking",
-    "shell": "Bash",
-    "os": "Linux"
-  },
-  {
-    "command": "iptables -L -n -v",
-    "descriptionHe": "הצגת כל חוקי חומת האש",
-    "descriptionEn": "List firewall rules",
-    "category": "Networking",
-    "shell": "Bash (Root)",
-    "os": "Linux"
-  },
-  {
-    "command": "adb devices",
-    "descriptionHe": "הצגת כל המכשירים המחוברים",
-    "descriptionEn": "List connected devices",
-    "category": "Device Management",
-    "shell": "ADB",
-    "os": "ADB"
-  },
-  {
-    "command": "adb reboot recovery",
-    "descriptionHe": "הפעלה מחדש למצב צריבה (Recovery)",
-    "descriptionEn": "Reboot into Recovery mode",
-    "category": "System Repair",
-    "shell": "ADB",
-    "os": "ADB"
-  },
-  {
-    "command": "adb reboot bootloader",
-    "descriptionHe": "הפעלה מחדש למצב Fastboot",
-    "descriptionEn": "Reboot into Fastboot mode",
-    "category": "System Repair",
-    "shell": "ADB",
-    "os": "ADB"
-  },
-  {
-    "command": "adb logcat -c",
-    "descriptionHe": "ניקוי יומן הרישום של המכשיר",
-    "descriptionEn": "Clear device log buffer",
-    "category": "System Repair",
-    "shell": "ADB",
-    "os": "ADB"
-  },
-  {
-    "command": "adb shell pm clear com.android.chrome",
-    "descriptionHe": "איפוס נתוני אפליקציה (כרום לדוגמה)",
-    "descriptionEn": "Clear app data (e.g. Chrome)",
-    "category": "System Repair",
-    "shell": "ADB",
-    "os": "ADB"
-  },
-  {
     "command": "ip addr",
     "descriptionHe": "פקודת לינוקס (Network) וריאציה 1: ip addr",
     "descriptionEn": "Linux Command (Network) ip addr",
@@ -42443,14 +42443,6 @@ const commandsData = [
     "command": "cp -r",
     "descriptionHe": "פקודת לינוקס (File Operations) וריאציה 1: cp -r",
     "descriptionEn": "Linux Command (File Operations) cp -r",
-    "category": "File Operations",
-    "shell": "Bash",
-    "os": "Linux"
-  },
-  {
-    "command": "mv",
-    "descriptionHe": "פקודת לינוקס (File Operations) וריאציה 1: mv",
-    "descriptionEn": "Linux Command (File Operations) mv",
     "category": "File Operations",
     "shell": "Bash",
     "os": "Linux"
