@@ -54,22 +54,13 @@ Don't waste time typing. Every command comes with dedicated `Copy` and `Download
 
 ---
 
-## 🚀 Installation & Usage (התקנה ושימוש)
+## 🚀 Usage (שימוש)
 
-This tool is **100% Offline-First** (excluding the AI generator). No Node.js, no servers, no databases required to run the core library!
+The application is now hosted live on the web! You can access it from anywhere, directly from your browser:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dor2500/Command-Library-CMD-Terminal-.git
-   ```
-2. Navigate to the folder:
-   ```bash
-   cd Command-Library-CMD-Terminal-
-   ```
-3. Open `index.html` in any modern web browser.
-4. **Done.** 
+### 🌐 [https://dor2500.github.io/Command-Library-CMD-Terminal-/](https://dor2500.github.io/Command-Library-CMD-Terminal-/)
 
-*For AI capabilities, ensure you have an active internet connection.*
+*(For AI capabilities, ensure you have an active internet connection).*
 
 ---
 
