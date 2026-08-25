@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Toolkit - ארגז הכלים לטכנאי</title>
+    <!-- Google Fonts: Inter for UI, Fira Code for code blocks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat-styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i data-lucide="cpu" class="logo-icon"></i>
+                    <h1>Tech Toolkit</h1>
+                </div>
+                <p class="subtitle" data-i18n="subtitle">ארגז הכלים לטכנאי</p>
+                <button id="langToggle" class="lang-btn">English / עברית</button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-btn active" data-target="commands-section">
+                    <i data-lucide="terminal"></i>
+                    <span data-i18n="nav_commands">מאגר פקודות</span>
+                </button>
+                <button class="nav-btn" data-target="software-section">
+                    <i data-lucide="download"></i>
+                    <span data-i18n="nav_software">תוכנות חובה</span>
+                </button>
+                <button class="nav-btn" data-target="ai-section">
+                    <i data-lucide="bot"></i>
+                    <span data-i18n="nav_ai">מחולל AI</span>
+                </button>
+                <button class="nav-btn" data-target="about-section">
+                    <i data-lucide="info"></i>
+                    <span data-i18n="nav_about">אודות</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>© 2026 Tech Tools</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Commands Section -->
+            <section id="commands-section" class="content-section active">
+                <header class="section-header">
+                    <h2 data-i18n="main_title">מאגר פקודות (CMD & PowerShell)</h2>
+                    <p data-i18n="main_subtitle">חפש מתוך אלפי פקודות מערכת, רשת ותיקון.</p>
+                </header>
+
+                <div class="search-container glass-panel">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="commandSearch" placeholder="חפש פקודה, תיאור או קטגוריה..." autocomplete="off">
+                    <span id="commandCount" class="badge">טוען...</span>
+                </div>
+
+                <!-- OS Filters -->
+                <div class="os-filters" id="osFilters">
+                    <button class="os-btn active" data-os="Windows"><i data-lucide="monitor"></i> Windows</button>
+                    <button class="os-btn" data-os="Linux"><i data-lucide="terminal-square"></i> Linux</button>
+                    <button class="os-btn" data-os="macOS"><i data-lucide="command"></i> macOS</button>
+                    <button class="os-btn" data-os="ADB"><i data-lucide="smartphone"></i> Android (ADB)</button>
+                    <button class="os-btn" data-os="all"><i data-lucide="globe"></i> <span data-i18n="all_os">הכל יחד</span></button>
+                </div>
+
+                <div class="filter-tags" id="commandCategories">
+                    <!-- Categories injected via JS -->
+                </div>
+
+                <div class="cards-grid" id="commandsGrid">
+                    <!-- Commands injected via JS -->
+                    <div class="loading-spinner">טוען פקודות...</div>
+                </div>
+            </section>
+
+            <!-- Software Section -->
+            <section id="software-section" class="content-section">
+                <header class="section-header">
+                    <h2 data-i18n="sw_title">תוכנות חובה לטכנאים</h2>
+                    <p data-i18n="sw_subtitle">מאגר תוכנות ניידות וכלים שכל טכנאי חייב בדיסק און קי.</p>
+                </header>
+
+                <div class="search-container glass-panel">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="softwareSearch" placeholder="חפש תוכנה (לדוגמה: Rufus, רשת, שחזור)..." autocomplete="off">
+                    <span id="softwareCount" class="badge">טוען...</span>
+                </div>
+
+                <div class="filter-tags" id="softwareCategories">
+                    <!-- Categories injected via JS -->
+                </div>
+
+                <div class="cards-grid" id="softwareGrid">
+                    <!-- Software injected via JS -->
+                </div>
+            </section>
+
+            <!-- AI Section -->
+            <section id="ai-section" class="content-section">
+                <header class="section-header">
+                    <h2 data-i18n="ai_title">מחולל סקריפטים חכם (Gemini)</h2>
+                    <p data-i18n="ai_subtitle">תאר איזה סקריפט או פקודה אתה צריך, והבינה המלאכותית תייצר לך קובץ מוכן להורדה.</p>
+                </header>
+                
+                <div class="ai-chat-container glass-panel" style="flex-grow: 1; display: flex; flex-direction: column; overflow: hidden; margin-top: 15px;">
+                    <div id="aiChatLog" class="chat-log" style="flex-grow: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                        <div class="chat-message bot-message">
+                            <div class="message-bubble" data-i18n="ai_welcome">
+                                היי! אני עוזר ה-AI שלך. איזה סקריפט תרצה שאכתוב עבורך היום? (לדוגמה: 'תכתוב לי סקריפט PowerShell שמנקה קבצים זמניים')
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-area" style="padding: 15px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 10px;">
+                        <textarea id="aiInput" data-i18n-placeholder="ai_placeholder" placeholder="הקלד כאן את הבקשה שלך..." style="flex-grow: 1; resize: none; border-radius: 8px; padding: 10px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); color: #fff; font-family: 'Inter', sans-serif;" rows="2"></textarea>
+                        <button id="aiSendBtn" class="download-btn" style="height: auto; padding: 0 20px;">
+                            <i data-lucide="send"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about-section" class="content-section">
+                <header class="section-header">
+                    <h2 data-i18n="about_title">אודות המערכת</h2>
+                </header>
+                <div class="about-card glass-panel" style="line-height: 1.6;">
+                    <h3 data-i18n="about_subtitle">Tech Toolkit - ארגז הכלים האולטימטיבי</h3>
+                    <p data-i18n="about_p1" style="margin-top: 15px; margin-bottom: 15px;">ברוכים הבאים למאגר הפקודות והכלים הגדול והמתקדם מסוגו. המערכת נבנתה במיוחד עבור טכנאים, אנשי סיסטם ומפתחים המחפשים גישה מיידית לאלפי כלי עבודה, ללא תלות בחיבור לאינטרנט.</p>
+                    
+                    <ul style="list-style-type: disc; padding-inline-start: 20px; margin-bottom: 20px;">
+                        <li data-i18n="about_li1"><strong>מאגר עצום:</strong> למעלה מ-25,000 פקודות מערכת, הכוללות פקודות PowerShell מובניות, מחלקות WMI, תהליכי שירות (Services), ופקודות טכנאים אותנטיות.</li>
+                        <li data-i18n="about_li2"><strong>תמיכה מרובת פלטפורמות:</strong> כיסוי נרחב למערכות Windows, Linux, macOS וכלים למכשירי Android דרך ADB.</li>
+                        <li data-i18n="about_li3"><strong>דו-לשוניות מלאה:</strong> כל הפקודות מתורגמות באופן מלא לאנגלית ולעברית, עם אפשרות החלפה בלחיצת כפתור אחת כולל התאמת יישור טקסט (RTL/LTR).</li>
+                        <li data-i18n="about_li4"><strong>חיפוש חי וסינון:</strong> מנוע חיפוש חכם הפועל בצד הלקוח ומסוגל לסנן אלפי רשומות בזמן אמת לפי שם הפקודה, התיאור או הקטגוריה, ללא זמני טעינה (Zero Latency).</li>
+                    </ul>
+                    
+                    <div style="padding: 15px; background: rgba(0,255,255,0.05); border-radius: 8px; border: 1px solid rgba(0,255,255,0.1);">
+                        <p data-i18n="about_footer" style="margin: 0; font-size: 0.95em; color: var(--text-muted);">כל המידע נטען מקומית ואינו דורש שרת חיצוני. הקליקו על סמל ההעתקה לצד כל פקודה כדי להעתיק אותה מידית ללוח שלכם.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle"></i>
+        <span id="toastMessage">הועתק ללוח!</span>
+    </div>
+
+    <script src="data/software.js"></script>
+    <script src="data/commands.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+*.log
+
+# Build / Injection Scripts
+cleanup.js
+extract_ps.ps1
+injector_*.js
+add_wmi_services.js
+ps_cmds.json
+
+# IDE Files
+.vscode/
+.idea/
