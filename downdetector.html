@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Downdetector Israel - סטטוס שירותים בזמן אמת</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'dd-dark': '#0f172a',
+                        'dd-card': '#1e293b',
+                        'dd-red': '#ef4444',
+                        'dd-yellow': '#f59e0b',
+                        'dd-green': '#10b981',
+                        'dd-blue': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Hide scrollbar for tabs but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Sparkline Animation */
+        .sparkline-bar {
+            transition: height 0.5s ease;
+        }
+
+        .tab-btn.active {
+            background-color: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+
+        .avatar-fallback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 0.75rem;
+        }
+
+        /* Modals Overlay */
+        .modal-overlay {
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-dd-dark text-gray-900 dark:text-white transition-colors duration-300 min-h-screen pb-10">
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-dd-card shadow-md sticky top-0 z-40 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/30">
+                            <i class="fa-solid fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold tracking-tight">Downdetector <span class="text-red-500">IL</span></h1>
+                            <p class="text-xs text-gray-500 dark:text-gray-400">ניטור תקלות ושירותים בזמן אמת</p>
+                        </div>
+                    </div>
+                    <!-- Theme Toggle Mobile -->
+                    <button id="themeToggleBtnMobile" class="md:hidden p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300" onclick="toggleTheme()">
+                        <i class="fa-solid fa-moon dark:hidden"></i>
+                        <i class="fa-solid fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                
+                <div class="w-full md:w-1/2 relative flex gap-2">
+                    <div class="relative w-full">
+                        <i class="fa-solid fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="searchInput" placeholder="חפש שירות, שרת מקומי, IP, או אפליקציה..." 
+                            class="w-full bg-gray-100 dark:bg-gray-800 border-none rounded-full py-3 pr-12 pl-4 focus:ring-2 focus:ring-blue-500 text-sm outline-none transition-colors dark:text-white placeholder-gray-500">
+                    </div>
+                    <!-- Theme Toggle Desktop -->
+                    <button id="themeToggleBtnDesktop" class="hidden md:flex p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 items-center justify-center" onclick="toggleTheme()" title="החלף עיצוב">
+                        <i class="fa-solid fa-moon dark:hidden text-lg"></i>
+                        <i class="fa-solid fa-sun hidden dark:inline text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Categories / Tabs -->
+        <div class="mb-8 overflow-hidden">
+            <div class="flex gap-3 overflow-x-auto no-scrollbar pb-4 pt-2 px-2 -mx-2 items-center flex-nowrap" id="categoryTabs">
+                <button onclick="filterCategory('all')" class="tab-btn active whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    הכל
+                </button>
+                <button onclick="filterCategory('down')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-red-500/50 text-sm font-medium transition-colors bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/40 shadow-sm shrink-0 flex items-center gap-2">
+                    תקלות ועומסים <span class="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse"></span>
+                </button>
+                <button onclick="filterCategory('custom')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-purple-500/30 text-sm font-medium transition-colors bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-900/40 shadow-sm shrink-0">
+                    שרתים אישיים / IP 🖥️
+                </button>
+                <button onclick="filterCategory('israel')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    שירותים בישראל IL
+                </button>
+                <button onclick="filterCategory('finance')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    פיננסי ובנקים 💳
+                </button>
+                <button onclick="filterCategory('telecom')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    תקשורת ואינטרנט 📡
+                </button>
+                <button onclick="filterCategory('ai')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    AI ופיתוח 🤖
+                </button>
+                <button onclick="filterCategory('social')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    רשתות מדיה 💬
+                </button>
+                <button onclick="filterCategory('shopping')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    שופינג ומשלוחים 🛍️
+                </button>
+                <button onclick="filterCategory('gaming')" class="tab-btn whitespace-nowrap px-5 py-2.5 rounded-full border border-gray-300 dark:border-gray-700 text-sm font-medium transition-colors bg-white dark:bg-dd-card hover:bg-gray-50 dark:hover:bg-gray-800 shadow-sm shrink-0">
+                    גיימינג וסטרימינג 🎮
+                </button>
+            </div>
+        </div>
+
+        <!-- Add Dynamic/Local Service Button -->
+        <div id="addServiceContainer" class="hidden mb-8 flex justify-center">
+            <button onclick="openAddServerModal()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl shadow-lg transition-all transform hover:scale-105 flex items-center gap-2">
+                <i class="fa-solid fa-server"></i>
+                <span id="addServiceText">לא מצאת? הוסף שרת או כתובת מותאמת אישית</span>
+            </button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6" id="servicesGrid">
+            <!-- Cards will be injected here via JS -->
+        </div>
+
+    </main>
+
+    <!-- Modal for Detailed Service Status -->
+    <div id="serviceModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 modal-overlay" style="background-color: rgba(0,0,0,0.7);">
+        <div class="bg-white dark:bg-dd-card w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden transform transition-transform duration-300 scale-95" id="modalContent">
+            
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-gray-200 dark:border-gray-700 relative">
+                <button onclick="closeModal('serviceModal')" class="absolute left-6 top-6 text-gray-400 hover:text-gray-700 dark:hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                
+                <div class="flex items-center gap-5 pr-8">
+                    <div id="modalIconContainer" class="w-16 h-16 rounded-2xl flex-shrink-0 bg-white shadow-md p-1 flex items-center justify-center overflow-hidden border border-gray-100 dark:border-gray-600">
+                        <!-- Image injected by JS -->
+                    </div>
+                    <div class="w-full">
+                        <h2 id="modalTitle" class="text-3xl font-bold mb-1">Service Name</h2>
+                        <div id="modalStatusBadge" class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full"></span>
+                            <span id="modalStatusText">תקין</span>
+                        </div>
+                        
+                        <!-- Location Impact Info -->
+                        <div id="modalLocationText" class="mt-2 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2 hidden">
+                            <i class="fa-solid fa-location-dot w-4 text-center"></i> <span id="modalLocationValue"></span>
+                        </div>
+                        
+                        <!-- NEW: Technical Root Cause Info -->
+                        <div id="modalRootCauseText" class="mt-1 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2 hidden">
+                            <i class="fa-solid fa-microchip w-4 text-center"></i> <span class="font-medium text-gray-700 dark:text-gray-200">רכיב כושל: <strong id="modalRootCauseValue" class="text-blue-600 dark:text-blue-400"></strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 max-h-[70vh] overflow-y-auto custom-scrollbar">
+                <!-- Chart Section -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300">זמני תגובה ופינגים (24 שעות)</h3>
+                    <div class="w-full h-48">
+                        <canvas id="modalChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Problem Types -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300">סוגי התקלות המדווחים ביותר</h3>
+                    <div id="modalProblems" class="space-y-3">
+                        <!-- Problems injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Report Button -->
+                <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-xl border border-gray-200 dark:border-gray-700 text-center">
+                    <h4 class="font-medium mb-2">האם אתה חווה תקלה בשירות זה?</h4>
+                    <button onclick="reportIssue()" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors shadow-md w-full sm:w-auto">
+                        <i class="fa-solid fa-bullhorn ml-2"></i> דיווח על תקלה / Ping אבוד
+                    </button>
+                    <p id="reportSuccessMsg" class="text-green-500 text-sm mt-3 hidden font-medium">הדיווח התקבל בהצלחה! תודה.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding Custom Server -->
+    <div id="addServerModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 modal-overlay" style="background-color: rgba(0,0,0,0.7);">
+        <div class="bg-white dark:bg-dd-card w-full max-w-md rounded-2xl shadow-2xl overflow-hidden transform transition-transform duration-300 scale-95" id="addServerModalContent">
+            
+            <div class="p-6 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">הוספת שרת לניטור</h2>
+                <button onclick="closeModal('addServerModal')" class="text-gray-400 hover:text-gray-700 dark:hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="p-6">
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                    הכנס את פרטי השרת, ה-API או כתובת ה-IP המקומית שתרצה לעקוב אחרי זמינותה.
+                </p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">שם השירות / השרת</label>
+                        <input type="text" id="customServerName" placeholder="לדוגמא: Home Assistant הבית שלי" 
+                            class="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">כתובת השרת (URL / IP)</label>
+                        <input type="text" id="customServerAddress" placeholder="לדוגמא: 192.168.1.150 או localhost:8080" 
+                            class="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white text-left" dir="ltr">
+                    </div>
+                </div>
+
+                <div class="mt-8 flex gap-3">
+                    <button onclick="saveCustomServer()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg transition-colors">
+                        הוסף למעקב <i class="fa-solid fa-check ml-1"></i>
+                    </button>
+                    <button onclick="closeModal('addServerModal')" class="flex-1 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium py-2.5 rounded-lg transition-colors">
+                        ביטול
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- HELPER FUNCTION FOR IMAGE FALLBACKS ---
+        function handleImgError(imgElement, name) {
+            imgElement.style.display = 'none';
+            // Get initials (first letter of first 2 words)
+            let initials = name.split(' ').slice(0, 2).map(w => w.charAt(0)).join('').toUpperCase();
+            if(!initials || initials.length === 0) initials = "??";
+            
+            let parent = imgElement.parentElement;
+            if(parent) {
+                // Remove existing fallbacks if any
+                const existing = parent.querySelector('.avatar-fallback');
+                if(existing) existing.remove();
+                
+                let fallback = document.createElement('div');
+                fallback.className = 'w-full h-full avatar-fallback text-lg font-bold shadow-inner';
+                fallback.innerText = initials;
+                parent.appendChild(fallback);
+                parent.style.background = 'transparent';
+                parent.style.padding = '0';
+                parent.style.border = 'none';
+            }
+        }
+
+        const isDarkMode = () => document.documentElement.classList.contains('dark');
+        
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            updateChartTheme();
+        }
+
+        // Domain to Logo URL generator 
+        function getLogoUrl(domain) {
+            if(!domain) return '';
+            // If it's a local IP or localhost, return a junk url to immediately force the text fallback
+            if(domain.match(/^(localhost|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/)) {
+                return 'invalid-local-ip-trigger.png'; 
+            }
+            return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+        }
+
+        // Extensive Services Database
+        const generateBaseData = () => {
+            const data = [];
+            // Israel / Public
+            data.push({ id: 'jumbomail', name: 'JumboMail', category: 'israel', domain: 'jumbomail.me', isGlobal: false });
+            data.push({ id: 'govil', name: 'Gov.il (ממשל זמין)', category: 'israel', domain: 'gov.il', isGlobal: false });
+            data.push({ id: 'taxes', name: 'רשות המסים', category: 'israel', domain: 'taxes.gov.il', isGlobal: false });
+            data.push({ id: 'electric', name: 'חברת החשמל', category: 'israel', domain: 'iec.co.il', isGlobal: false });
+            data.push({ id: 'post', name: 'דואר ישראל', category: 'israel', domain: 'israelpost.co.il', isGlobal: false });
+            data.push({ id: 'mda', name: 'מד"א 101', category: 'israel', domain: 'mdais.org', isGlobal: false });
+            data.push({ id: 'moovit', name: 'Moovit', category: 'israel', domain: 'moovitapp.com', isGlobal: false });
+            data.push({ id: 'rail', name: 'רכבת ישראל', category: 'israel', domain: 'rail.co.il', isGlobal: false });
+            data.push({ id: 'pikud', name: 'פיקוד העורף', category: 'israel', domain: 'oref.org.il', isGlobal: false });
+            data.push({ id: 'maccabi', name: 'מכבי שירותי בריאות', category: 'israel', domain: 'maccabi4u.co.il', isGlobal: false });
+            
+            // Finance
+            data.push({ id: 'bit', name: 'ביט (Bit)', category: 'finance', domain: 'bitpay.co.il', isGlobal: false });
+            data.push({ id: 'paybox', name: 'PayBox (פייבוקס)', category: 'finance', domain: 'payboxapp.com', isGlobal: false });
+            data.push({ id: 'poalim', name: 'בנק הפועלים', category: 'finance', domain: 'bankhapoalim.co.il', isGlobal: false });
+            data.push({ id: 'leumi', name: 'בנק לאומי', category: 'finance', domain: 'leumi.co.il', isGlobal: false });
+            data.push({ id: 'discount', name: 'בנק דיסקונט', category: 'finance', domain: 'discountbank.co.il', isGlobal: false });
+            data.push({ id: 'paypal', name: 'PayPal', category: 'finance', domain: 'paypal.com', isGlobal: true });
+            data.push({ id: 'applepay', name: 'Apple Pay', category: 'finance', domain: 'apple.com', isGlobal: true });
+            data.push({ id: 'binance', name: 'Binance', category: 'finance', domain: 'binance.com', isGlobal: true });
+
+            // Telecom
+            data.push({ id: 'bezeq', name: 'בזק', category: 'telecom', domain: 'bezeq.co.il', isGlobal: false });
+            data.push({ id: 'partner', name: 'פרטנר (Partner)', category: 'telecom', domain: 'partner.co.il', isGlobal: false });
+            data.push({ id: 'cellcom', name: 'סלקום', category: 'telecom', domain: 'cellcom.co.il', isGlobal: false });
+            data.push({ id: 'hot', name: 'HOT', category: 'telecom', domain: 'hot.net.il', isGlobal: false });
+            data.push({ id: 'yes', name: 'yes / STINGTV', category: 'telecom', domain: 'yes.co.il', isGlobal: false });
+
+            // AI & Cloud
+            data.push({ id: 'chatgpt', name: 'OpenAI / ChatGPT', category: 'ai', domain: 'openai.com', isGlobal: true });
+            data.push({ id: 'claude', name: 'Claude AI', category: 'ai', domain: 'anthropic.com', isGlobal: true });
+            data.push({ id: 'gemini', name: 'Google Gemini', category: 'ai', domain: 'gemini.google.com', isGlobal: true });
+            data.push({ id: 'cloudflare', name: 'Cloudflare', category: 'ai', domain: 'cloudflare.com', isGlobal: true });
+            data.push({ id: 'aws', name: 'AWS', category: 'ai', domain: 'aws.amazon.com', isGlobal: true });
+            data.push({ id: 'github', name: 'GitHub', category: 'ai', domain: 'github.com', isGlobal: true });
+
+            // Social
+            data.push({ id: 'whatsapp', name: 'WhatsApp', category: 'social', domain: 'whatsapp.com', isGlobal: true });
+            data.push({ id: 'facebook', name: 'Facebook', category: 'social', domain: 'facebook.com', isGlobal: true });
+            data.push({ id: 'instagram', name: 'Instagram', category: 'social', domain: 'instagram.com', isGlobal: true });
+            data.push({ id: 'tiktok', name: 'TikTok', category: 'social', domain: 'tiktok.com', isGlobal: true });
+            data.push({ id: 'telegram', name: 'Telegram', category: 'social', domain: 'telegram.org', isGlobal: true });
+            data.push({ id: 'discord', name: 'Discord', category: 'social', domain: 'discord.com', isGlobal: true });
+
+            // Shopping & Gaming
+            data.push({ id: 'wolt', name: 'Wolt (וולט)', category: 'shopping', domain: 'wolt.com', isGlobal: false });
+            data.push({ id: 'amazon', name: 'Amazon', category: 'shopping', domain: 'amazon.com', isGlobal: true });
+            data.push({ id: 'netflix', name: 'Netflix', category: 'gaming', domain: 'netflix.com', isGlobal: true });
+            data.push({ id: 'youtube', name: 'YouTube', category: 'gaming', domain: 'youtube.com', isGlobal: true });
+            data.push({ id: 'steam', name: 'Steam', category: 'gaming', domain: 'steampowered.com', isGlobal: true });
+            
+            return data;
+        };
+
+        let servicesData = generateBaseData();
+        let chartInstance = null;
+        let currentFilter = 'all';
+
+        // Impact Locations
+        const globalLocations = ["תקלה עולמית רוחבית", "מוקד דיווחים: אירופה וארה״ב", "שרתי קצה בינלאומיים"];
+        const israelLocations = ["פריסה ארצית", "מוקד: אזור גוש דן והמרכז", "תקלת ספקיות מקומית"];
+
+        // Technical Root Causes
+        const technicalRootCauses = {
+            israel: ["שגיאת שרת פנימית (500 Internal Error)", "קריסת מסד נתונים מרכזי", "עומס חריג על שרת ה-API", "נפילת שרת אימות ממשלתי (SSO)"],
+            finance: ["כשל במערכת אימות משתמשים (Auth Gateway)", "עומס חריג בשערי סליקה", "נפילת שרת קור (Core Banking)"],
+            telecom: ["קריסת מתג רשת ראשי (Core Switch)", "שגיאת ניתוב כתובות (DNS Failure)"],
+            ai: ["חריגה ממכסת משאבי ענן (Capacity Limit)", "כשל במנגנון חלוקת עומסים (Load Balancer)"],
+            social: ["קריסת שרתי סנכרון (WebSockets)", "באג בשליפת נתונים (Cache Failure)", "קריסת רכיב ההתחברות (OAuth)"],
+            shopping: ["קריסת מסד נתוני עגלות קניות", "שגיאת רשת הפצת תוכן (CDN Failure)"],
+            gaming: ["חוסר יציבות בשרתי מולטיפלייר", "קריסת שרתי התחברות (Login Servers)"],
+            custom: ["Time Out: אין מענה מהשרת (Ping Failed)", "הפורט הדרוש חסום (Connection Refused)", "נפילת שרת ווב מקומי (Local HTTP Server Down)", "שגיאת רזולוציית רשת (Local DNS Error)"]
+        };
+
+        function assignStatuses() {
+            servicesData.forEach(service => {
+                let hash = service.name.length + service.category.length;
+                let random = Math.random();
+                
+                if (!service.isCustom) {
+                    if (service.id === 'whatsapp' || service.id === 'post' || service.id === 'discord' || service.id === 'youtube') {
+                        service.status = 'down'; service.statusText = 'תקלה נרחבת'; service.statusColor = 'red';
+                    } else if (random > 0.85 || service.id === 'bezeq' || service.id === 'wolt' || service.id === 'poalim') {
+                        service.status = 'warning'; service.statusText = 'תקלות חלקיות'; service.statusColor = 'yellow';
+                    } else {
+                        service.status = 'ok'; service.statusText = 'תקין'; service.statusColor = 'green';
+                    }
+
+                    service.history = [];
+                    let baseLevel = service.status === 'ok' ? 2 : (service.status === 'warning' ? 15 : 40);
+                    for(let i=0; i<24; i++) {
+                        let val = baseLevel + Math.floor(Math.random() * (baseLevel/2));
+                        if (service.status === 'down' && i > 18) val += (Math.random() * 50 + 20);
+                        if (service.status === 'warning' && i > 20) val += 15;
+                        service.history.push(val);
+                    }
+                    
+                    const issues = {
+                        israel: ["אתר אינטרנט / התחברות", "אזור אישי", "מוקד שירות"],
+                        finance: ["העברת כספים", "התחברות לחשבון", "אפליקציה בנייד"],
+                        telecom: ["אינטרנט ביתי (סיבים)", "רשת סלולרית", "קליטה"],
+                        ai: ["שרתי API", "זמן תגובה", "התחברות"],
+                        social: ["שליחת הודעות", "טעינת פיד", "אפליקציה"],
+                        shopping: ["סליקה / תשלום", "התחברות לאתר", "מעקב הזמנות"],
+                        gaming: ["חיבור לשרת משחק", "התחברות לשירות", "סטרימינג וידאו"]
+                    };
+                    let issueList = issues[service.category] || issues['israel'];
+                    service.primaryIssue = issueList[hash % issueList.length];
+
+                    if (service.status !== 'ok') {
+                        if (service.isGlobal) service.impactLocation = globalLocations[hash % globalLocations.length];
+                        else service.impactLocation = israelLocations[hash % israelLocations.length];
+                        
+                        let causesList = technicalRootCauses[service.category] || technicalRootCauses['israel'];
+                        if(service.id === 'youtube') service.rootCause = "קריסת רשת הפצת וידאו (Video CDN Failure)";
+                        else if(service.id === 'whatsapp') service.rootCause = "כשל בשרתי ה-WebSockets (סנכרון הודעות חי)";
+                        else service.rootCause = causesList[Math.floor(Math.random() * causesList.length)];
+                    } else {
+                        service.impactLocation = null;
+                        service.rootCause = null;
+                    }
+                }
+            });
+        }
+
+        assignStatuses();
+
+        function renderServices(filter = 'all', searchQuery = '') {
+            const grid = document.getElementById('servicesGrid');
+            grid.innerHTML = '';
+            
+            let filtered = servicesData;
+            
+            if (filter === 'down') {
+                filtered = filtered.filter(s => s.status === 'down' || s.status === 'warning');
+            } else if (filter !== 'all') {
+                filtered = filtered.filter(s => s.category === filter);
+            }
+
+            if (searchQuery) {
+                filtered = filtered.filter(s => s.name.toLowerCase().includes(searchQuery.toLowerCase()) || (s.domain && s.domain.includes(searchQuery.toLowerCase())));
+                
+                const addContainer = document.getElementById('addServiceContainer');
+                if (filtered.length === 0 && searchQuery.length > 1) {
+                    addContainer.classList.remove('hidden');
+                    document.getElementById('customServerName').value = searchQuery; // pre-fill
+                } else {
+                    addContainer.classList.add('hidden');
+                }
+            } else {
+                document.getElementById('addServiceContainer').classList.add('hidden');
+            }
+
+            filtered.sort((a,b) => {
+                const score = { 'down': 2, 'warning': 1, 'ok': 0 };
+                return score[b.status] - score[a.status];
+            });
+
+            filtered.forEach(service => {
+                const colorMap = {
+                    'ok': 'text-emerald-500 bg-emerald-500/10 border-emerald-500/20',
+                    'warning': 'text-amber-500 bg-amber-500/10 border-amber-500/20',
+                    'down': 'text-red-500 bg-red-500/10 border-red-500/20'
+                };
+                
+                const dotColorMap = {
+                    'ok': 'bg-emerald-500',
+                    'warning': 'bg-amber-500 animate-pulse',
+                    'down': 'bg-red-500 animate-pulse'
+                };
+
+                const logoUrl = getLogoUrl(service.domain);
+
+                const maxHist = Math.max(...service.history);
+                const sparklineHTML = service.history.slice(12, 24).map(val => {
+                    const height = Math.max(10, (val / maxHist) * 100);
+                    const barColor = service.status === 'down' ? 'bg-red-500' : (service.status === 'warning' ? 'bg-amber-400' : 'bg-gray-300 dark:bg-gray-600');
+                    return `<div class="w-1.5 rounded-t-sm sparkline-bar ${barColor} opacity-80" style="height: ${height}%"></div>`;
+                }).join('');
+
+                let statusSubtext = `<span class="text-emerald-600 dark:text-emerald-400 font-medium">✓ פועל כסדר</span>`;
+                if (service.status !== 'ok') {
+                    statusSubtext = `<span class="text-red-600 dark:text-red-400 font-bold">⚠️ תקלה מרכזית: ${service.primaryIssue}</span>`;
+                }
+
+                let extraBorder = service.id === 'jumbomail' ? 'border border-blue-500/30 dark:border-blue-500/50 shadow-md shadow-blue-500/10' : 'border border-gray-100 dark:border-gray-800 shadow-sm';
+                let recommendedTag = service.id === 'jumbomail' ? `<div class="absolute -top-3 -right-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-bl-xl rounded-tr-xl shadow-md transform rotate-3">מומלץ</div>` : '';
+
+                if(service.isCustom) extraBorder = 'border border-purple-500/30 shadow-md shadow-purple-500/10';
+
+                const card = document.createElement('div');
+                card.className = `bg-white dark:bg-dd-card rounded-2xl p-5 ${extraBorder} cursor-pointer hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative h-48 flex flex-col justify-between group`;
+                card.onclick = () => openModal(service.id);
+                
+                card.innerHTML = `
+                    ${recommendedTag}
+                    <div class="flex justify-between items-start mb-3">
+                        <div class="px-2.5 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 border ${colorMap[service.status]}">
+                            <span class="w-2 h-2 rounded-full ${dotColorMap[service.status]}"></span>
+                            ${service.statusText}
+                        </div>
+                        <div class="w-14 h-14 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center p-1.5 shrink-0 overflow-hidden group-hover:scale-110 transition-transform duration-300 relative">
+                            <img src="${logoUrl}" alt="${service.name}" class="w-full h-full object-contain" onerror="handleImgError(this, '${service.name.replace(/'/g, "\\'")}')">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 dark:text-white text-[1.1rem] leading-tight truncate mb-1" title="${service.name}">${service.name}</h3>
+                        <p class="text-[11px] truncate mt-0.5" dir="ltr" style="text-align: right;">${service.isCustom ? '<span class="text-gray-400">'+service.domain+'</span>' : statusSubtext}</p>
+                    </div>
+                    <div class="h-10 mt-3 flex items-end justify-between gap-1 w-full border-t border-gray-50 dark:border-gray-800 pt-3">
+                        ${sparklineHTML}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Custom Server Addition Logic
+        window.openAddServerModal = function() {
+            const modal = document.getElementById('addServerModal');
+            modal.classList.remove('hidden');
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                document.getElementById('addServerModalContent').classList.remove('scale-95'); 
+            }, 10);
+        }
+
+        window.saveCustomServer = function() {
+            const name = document.getElementById('customServerName').value.trim();
+            const address = document.getElementById('customServerAddress').value.trim();
+            
+            if (!name || !address) {
+                alert('אנא הזן שם שרת וכתובת IP / URL תקינה');
+                return;
+            }
+            
+            const newId = 'custom-' + Date.now();
+            
+            const newService = {
+                id: newId, 
+                name: name, 
+                category: 'custom', 
+                domain: address, // Store IP/URL as domain
+                status: 'ok', 
+                statusText: 'מנוטר (חי)', 
+                statusColor: 'green',
+                history: Array.from({length: 24}, () => Math.floor(Math.random() * 5) + 1), // Low steady ping history
+                primaryIssue: 'זמן תגובה (Ping)', 
+                impactLocation: 'רשת מקומית / מותאמת', 
+                rootCause: null, 
+                isGlobal: false,
+                isCustom: true
+            };
+            
+            servicesData.unshift(newService);
+            
+            closeModal('addServerModal');
+            document.getElementById('searchInput').value = '';
+            
+            // Switch to custom tab to show the new addition
+            filterCategory('custom');
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => renderServices(currentFilter, e.target.value));
+
+        window.filterCategory = function(cat) {
+            currentFilter = cat;
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white', 'border-blue-600', 'bg-purple-600', 'border-purple-600');
+                if (cat === 'down' && btn.innerHTML.includes('תקלות')) {
+                     // Keep base style
+                } else if (cat === 'custom' && btn.innerHTML.includes('שרתים אישיים')) {
+                    btn.classList.add('active', 'bg-purple-600', 'text-white', 'border-purple-600');
+                    btn.classList.remove('bg-purple-50', 'dark:bg-purple-900/20', 'text-purple-700', 'dark:text-purple-300');
+                } else if (btn.getAttribute('onclick').includes(`('${cat}')`)) {
+                    btn.classList.add('active', 'bg-blue-600', 'text-white', 'border-blue-600');
+                    btn.classList.remove('bg-white', 'dark:bg-dd-card', 'text-gray-900', 'dark:text-white');
+                } else {
+                    if(btn.innerHTML.includes('שרתים אישיים')) {
+                        btn.classList.add('bg-purple-50', 'dark:bg-purple-900/20', 'text-purple-700', 'dark:text-purple-300');
+                    } else if(!btn.innerHTML.includes('תקלות')) {
+                        btn.classList.add('bg-white', 'dark:bg-dd-card', 'text-gray-900', 'dark:text-white');
+                    }
+                }
+            });
+            renderServices(cat, document.getElementById('searchInput').value);
+        }
+
+        // Main Service Modal Logic
+        window.openModal = function(id) {
+            const service = servicesData.find(s => s.id === id);
+            if (!service) return;
+
+            document.getElementById('modalTitle').innerText = service.name;
+            const logoUrl = getLogoUrl(service.domain);
+            document.getElementById('modalIconContainer').innerHTML = `<img src="${logoUrl}" alt="${service.name}" class="w-full h-full object-contain" onerror="handleImgError(this, '${service.name.replace(/'/g, "\\'")}')">`;
+            
+            const badge = document.getElementById('modalStatusBadge');
+            const statusText = document.getElementById('modalStatusText');
+            const dot = badge.querySelector('span');
+            
+            badge.className = 'inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold gap-2 mt-2';
+            
+            if (service.status === 'ok') {
+                badge.classList.add('bg-emerald-100', 'text-emerald-700', 'dark:bg-emerald-900/30', 'dark:text-emerald-400');
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500';
+            } else if (service.status === 'warning') {
+                badge.classList.add('bg-amber-100', 'text-amber-700', 'dark:bg-amber-900/30', 'dark:text-amber-400');
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse';
+            } else {
+                badge.classList.add('bg-red-100', 'text-red-700', 'dark:bg-red-900/30', 'dark:text-red-400');
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse';
+            }
+            statusText.innerText = service.statusText;
+
+            const locTextEl = document.getElementById('modalLocationText');
+            const locValueEl = document.getElementById('modalLocationValue');
+            const causeTextEl = document.getElementById('modalRootCauseText');
+            const causeValueEl = document.getElementById('modalRootCauseValue');
+
+            if (service.status !== 'ok') {
+                locValueEl.innerText = service.impactLocation;
+                locTextEl.classList.remove('hidden');
+                locTextEl.className = service.status === 'down' 
+                    ? 'mt-3 text-sm font-semibold text-red-500 dark:text-red-400 flex items-center gap-2' 
+                    : 'mt-3 text-sm font-medium text-amber-500 dark:text-amber-400 flex items-center gap-2';
+                
+                causeValueEl.innerText = service.rootCause;
+                causeTextEl.classList.remove('hidden');
+            } else {
+                locTextEl.classList.add('hidden');
+                causeTextEl.classList.add('hidden');
+            }
+
+            const problemsDiv = document.getElementById('modalProblems');
+            problemsDiv.innerHTML = '';
+            let p1, p2, p3;
+            if (service.status === 'down') { p1 = 65; p2 = 25; p3 = 10; }
+            else if (service.status === 'warning') { p1 = 45; p2 = 35; p3 = 20; }
+            else { p1 = 40; p2 = 30; p3 = 30; }
+
+            const issues = {
+                israel: ["אתר אינטרנט", "אפליקציה בנייד", "התחברות לחשבון"],
+                finance: ["התחברות לחשבון", "העברת כספים", "אפליקציה"],
+                telecom: ["אינטרנט ביתי", "קליטה סלולרית", "ניתוקים"],
+                ai: ["חיבור לשרת", "יצירת תוכן", "התחברות"],
+                social: ["שליחת הודעות", "טעינת פיד", "אפליקציה"],
+                shopping: ["תשלום/סליקה", "עגלת קניות", "אתר אינטרנט"],
+                gaming: ["חיבור לשרת", "מולטיפלייר", "לאג/תקיעות"],
+                custom: ["Time Out (פינג)", "חיבור נדחה (Connection Refused)", "נפילת שרת ווב"]
+            };
+            let probs = issues[service.category] || issues['israel'];
+
+            [{ name: probs[0], val: p1 }, { name: probs[1], val: p2 }, { name: probs[2], val: p3 }].forEach(p => {
+                problemsDiv.innerHTML += `
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 text-sm font-medium text-gray-500 dark:text-gray-400">${p.val}%</div>
+                        <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
+                            <div class="bg-blue-500 h-3 rounded-full" style="width: ${p.val}%"></div>
+                        </div>
+                        <div class="w-32 text-sm text-gray-700 dark:text-gray-300">${p.name}</div>
+                    </div>`;
+            });
+
+            const ctx = document.getElementById('modalChart').getContext('2d');
+            if (chartInstance) chartInstance.destroy();
+            const isDark = isDarkMode();
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+            const textColor = isDark ? '#9ca3af' : '#4b5563';
+            const lineColor = service.status === 'down' ? '#ef4444' : (service.status === 'warning' ? '#f59e0b' : '#3b82f6');
+            const bgColor = service.status === 'down' ? 'rgba(239, 68, 68, 0.2)' : (service.status === 'warning' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(59, 130, 246, 0.2)');
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: Array.from({length: 24}, (_, i) => `${i}:00`),
+                    datasets: [{
+                        label: service.isCustom ? 'מילי-שניות (ms)' : 'דיווחי תקלות', data: service.history,
+                        borderColor: lineColor, backgroundColor: bgColor,
+                        borderWidth: 3, pointRadius: 0, pointHoverRadius: 6, fill: true, tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
+                    scales: {
+                        x: { grid: { display: false, color: gridColor }, ticks: { maxTicksLimit: 8, color: textColor } },
+                        y: { grid: { color: gridColor }, border: { dash: [4, 4] }, ticks: { color: textColor, beginAtZero: true } }
+                    },
+                    interaction: { mode: 'nearest', axis: 'x', intersect: false }
+                }
+            });
+
+            document.getElementById('reportSuccessMsg').classList.add('hidden');
+            openModalAnimation('serviceModal');
+        }
+
+        window.openModalAnimation = function(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                const content = modal.querySelector('div[id$="Content"]');
+                if(content) content.classList.remove('scale-95'); 
+            }, 10);
+        }
+
+        window.closeModal = function(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('opacity-0');
+            const content = modal.querySelector('div[id$="Content"]');
+            if(content) content.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        window.reportIssue = function() {
+            document.getElementById('reportSuccessMsg').classList.remove('hidden');
+            if(chartInstance) {
+                const data = chartInstance.data.datasets[0].data;
+                data[data.length-1] += 15; chartInstance.update();
+            }
+        }
+
+        function updateChartTheme() {
+            if (chartInstance) {
+                const isDark = isDarkMode();
+                chartInstance.options.scales.x.grid.color = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+                chartInstance.options.scales.y.grid.color = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+                chartInstance.options.scales.x.ticks.color = isDark ? '#9ca3af' : '#4b5563';
+                chartInstance.options.scales.y.ticks.color = isDark ? '#9ca3af' : '#4b5563';
+                chartInstance.update();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark');
+            renderServices(); filterCategory('all');
+        });
+        
+        // Close modals on click outside
+        document.querySelectorAll('.modal-overlay').forEach(modal => {
+            modal.addEventListener('click', function(e) { 
+                if (e.target === this) closeModal(this.id); 
+            });
+        });
+    </script>
+</body>
+</html>

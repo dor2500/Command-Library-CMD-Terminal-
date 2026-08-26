@@ -46,6 +46,34 @@
                     <i data-lucide="info"></i>
                     <span data-i18n="nav_about">אודות</span>
                 </button>
+                <button class="nav-btn" data-target="winget-section">
+                    <i data-lucide="package"></i>
+                    <span>App Deployer</span>
+                </button>
+                <button class="nav-btn" data-target="store-section">
+                    <i data-lucide="shopping-bag"></i>
+                    <span>Store Downloader</span>
+                </button>
+                <button class="nav-btn" data-target="scripts-section">
+                    <i data-lucide="code"></i>
+                    <span>Script Generators</span>
+                </button>
+                <button class="nav-btn" data-target="shortcuts-section">
+                    <i data-lucide="link"></i>
+                    <span>Windows Shortcuts</span>
+                </button>
+                <button class="nav-btn" data-target="network-section">
+                    <i data-lucide="wifi"></i>
+                    <span>Network Tools</span>
+                </button>
+                <button class="nav-btn" data-target="qa-section">
+                    <i data-lucide="clipboard-check"></i>
+                    <span>QA & Handover</span>
+                </button>
+                <button class="nav-btn" data-target="downdetector-section">
+                    <i data-lucide="activity-square"></i>
+                    <span>Downdetector IL</span>
+                </button>
             </nav>
 
             <div class="sidebar-footer">
@@ -157,6 +185,115 @@
                 </div>
             </section>
 
+            <!-- Winget Section -->
+            <section id="winget-section" class="content-section">
+                <header class="section-header">
+                    <h2>Software Deployment Center</h2>
+                </header>
+                <div class="glass-panel" style="padding: 15px; margin-bottom: 20px;">
+                    <button class="download-btn" id="btnSelectAllWinget">Select All</button>
+                    <button class="download-btn" id="btnSelectRecWinget">Select Recommended</button>
+                    <button class="download-btn" id="btnGenerateWinget">Generate Script</button>
+                    <button class="download-btn" id="btnDownloadWinget">Download .bat</button>
+                </div>
+                <textarea id="wingetOutput" rows="4" class="glass-panel" style="width: 100%; margin-bottom: 20px; color: white; background: rgba(0,0,0,0.2); padding: 10px;" readonly placeholder="Winget command will appear here..."></textarea>
+                <div id="wingetCategories" style="display: flex; flex-direction: column; gap: 20px;"></div>
+            </section>
+
+            <!-- MS Store Section -->
+            <section id="store-section" class="content-section">
+                <header class="section-header">
+                    <h2>MS Store App Package Downloader</h2>
+                    <p>Search and download AppX/MSIX files directly via rg-adguard.net integration.</p>
+                </header>
+                
+                <div class="search-container glass-panel" style="display: flex; gap: 10px; align-items: center; padding: 15px; flex-wrap: wrap;">
+                    
+                    <select id="adguardType" style="background: rgba(0,0,0,0.4); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 10px; border-radius: 6px; outline: none; font-size: 1rem;">
+                        <option value="url">URL (link)</option>
+                        <option value="ProductId" selected>ProductId</option>
+                        <option value="PackageFamilyName">PackageFamilyName</option>
+                        <option value="CategoryId">CategoryId</option>
+                    </select>
+
+                    <input type="text" id="adguardInput" placeholder="Enter link or ID (e.g. 9WZDNCRFJBMP)" autocomplete="off" style="flex-grow: 1; min-width: 200px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 10px; border-radius: 6px; font-size: 1rem; outline: none;">
+                    
+                    <select id="adguardRing" style="background: rgba(0,0,0,0.4); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 10px; border-radius: 6px; outline: none; font-size: 1rem;">
+                        <option value="RP">RP</option>
+                        <option value="Retail" selected>Retail</option>
+                        <option value="RP">Release Preview</option>
+                        <option value="WIS">Fast</option>
+                        <option value="WIF">Slow</option>
+                    </select>
+
+                    <button class="download-btn" id="btnAdguardSearch" style="background: #0078D7; border-color: #0078D7; padding: 10px 20px;">
+                        <i data-lucide="search"></i> Search
+                    </button>
+                </div>
+                
+                <div class="cards-grid" style="margin-top: 20px;">
+                    <div class="about-card glass-panel" style="width: 100%;">
+                        <h3><i data-lucide="info"></i> How it works</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-top: 10px;">
+                            Due to browser security policies (CORS) blocking direct access to Microsoft's hidden download APIs, we cannot download the raw installation files in the background without a backend server.
+                            <br><br>
+                            Clicking <b>Search</b> will securely pass your parameters to the official <b>store.rg-adguard.net</b> generator in a new tab, where you can instantly download the <code>.appx</code> or <code>.appxbundle</code> files directly from Microsoft servers!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scripts Section -->
+            <section id="scripts-section" class="content-section">
+                <header class="section-header">
+                    <h2>Interactive Script Generators</h2>
+                </header>
+                <div class="cards-grid">
+                    <div class="about-card glass-panel">
+                        <h3>Windows Health & Repair</h3>
+                        <label><input type="checkbox" id="chkSFC" checked> SFC Scan</label><br>
+                        <label><input type="checkbox" id="chkDISM" checked> DISM RestoreHealth</label><br>
+                        <button class="download-btn" id="btnGenerateHealthBat" style="margin-top: 10px;">Download Batch</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shortcuts Section -->
+            <section id="shortcuts-section" class="content-section">
+                <header class="section-header">
+                    <h2>Windows Shortcuts & Registry</h2>
+                </header>
+                <div class="cards-grid" id="shortcutsGrid"></div>
+            </section>
+
+            <!-- Network Section -->
+            <section id="network-section" class="content-section">
+                <header class="section-header">
+                    <h2>Network Tools</h2>
+                </header>
+                <div class="about-card glass-panel">
+                    <h3>Network Diagnostics</h3>
+                    <p>Generate a script to reset adapters, flush DNS, and renew IP.</p>
+                    <button class="download-btn" id="btnNetResetBat" style="margin-top: 10px;">Download Reset.bat</button>
+                </div>
+            </section>
+
+            <!-- Downdetector Section -->
+            <section id="downdetector-section" class="content-section" style="height: calc(100vh - 150px); padding: 0;">
+                <iframe src="downdetector.html" style="width: 100%; height: 100%; border: none; border-radius: 12px;"></iframe>
+            </section>
+
+            <!-- QA Section -->
+            <section id="qa-section" class="content-section">
+                <header class="section-header">
+                    <h2>QA & Handover Report</h2>
+                </header>
+                <div class="about-card glass-panel print-area">
+                    <input type="text" placeholder="Client Name" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+                    <textarea placeholder="Work Performed" rows="4" style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
+                    <button class="download-btn no-print" onclick="window.print()">Print Handover Report</button>
+                </div>
+            </section>
         </main>
     </div>
 

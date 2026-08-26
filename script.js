@@ -722,3 +722,220 @@ Also, the very FIRST line of your response MUST be a comment containing exactly 
         console.error(err);
     }
 }
+
+// --- New Module Integrations --- //
+
+// Winget Selection & Generation
+document.addEventListener('DOMContentLoaded', () => {
+    // Nav logic update for new sections
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.content-section');
+    
+    navBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            navBtns.forEach(b => b.classList.remove('active'));
+            sections.forEach(s => s.classList.remove('active'));
+            
+            btn.classList.add('active');
+            const targetId = btn.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        });
+    });
+
+    const wingetData = {
+        "Web Browsers": [
+            { id: "Google.Chrome", name: "Google Chrome", rec: true },
+            { id: "Mozilla.Firefox", name: "Mozilla Firefox", rec: true },
+            { id: "Brave.Brave", name: "Brave" }
+        ],
+        "Utilities": [
+            { id: "7zip.7zip", name: "7-Zip", rec: true },
+            { id: "Rufus.Rufus", name: "Rufus", rec: true }
+        ]
+    };
+
+    const wContainer = document.getElementById('wingetCategories');
+    if (wContainer) {
+        for (const [cat, apps] of Object.entries(wingetData)) {
+            let html = `<div style="margin-bottom:10px;"><h4>${cat}</h4><div style="display:flex;gap:10px;flex-wrap:wrap;">`;
+            apps.forEach(app => {
+                html += `<label><input type="checkbox" class="winget-chk" value="${app.id}" data-rec="${app.rec}"> ${app.name}</label>`;
+            });
+            html += `</div></div>`;
+            wContainer.innerHTML += html;
+        }
+    }
+
+    const generateWinget = () => {
+        const selected = Array.from(document.querySelectorAll('.winget-chk:checked')).map(c => c.value);
+        return selected.length ? `winget install --id ${selected.join(" ")} -e --accept-package-agreements` : "";
+    };
+
+    const btnGenW = document.getElementById('btnGenerateWinget');
+    if (btnGenW) {
+        btnGenW.addEventListener('click', () => {
+            document.getElementById('wingetOutput').value = generateWinget();
+        });
+    }
+
+    const btnStore = document.getElementById('btnGenerateStore');
+    if (btnStore) {
+        btnStore.addEventListener('click', () => {
+            let input = document.getElementById('storeInput').value.trim();
+            let idMatch = input.match(/9[A-Z0-9]{9,13}/i);
+            let extractedId = idMatch ? idMatch[0] : input;
+            if (!extractedId) extractedId = "INVALID_ID";
+            document.getElementById('storeWingetOutput').value = `winget download --id ${extractedId} -e --accept-package-agreements`;
+            document.getElementById('storeAdguardLink').href = `https://store.rg-adguard.net/?type=ProductId&url=${extractedId}`;
+            // Re-render lucide icons if needed
+            if (window.lucide) lucide.createIcons();
+        });
+    }
+});
+
+
+// --- Additional Fixes Logic --- //
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Store Downloader .bat logic
+    const btnDownloadStoreBat = document.getElementById('btnDownloadStoreBat');
+    if (btnDownloadStoreBat) {
+        btnDownloadStoreBat.addEventListener('click', () => {
+            let input = document.getElementById('storeInput').value.trim();
+            let idMatch = input.match(/9[A-Z0-9]{9,13}/i);
+            let extractedId = idMatch ? idMatch[0] : input;
+            if (!extractedId) {
+                alert("Please enter a valid MS Store link or ID.");
+                return;
+            }
+            
+            const batContent = `@echo off\ncolor 0A\necho Downloading AppX package from MS Store...\nwinget download --id ${extractedId} -e --accept-package-agreements\necho.\npause`;
+            const blob = new Blob([batContent], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `MS_Store_${extractedId}.bat`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+    }
+
+    // Windows Shortcuts Logic
+    const shortcutsGrid = document.getElementById('shortcutsGrid');
+    if (shortcutsGrid) {
+        const shortcuts = [
+            { name: "Network Connections", cmd: "ncpa.cpl", icon: "wifi" },
+            { name: "Programs & Features", cmd: "appwiz.cpl", icon: "trash-2" },
+            { name: "Computer Management", cmd: "compmgmt.msc", icon: "monitor" },
+            { name: "Device Manager", cmd: "devmgmt.msc", icon: "cpu" },
+            { name: "System Properties", cmd: "sysdm.cpl", icon: "settings" },
+            { name: "Disk Management", cmd: "diskmgmt.msc", icon: "hard-drive" }
+        ];
+        
+        let sHtml = '';
+        shortcuts.forEach(s => {
+            sHtml += `<div class="about-card glass-panel" style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="display:flex; gap:10px; align-items:center;">
+                    <i data-lucide="${s.icon}" style="color:var(--text-main);"></i>
+                    <span style="font-weight:500;">${s.name}</span>
+                </div>
+                <div style="font-family:'Fira Code', monospace; color:var(--text-muted);">${s.cmd}</div>
+            </div>`;
+        });
+        shortcutsGrid.innerHTML = sHtml;
+    }
+
+    // Hardware Diagnostics (Display Test)
+    const btnDisplayTest = document.getElementById('btnDisplayTest');
+    if (btnDisplayTest) {
+        btnDisplayTest.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0'; overlay.style.left = '0';
+            overlay.style.width = '100vw'; overlay.style.height = '100vh';
+            overlay.style.zIndex = '999999';
+            overlay.style.cursor = 'pointer';
+            
+            const colors = ['#000000', '#ffffff', '#ff0000', '#00ff00', '#0000ff'];
+            let colorIndex = 0;
+            overlay.style.backgroundColor = colors[colorIndex];
+            
+            overlay.addEventListener('click', () => {
+                colorIndex++;
+                if (colorIndex >= colors.length) {
+                    document.body.removeChild(overlay);
+                    if (document.exitFullscreen) document.exitFullscreen();
+                } else {
+                    overlay.style.backgroundColor = colors[colorIndex];
+                }
+            });
+            
+            document.body.appendChild(overlay);
+            if (overlay.requestFullscreen) overlay.requestFullscreen();
+        });
+    }
+
+    // Script Generators (Health check)
+    const btnHealth = document.getElementById('btnGenerateHealthBat');
+    if (btnHealth) {
+        btnHealth.addEventListener('click', () => {
+            let cmds = [`@echo off`, `color 0A`, `echo Starting Windows Health Repair...`, `echo Please ensure this is running as Administrator!`, `pause`];
+            if (document.getElementById('chkSFC').checked) cmds.push(`sfc /scannow`);
+            if (document.getElementById('chkDISM').checked) cmds.push(`DISM /Online /Cleanup-Image /RestoreHealth`);
+            cmds.push(`echo Done!`, `pause`);
+            
+            const blob = new Blob([cmds.join('\n')], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `Windows_Health_Repair.bat`;
+            a.click();
+        });
+    }
+
+    // Network Tools (Reset)
+    const btnNet = document.getElementById('btnNetResetBat');
+    if (btnNet) {
+        btnNet.addEventListener('click', () => {
+            let cmds = [`@echo off`, `color 0A`, `echo Resetting Network Settings...`, `ipconfig /release`, `ipconfig /flushdns`, `ipconfig /renew`, `netsh winsock reset`, `echo Network reset complete. Please restart your computer.`, `pause`];
+            
+            const blob = new Blob([cmds.join('\n')], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `Network_Reset.bat`;
+            a.click();
+        });
+    }
+
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btnSearch = document.getElementById('btnAdguardSearch');
+    if (btnSearch) {
+        btnSearch.addEventListener('click', () => {
+            const type = document.getElementById('adguardType').value;
+            let val = document.getElementById('adguardInput').value.trim();
+            const ring = document.getElementById('adguardRing').value;
+            
+            if (!val) {
+                alert('Please enter a value to search.');
+                return;
+            }
+            
+            // If user pastes full URL but selected ProductId, try to extract ID
+            if (type === 'ProductId' && val.includes('http')) {
+                let idMatch = val.match(/9[A-Z0-9]{9,13}/i);
+                if (idMatch) val = idMatch[0];
+            }
+            
+            const targetUrl = `https://store.rg-adguard.net/?type=${type}&url=${encodeURIComponent(val)}&ring=${ring}&lang=en-US`;
+            window.open(targetUrl, '_blank');
+        });
+    }
+});

@@ -776,3 +776,25 @@ body {
 [data-theme="light"] .sh-path {
     color: #16a34a;
 }
+
+/* Print Rules for QA Report */
+@media print {
+    .sidebar, .section-header, .os-filters, .search-container, .no-print {
+        display: none !important;
+    }
+    .main-content {
+        padding: 0;
+        margin: 0;
+    }
+    .glass-panel {
+        background: none;
+        border: 1px solid #000;
+        box-shadow: none;
+        color: #000;
+    }
+    input, textarea {
+        border: 1px solid #ccc !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
